@@ -82,6 +82,14 @@ nmap <Leader><Leader>c :e app/Http/Controllers/<cr>
 nmap <Leader><Leader>m :CtrlP<cr>app/
 nmap <Leader><Leader>v :e resources/views/<cr>
 
+"fugitive
+nmap <Leader>gs :Gstatus
+nmap <Leader>gd :Gdiff
+nmap <Leader>gc :Gcommit
+nmap <Leader>gb :Gblame
+nmap <Leader>gl :Glog
+nmap <Leader>gp :Git push
+
 "-----Auto-Commands-----"
 
 "Automatically source the vimrc file on save.
