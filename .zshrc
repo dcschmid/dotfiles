@@ -82,8 +82,7 @@ export ARCHFLAGS="-arch x86_64"
 # Example aliases
 alias zshconfig="nano ~/.zshrc"
 alias ohmyzsh="nano ~/.oh-my-zsh"
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias configdot='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 alias gswdev="ssh wwwadmin@gsw-dev-v1.odmedia.net"
 alias gswlive="ssh wwwadmin@gsw-red-v1.eu-c1.odmedia.net"
-
