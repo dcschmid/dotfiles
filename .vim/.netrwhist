@@ -1,6 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/home/daniel/.vim/snippets'
 let g:netrw_dirhist_2='/data/larabasic/app/Http/Controllers'
 let g:netrw_dirhist_3='/data/larabasic/resources/views'
 let g:netrw_dirhist_4='/data/larabasic/app/Http/Controllers'
+let g:netrw_dirhist_5='/data/websites/larabasic/resources/views'
+let g:netrw_dirhist_6='/data/websites/larabasic/resources/views/pages'
+let g:netrw_dirhist_7='/data/websites/larabasic/app/Http/Controllers'
+let g:netrw_dirhist_8='/data/websites/larabasic/app/Http'
+let g:netrw_dirhist_9='/data/websites/larabasic/app'
