@@ -14,6 +14,7 @@ set tabstop=8
 set expandtab
 set softtabstop=4
 set shiftwidth=4
+set laststatus=2
 
 "-----Visuals-----"
 colorscheme atom-dark-256
@@ -75,6 +76,7 @@ nnoremap <silent><leader>pf :call PhpCsFixerFixFile()<CR>
 "pdv
 let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
 nnoremap <Leader>d :call pdv#DocumentWithSnip()<cr>
+
 
 "-----Laravel-Specific-----"
 nmap <Leader>lm :!php artisan make:
