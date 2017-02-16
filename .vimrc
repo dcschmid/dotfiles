@@ -85,12 +85,12 @@ nmap <Leader><Leader>m :CtrlP<cr>app/
 nmap <Leader><Leader>v :e resources/views/<cr>
 
 "fugitive
-nmap <Leader>gs :Gstatus
-nmap <Leader>gd :Gdiff
-nmap <Leader>gc :Gcommit
-nmap <Leader>gb :Gblame
-nmap <Leader>gl :Glog
-nmap <Leader>gp :Git push
+nmap <Leader>gs :Gstatus<cr>
+nmap <Leader>gd :Gdiff<cr>
+nmap <Leader>gc :Gcommit<cr>
+nmap <Leader>gb :Gblame<cr>
+nmap <Leader>gl :Glog<cr>
+nmap <Leader>gp :Git push<cr>
 
 "-----Auto-Commands-----"
 
@@ -116,6 +116,12 @@ autocmd FileType php noremap <Leader>nf :call PhpExpandClass()<CR>
 
 autocmd FileType php inoremap <Leader>ns <Esc>:call PhpSortUse()<CR>
 autocmd FileType php noremap <Leader>ns :call PhpSortUse()<CR>
+
+augroup VimCSS3Syntax
+  autocmd!
+
+  autocmd FileType css setlocal iskeyword+=-
+augroup END
 
 "-------------Tips and Reminders--------------"
 " - Press 'zz' to instantly center the line where the cursor is located.
