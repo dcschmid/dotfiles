@@ -19,8 +19,8 @@ URxvt.loginShell:           true
 URxvt.visualBell:           false
 
 ! Fonts
-URxvt*font:                 xft:Monospace:pixelsize=14
-URxvt*boldFont:             xft:Monospace:pixelsize=14
+URxvt*font:                 xft:Monospace:pixelsize=12
+URxvt*boldFont:             xft:Monospace:pixelsize=12
 URxvt.letterSpace:          -1
 
 ! Scrollbar
@@ -28,17 +28,11 @@ URxvt.scrollStyle:          rxvt
 URxvt.scrollBar:            false
 
 ! Perl extensions
-URxvt.perl-ext-common:      default,matcher,tabbed
+URxvt.perl-ext-common:      default,matcher
 URxvt.matcher.button:       1
 URxvt.urlLauncher:          firefox-bin -new-tab
 URxvt.keysym.M-c:           perl:clipboard:copy
 URxvt.keysym.M-v:           perl:clipboard:paste
-
-! Tabs
-URxvt.tabbed.tabbar-fg: 10
-URxvt.tabbed.tabbar-bg: 0
-URxvt.tabbed.tab-fg: 12
-URxvt.tabbed.tab-bg: 0
 
 ! special
 *.foreground:   #93a1a1
