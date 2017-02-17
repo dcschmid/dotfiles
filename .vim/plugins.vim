@@ -29,6 +29,7 @@ Plugin 'hail2u/vim-css3-syntax'
 Plugin 'groenewege/vim-less'
 Plugin 'gorodinskiy/vim-coloresque'
 Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'pangloss/vim-javascript'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
