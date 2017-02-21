@@ -15,6 +15,9 @@ set expandtab
 set softtabstop=4
 set shiftwidth=4
 set laststatus=2
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 
 "-----Visuals-----"
 colorscheme atom-dark-256
@@ -77,6 +80,13 @@ nnoremap <silent><leader>pf :call PhpCsFixerFixFile()<CR>
 let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
 nnoremap <Leader>d :call pdv#DocumentWithSnip()<cr>
 
+"syntastics
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 1
+let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']
+let g:syntastic_php_phpcs_args = "--standard=PSR2"
 
 "-----Laravel-Specific-----"
 nmap <Leader>lm :!php artisan make:
@@ -91,6 +101,9 @@ nmap <Leader>gc :Gcommit<cr>
 nmap <Leader>gb :Gblame<cr>
 nmap <Leader>gl :Glog<cr>
 nmap <Leader>gp :Git push<cr>
+
+"tagbar
+nmap <C-t> :TagbarToggle<CR>
 
 "-----Auto-Commands-----"
 

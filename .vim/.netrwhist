@@ -1,4 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/data/larabasic/resources/views'
 let g:netrw_dirhist_2='/data/larabasic/app/Http/Controllers'
+let g:netrw_dirhist_3='/data/larabasic/resources/views'
+let g:netrw_dirhist_4='/data/larabasic/app/Http/Controllers'
+let g:netrw_dirhist_5='/data/larabasic/app/Http/Controllers/Auth'
