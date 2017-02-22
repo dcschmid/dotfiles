@@ -19,8 +19,8 @@ URxvt.loginShell:           true
 URxvt.visualBell:           false
 
 ! Fonts
-URxvt*font:                 xft:Monospace:pixelsize=12
-URxvt*boldFont:             xft:Monospace:pixelsize=12
+URxvt*font:                 xft:Hack:pixelsize=12
+URxvt*boldFont:             xft:Hack:pixelsize=12
 URxvt.letterSpace:          -1
 
 ! Scrollbar

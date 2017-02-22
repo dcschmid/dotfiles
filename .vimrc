@@ -1,7 +1,7 @@
 set nocompatible              				" We want the latest vim settings
 filetype off                  				" required
 
-so ~/.vim/plugins.vim
+so ~/.vim/plugins.vim                                   "extra plugins file
 
 syntax enable
 
@@ -42,7 +42,7 @@ nmap <C-L> <C-W><C-L>
 
 "/CtrlP
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
-let g:ctrlp_match_window = 'top,order:ttb,min:1,max:30,results:30'
+let g:ctrlp_match_window = 'bottom,order:ttb,min:1,max:30,results:30'
 
 "/NERDTree
 let NERDTreeHijackNetrw = 0
@@ -104,6 +104,7 @@ nmap <Leader>gp :Git push<cr>
 
 "tagbar
 nmap <C-t> :TagbarToggle<CR>
+
 
 "-----Auto-Commands-----"
 
