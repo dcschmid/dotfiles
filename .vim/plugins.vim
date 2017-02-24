@@ -34,6 +34,7 @@ Plugin 'itchyny/lightline.vim'          "statusline/tabline for vim
 Plugin 'sjl/gundo.vim'                  "visualize your vim undo
 Plugin 'ntpeters/vim-better-whitespace' "Better whitespace highlighting for Vim
 Plugin 'isRuslan/vim-es6'               "Snippets and Syntax Highlighting for vim
+Plugin 'shawncplus/phpcomplete.vim'     "Improved PHP omni-completion
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

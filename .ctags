@@ -12,3 +12,5 @@
 --exclude=*.js
 --exclude=*.css
 --recurse
+--fields=+aimlS
+--languages=php
