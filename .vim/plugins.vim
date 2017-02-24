@@ -1,4 +1,3 @@
-
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -8,6 +7,7 @@ Plugin 'VundleVim/Vundle.vim'           "Plugin installer
 Plugin 'tpope/vim-vinegar'              "expand netrw
 Plugin 'majutsushi/tagbar'              "displays tags in a window, ordered by scope
 Plugin 'scrooloose/nerdtree'            "tree explorer
+Plugin 'Xuyuanp/nerdtree-git-plugin'    "showing git status flags in NERDTree
 Plugin 'ctrlpvim/ctrlp.vim'             "Fuzzy file,buffer,mru,tag ...finder
 Plugin 'rking/ag.vim'                   "plugin for the_silver_searcher
 Plugin 'skwp/greplace.vim'              "Global search and replace
@@ -30,7 +30,10 @@ Plugin 'pangloss/vim-javascript'        "Vastly improved Javascript indentation 
 Plugin 'jwalton512/vim-blade'           "Vim syntax highlighting for Blade templates
 Plugin 'scrooloose/syntastic'           "Syntax checking hacks for vim
 Plugin 'posva/vim-vue'                  "Vim syntax highlighting for Vue components.
-
+Plugin 'itchyny/lightline.vim'          "statusline/tabline for vim
+Plugin 'sjl/gundo.vim'                  "visualize your vim undo
+Plugin 'ntpeters/vim-better-whitespace' "Better whitespace highlighting for Vim
+Plugin 'isRuslan/vim-es6'               "Snippets and Syntax Highlighting for vim
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

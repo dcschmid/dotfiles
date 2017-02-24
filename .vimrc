@@ -55,13 +55,14 @@ let g:grep_cmd_opts = '--line-numbers --noheading'
 let g:php_namespace_sort_after_insert = 1
 
 "/php-cs-fixer
-let g:php_cs_fixer_level = "psr2" 
+let g:php_cs_fixer_level = "psr2"
 
 "-----Mappings-----"
 "Make it easy to edit the vimrc file.
 nmap <Leader>ev :tabedit ~/.vimrc<cr>
 nmap <Leader>es :e ~/.vim/snippets/
 nmap <Leader>ep :tabedit ~/.vim/plugins.vim<cr>
+nmap <Leader>el :tabedit ~/.vim/lightline.vim<cr>
 
 "Add simple highlight removal.
 nmap <Leader><space> :nohlsearch<cr>
@@ -105,6 +106,11 @@ nmap <Leader>gp :Git push<cr>
 "tagbar
 nmap <C-t> :TagbarToggle<CR>
 
+"lightline
+so ~/.vim/lightline.vim                                   "extra lightline file
+
+"Gundo
+nmap <c-g> :GundoToggle<cr>
 
 "-----Auto-Commands-----"
 
@@ -130,6 +136,9 @@ autocmd FileType php noremap <Leader>nf :call PhpExpandClass()<CR>
 
 autocmd FileType php inoremap <Leader>ns <Esc>:call PhpSortUse()<CR>
 autocmd FileType php noremap <Leader>ns :call PhpSortUse()<CR>
+
+"Strip all trailling whitespace on save
+autocmd BufEnter * EnableStripWhitespaceOnSave
 
 augroup VimCSS3Syntax
   autocmd!
