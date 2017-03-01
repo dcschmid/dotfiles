@@ -328,10 +328,26 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 1
 
+"php checkers
 let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']
 let g:syntastic_php_phpcs_args = "--standard=PSR2"
 
+"html checker
 let g:syntastic_html_checkers = ['htmlhint']
+
+"css checker
+let g:syntastic_css_checkers = ['csslint']
+
+"less checker
+let g:syntastic_less_checkers = ['lessc']
+
+"sass/scss checker
+let g:syntastic_sass_checkers = ['sass-lint']
+let g:syntastic_scss_checkers = ['sass-lint']
+
+"javascript
+let g:syntastic_javascript_checker = ['jshint']
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => fugitive
