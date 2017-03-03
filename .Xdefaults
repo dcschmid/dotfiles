@@ -28,11 +28,18 @@ URxvt.scrollStyle:          rxvt
 URxvt.scrollBar:            false
 
 ! Perl extensions
-URxvt.perl-ext-common:      default,matcher
-URxvt.matcher.button:       1
-URxvt.urlLauncher:          firefox-bin -new-tab
+URxvt.perl-ext-common:      default,url-select,tabbed
+URxvt.keysym.M-u:           perl:url-select:select_next
+URxvt.url-select.launcher:  firefox -new-tab
+URxvt.url-select.underline: true
+
 URxvt.keysym.M-c:           perl:clipboard:copy
 URxvt.keysym.M-v:           perl:clipboard:paste
+
+URxvt.tabbed.tabbar-fg: 2
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg: 3
+URxvt.tabbed.tab-bg: 0
 
 ! special
 *.foreground:   #93a1a1

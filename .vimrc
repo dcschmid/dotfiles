@@ -360,7 +360,7 @@ nmap <Leader>gl :Glog<cr>
 nmap <Leader>gp :Git push<cr>
 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""0
 " => tagbar
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <C-t> :TagbarToggle<CR>
@@ -377,6 +377,12 @@ nmap <c-g> :GundoToggle<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 let g:SuperTabDefaultCompletionType = "context"
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-autotag
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:autotagCtagsCmd="ctags -R"
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -398,6 +404,7 @@ augroup VimCSS3Syntax
   autocmd FileType css setlocal iskeyword+=-
 augroup END
 
+autocmd BufWritePost *.php silent! !ctags -R &
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
