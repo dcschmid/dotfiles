@@ -386,6 +386,16 @@ let g:autotagCtagsCmd="ctags -R"
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-easy-align
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Auto-Commands
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Automatically source the vimrc file on save.
