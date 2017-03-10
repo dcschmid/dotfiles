@@ -375,14 +375,16 @@ nmap <c-g> :GundoToggle<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Supertab
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
-let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
+let g:SuperTabRetainCompletionDuration = "completion"
+let g:SuperTabLongestEnhanced = 1
+let g:SuperTabLongestHighlight = 1
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => vim-autotag
+" => javascript-libraries-syntax.vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:autotagCtagsCmd="ctags -R"
+let g:used_javascript_libs = 'jquery,vue'
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
