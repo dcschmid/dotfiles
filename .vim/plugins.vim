@@ -57,13 +57,14 @@ Plugin 'othree/yajs.vim'                                "Yet Another JavaScript 
 Plugin 'othree/javascript-libraries-syntax.vim'         "Syntax file for JavaScript Libraries
 Plugin 'othree/es.next.syntax.vim'                      "The syntax file for EcmaScript future syntax
 Plugin 'elzr/vim-json'                                  "a better JSON for vim
-Plugin 'othree/jsdoc-syntax.vim'                               "standalone Jsdoc syntax for vim
+Plugin 'othree/jsdoc-syntax.vim'                        "standalone Jsdoc syntax for vim
 Plugin 'heavenshell/vim-jsdoc'                          "generates JSDoc block commentsi
 Plugin '1995eaton/vim-better-javascript-completion'     "An expansion of vim's current Jacascript syntax file
 Plugin 'posva/vim-vue'                                  "Vim syntax highlighting for Vue components.
+Plugin 'sekel/vim-vue-syntastic'
 Plugin 'othree/jspc.vim'                                "JS Parameter Complete
 
-Plugin 'ludovicchabant/vim-gutentags'                   "plugin that manages the tag files
+"Plugin 'ludovicchabant/vim-gutentags'                   "plugin that manages the tag files
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

@@ -346,8 +346,11 @@ let g:syntastic_sass_checkers = ['sass-lint']
 let g:syntastic_scss_checkers = ['sass-lint']
 
 "javascript
-let g:syntastic_javascript_checker = ['jshint']
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_eslint_exec = 'eslint_d'
 
+"vue
+let g:syntastic_vue_checkers = ['eslint']
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => fugitive
