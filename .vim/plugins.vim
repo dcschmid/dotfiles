@@ -26,7 +26,7 @@ Plugin 'itchyny/lightline.vim'          "statusline/tabline for vim
 Plugin 'sjl/gundo.vim'                  "visualize your vim undo
 Plugin 'ntpeters/vim-better-whitespace' "Better whitespace highlighting for Vim
 Plugin 'airblade/vim-gitgutter'         "A Vim plugin shows a git diff in the gutter and stages/undoes hunks
-
+Plugin 'chrisbra/vim-autoread'          "Use tail -f on a buffer and append new content
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => PHP, Laravel
@@ -34,11 +34,12 @@ Plugin 'airblade/vim-gitgutter'         "A Vim plugin shows a git diff in the gu
 Plugin 'StanAngeloff/php.vim'           "Up-to-date php syntax file
 Plugin 'arnaud-lb/vim-php-namespace'    "types use statements for you
 Plugin 'stephpy/vim-php-cs-fixer'       "A tool to automatically fix PHP coding standard issues
+Plugin 'SirVer/ultisnips'               "UltiSnips - The ultimate snippet solution for Vim.
 Plugin 'tobyS/vmustache'                "Mustache templates system for VIMScript (required for PDV)
 Plugin 'tobyS/pdv'                      "PHP Documentator for vim
 Plugin 'shawncplus/phpcomplete.vim'     "Improved PHP omni-completion
 Plugin 'jwalton512/vim-blade'           "Vim syntax highlighting for Blade templates
-
+Plugin 'lumiliet/vim-twig'              "Twig Syntax highlighting
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => HTML, CSS, SASS, LESS
