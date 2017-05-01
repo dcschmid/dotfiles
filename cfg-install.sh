@@ -12,3 +12,4 @@ if [ $? = 0 ]; then
 fi;
 configdot checkout
 configdot config status.showUntrackedFiles no
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
