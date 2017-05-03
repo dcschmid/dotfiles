@@ -18,6 +18,8 @@ URxvt.transparent:          false
 URxvt.loginShell:           true
 URxvt.visualBell:           false
 
+URxvt.termName:             rxvt-unicode-256color
+
 ! Fonts
 URxvt*font:                 xft:Hack:pixelsize=12
 URxvt*boldFont:             xft:Hack:pixelsize=12
