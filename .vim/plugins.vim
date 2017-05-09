@@ -7,6 +7,7 @@ call vundle#begin()
 " => Basic
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'VundleVim/Vundle.vim'           "let Vundle manage Vundle, required
+Plugin 'cocopon/iceberg.vim'            "A dark blue color theme
 Plugin 'tpope/vim-vinegar'              "expand netrw
 Plugin 'majutsushi/tagbar'              "displays tags in a window, ordered by scope
 Plugin 'scrooloose/nerdtree'            "tree explorer
@@ -23,6 +24,7 @@ Plugin 'tpope/vim-fugitive'             "A git wrapper
 Plugin 'scrooloose/syntastic'           "Syntax checking hacks for vim
 Plugin 'junegunn/vim-easy-align'        "A simple easy to use vim alignment plugin
 Plugin 'itchyny/lightline.vim'          "statusline/tabline for vim
+Plugin 'hallzy/lightline-iceberg'       "Lightline color theme
 Plugin 'sjl/gundo.vim'                  "visualize your vim undo
 Plugin 'ntpeters/vim-better-whitespace' "Better whitespace highlighting for Vim
 Plugin 'airblade/vim-gitgutter'         "A Vim plugin shows a git diff in the gutter and stages/undoes hunks

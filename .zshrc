@@ -52,9 +52,8 @@ HIST_STAMPS="dd.mm.yyyy"
 plugins=(archlinux bower composer common-aliases encode64 git git-extras git-flow httpie jira jsontools node npm redis-cli sublime sudo systemd urltools web-search)
 
 # User configuration
-
- export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH:/home/daniel/.config/composer/vendor/bin"
- export MANPATH="/usr/local/man:$MANPATH"
+export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH:/home/daniel/.config/composer/vendor/bin"
+export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -82,7 +81,8 @@ export ARCHFLAGS="-arch x86_64"
 # Example aliases
 alias zshconfig="nano ~/.zshrc"
 alias ohmyzsh="nano ~/.oh-my-zsh"
-alias configdot='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias configdot='/usr/local/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
 
 alias gswdev="ssh wwwadmin@gsw-dev-v1.odmedia.net"
 alias gswlive="ssh wwwadmin@gsw-red-v1.eu-c1.odmedia.net"
