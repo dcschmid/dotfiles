@@ -29,6 +29,7 @@ Plugin 'sjl/gundo.vim'                  "visualize your vim undo
 Plugin 'ntpeters/vim-better-whitespace' "Better whitespace highlighting for Vim
 Plugin 'airblade/vim-gitgutter'         "A Vim plugin shows a git diff in the gutter and stages/undoes hunks
 Plugin 'chrisbra/vim-autoread'          "Use tail -f on a buffer and append new content
+Plugin 'editorconfig/editorconfig-vim'  "EditorConfig plugin for vim
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => PHP, Laravel
@@ -51,7 +52,6 @@ Plugin 'hail2u/vim-css3-syntax'         "CSS3 snytax support
 Plugin 'groenewege/vim-less'            "Vim syntax for less
 Plugin 'gorodinskiy/vim-coloresque'     "css/less/sass/html color preview for vim
 Plugin 'cakebaker/scss-syntax.vim'      "Vim syntax file for scss
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => HTML, CSS, SASS, LESS
