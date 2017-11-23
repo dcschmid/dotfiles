@@ -1,3 +1,5 @@
+rm .zshrc
+
 git clone --bare https://bitbucket.org/dschmid/dotfiles $HOME/.cfg
 
 alias configdot='/usr/local/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
