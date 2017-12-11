@@ -49,7 +49,7 @@ HIST_STAMPS="dd.mm.yyyy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(archlinux bower composer common-aliases encode64 git git-extras git-flow httpie jira jsontools node npm redis-cli sublime sudo systemd urltools web-search)
+plugins=(archlinux bower composer common-aliases encode64 git git-extras git-flow httpie jira jsontools node npm redis-cli sublime sudo systemd urltools web-search fzf-zsh)
 
 # User configuration
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH:/home/daniel/.config/composer/vendor/bin:/home/daniel/.gem/ruby/2.4.0/bin/"
@@ -81,8 +81,7 @@ export ARCHFLAGS="-arch x86_64"
 # Example aliases
 alias zshconfig="nano ~/.zshrc"
 alias ohmyzsh="nano ~/.oh-my-zsh"
-alias configdot='/usr/local/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias configdot='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 
-alias gswdev="ssh wwwadmin@gsw-dev-v1.odmedia.net"
-alias gswlive="ssh wwwadmin@gsw-red-v1.eu-c1.odmedia.net"
+alias danschmid="ssh root@danschmid.de"
