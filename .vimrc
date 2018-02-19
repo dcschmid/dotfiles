@@ -192,6 +192,12 @@ nmap <Leader>es :e ~/.vim/snippets/
 nmap <Leader>ep :tabedit ~/.vim/plugins.vim<cr>
 nmap <Leader>el :tabedit ~/.vim/lightline.vim<cr>
 
+"""""""""""""""""""""""""""""""""
+" => Netrw
+"""""""""""""""""""""""""""""""""
+let g:netrw_banner = 0
+nmap - :Explore<cr>
+
 
 """""""""""""""""""""""""""""""""
 " => Laravel specific
@@ -200,6 +206,13 @@ nmap <Leader>lm :!php artisan make:
 nmap <Leader><Leader>c :e app/Http/Controllers/<cr>
 nmap <Leader><Leader>m :CtrlP<cr>app/
 nmap <Leader><Leader>v :e resources/views/<cr>
+
+"""""""""""""""""""""""""""""""""
+" => Symfony specific
+"""""""""""""""""""""""""""""""""
+nmap <Leader>sc :e src/Controller/<cr>
+nmap <Leader>se :e src/Entity/<cr>
+nmap <Leader>sv :e templates/<cr>
 
 
 """""""""""""""""""""""""""""""""
@@ -249,17 +262,11 @@ map <leader>p :cp<cr>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => CtrlP
+" => FZF
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|.git'
-let g:ctrlp_match_window = 'bottom,order:ttb,min:1,max:30,results:30'
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => NERDtree
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let NERDTreeHijackNetrw = 0
-nmap <C-f> :NERDTreeToggle<cr>
+nmap ; :Buffers<CR>
+nmap <Leader>t :Files<CR>
+nmap <Leader>r :Tags<CR>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -278,6 +285,8 @@ let g:php_namespace_sort_after_insert = 1
 " cursor
 function! IPhpInsertUse()
 	call PhpInsertUse()
+    :q
+    :q
 	call feedkeys('a',  'n')
 endfunction
 autocmd FileType php inoremap <Leader>n <Esc>:call IPhpInsertUse()<CR>
@@ -315,42 +324,14 @@ nmap <Leader><space> :nohlsearch<cr>
 let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
 nnoremap <Leader>d :call pdv#DocumentWithSnip()<cr>
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Syntastic
+" => ALE
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+let g:ale_sign_warning = '▲'
+let g:ale_sign_error = '✗'
+highlight link ALEWarningSign String
+highlight link ALEErrorSign Title
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 1
-
-"php checkers
-let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']
-let g:syntastic_php_phpcs_args = "--standard=PSR2"
-
-"html checker
-let g:syntastic_html_checkers = ['htmlhint']
-
-"css checker
-let g:syntastic_css_checkers = ['csslint']
-
-"less checker
-let g:syntastic_less_checkers = ['lessc']
-
-"sass/scss checker
-let g:syntastic_sass_checkers = ['sass-lint']
-let g:syntastic_scss_checkers = ['sass-lint']
-
-"javascript
-let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_javascript_eslint_exec = 'eslint_d'
-
-"vue
-let g:syntastic_vue_checkers = ['eslint']
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => fugitive
