@@ -18,6 +18,8 @@ let g:mapleader=','
 "fast saving
 nmap <leader>w :w!<cr>
 
+" Use ag over grep
+set grepprg=ag\ --nogroup\ --nocolor
 
 """""""""""""""""""""""""""""""""
 " => Vim user interface
@@ -232,9 +234,26 @@ set omnifunc=syntaxcomplete#Complete
 
 
 """""""""""""""""""""""""""""""""""""""
+" => CtrlP
+" requires ctrlp.vim
+"""""""""""""""""""""""""""""""""""""""
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|.git'
+let g:ctrlp_match_window = 'bottom,order:ttb,min:1,max:30,results:30'
+
+" Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+" ag is fast enough that CtrlP doesn't need to cache
+let g:ctrlp_use_caching = 0
+
+map <silent> <leader>jd :CtrlPTag<cr><c-\>w
+
+"""""""""""""""""""""""""""""""""""""""
 " => Ag searching and scope displaying
 " requires ag-vim
 """""""""""""""""""""""""""""""""""""""
+nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+
 " When you press gv you Ag after the selected text
 vnoremap <silent> gv :call VisualSelection('gv', '')<cr>
 
@@ -259,14 +278,6 @@ map <leader>cc :botright cope<cr>
 map <leader>co ggVGy:tabnew<cr>:set syntax=qf<cr>pgg
 map <leader>n :cn<cr>
 map <leader>p :cp<cr>
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => FZF
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nmap ; :Buffers<CR>
-nmap <Leader>t :Files<CR>
-nmap <Leader>r :Tags<CR>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -400,7 +411,7 @@ augroup VimCSS3Syntax
   autocmd FileType css setlocal iskeyword+=-
 augroup END
 
-autocmd BufWritePost *.php silent! !ctags -R &
+autocmd BufWritePost *.php silent! !exctags -R &
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions

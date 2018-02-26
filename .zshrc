@@ -49,7 +49,7 @@ HIST_STAMPS="dd.mm.yyyy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(archlinux bower composer common-aliases encode64 git git-extras git-flow httpie jira jsontools node npm redis-cli sublime sudo systemd urltools web-search fzf-zsh)
+plugins=(composer common-aliases encode64 git git-extras git-flow httpie jira jsontools node npm redis-cli sublime sudo systemd urltools web-search)
 
 # User configuration
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH:/home/daniel/.config/composer/vendor/bin:/home/daniel/.gem/ruby/2.4.0/bin/"
@@ -62,31 +62,11 @@ export LANG=de_DE.UTF-8
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='nano'
+   export EDITOR='vim'
 else
-   export EDITOR='nano'
+   export EDITOR='vim'
 fi
 
-# FZF {{{1
-# FZF is the future. This stuff has to be after some of the Zsh stuff above. Not sure why.
-if [ -e /usr/local/opt/fzf/shell/completion.zsh ]; then
-  source /usr/local/opt/fzf/shell/key-bindings.zsh
-  source /usr/local/opt/fzf/shell/completion.zsh
-fi
-if [ -e ~/.fzf ]; then
-  _append_to_path ~/.fzf/bin
-  source ~/.fzf/shell/key-bindings.zsh
-  source ~/.fzf/shell/completion.zsh
-fi
-if _has fzf && _has ag; then
-  export FZF_DEFAULT_COMMAND='ag --nocolor -g ""'
-  export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-  export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND"
-  export FZF_DEFAULT_OPTS='
-  --color fg:242,bg:236,hl:65,fg+:15,bg+:239,hl+:108
-  --color info:108,prompt:109,spinner:108,pointer:168,marker:168
-  '
-fi
 
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
@@ -102,7 +82,7 @@ export ARCHFLAGS="-arch x86_64"
 # Example aliases
 alias zshconfig="nano ~/.zshrc"
 alias ohmyzsh="nano ~/.oh-my-zsh"
-alias configdot='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias configdot='/usr/local/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 
 alias danschmid="ssh root@danschmid.de"

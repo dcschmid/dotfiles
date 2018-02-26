@@ -8,12 +8,7 @@ call vundle#begin()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'VundleVim/Vundle.vim'           "let Vundle manage Vundle, required
 Plugin 'cocopon/iceberg.vim'            "A dark blue color theme
-"Plugin 'tpope/vim-vinegar'              "expand netrw
 Plugin 'majutsushi/tagbar'              "displays tags in a window, ordered by scope
-"Plugin 'scrooloose/nerdtree'            "tree explorer
-"Plugin 'Xuyuanp/nerdtree-git-plugin'    "showing git status flags in NERDTree
-Plugin 'junegunn/fzf.vim'               "Fuzzy file,buffer,mru,tag ...finder
-"Plugin 'rking/ag.vim'                   "plugin for the_silver_searcher
 Plugin 'skwp/greplace.vim'              "Global search and replace
 Plugin 'tpope/vim-surround'             "quoting/parenthesizing made simple
 Plugin 'MarcWeber/vim-addon-mw-utils'   "needed for vim-snipmate
@@ -21,7 +16,6 @@ Plugin 'tomtom/tlib_vim'                "needed for vim-snipmate
 Plugin 'garbas/vim-snipmate'            "TextMate snippets feature in vim
 Plugin 'ervandew/supertab'              "Perform all your vim insert mode completions with tab
 Plugin 'tpope/vim-fugitive'             "A git wrapper
-"Plugin 'scrooloose/syntastic'           "Syntax checking hacks for vim
 Plugin 'w0rp/ale'                       "Asynchronous Lint Engine
 Plugin 'junegunn/vim-easy-align'        "A simple easy to use vim alignment plugin
 Plugin 'itchyny/lightline.vim'          "statusline/tabline for vim
@@ -31,7 +25,9 @@ Plugin 'ntpeters/vim-better-whitespace' "Better whitespace highlighting for Vim
 Plugin 'airblade/vim-gitgutter'         "A Vim plugin shows a git diff in the gutter and stages/undoes hunks
 Plugin 'chrisbra/vim-autoread'          "Use tail -f on a buffer and append new content
 Plugin 'editorconfig/editorconfig-vim'  "EditorConfig plugin for vim
-Plugin 'mileszs/ack.vim'                "Run your favorite search tool from Vim, with an enhanced results list
+Plugin 'ctrlpvim/ctrlp.vim'             "Fuzzy File buffer,mru,tag ...finder
+Plugin 'rking/ag.vim'                   "plugin for the_silver_surfer
+Plugin 'ludovicchabant/vim-gutentags'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => PHP, Laravel, Symfony
