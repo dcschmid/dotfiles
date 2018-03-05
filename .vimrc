@@ -191,7 +191,7 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 """""""""""""""""""""""""""""""""
 nmap <Leader>ev :tabedit ~/.vimrc<cr>
 nmap <Leader>es :e ~/.vim/snippets/
-nmap <Leader>ep :tabedit ~/.vim/plugins.vim<cr>
+nmap <Leader>epl :tabedit ~/.vim/plugins.vim<cr>
 nmap <Leader>el :tabedit ~/.vim/lightline.vim<cr>
 
 """""""""""""""""""""""""""""""""
@@ -246,7 +246,9 @@ let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 " ag is fast enough that CtrlP doesn't need to cache
 let g:ctrlp_use_caching = 0
 
+" jump to definition
 map <silent> <leader>jd :CtrlPTag<cr><c-\>w
+
 
 """""""""""""""""""""""""""""""""""""""
 " => Ag searching and scope displaying
@@ -321,6 +323,28 @@ autocmd FileType php noremap <Leader>ns :call PhpSortUse()<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:php_cs_fixer_level = "psr2"
 nnoremap <silent><leader>pf :call PhpCsFixerFixFile()<CR>
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => phpactor
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Include use statement
+nmap <Leader>u :call phpactor#UseAdd()<CR>
+
+" Invoke the context menu
+nmap <Leader>mm :call phpactor#ContextMenu()<CR>
+
+" Goto definition of class or class member under the cursor
+nmap <Leader>o :call phpactor#GotoDefinition()<CR>
+
+" Transform the classes in the current file
+nmap <Leader>tt :call phpactor#Transform()<CR>
+
+" Generate a new class (replacing the current file)
+nmap <Leader>cc :call phpactor#ClassNew()<CR>
+
+" Extract method from selection
+vmap <silent><Leader>em :<C-U>call phpactor#ExtractMethod()<CR>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

@@ -27,7 +27,6 @@ Plugin 'chrisbra/vim-autoread'          "Use tail -f on a buffer and append new 
 Plugin 'editorconfig/editorconfig-vim'  "EditorConfig plugin for vim
 Plugin 'ctrlpvim/ctrlp.vim'             "Fuzzy File buffer,mru,tag ...finder
 Plugin 'rking/ag.vim'                   "plugin for the_silver_surfer
-Plugin 'ludovicchabant/vim-gutentags'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => PHP, Laravel, Symfony
@@ -42,6 +41,8 @@ Plugin 'shawncplus/phpcomplete.vim'     "Improved PHP omni-completion
 Plugin 'jwalton512/vim-blade'           "Vim syntax highlighting for Blade templates
 Plugin 'lumiliet/vim-twig'              "Twig Syntax highlighting
 Plugin 'qbbr/vim-symfony'               "Symfoyn 3 Vim Plugin
+Plugin 'phpactor/phpactor'              "Intelligent completion and refactoring tool for PHP
+Plugin 'adoy/vim-php-refactoring-toolbox' "PHP Refactoring Toolbox for VIM
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => HTML, CSS, SASS, LESS
