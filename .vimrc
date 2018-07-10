@@ -194,6 +194,7 @@ nmap <Leader>es :e ~/.vim/snippets/
 nmap <Leader>epl :tabedit ~/.vim/plugins.vim<cr>
 nmap <Leader>el :tabedit ~/.vim/lightline.vim<cr>
 
+
 """""""""""""""""""""""""""""""""
 " => Netrw
 """""""""""""""""""""""""""""""""
@@ -208,13 +209,6 @@ nmap <Leader>lm :!php artisan make:
 nmap <Leader><Leader>c :e app/Http/Controllers/<cr>
 nmap <Leader><Leader>m :CtrlP<cr>app/
 nmap <Leader><Leader>v :e resources/views/<cr>
-
-"""""""""""""""""""""""""""""""""
-" => Symfony specific
-"""""""""""""""""""""""""""""""""
-nmap <Leader>sc :e src/Controller/<cr>
-nmap <Leader>se :e src/Entity/<cr>
-nmap <Leader>sv :e templates/<cr>
 
 
 """""""""""""""""""""""""""""""""
@@ -326,28 +320,6 @@ nnoremap <silent><leader>pf :call PhpCsFixerFixFile()<CR>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => phpactor
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Include use statement
-nmap <Leader>u :call phpactor#UseAdd()<CR>
-
-" Invoke the context menu
-nmap <Leader>mm :call phpactor#ContextMenu()<CR>
-
-" Goto definition of class or class member under the cursor
-nmap <Leader>o :call phpactor#GotoDefinition()<CR>
-
-" Transform the classes in the current file
-nmap <Leader>tt :call phpactor#Transform()<CR>
-
-" Generate a new class (replacing the current file)
-nmap <Leader>cc :call phpactor#ClassNew()<CR>
-
-" Extract method from selection
-vmap <silent><Leader>em :<C-U>call phpactor#ExtractMethod()<CR>
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Add simple highlight removal.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <Leader><space> :nohlsearch<cr>
@@ -436,6 +408,9 @@ augroup VimCSS3Syntax
 augroup END
 
 autocmd BufWritePost *.php silent! !exctags -R &
+autocmd BufWritePost *.scss silent! !exctags -R &
+autocmd BufWritePost *.js silent! !exctags -R &
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions

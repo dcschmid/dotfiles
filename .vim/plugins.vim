@@ -40,8 +40,6 @@ Plugin 'tobyS/pdv'                      "PHP Documentator for vim
 Plugin 'shawncplus/phpcomplete.vim'     "Improved PHP omni-completion
 Plugin 'jwalton512/vim-blade'           "Vim syntax highlighting for Blade templates
 Plugin 'lumiliet/vim-twig'              "Twig Syntax highlighting
-Plugin 'qbbr/vim-symfony'               "Symfoyn 3 Vim Plugin
-Plugin 'phpactor/phpactor'              "Intelligent completion and refactoring tool for PHP
 Plugin 'adoy/vim-php-refactoring-toolbox' "PHP Refactoring Toolbox for VIM
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -52,6 +50,7 @@ Plugin 'hail2u/vim-css3-syntax'         "CSS3 snytax support
 Plugin 'groenewege/vim-less'            "Vim syntax for less
 Plugin 'gorodinskiy/vim-coloresque'     "css/less/sass/html color preview for vim
 Plugin 'cakebaker/scss-syntax.vim'      "Vim syntax file for scss
+Plugin 'mattn/emmet-vim'                "Emmet Plugin
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => HTML, CSS, SASS, LESS
