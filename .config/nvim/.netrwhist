@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/data/websites/natours'
+let g:netrw_dirhist_2='/data/websites/natours/sass'
+let g:netrw_dirhist_3='/data/websites/natours/sass/components'
+let g:netrw_dirhist_4='/data/websites/natours'

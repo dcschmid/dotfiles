@@ -53,7 +53,7 @@ Plugin 'cakebaker/scss-syntax.vim'      "Vim syntax file for scss
 Plugin 'mattn/emmet-vim'                "Emmet Plugin
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => HTML, CSS, SASS, LESS
+" => Javascript
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'othree/yajs.vim'                                "Yet Another JavaScript Syntax file
 Plugin 'othree/javascript-libraries-syntax.vim'         "Syntax file for JavaScript Libraries
