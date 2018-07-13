@@ -7,6 +7,10 @@ endif
 
 call plug#begin()
 
+function! DoRemote(arg)
+      UpdateRemotePlugins
+endfunction
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Basic
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -72,5 +76,6 @@ Plug 'posva/vim-vue'                                  "Vim syntax highlighting f
 Plug 'sekel/vim-vue-syntastic'
 Plug 'othree/jspc.vim'                                "JS Parameter Complete
 Plug 'ternjs/tern_for_vim', { 'do': 'npm install && npm install -g tern' }
+Plug 'carlitux/deoplete-ternjs'
 
 call plug#end()
