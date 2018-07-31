@@ -2,7 +2,7 @@
     \ 'colorscheme': 'iceberg',
     \ 'active': {
     \   'left': [['mode','paste'],['fugitive', 'filename'],['ctrlpmark']],
-    \   'right': [['lineinfo'], ['percent'], ['fileformat', 'fileencoding', 'filetype'],['linter_warnings', 'linter_errors', 'linter_ok']]
+    \   'right': [['lineinfo'], ['percent'], ['fileformat', 'fileencoding', 'filetype'],['linter_checking','linter_warnings', 'linter_errors', 'linter_ok']]
     \},
     \ 'component_function': {
     \   'fugitive': 'LightlineFugitive',
@@ -13,14 +13,17 @@
     \   'mode': 'LightlineMode',
     \ },
     \ 'component_expand': {
-    \   'linter_warnings': 'LightlineLinterWarnings',
-    \   'linter_errors': 'LightlineLinterErrors',
-    \   'linter_ok': 'LightlineLinterOK'
+    \   'linter_checking': 'lightline#ale#checking',
+    \   'linter_warnings': 'lightline#ale#warnings',
+    \   'linter_errors': 'lightline#ale#errors',
+    \   'linter_ok': 'lightline#ale#ok',
     \ },
     \ 'component_type': {
     \   'readonly': 'error',
+    \   'linter_checking': 'left',
     \   'linter_warnings': 'warning',
-    \   'linter_errors': 'error'
+    \   'linter_errors': 'error',
+    \   'linter_ok': 'left',
     \ },
     \ 'subseparator': { 'left': '|', 'right': '|' }
     \ }
@@ -150,3 +153,6 @@ endfunction
 let g:unite_force_overwrite_statusline = 0
 let g:vimfiler_force_overwrite_statusline = 0
 let g:vimshell_force_overwrite_statusline = 0
+
+let g:lightline#ale#indicator_warnings = "▲"
+let g:lightline#ale#indicator_errors = "✗"

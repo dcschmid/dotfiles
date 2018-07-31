@@ -195,10 +195,35 @@ nmap - :Explore<cr>
 set omnifunc=syntaxcomplete#Complete
 
 
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Add simple highlight removal.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <Leader><space> :nohlsearch<cr>
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Nvim Terminal
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <leader>ts :tabedit term
+
+if has('nvim')
+    tnoremap <Esc> <C-\><C-n>
+    tnoremap <C-v><Esc> <Esc>
+endif
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Nvim Sessions
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:session_autoload = "no"
+let g:session_autosave = "no"
+let g:session_command_aliases = 1
+
+nnoremap <leader>so :OpenSession
+nnoremap <leader>ss :SaveSession
+nnoremap <leader>sd :DeleteSession<CR>
+nnoremap <leader>sc :CloseSession<CR>
 
 
 """""""""""""""""""""""""""""""""
@@ -310,11 +335,14 @@ nmap <C-t> :TagbarToggle<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => ALE
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:ale_lint_on_enter = 1
+let g:ale_lint_on_text_changed = 'never'
 let g:ale_sign_warning = '▲'
 let g:ale_sign_error = '✗'
 highlight link ALEWarningSign String
 highlight link ALEErrorSign Title
-
+nmap <silent> <c-k> <Plug>(ale_previous_wrap)
+nmap <silent> <c-j> <Plug>(ale_next_wrap)
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => fugitive
@@ -413,7 +441,6 @@ augroup END
 autocmd BufWritePost *.php silent! !exctags -R &
 autocmd BufWritePost *.scss silent! !exctags -R &
 autocmd BufWritePost *.js silent! !exctags -R &
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions

@@ -86,3 +86,5 @@ alias configdot='/usr/local/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 
 alias danschmid="ssh root@danschmid.de"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
