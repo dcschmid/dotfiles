@@ -1,8 +1,8 @@
  let g:lightline =  {
     \ 'colorscheme': 'iceberg',
     \ 'active': {
-    \   'left': [['mode','paste'],['fugitive', 'filename'],['ctrlpmark']],
-    \   'right': [['lineinfo'], ['percent'], ['fileformat', 'fileencoding', 'filetype'],['linter_checking','linter_warnings', 'linter_errors', 'linter_ok']]
+    \   'left': [['mode','paste'],['fugitive', 'filename']],
+    \   'right': [['lineinfo'], ['percent'], ['fileformat', 'fileencoding', 'filetype'],['linter_checking','linter_warnings', 'linter_errors', 'linter_ok'], ['nofixme']]
     \},
     \ 'component_function': {
     \   'fugitive': 'LightlineFugitive',
@@ -17,6 +17,7 @@
     \   'linter_warnings': 'lightline#ale#warnings',
     \   'linter_errors': 'lightline#ale#errors',
     \   'linter_ok': 'lightline#ale#ok',
+    \   'nofixme': 'nofixme#amount',
     \ },
     \ 'component_type': {
     \   'readonly': 'error',
@@ -24,6 +25,7 @@
     \   'linter_warnings': 'warning',
     \   'linter_errors': 'error',
     \   'linter_ok': 'left',
+    \   'nofixme': 'warning',
     \ },
     \ 'subseparator': { 'left': '|', 'right': '|' }
     \ }
@@ -38,8 +40,7 @@ endfunction
 
 function! LightlineFilename()
   let fname = expand('%:t')
-  return fname == 'ControlP' && has_key(g:lightline, 'ctrlp_item') ? g:lightline.ctrlp_item :
-        \ fname == '__Tagbar__' ? g:lightline.fname :
+  return fname == '__Tagbar__' ? g:lightline.fname :
         \ fname =~ '__Gundo' ? '' :
         \ &ft == 'vimfiler' ? vimfiler#get_status_string() :
         \ &ft == 'unite' ? unite#get_status_string() :
@@ -76,41 +77,12 @@ endfunction
 function! LightlineMode()
   let fname = expand('%:t')
   return fname == '__Tagbar__' ? 'Tagbar' :
-        \ fname == 'ControlP' ? 'CtrlP' :
         \ fname == '__Gundo__' ? 'Gundo' :
         \ fname == '__Gundo_Preview__' ? 'Gundo Preview' :
         \ &ft == 'unite' ? 'Unite' :
         \ &ft == 'vimfiler' ? 'VimFiler' :
         \ &ft == 'vimshell' ? 'VimShell' :
         \ winwidth(0) > 60 ? lightline#mode() : ''
-endfunction
-
-function! CtrlPMark()
-  if expand('%:t') =~ 'ControlP' && has_key(g:lightline, 'ctrlp_item')
-    call lightline#link('iR'[g:lightline.ctrlp_regex])
-    return lightline#concatenate([g:lightline.ctrlp_prev, g:lightline.ctrlp_item
-          \ , g:lightline.ctrlp_next], 0)
-  else
-    return ''
-  endif
-endfunction
-
-
-let g:ctrlp_status_func = {
-    \ 'main': 'CtrlPStatusFunc_1',
-    \ 'prog': 'CtrlPStatusFunc_2',
-\ }
-
-function! CtrlPStatusFunc_1(focus, byfname, regex, prev, item, next, marked)
-    let g:lightline.ctrlp_regex = a:regex
-    let g:lightline.ctrlp_prev = a:prev
-    let g:lightline.ctrlp_item = a:item
-    let g:lightline.ctrlp_next = a:next
-    return lightline#statusline(0)
-endfunction
-
-function! CtrlPStatusFunc_2(str)
-    return lightline#statusline(0)
 endfunction
 
 let g:tagbar_status_func = 'TagbarStatusFunc'

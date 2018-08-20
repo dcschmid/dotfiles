@@ -15,18 +15,18 @@ endfunction
 " => Basic
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'cocopon/iceberg.vim'            "A dark blue color theme
-Plug 'rking/ag.vim'                   "plugin for the_silver_surfer
-Plug 'skwp/greplace.vim'              "Global search and replace
-Plug 'ctrlpvim/ctrlp.vim'             "Fuzzy File buffer,mru,tag ...finder
 Plug 'itchyny/lightline.vim'          "statusline/tabline for vim
 Plug 'hallzy/lightline-iceberg'       "Lightline color theme
+Plug 'maximbaz/lightline-ale'         "This plugin provides ALE indicator for the lightline vim plugin.
+Plug 'fisle/vim-no-fixme'             "Vim plugin for lightline to show amount of TODO|FIXME|XXX in current file
 Plug 'tpope/vim-surround'             "quoting/parenthesizing made simple
 Plug 'ervandew/supertab'              "Perform all your vim insert mode completions with tab
 Plug 'junegunn/vim-easy-align'        "A simple easy to use vim alignment plugin
 Plug 'sjl/gundo.vim'                  "visualize your vim undo
 Plug 'majutsushi/tagbar'              "displays tags in a window, ordered by scope
-Plug 'w0rp/ale'                       "Asynchronous Lint Engine
 Plug 'tpope/vim-fugitive'             "A git wrapper
+Plug 'idanarye/vim-merginal'          "Fugitive extension to manage and merge Git branches 
+Plug 'sodapopcan/vim-twiggy'          "Maintain your bearings while branching with Git
 Plug 'MarcWeber/vim-addon-mw-utils'   "needed for vim-snipmate
 Plug 'tomtom/tlib_vim'                "needed for vim-snipmate
 Plug 'garbas/vim-snipmate'            "TextMate snippets feature in vim
@@ -34,9 +34,20 @@ Plug 'sjl/gundo.vim'                  "visualize your vim undo
 Plug 'ntpeters/vim-better-whitespace' "Better whitespace highlighting for Vim
 Plug 'airblade/vim-gitgutter'         "A Vim plugin shows a git diff in the gutter and stages/undoes hunks
 Plug 'editorconfig/editorconfig-vim'  "EditorConfig plugin for vim
-Plug 'ludovicchabant/vim-gutentags'
+Plug 'w0rp/ale'                       "Asynchronous Lint Engine
+Plug 'xolox/vim-session'              "Session management 
+Plug 'xolox/vim-misc'                 "Session management 
+Plug 'jiangmiao/auto-pairs'           "Vim plugin, insert or delete brackets, parens, quotes in pair
+Plug 'alvan/vim-closetag'             "Autoclose HTML Tags
+Plug 'shime/vim-livedown'             "A Vim plugin for Livedown
+Plug 'terryma/vim-multiple-cursors'   "True Sublime Text style multiple selections for Vim
+Plug 'tpope/vim-commentary'           "comment stuff out
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }             "Fuzzy search
+Plug 'junegunn/fzf.vim'               "Fuzzy search
+Plug 'mhinz/vim-grepper'              "Helps you win at grep
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""nn
 " => PHP, Laravel, Symfony
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'StanAngeloff/php.vim'           "Up-to-date php syntax file
@@ -75,7 +86,5 @@ Plug '1995eaton/vim-better-javascript-completion'     "An expansion of vim's cur
 Plug 'posva/vim-vue'                                  "Vim syntax highlighting for Vue components.
 Plug 'sekel/vim-vue-syntastic'
 Plug 'othree/jspc.vim'                                "JS Parameter Complete
-Plug 'ternjs/tern_for_vim', { 'do': 'npm install && npm install -g tern' }
-Plug 'carlitux/deoplete-ternjs'
 
 call plug#end()

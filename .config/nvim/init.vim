@@ -246,69 +246,45 @@ so ~/.config/nvim/lightline.vim    "extra lightline file
 
 
 """""""""""""""""""""""""""""""""""""""
-" => Ag searching and scope displaying
-" requires ag-vim
+" => FZF
 """""""""""""""""""""""""""""""""""""""
-nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
-
-" When you press gv you Ag after the selected text
-vnoremap <silent> gv :call VisualSelection('gv', '')<cr>
-
-"open Ag and put the cursor in the right position
-map <leader>g :Ag
-
-" When you press <leader>r you can search and replace the selected text
-vnoremap <silent> <leader>r :call VisualSelection('replace', '')<CR>
-
-" Do :help cope if you are unsure what cope is. It's super useful!
-"
-" When you search with Ag, display your results in cope by doing:
-"   <leader>cc
-"
-" To go to the next search result do:
-"   <leader>n
-"
-" To go to the previous search results do:
-"   <leader>p
-"
-map <leader>cc :botright cope<cr>
-map <leader>co ggVGy:tabnew<cr>:set syntax=qf<cr>pgg
-map <leader>n :cn<cr>
-map <leader>p :cp<cr>
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => greplace.vim
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set grepprg=ag						"We want use Ag for search
-let g:grep_cmd_opts = '--line-numbers --noheading'
+nmap ; :Buffers<CR>
+nmap <c-p> :Files<CR>
+nmap <Leader>t :Tags<CR>
 
 
 """""""""""""""""""""""""""""""""""""""
-" => CtrlP
-" requires ctrlp.vim
+" => Vim-Grepper
 """""""""""""""""""""""""""""""""""""""
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|.git'
-let g:ctrlp_match_window = 'bottom,order:ttb,min:1,max:30,results:30'
+let g:grepper = {}
+let g:grepper.tools = ['rg', 'git']
 
-" Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+"Search for the current selection
+nmap gs <plug>(GrepperOperator)
+xmap gs <plug>(GrepperOperator)
 
-" ag is fast enough that CtrlP doesn't need to cache
-let g:ctrlp_use_caching = 0
+"Open Grepper-prompt for a particular grep-alike tool
+nnoremap <leader>g :Grepper -tool rg<CR>
+nnoremap <leader>gg :Grepper -tool git<CR>
 
-" jump to definition
-map <silent> <leader>jd :CtrlPTag<cr><c-\>w
+"Searching for the current word
+nnoremap <leader>rg :Grepper -tool rg -cword<CR>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Supertab
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+function MyTagContext()
+	if filereadable(expand('%:p:h') . '/tags')
+    	return "\<c-x>\<c-]>"
+    endif
+endfunction
+
 let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 let g:SuperTabRetainCompletionDuration = "completion"
 let g:SuperTabLongestEnhanced = 1
 let g:SuperTabLongestHighlight = 1
-
+let g:SuperTabCompletionContexts = ['MyTagContext', 's:ContextText', 's:ContextDiscover']
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-easy-align
@@ -332,6 +308,12 @@ nmap <c-g> :GundoToggle<cr>
 nmap <C-t> :TagbarToggle<CR>
 
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""0
+" => Livedown
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap gm :LivedownToggle<CR>
+
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => ALE
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -344,6 +326,7 @@ highlight link ALEErrorSign Title
 nmap <silent> <c-k> <Plug>(ale_previous_wrap)
 nmap <silent> <c-j> <Plug>(ale_next_wrap)
 
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => fugitive
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -353,7 +336,45 @@ nmap <Leader>gc :Gcommit<cr>
 nmap <Leader>gb :Gblame<cr>
 nmap <Leader>gl :Glog<cr>
 nmap <Leader>gp :Git push<cr>
+nmap <Leader>gm :Merginal<cr>
+nmap <Leader>gt :Twiggy<cr>
 
+
+"""""""""""""""""""""""""""""""""
+" => AutoCloseHTMLTags
+"""""""""""""""""""""""""""""""""
+" filenames like *.xml, *.html, *.xhtml, ...
+" These are the file extensions where this plugin is enabled.
+"
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.twig'
+
+" filenames like *.xml, *.xhtml, ...
+" This will make the list of non-closing tags self-closing in the specified files.
+"
+let g:closetag_xhtml_filenames = '*.xhtml,*.jsx'
+
+" filetypes like xml, html, xhtml, ...
+" These are the file types where this plugin is enabled.
+"
+let g:closetag_filetypes = 'html,xhtml,phtml,*.twig'
+
+" filetypes like xml, xhtml, ...
+" This will make the list of non-closing tags self-closing in the specified files.
+"
+let g:closetag_xhtml_filetypes = 'xhtml,jsx'
+
+" integer value [0|1]
+" This will make the list of non-closing tags case-sensitive (e.g. `<Link>` will be closed while `<link>` won't.)
+"
+let g:closetag_emptyTags_caseSensitive = 1
+
+" Shortcut for closing tags, default is '>'
+"
+let g:closetag_shortcut = '>'
+
+" Add > at current position without closing the current tag, default is ''
+"
+let g:closetag_close_shortcut = '<leader>>'
 
 """""""""""""""""""""""""""""""""
 " => Laravel specific
