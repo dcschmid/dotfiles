@@ -45,7 +45,7 @@ Plug 'tpope/vim-commentary'           "comment stuff out
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }             "Fuzzy search
 Plug 'junegunn/fzf.vim'               "Fuzzy search
 Plug 'mhinz/vim-grepper'              "Helps you win at grep
-
+Plug 'brooth/far.vim'                 "Find and Replace
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""nn
 " => PHP, Laravel, Symfony
