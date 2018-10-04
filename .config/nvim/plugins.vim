@@ -46,6 +46,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }             "F
 Plug 'junegunn/fzf.vim'               "Fuzzy search
 Plug 'mhinz/vim-grepper'              "Helps you win at grep
 Plug 'brooth/far.vim'                 "Find and Replace
+Plug 'janko-m/vim-test'               "A Vim wrapper for running tests on different granularities
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""nn
 " => PHP, Laravel, Symfony
@@ -60,6 +61,7 @@ Plug 'shawncplus/phpcomplete.vim'     "Improved PHP omni-completion
 Plug 'jwalton512/vim-blade'           "Vim syntax highlighting for Blade templates
 Plug 'lumiliet/vim-twig'              "Twig Syntax highlighting
 Plug 'adoy/vim-php-refactoring-toolbox' "PHP Refactoring Toolbox for VIM
+Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install'  } "PHP Completion Daemon Plugin for Vim/NeoVim
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

@@ -62,9 +62,9 @@ export LANG=de_DE.UTF-8
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='vim'
+   export EDITOR='nqvim'
 else
-   export EDITOR='vim'
+   export EDITOR='nvim'
 fi
 
 

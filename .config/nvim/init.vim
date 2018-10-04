@@ -153,7 +153,7 @@ nmap <leader>l :bnext<cr>
 nmap <leader>h :bprevious<cr>
 
 "Useful mappings for managing tabs
-nmap <leader>tn :tabnew<cr>
+nmap <leader>nt :tabnew<cr>
 nmap <leader>to :tabonly<cr>
 nmap <leader>tc :tabclose<cr>
 nmap <leader>tm :tabmove
@@ -249,8 +249,35 @@ so ~/.config/nvim/lightline.vim    "extra lightline file
 " => FZF
 """""""""""""""""""""""""""""""""""""""
 nmap ; :Buffers<CR>
-nmap <c-p> :Files<CR>
+nmap <c-p> :GFiles<CR>
 nmap <Leader>t :Tags<CR>
+
+let g:fzf_tags_command = 'ctags -R'
+
+" Command for git grep
+" - fzf#vim#grep(command, with_column, [options], [fullscreen])
+command! -bang -nargs=* GGrep
+  \ call fzf#vim#grep(
+  \   'git grep --line-number '.shellescape(<q-args>), 0,
+  \   { 'dir': systemlist('git rev-parse --show-toplevel')[0] }, <bang>0)
+
+" Override Colors command. You can safely do this in your .vimrc as fzf.vim
+" will not override existing commands.
+command! -bang Colors
+  \ call fzf#vim#colors({'left': '15%', 'options': '--reverse --margin 30%,0'}, <bang>0)
+
+
+" Likewise, Files command with preview window
+command! -bang -nargs=? -complete=dir Files
+  \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
+
+" Similarly, we can apply it to fzf#vim#grep. To use ripgrep instead of ag:
+command! -bang -nargs=* Rg
+  \ call fzf#vim#grep(
+  \   'rg --column --line-number --no-heading --color=always --smart-case '.shellescape(<q-args>), 1,
+  \   <bang>0 ? fzf#vim#with_preview('up:60%')
+  \           : fzf#vim#with_preview('right:50%:hidden', '?'),
+  \   <bang>0)
 
 
 """""""""""""""""""""""""""""""""""""""
@@ -385,10 +412,15 @@ nmap <Leader><Leader>m :CtrlP<cr>app/
 nmap <Leader><Leader>v :e resources/views/<cr>
 
 
+"""""""""""""""""""""""""""""""""
+" => phpcd
+"""""""""""""""""""""""""""""""""
+let g:phpcd_autoload_path = '.autoload.php'
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => pdv
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
+let g:pdv_template_dir = $HOME ."/.config/nvim/plugged/pdv/templates_snip"
 nnoremap <Leader>d :call pdv#DocumentWithSnip()<cr>
 
 
@@ -426,6 +458,16 @@ autocmd FileType php noremap <Leader>ns :call PhpSortUse()<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:php_cs_fixer_level = "psr2"
 nnoremap <silent><leader>pf :call PhpCsFixerFixFile()<CR>
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-test
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap <silent> <leader>tn :TestNearest<CR>
+nmap <silent> <leader>tf :TestFile<CR>
+nmap <silent> <leader>ts :TestSuite<CR>
+nmap <silent> <leader>tl :TestLast<CR>
+nmap <silent> <leader>tg :TestVisit<CR>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
