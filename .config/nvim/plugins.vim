@@ -30,6 +30,8 @@ Plug 'sodapopcan/vim-twiggy'          "Maintain your bearings while branching wi
 Plug 'MarcWeber/vim-addon-mw-utils'   "needed for vim-snipmate
 Plug 'tomtom/tlib_vim'                "needed for vim-snipmate
 Plug 'garbas/vim-snipmate'            "TextMate snippets feature in vim
+Plug 'SirVer/ultisnips'               "The ultimate snippet solution for Vim. Send pull requests to SirVer/ultisnips!
+Plug 'phux/vim-snippets'              "vim-snipmate default snippets (Previously snipmate-snippets)
 Plug 'sjl/gundo.vim'                  "visualize your vim undo
 Plug 'ntpeters/vim-better-whitespace' "Better whitespace highlighting for Vim
 Plug 'airblade/vim-gitgutter'         "A Vim plugin shows a git diff in the gutter and stages/undoes hunks
@@ -47,6 +49,7 @@ Plug 'junegunn/fzf.vim'               "Fuzzy search
 Plug 'mhinz/vim-grepper'              "Helps you win at grep
 Plug 'brooth/far.vim'                 "Find and Replace
 Plug 'janko-m/vim-test'               "A Vim wrapper for running tests on different granularities
+Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }  "Dark powered asynchronous completion framework for neovim/Vim8 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""nn
 " => PHP, Laravel, Symfony
@@ -60,7 +63,7 @@ Plug 'tobyS/pdv'                      "PHP Documentator for vim
 Plug 'shawncplus/phpcomplete.vim'     "Improved PHP omni-completion
 Plug 'jwalton512/vim-blade'           "Vim syntax highlighting for Blade templates
 Plug 'lumiliet/vim-twig'              "Twig Syntax highlighting
-Plug 'adoy/vim-php-refactoring-toolbox' "PHP Refactoring Toolbox for VIM
+Plug 'phpactor/phpactor', { 'do': ':call phpactor#Update()', 'for': 'php' }
 Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install'  } "PHP Completion Daemon Plugin for Vim/NeoVim
 
 
@@ -88,5 +91,7 @@ Plug '1995eaton/vim-better-javascript-completion'     "An expansion of vim's cur
 Plug 'posva/vim-vue'                                  "Vim syntax highlighting for Vue components.
 Plug 'sekel/vim-vue-syntastic'
 Plug 'othree/jspc.vim'                                "JS Parameter Complete
+Plug 'ternjs/tern_for_vim', { 'do': 'npm install && npm install -g tern' }
+Plug 'carlitux/deoplete-ternjs'
 
 call plug#end()

@@ -147,8 +147,7 @@ nmap <C-H> <C-W><C-H>
 nmap <C-L> <C-W><C-L>
 
 "close all the buffers
-nmap <leader>ba :bufdo bd<cr>
-
+nmap <leader>ba :bufdo
 nmap <leader>l :bnext<cr>
 nmap <leader>h :bprevious<cr>
 
@@ -252,7 +251,7 @@ nmap ; :Buffers<CR>
 nmap <c-p> :GFiles<CR>
 nmap <Leader>t :Tags<CR>
 
-let g:fzf_tags_command = 'ctags -R'
+let g:fzf_tags_command = 'exctags -R'
 
 " Command for git grep
 " - fzf#vim#grep(command, with_column, [options], [fullscreen])
@@ -367,6 +366,39 @@ nmap <Leader>gm :Merginal<cr>
 nmap <Leader>gt :Twiggy<cr>
 
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => deoplete
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:python3_host_prog = '/usr/local/bin/python3.6'
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#enable_ignore_case = 1
+let g:deoplete#enable_smart_case = 1
+let g:deoplete#enable_camel_case = 1
+let g:deoplete#enable_refresh_always = 1
+let g:deoplete#max_abbr_width = 0
+let g:deoplete#max_menu_width = 0
+let g:deoplete#omni#input_patterns = get(g:,'deoplete#omni#input_patterns',{})
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => tern
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:nern_request_timeout = 1
+let g:tern_request_timeout = 6000
+let g:tern#command = ["tern"]
+let g:tern#arguments = ["--persistent"]
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Ultisnips
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-b>"
+" PHP7
+let g:ultisnips_php_scalar_types = 1
+
+
 """""""""""""""""""""""""""""""""
 " => AutoCloseHTMLTags
 """""""""""""""""""""""""""""""""
@@ -408,7 +440,7 @@ let g:closetag_close_shortcut = '<leader>>'
 """""""""""""""""""""""""""""""""
 nmap <Leader>lm :!php artisan make:
 nmap <Leader><Leader>c :e app/Http/Controllers/<cr>
-nmap <Leader><Leader>m :CtrlP<cr>app/
+nmap <Leader><Leader>m :e app/<cr>
 nmap <Leader><Leader>v :e resources/views/<cr>
 
 
@@ -416,6 +448,7 @@ nmap <Leader><Leader>v :e resources/views/<cr>
 " => phpcd
 """""""""""""""""""""""""""""""""
 let g:phpcd_autoload_path = '.autoload.php'
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => pdv
