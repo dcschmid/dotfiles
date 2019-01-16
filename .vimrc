@@ -1,5 +1,5 @@
 "Plugins
-so ~/.config/nvim/plugins.vim    "extra plugins file
+so ~/.vim/plugins.vim    "extra plugins file
 
 """""""""""""""""""""""""""""""""
 " => General
@@ -91,7 +91,7 @@ set splitright
 syntax enable
 
 "Colorscheme and enable 256 Colors
-colorscheme iceberg
+colorscheme gotham256
 set t_CO=256						"Use colors, This is useful for Terminal vim
 
 "set utf8 as standard encoding
@@ -172,8 +172,8 @@ nmap <leader>cd :cd %:p:h<cr>:pwd<cr>
 
 " Specify the behavior when switching between buffers
 try
-  set switchbuf=useopen,usetab,newtab
-  set stal=2
+set switchbuf=useopen,usetab,newtab
+set stal=2
 catch
 endtry
 
@@ -207,8 +207,8 @@ nmap <Leader><space> :nohlsearch<cr>
 nnoremap <leader>ts :tabedit term
 
 if has('nvim')
-    tnoremap <Esc> <C-\><C-n>
-    tnoremap <C-v><Esc> <Esc>
+tnoremap <Esc> <C-\><C-n>
+tnoremap <C-v><Esc> <Esc>
 endif
 
 
@@ -228,10 +228,10 @@ nnoremap <leader>sc :CloseSession<CR>
 """""""""""""""""""""""""""""""""
 " => Make it easy to edit the vimrc file.
 """""""""""""""""""""""""""""""""
-nmap <Leader>ev :tabedit ~/.config/nvim/init.vim<cr>
-nmap <Leader>es :e ~/.config/nvim/snippets/
-nmap <Leader>epl :tabedit ~/.config/nvim/plugins.vim<cr>
-nmap <Leader>el :tabedit ~/.config/nvim/lightline.vim<cr>
+nmap <Leader>ev :tabedit ~/.vimrc<cr>
+nmap <Leader>es :e ~/.vim/snippets/
+nmap <Leader>epl :tabedit ~/.vim/plugins.vim<cr>
+nmap <Leader>el :tabedit ~/.vim/lightline.vim<cr>
 
 
 """""""""""""""""""""""""""""""""
@@ -241,14 +241,14 @@ nmap <Leader>el :tabedit ~/.config/nvim/lightline.vim<cr>
 set laststatus=2
 
 "lightline
-so ~/.config/nvim/lightline.vim    "extra lightline file
+so ~/.vim/lightline.vim    "extra lightline file
 
 
 """""""""""""""""""""""""""""""""""""""
 " => FZF
 """""""""""""""""""""""""""""""""""""""
 nmap ; :Buffers<CR>
-nmap <c-p> :GFiles<CR>
+nmap <c-p> :Files<CR>
 nmap <Leader>t :Tags<CR>
 
 let g:fzf_tags_command = 'exctags -R'
@@ -256,27 +256,27 @@ let g:fzf_tags_command = 'exctags -R'
 " Command for git grep
 " - fzf#vim#grep(command, with_column, [options], [fullscreen])
 command! -bang -nargs=* GGrep
-  \ call fzf#vim#grep(
-  \   'git grep --line-number '.shellescape(<q-args>), 0,
-  \   { 'dir': systemlist('git rev-parse --show-toplevel')[0] }, <bang>0)
+\ call fzf#vim#grep(
+\   'git grep --line-number '.shellescape(<q-args>), 0,
+\   { 'dir': systemlist('git rev-parse --show-toplevel')[0] }, <bang>0)
 
 " Override Colors command. You can safely do this in your .vimrc as fzf.vim
 " will not override existing commands.
 command! -bang Colors
-  \ call fzf#vim#colors({'left': '15%', 'options': '--reverse --margin 30%,0'}, <bang>0)
+\ call fzf#vim#colors({'left': '15%', 'options': '--reverse --margin 30%,0'}, <bang>0)
 
 
 " Likewise, Files command with preview window
 command! -bang -nargs=? -complete=dir Files
-  \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
+\ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
 
 " Similarly, we can apply it to fzf#vim#grep. To use ripgrep instead of ag:
 command! -bang -nargs=* Rg
-  \ call fzf#vim#grep(
-  \   'rg --column --line-number --no-heading --color=always --smart-case '.shellescape(<q-args>), 1,
-  \   <bang>0 ? fzf#vim#with_preview('up:60%')
-  \           : fzf#vim#with_preview('right:50%:hidden', '?'),
-  \   <bang>0)
+\ call fzf#vim#grep(
+\   'rg --column --line-number --no-heading --color=always --smart-case '.shellescape(<q-args>), 1,
+\   <bang>0 ? fzf#vim#with_preview('up:60%')
+\           : fzf#vim#with_preview('right:50%:hidden', '?'),
+\   <bang>0)
 
 
 """""""""""""""""""""""""""""""""""""""
@@ -301,9 +301,9 @@ nnoremap <leader>rg :Grepper -tool rg -cword<CR>
 " => Supertab
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 function MyTagContext()
-	if filereadable(expand('%:p:h') . '/tags')
-    	return "\<c-x>\<c-]>"
-    endif
+if filereadable(expand('%:p:h') . '/tags')
+	return "\<c-x>\<c-]>"
+endif
 endfunction
 
 let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
@@ -364,20 +364,6 @@ nmap <Leader>gl :Glog<cr>
 nmap <Leader>gp :Git push<cr>
 nmap <Leader>gm :Merginal<cr>
 nmap <Leader>gt :Twiggy<cr>
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => deoplete
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:python3_host_prog = '/usr/local/bin/python3.6'
-let g:deoplete#enable_at_startup = 1
-let g:deoplete#enable_ignore_case = 1
-let g:deoplete#enable_smart_case = 1
-let g:deoplete#enable_camel_case = 1
-let g:deoplete#enable_refresh_always = 1
-let g:deoplete#max_abbr_width = 0
-let g:deoplete#max_menu_width = 0
-let g:deoplete#omni#input_patterns = get(g:,'deoplete#omni#input_patterns',{})
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -445,6 +431,18 @@ nmap <Leader><Leader>v :e resources/views/<cr>
 
 
 """""""""""""""""""""""""""""""""
+" => Gutentags
+"""""""""""""""""""""""""""""""""
+let g:gutentags_ctags_executable = 'exctags'
+
+augroup MyGutentagsStatusLineRefresher
+    autocmd!
+    autocmd User GutentagsUpdating call lightline#update()
+    autocmd User GutentagsUpdated call lightline#update()
+augroup END
+
+
+"""""""""""""""""""""""""""""""""
 " => phpcd
 """""""""""""""""""""""""""""""""
 let g:phpcd_autoload_path = '.autoload.php'
@@ -453,7 +451,7 @@ let g:phpcd_autoload_path = '.autoload.php'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => pdv
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:pdv_template_dir = $HOME ."/.config/nvim/plugged/pdv/templates_snip"
+let g:pdv_template_dir = $HOME ."/.vim/plugged/pdv/templates_snip"
 nnoremap <Leader>d :call pdv#DocumentWithSnip()<cr>
 
 
@@ -465,18 +463,18 @@ let g:php_namespace_sort_after_insert = 1
 " Automatically adds the corresponding use statement for the name under the
 " cursor
 function! IPhpInsertUse()
-	call PhpInsertUse()
-    :q
-    :q
-	call feedkeys('a',  'n')
+call PhpInsertUse()
+:q
+:q
+call feedkeys('a',  'n')
 endfunction
 autocmd FileType php inoremap <Leader>n <Esc>:call IPhpInsertUse()<CR>
 autocmd FileType php noremap <Leader>n :call PhpInsertUse()<CR>
 
 " Expands the name under the cursor to its fully qualified name.
 function! IPhpExpandClass()
-	call PhpExpandClass()
-        call feedkeys('a', 'n')
+call PhpExpandClass()
+    call feedkeys('a', 'n')
 endfunction
 autocmd FileType php inoremap <Leader>nf <Esc>:call IPhpExpandClass()<CR>
 autocmd FileType php noremap <Leader>nf :call PhpExpandClass()<CR>
@@ -523,75 +521,75 @@ let g:tern#arguments = ["--persistent"]
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Automatically source the vimrc file on save.
 augroup autosourcing
-	autocmd!
-	autocmd BufWritePost .vimrc source %
+autocmd!
+autocmd BufWritePost .vimrc source %
 augroup END
 
 
 augroup VimCSS3Syntax
-  autocmd!
+autocmd!
 
-  autocmd FileType css setlocal iskeyword+=-
+autocmd FileType css setlocal iskeyword+=-
 augroup END
 
-autocmd BufWritePost *.php silent! !exctags -R &
-autocmd BufWritePost *.scss silent! !exctags -R &
-autocmd BufWritePost *.js silent! !exctags -R &
+"autocmd BufWritePost *.php silent! !uctags -R &
+"autocmd BufWritePost *.scss silent! !uctags --options=/home/daniel/.ctags.d/scss.tags -R &
+"autocmd BufWritePost *.js silent! !uctags -R &
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 function! CmdLine(str)
-    exe "menu Foo.Bar :" . a:str
-    emenu Foo.Bar
-    unmenu Foo
+exe "menu Foo.Bar :" . a:str
+emenu Foo.Bar
+unmenu Foo
 endfunction
 
 function! VisualSelection(direction, extra_filter) range
-    let l:saved_reg = @"
-    execute "normal! vgvy"
+let l:saved_reg = @"
+execute "normal! vgvy"
 
-    let l:pattern = escape(@", "\\/.*'$^~[]")
-    let l:pattern = substitute(l:pattern, "\n$", "", "")
+let l:pattern = escape(@", "\\/.*'$^~[]")
+let l:pattern = substitute(l:pattern, "\n$", "", "")
 
-    if a:direction == 'gv'
-        call CmdLine("Ag '" . l:pattern . "' " )
-    elseif a:direction == 'replace'
-        call CmdLine("%s" . '/'. l:pattern . '/')
-    endif
+if a:direction == 'gv'
+    call CmdLine("Ag '" . l:pattern . "' " )
+elseif a:direction == 'replace'
+    call CmdLine("%s" . '/'. l:pattern . '/')
+endif
 
-    let @/ = l:pattern
-    let @" = l:saved_reg
+let @/ = l:pattern
+let @" = l:saved_reg
 endfunction
 
 
 " Returns true if paste mode is enabled
 function! HasPaste()
-    if &paste
-        return 'PASTE MODE  '
-    endif
-    return ''
+if &paste
+    return 'PASTE MODE  '
+endif
+return ''
 endfunction
 
 " Don't close window, when deleting a buffer
 command! Bclose call <SID>BufcloseCloseIt()
 function! <SID>BufcloseCloseIt()
-   let l:currentBufNum = bufnr("%")
-   let l:alternateBufNum = bufnr("#")
+let l:currentBufNum = bufnr("%")
+let l:alternateBufNum = bufnr("#")
 
-   if buflisted(l:alternateBufNum)
-     buffer #
-   else
-     bnext
-   endif
+if buflisted(l:alternateBufNum)
+ buffer #
+else
+ bnext
+endif
 
-   if bufnr("%") == l:currentBufNum
-     new
-   endif
+if bufnr("%") == l:currentBufNum
+ new
+endif
 
-   if buflisted(l:currentBufNum)
-     execute("bdelete! ".l:currentBufNum)
-   endif
+if buflisted(l:currentBufNum)
+ execute("bdelete! ".l:currentBufNum)
+endif
 endfunction
 
 set complete=.,w,b,u 					"Set our desired autocompletion matching

@@ -1,6 +1,6 @@
 " Install Vim Plug if not installed
-if empty(glob('~/.config/nvim/autoload/plug.vim'))
-  silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   autocmd VimEnter * PlugInstall
 endif
@@ -14,9 +14,8 @@ endfunction
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Basic
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plug 'cocopon/iceberg.vim'            "A dark blue color theme
+Plug 'whatyouhide/vim-gotham'         "A very dark color theme
 Plug 'itchyny/lightline.vim'          "statusline/tabline for vim
-Plug 'hallzy/lightline-iceberg'       "Lightline color theme
 Plug 'maximbaz/lightline-ale'         "This plugin provides ALE indicator for the lightline vim plugin.
 Plug 'fisle/vim-no-fixme'             "Vim plugin for lightline to show amount of TODO|FIXME|XXX in current file
 Plug 'tpope/vim-surround'             "quoting/parenthesizing made simple
@@ -49,7 +48,8 @@ Plug 'junegunn/fzf.vim'               "Fuzzy search
 Plug 'mhinz/vim-grepper'              "Helps you win at grep
 Plug 'brooth/far.vim'                 "Find and Replace
 Plug 'janko-m/vim-test'               "A Vim wrapper for running tests on different granularities
-Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }  "Dark powered asynchronous completion framework for neovim/Vim8 
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'skywind3000/gutentags_plus'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""nn
 " => PHP, Laravel, Symfony
@@ -91,7 +91,6 @@ Plug '1995eaton/vim-better-javascript-completion'     "An expansion of vim's cur
 Plug 'posva/vim-vue'                                  "Vim syntax highlighting for Vue components.
 Plug 'sekel/vim-vue-syntastic'
 Plug 'othree/jspc.vim'                                "JS Parameter Complete
-Plug 'ternjs/tern_for_vim', { 'do': 'npm install && npm install -g tern' }
-Plug 'carlitux/deoplete-ternjs'
 
 call plug#end()
+

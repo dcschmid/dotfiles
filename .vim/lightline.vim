@@ -1,5 +1,5 @@
  let g:lightline =  {
-    \ 'colorscheme': 'iceberg',
+    \ 'colorscheme': 'gotham256',
     \ 'active': {
     \   'left': [['mode','paste'],['fugitive', 'filename']],
     \   'right': [['lineinfo'], ['percent'], ['fileformat', 'fileencoding', 'filetype'],['linter_checking','linter_warnings', 'linter_errors', 'linter_ok'], ['nofixme']]
@@ -128,3 +128,4 @@ let g:vimshell_force_overwrite_statusline = 0
 
 let g:lightline#ale#indicator_warnings = "▲"
 let g:lightline#ale#indicator_errors = "✗"
+
