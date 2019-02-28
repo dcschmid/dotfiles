@@ -14,7 +14,7 @@ endfunction
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Basic
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plug 'whatyouhide/vim-gotham'         "A very dark color theme
+Plug 'cocopon/iceberg.vim'            "A dark blue theme
 Plug 'itchyny/lightline.vim'          "statusline/tabline for vim
 Plug 'maximbaz/lightline-ale'         "This plugin provides ALE indicator for the lightline vim plugin.
 Plug 'fisle/vim-no-fixme'             "Vim plugin for lightline to show amount of TODO|FIXME|XXX in current file
@@ -27,11 +27,11 @@ Plug 'tpope/vim-fugitive'             "A git wrapper
 Plug 'idanarye/vim-merginal'          "Fugitive extension to manage and merge Git branches 
 Plug 'sodapopcan/vim-twiggy'          "Maintain your bearings while branching with Git
 Plug 'MarcWeber/vim-addon-mw-utils'   "needed for vim-snipmate
+Plug 'junegunn/gv.vim'
 Plug 'tomtom/tlib_vim'                "needed for vim-snipmate
 Plug 'garbas/vim-snipmate'            "TextMate snippets feature in vim
 Plug 'SirVer/ultisnips'               "The ultimate snippet solution for Vim. Send pull requests to SirVer/ultisnips!
 Plug 'phux/vim-snippets'              "vim-snipmate default snippets (Previously snipmate-snippets)
-Plug 'sjl/gundo.vim'                  "visualize your vim undo
 Plug 'ntpeters/vim-better-whitespace' "Better whitespace highlighting for Vim
 Plug 'airblade/vim-gitgutter'         "A Vim plugin shows a git diff in the gutter and stages/undoes hunks
 Plug 'editorconfig/editorconfig-vim'  "EditorConfig plugin for vim

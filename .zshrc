@@ -82,10 +82,6 @@ export ARCHFLAGS="-arch x86_64"
 
 export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --glob "!{.git,.svn,node_modules,bower_components,vendor}"'
 
-# Gotham Shell
-GOTHAM_SHELL="$HOME/.config/gotham/gotham.sh"
-[[ -s $GOTHAM_SHELL ]] && source $GOTHAM_SHELL
-
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.

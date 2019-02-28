@@ -1,5 +1,5 @@
  let g:lightline =  {
-    \ 'colorscheme': 'gotham256',
+    \ 'colorscheme': 'iceberg',
     \ 'active': {
     \   'left': [['mode','paste'],['fugitive', 'filename']],
     \   'right': [['lineinfo'], ['percent'], ['fileformat', 'fileencoding', 'filetype'],['linter_checking','linter_warnings', 'linter_errors', 'linter_ok'], ['nofixme']]

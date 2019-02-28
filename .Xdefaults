@@ -43,31 +43,29 @@ URxvt.tabbed.tabbar-bg: 0
 URxvt.tabbed.tab-fg: 3
 URxvt.tabbed.tab-bg: 0
 
-*.foreground:   #98d1ce
-*.background:   #0a0f14
-*.cursorColor:  #98d1ce
+*background: #1e2132
+*foreground: #c6c8d1
 
-*.color0:       #0a0f14
-*.color8:       #10151b
+*color0: #2a3158
+*color8: #444b71
 
-*.color1:       #c33027
-*.color9:       #d26939
+*color1: #e27878
+*color9: #e2a478
 
-*.color2:       #26a98b
-*.color10:      #081f2d
+*color2: #89b8c2
+*color10: #b4be82
 
-*.color3:       #edb54b
-*.color11:      #245361
+*color3: #e4aa80
+*color11: #d8e599
 
-*.color4:       #195465
-*.color12:      #093748
+*color4: #84a0c6
+*color12: #3e445e
 
-*.color5:       #4e5165
-*.color13:      #888ba5
+*color5: #d1a8ad
+*color13: #673e43
 
-*.color6:       #33859d
-*.color14:      #599caa
+*color6: #adc1cb
+*color14: #686f9a
 
-*.color7:       #98d1ce
-*.color15:      #d3ebe9
-
+*color7: #c6c8d1
+*color15: #d4d5db

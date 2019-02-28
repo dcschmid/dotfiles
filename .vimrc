@@ -91,7 +91,7 @@ set splitright
 syntax enable
 
 "Colorscheme and enable 256 Colors
-colorscheme gotham256
+colorscheme iceberg
 set t_CO=256						"Use colors, This is useful for Terminal vim
 
 "set utf8 as standard encoding
