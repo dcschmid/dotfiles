@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/3.6/menu">
+<menu id="root-menu" label="openbox">
+
+<!-- BEGIN -->
+
+<separator label="FreeBSD 🔥 openbox³" />
+
+<item label="urxvt">
+  <action name="Execute">
+    <command>urxvtc</command>
+  </action>
+</item>
+
+<item label="xcalc">
+  <action name="Execute">
+    <command>xcalc</command>
+  </action>
+</item>
+
+<item label="xkill">
+  <action name="Execute">
+    <command>xkill</command>
+  </action>
+</item>
+
+<separator />
+
+<menu id="internet" label="internet">
+
+  <item label="firefox">
+    <action name="Execute">
+      <command>firefox -new-window -browser</command>
+    </action>
+  </item>
+
+  <item label="chrome">
+    <action name="Execute">
+      <command>chrome</command>
+    </action>
+  </item>
+
+  <item label="filezilla">
+    <action name="Execute">
+      <command>filezilla</command>
+    </action>
+  </item>
+
+  <item label="seafile">
+    <action name="Execute">
+      <command>seafile-applet</command>
+    </action>
+  </item>
+
+</menu>
+
+<menu id="development" label="development">
+
+  <item label="gvim">
+    <action name="Execute">
+      <command>gvim</command>
+    </action>
+  </item>
+
+  <item label="zeal">
+    <action name="Execute">
+      <command>zeal</command>
+    </action>
+  </item>
+
+</menu>
+
+<menu id="office" label="office">
+
+  <item label="evince pdf viewer">
+    <action name="Execute">
+       <execute>evince</execute>
+    </action>
+  </item>
+
+  <item label="libreoffice">
+    <action name="Execute">
+      <execute>libreoffice</execute>
+    </action>
+  </item>
+
+  <item label="libreoffice calc">
+    <action name="Execute">
+      <execute>libreoffice --calc</execute>
+    </action>
+  </item>
+
+  <item label="libreoffice impress">
+    <action name="Execute">
+      <execute>libreoffice --impress</execute>
+    </action>
+  </item>
+
+  <item label="libreoffice math">
+    <action name="Execute">
+       <execute>libreoffice --math</execute>
+    </action>
+  </item>
+
+  <item label="libreoffice writer">
+    <action name="Execute">
+      <execute>libreoffice --writer</execute>
+    </action>
+  </item>
+
+  <item label="lyx">
+    <action name="Execute">
+      <execute>lyx</execute>
+    </action>
+  </item>
+
+  <item label="zim">
+    <action name="Execute">
+      <execute>zim</execute>
+    </action>
+  </item>
+
+</menu>
+
+<menu id="graphics" label="graphics">
+
+  <item label="gimp">
+    <action name="Execute">
+      <command>gimp</command>
+    </action>
+  </item>
+
+  <item label="libreoffice draw">
+    <action name="Execute">
+      <execute>libreoffice --draw</execute>
+    </action>
+  </item>
+
+  <item label="shotwell">
+    <action name="Execute">
+      <execute>shotwell</execute>
+    </action>
+  </item>
+
+</menu>
+
+<menu id="multimedia" label="multimedia">
+
+  <item label="handbrake">
+    <action name="Execute">
+      <execute>ghb</execute>
+    </action>
+  </item>
+
+  <item label="quodlibet">
+    <action name="Execute">
+      <execute>quodlibet</execute>
+    </action>
+  </item>
+
+  <item label="gnome mpv">
+    <action name="Execute">
+      <execute>gnome-mpv</execute>
+    </action>
+  </item>
+</menu>
+
+<menu id="games" label="games">
+
+  <item label="supertux 2">
+    <action name="Execute">
+      <execute>supertux2</execute>
+    </action>
+  </item>
+
+  <item label="openrct2">
+    <action name="Execute">
+      <execute>openrct2</execute>
+    </action>
+  </item>
+
+  <item label="openttd">
+    <action name="Execute">
+      <execute>openttd</execute>
+    </action>
+  </item>
+
+  <item label="warzone 2100">
+    <action name="Execute">
+      <execute>warzone2100</execute>
+    </action>
+  </item>
+
+  <item label="widelands">
+    <action name="Execute">
+      <execute>widelands</execute>
+    </action>
+  </item>
+
+  <item label="corsix-th">
+    <action name="Execute">
+        <execute>corsix-th</execute>
+    </action>
+  </item>
+
+  <item label="openarena">
+    <action name="Execute">
+        <execute>openarena</execute>
+    </action>
+  </item>
+
+</menu>
+
+<menu id="utilities-menu" label="utilities">
+
+  <item label="cache: firefox">
+    <action name="Execute">
+      <command>~/scripts/firefox-clean.sh</command>
+    </action>
+  </item>
+
+  <item label="cache: trash">
+    <action name="Execute">
+      <command>rm -rf ~/.local/share/Trash</command>
+    </action>
+  </item>
+
+  <item label="cache: thumbnails">
+    <action name="Execute">
+      <command>rm -rf ~/.cache/thumbnails ~/.thumbnails</command>
+    </action>
+  </item>
+
+  <separator />
+
+  <item label="kill: firefox">
+    <action name="Execute">
+      <command>killall -9 firefox</command>
+    </action>
+  </item>
+</menu>
+
+<menu id="system" label="system">
+
+  <menu id="ps-killall" label="ps(1) | killall(1)" execute="~/scripts/__openbox_stats_ps_KILLALL.sh" />
+
+  <separator />
+
+  <menu id="top-cpu-renice" label="top(1) | CPU | renice(1)" execute="~/scripts/__openbox_stats_top_cpu_RENICE.sh" />
+  <menu id="top-mem-renice" label="top(1) | MEM | renice(1)" execute="~/scripts/__openbox_stats_top_mem_RENICE.sh" />
+
+  <separator />
+
+  <menu id="top-cpu-kill" label="top(1) | CPU | kill(1)" execute="~/scripts/__openbox_stats_top_cpu_KILL.sh" />
+  <menu id="top-mem-kill" label="top(1) | MEM | kill(1)" execute="~/scripts/__openbox_stats_top_mem_KILL.sh" />
+
+  <separator />
+
+  <item label="/boot/loader.conf">
+    <action name="Execute">
+      <execute>doas urxvtc -e vim /boot/loader.conf</execute>
+    </action>
+  </item>
+
+  <item label="/etc/rc.conf">
+    <action name="Execute">
+      <execute>doas xterm -g 120x40 -T /etc/rc.conf -e vi /etc/rc.conf</execute>
+    </action>
+  </item>
+
+  <item label="/etc/sysctl.conf">
+    <action name="Execute">
+      <execute>doas xterm -g 120x40 -T /etc/sysctl.conf -e vi /etc/sysctl.conf</execute>
+    </action>
+  </item>
+
+  <item label="/etc/make.conf">
+    <action name="Execute">
+      <execute>doas xterm -g 120x40 -T /etc/make.conf -e vi /etc/make.conf</execute>
+    </action>
+  </item>
+
+  <item label="/etc/newsyslog.conf">
+    <action name="Execute">
+      <execute>doas xterm -g 120x40 -T /etc/newsyslog.conf -e vi /etc/newsyslog.conf</execute>
+    </action>
+  </item>
+
+  <item label="/etc/wpa_supplicant.conf">
+    <action name="Execute">
+      <execute>doas xterm -g 120x40 -T /etc/wpa_supplicant.conf -e vi /etc/wpa_supplicant.conf</execute>
+    </action>
+  </item>
+
+  <item label="/etc/fstab">
+    <action name="Execute">
+      <execute>doas xterm -g 120x40 -T /etc/fstab -e vi /etc/fstab</execute>
+    </action>
+  </item>
+
+</menu>
+
+<menu id="recent" label="recent" execute="~/scripts/__openbox_recent.sh" />
+
+<menu id="sound" label="sound" execute="~/scripts/__openbox_freebsd_sound.sh" />
+
+<menu id="daemons" label="daemons">
+
+
+  <item label="RESTART: tint2">
+    <action name="Execute">
+      <execute>~/scripts/__openbox_restart_tint2.sh</execute>
+    </action>
+  </item>
+
+</menu>
+
+<menu id="x11" label="x11">
+
+  <item label="screen off">
+    <action name="Execute">
+      <command>xset dpms force off</command>
+    </action>
+  </item>
+
+  <item label="screen lock">
+    <action name="Execute">
+      <command>~/scripts/__openbox_lock.sh</command>
+    </action>
+  </item>
+
+  <item label="sleep">
+    <action name="Execute">
+      <command>~/scripts/__openbox_lock_zzz.sh</command>
+    </action>
+  </item>
+
+  <separator />
+
+  <item label="arandr">
+    <action name="Execute">
+      <command>arandr</command>
+    </action>
+  </item>
+
+  <item label="xrandr: default resolution">
+    <action name="Execute">
+      <command>xrandr -s 0</command>
+    </action>
+  </item>
+
+  <separator />
+
+  <item label="fc-cache: reload">
+    <action name="Execute">
+      <command>xterm -e ~/scripts/fc-cache.sh</command>
+    </action>
+  </item>
+
+  <item label="gfontview">
+    <action name="Execute">
+      <command>gfontview</command>
+    </action>
+  </item>
+
+  <item label="gfontview ~/.fonts">
+    <action name="Execute">
+      <command>gfontview ~/.fonts</command>
+    </action>
+  </item>
+
+  <item label="qtconfig">
+    <action name="Execute">
+      <command>qtconfig</command>
+    </action>
+  </item>
+
+  <item label="qt5ct">
+    <action name="Execute">
+      <command>qt5ct</command>
+    </action>
+  </item>
+
+  <item label="qtconfig-qt4">
+    <action name="Execute">
+      <command>qtconfig-qt4</command>
+    </action>
+  </item>
+
+  <separator />
+
+  <item label="~/.xinitrc">
+    <action name="Execute">
+      <execute>gvim ~/.xinitrc</execute>
+    </action>
+  </item>
+
+  <item label="~/.config/openbox/menu.xml">
+    <action name="Execute">
+      <execute>gvim ~/.config/openbox/menu.xml</execute>
+    </action>
+  </item>
+
+  <item label="~/.config/openbox/rc.xml">
+    <action name="Execute">
+      <execute>gvim ~/.config/openbox/rc.xml</execute>
+    </action>
+  </item>
+
+  <separator />
+
+  <item label="screenshot: show last">
+    <action name="Execute">
+      <command>~/scripts/__openbox_show_screenshot.sh</command>
+    </action>
+  </item>
+
+  <item label="screenshot: edit last">
+    <action name="Execute">
+      <command>~/scripts/__openbox_edit_screenshot.sh</command>
+    </action>
+  </item>
+
+  <item label="screenshot: browse">
+    <action name="Execute">
+      <command>pcmanfm ~/gfx/screenshots</command>
+    </action>
+  </item>
+</menu>
+
+<separator />
+
+<menu id="kill" label="kill x11">
+
+  <item label="confirm">
+    <action name="Execute">
+      <command>doas pkill X</command>
+    </action>
+  </item>
+
+</menu>
+
+<menu id="exit" label="exit x11">
+
+  <item label="confirm">
+    <action name="Exit">
+      <prompt>no</prompt>
+    </action>
+  </item>
+
+</menu>
+
+<item label="reconfigure">
+  <action name="Reconfigure" />
+</item>
+
+<!-- END -->
+
+</menu>
+</openbox_menu>

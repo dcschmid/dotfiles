@@ -1,0 +1,13 @@
+tint2 &
+volumeicon &
+ 1 autostart                                                                                                                                                                                    X 
+  1 tint2 &
+  2 volumeicon &
+  3 dsbmc -i &
+  4 dsbmc-cli -a &
+  5 urxvtd &
+  6 seafile-applet &
+dsbmc -i &
+dsbmc-cli -a &
+urxvtd &
+seafile-applet &

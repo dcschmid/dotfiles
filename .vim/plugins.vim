@@ -26,6 +26,7 @@ Plug 'majutsushi/tagbar'              "displays tags in a window, ordered by sco
 Plug 'tpope/vim-fugitive'             "A git wrapper
 Plug 'idanarye/vim-merginal'          "Fugitive extension to manage and merge Git branches 
 Plug 'sodapopcan/vim-twiggy'          "Maintain your bearings while branching with Git
+Plug 'rbong/vim-flog'
 Plug 'MarcWeber/vim-addon-mw-utils'   "needed for vim-snipmate
 Plug 'junegunn/gv.vim'
 Plug 'tomtom/tlib_vim'                "needed for vim-snipmate
@@ -65,7 +66,6 @@ Plug 'jwalton512/vim-blade'           "Vim syntax highlighting for Blade templat
 Plug 'lumiliet/vim-twig'              "Twig Syntax highlighting
 Plug 'phpactor/phpactor', { 'do': ':call phpactor#Update()', 'for': 'php' }
 Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install'  } "PHP Completion Daemon Plugin for Vim/NeoVim
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => HTML, CSS, SASS, LESS

@@ -2,3 +2,5 @@
 .config/nvim/autoload/
 .vim/plugged
 .vim/autoload
+tags
+.vim/.netrwhist
