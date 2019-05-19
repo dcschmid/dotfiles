@@ -163,7 +163,7 @@
         <!-- KEYBOARD / TASK MANAGER -->
         <keybind key="C-S-Escape">
             <action name="Execute">
-                <execute>urxvtc -e sudo htop</execute>
+                <execute>urxvtc -e doas htop</execute>
             </action>
         </keybind>
         <!-- KEYBOARD / SHOW DESKTOP -->

@@ -259,43 +259,43 @@
 
   <item label="/boot/loader.conf">
     <action name="Execute">
-      <execute>doas urxvtc -e vim /boot/loader.conf</execute>
+      <execute>doas gvim /boot/loader.conf</execute>
     </action>
   </item>
 
   <item label="/etc/rc.conf">
     <action name="Execute">
-      <execute>doas xterm -g 120x40 -T /etc/rc.conf -e vi /etc/rc.conf</execute>
+      <execute>doas gvim /etc/rc.conf</execute>
     </action>
   </item>
 
   <item label="/etc/sysctl.conf">
     <action name="Execute">
-      <execute>doas xterm -g 120x40 -T /etc/sysctl.conf -e vi /etc/sysctl.conf</execute>
+      <execute>doas gvim /etc/sysctl.conf</execute>
     </action>
   </item>
 
   <item label="/etc/make.conf">
     <action name="Execute">
-      <execute>doas xterm -g 120x40 -T /etc/make.conf -e vi /etc/make.conf</execute>
+      <execute>doas gvim /etc/make.conf</execute>
     </action>
   </item>
 
   <item label="/etc/newsyslog.conf">
     <action name="Execute">
-      <execute>doas xterm -g 120x40 -T /etc/newsyslog.conf -e vi /etc/newsyslog.conf</execute>
+      <execute>doas gvim /etc/newsyslog.conf</execute>
     </action>
   </item>
 
   <item label="/etc/wpa_supplicant.conf">
     <action name="Execute">
-      <execute>doas xterm -g 120x40 -T /etc/wpa_supplicant.conf -e vi /etc/wpa_supplicant.conf</execute>
+      <execute>doas gvim /etc/wpa_supplicant.conf</execute>
     </action>
   </item>
 
   <item label="/etc/fstab">
     <action name="Execute">
-      <execute>doas xterm -g 120x40 -T /etc/fstab -e vi /etc/fstab</execute>
+      <execute>doas gvim /etc/fstab</execute>
     </action>
   </item>
 
@@ -358,33 +358,9 @@
     </action>
   </item>
 
-  <item label="gfontview">
-    <action name="Execute">
-      <command>gfontview</command>
-    </action>
-  </item>
-
-  <item label="gfontview ~/.fonts">
-    <action name="Execute">
-      <command>gfontview ~/.fonts</command>
-    </action>
-  </item>
-
-  <item label="qtconfig">
-    <action name="Execute">
-      <command>qtconfig</command>
-    </action>
-  </item>
-
   <item label="qt5ct">
     <action name="Execute">
       <command>qt5ct</command>
-    </action>
-  </item>
-
-  <item label="qtconfig-qt4">
-    <action name="Execute">
-      <command>qtconfig-qt4</command>
     </action>
   </item>
 
