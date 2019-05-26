@@ -51,8 +51,9 @@ Plug 'brooth/far.vim'                 "Find and Replace
 Plug 'janko-m/vim-test'               "A Vim wrapper for running tests on different granularities
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'skywind3000/gutentags_plus'
+Plug 'KabbAmine/zeavim.vim'
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""nn
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => PHP, Laravel, Symfony
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'StanAngeloff/php.vim'           "Up-to-date php syntax file
