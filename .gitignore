@@ -4,3 +4,4 @@
 .vim/autoload
 tags
 .vim/.netrwhist
+scripts/stats
