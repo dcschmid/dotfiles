@@ -427,10 +427,21 @@
 
 </menu>
 
+<item label="reboot">
+    <action name="Reboot">
+        <command>shutdown -r now</command>
+    </action>
+</item>
+
+<item label="shutdown">
+    <action name="Shutdown">
+        <command>shutdown -p now</command>
+    </action>
+</item>
+
 <item label="reconfigure">
   <action name="Reconfigure" />
 </item>
-
 <!-- END -->
 
 </menu>
