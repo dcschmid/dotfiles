@@ -101,6 +101,7 @@ Plug '1995eaton/vim-better-javascript-completion'     "An expansion of vim's cur
 Plug 'posva/vim-vue'                                  "Vim syntax highlighting for Vue components.
 Plug 'sekel/vim-vue-syntastic'
 Plug 'othree/jspc.vim'                                "JS Parameter Complete
+Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
 
 call plug#end()
 
