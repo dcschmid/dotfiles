@@ -517,6 +517,13 @@ let g:tern#arguments = ["--persistent"]
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => deoplete
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#ignore_sources = get(g:, 'deoplete#ignore_sources', {})
+let g:deoplete#ignore_sources.php = ['omni']
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Auto-Commands
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Automatically source the vimrc file on save.

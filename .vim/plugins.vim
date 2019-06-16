@@ -52,6 +52,14 @@ Plug 'janko-m/vim-test'               "A Vim wrapper for running tests on differ
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'skywind3000/gutentags_plus'
 Plug 'KabbAmine/zeavim.vim'
+Plug 'rajasegar/vim-search-web'
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => PHP, Laravel, Symfony
@@ -67,6 +75,7 @@ Plug 'jwalton512/vim-blade'           "Vim syntax highlighting for Blade templat
 Plug 'lumiliet/vim-twig'              "Twig Syntax highlighting
 Plug 'phpactor/phpactor', { 'do': ':call phpactor#Update()', 'for': 'php' }
 Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install'  } "PHP Completion Daemon Plugin for Vim/NeoVim
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => HTML, CSS, SASS, LESS
