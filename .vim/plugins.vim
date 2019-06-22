@@ -61,6 +61,8 @@ else
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
 
+Plug 'vim-vdebug/vdebug'
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => PHP, Laravel, Symfony
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
