@@ -368,15 +368,6 @@ nmap <Leader>gt :Twiggy<cr>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => tern
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:nern_request_timeout = 1
-let g:tern_request_timeout = 6000
-let g:tern#command = ["tern"]
-let g:tern#arguments = ["--persistent"]
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Ultisnips
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:UltiSnipsExpandTrigger="<c-j>"
@@ -443,12 +434,6 @@ augroup MyGutentagsStatusLineRefresher
 augroup END
 
 
-"""""""""""""""""""""""""""""""""
-" => phpcd
-"""""""""""""""""""""""""""""""""
-let g:phpcd_autoload_path = '.autoload.php'
-
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => pdv
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -511,18 +496,26 @@ let g:used_javascript_libs = 'jquery,vue'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => tern
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:tern_request_timeout = 1
+let g:nern_request_timeout = 1
 let g:tern_request_timeout = 6000
 let g:tern#command = ["tern"]
 let g:tern#arguments = ["--persistent"]
 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => deoplete
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Use deoplete.
 let g:deoplete#enable_at_startup = 1
+let g:deoplete#sources = {}
+let g:deoplete#sources#ternjs#timeout = 1
+let g:deoplete#sources#ternjs#types = 1
+let g:deoplete#sources#ternjs#depths = 1
+let g:deoplete#sources#ternjs#docs = 1
+let g:deoplete#sources#ternjs#filter = 0
+let g:deoplete#sources#ternjs#include_keywords = 1
 let g:deoplete#ignore_sources = get(g:, 'deoplete#ignore_sources', {})
 let g:deoplete#ignore_sources.php = ['omni']
+
+
+let g:phpcd_autoload_path = '.autoload.php'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Auto-Commands
@@ -539,10 +532,6 @@ autocmd!
 
 autocmd FileType css setlocal iskeyword+=-
 augroup END
-
-"autocmd BufWritePost *.php silent! !uctags -R &
-"autocmd BufWritePost *.scss silent! !uctags --options=/home/daniel/.ctags.d/scss.tags -R &
-"autocmd BufWritePost *.js silent! !uctags -R &
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions

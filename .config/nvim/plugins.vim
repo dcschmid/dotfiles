@@ -24,6 +24,7 @@ Plug 'ervandew/supertab'              "Perform all your vim insert mode completi
 Plug 'junegunn/vim-easy-align'        "A simple easy to use vim alignment plugin
 Plug 'sjl/gundo.vim'                  "visualize your vim undo
 Plug 'majutsushi/tagbar'              "displays tags in a window, ordered by scope
+Plug 'mtscout6/vim-tagbar-css'
 Plug 'tpope/vim-fugitive'             "A git wrapper
 Plug 'idanarye/vim-merginal'          "Fugitive extension to manage and merge Git branches 
 Plug 'sodapopcan/vim-twiggy'          "Maintain your bearings while branching with Git
@@ -54,15 +55,16 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'skywind3000/gutentags_plus'
 Plug 'KabbAmine/zeavim.vim'
 Plug 'rajasegar/vim-search-web'
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
-
 Plug 'vim-vdebug/vdebug'
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Autocompletion
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins'  }
+Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
+Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => PHP, Laravel, Symfony
@@ -77,7 +79,7 @@ Plug 'shawncplus/phpcomplete.vim'     "Improved PHP omni-completion
 Plug 'jwalton512/vim-blade'           "Vim syntax highlighting for Blade templates
 Plug 'lumiliet/vim-twig'              "Twig Syntax highlighting
 Plug 'phpactor/phpactor', { 'do': ':call phpactor#Update()', 'for': 'php' }
-Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install'  } "PHP Completion Daemon Plugin for Vim/NeoVim
+Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install'  }
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -94,6 +96,7 @@ Plug 'mattn/emmet-vim'                "Emmet Plugin
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Javascript
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'HerringtonDarkholme/yats.vim'
 Plug 'othree/yajs.vim'                                "Yet Another JavaScript Syntax file
 Plug 'othree/javascript-libraries-syntax.vim'         "Syntax file for JavaScript Libraries
 Plug 'othree/es.next.syntax.vim'                      "The syntax file for EcmaScript future syntax
@@ -104,7 +107,6 @@ Plug '1995eaton/vim-better-javascript-completion'     "An expansion of vim's cur
 Plug 'posva/vim-vue'                                  "Vim syntax highlighting for Vue components.
 Plug 'sekel/vim-vue-syntastic'
 Plug 'othree/jspc.vim'                                "JS Parameter Complete
-Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
-
+Plug 'ternjs/tern_for_vim', { 'do': 'npm install && npm install -g tern' }
 call plug#end()
 
