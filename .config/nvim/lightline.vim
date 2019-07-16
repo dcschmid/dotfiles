@@ -1,7 +1,7 @@
  let g:lightline =  {
     \ 'colorscheme': 'iceberg',
     \ 'active': {
-    \   'left': [['mode','paste'],['fugitive', 'filename']],
+    \   'left': [['mode','paste'],['gitbranch', 'gitdiff', 'fugitive', 'filename']],
     \   'right': [['lineinfo'], ['percent'], ['fileformat', 'fileencoding', 'filetype'],['linter_checking','linter_warnings', 'linter_errors', 'linter_ok'], ['nofixme']]
     \},
     \ 'component_function': {
@@ -11,6 +11,10 @@
     \   'filetype': 'LightlineFiletype',
     \   'fileencoding': 'LightlineFileencoding',
     \   'mode': 'LightlineMode',
+    \   'gitbranch': 'fugitive#head',
+    \ },
+    \  'component_visible_condition': {
+    \    'gitstatus': 'lightline_gitdiff#get_status() !=# ""',
     \ },
     \ 'component_expand': {
     \   'linter_checking': 'lightline#ale#checking',
@@ -18,6 +22,7 @@
     \   'linter_errors': 'lightline#ale#errors',
     \   'linter_ok': 'lightline#ale#ok',
     \   'nofixme': 'nofixme#amount',
+    \   'gitdiff': 'lightline#gitdiff#get',
     \ },
     \ 'component_type': {
     \   'readonly': 'error',
@@ -26,6 +31,7 @@
     \   'linter_errors': 'error',
     \   'linter_ok': 'left',
     \   'nofixme': 'warning',
+    \   'gitdiff': 'middle',
     \ },
     \ 'subseparator': { 'left': '|', 'right': '|' }
     \ }
@@ -46,7 +52,7 @@ function! LightlineFilename()
         \ &ft == 'unite' ? unite#get_status_string() :
         \ &ft == 'vimshell' ? vimshell#get_status_string() :
         \ ('' != LightlineReadonly() ? LightlineReadonly() . ' ' : '') .
-        \ ('' != fname ? fname : '[No Name]') .
+        \ ('' != fname ? fname : '[8$\No Name]') .
         \ ('' != LightlineModified() ? ' ' . LightlineModified() : '')
 endfunction
 

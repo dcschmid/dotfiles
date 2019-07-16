@@ -18,6 +18,8 @@ endfunction
 Plug 'cocopon/iceberg.vim'            "A dark blue theme
 Plug 'itchyny/lightline.vim'          "statusline/tabline for vim
 Plug 'maximbaz/lightline-ale'         "This plugin provides ALE indicator for the lightline vim plugin.
+Plug 'itchyny/vim-gitbranch'
+Plug 'niklaas/lightline-gitdiff'
 Plug 'fisle/vim-no-fixme'             "Vim plugin for lightline to show amount of TODO|FIXME|XXX in current file
 Plug 'tpope/vim-surround'             "quoting/parenthesizing made simple
 Plug 'ervandew/supertab'              "Perform all your vim insert mode completions with tab
