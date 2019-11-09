@@ -80,7 +80,7 @@ export ARCHFLAGS="-arch x86_64"
 # --follow: Follow symlinks
 # --glob: Additional conditions for search (in this case ignore everything in the .git/ folder)
 
-export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --glob "!{.git,.svn,node_modules,bower_components,vendor}"'
+export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --glob "!{.git,.svn,node_modules,bower_components,vendor,_site}"'
 
 export QT_QPA_PLATFORMTHEME=qt5ct
 

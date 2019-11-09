@@ -28,7 +28,6 @@ Plug 'sjl/gundo.vim'                  "visualize your vim undo
 Plug 'majutsushi/tagbar'              "displays tags in a window, ordered by scope
 Plug 'mtscout6/vim-tagbar-css'
 Plug 'tpope/vim-fugitive'             "A git wrapper
-Plug 'idanarye/vim-merginal'          "Fugitive extension to manage and merge Git branches 
 Plug 'sodapopcan/vim-twiggy'          "Maintain your bearings while branching with Git
 Plug 'rbong/vim-flog'
 Plug 'MarcWeber/vim-addon-mw-utils'   "needed for vim-snipmate
@@ -110,5 +109,7 @@ Plug 'posva/vim-vue'                                  "Vim syntax highlighting f
 Plug 'sekel/vim-vue-syntastic'
 Plug 'othree/jspc.vim'                                "JS Parameter Complete
 Plug 'ternjs/tern_for_vim', { 'do': 'npm install && npm install -g tern' }
+Plug 'leafgarland/typescript-vim'
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'mlaursen/vim-react-snippets'
 call plug#end()
-
