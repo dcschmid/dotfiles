@@ -93,7 +93,7 @@ export QT_QPA_PLATFORMTHEME=qt5ct
 alias zshconfig="nano ~/.zshrc"
 alias ohmyzsh="nano ~/.oh-my-zsh"
 alias configdot='/usr/local/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-
+alias vim='nvim'
 
 alias danschmid="ssh root@danschmid.de"
 
