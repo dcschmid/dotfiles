@@ -1,0 +1,1649 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+mapleader	.config/nvim/init.vim	/^let mapleader=','$/;"	v
+g:mapleader	.config/nvim/init.vim	/^let g:mapleader=','$/;"	v
+<leader>w	.config/nvim/init.vim	/^nmap <leader>w :w!<cr>$/;"	m
+g:python3_host_prog	.config/nvim/init.vim	/^let g:python3_host_prog = "\/usr\/local\/bin\/python3.7"$/;"	v
+<space>	.config/nvim/init.vim	/^nmap <space> \/$/;"	m
+<c-space>	.config/nvim/init.vim	/^nmap <c-space> ?$/;"	m
+<C-J>	.config/nvim/init.vim	/^nmap <C-J> <C-W><C-J>$/;"	m
+<C-K>	.config/nvim/init.vim	/^nmap <C-K> <C-W><C-K>$/;"	m
+<C-H>	.config/nvim/init.vim	/^nmap <C-H> <C-W><C-H>$/;"	m
+<C-L>	.config/nvim/init.vim	/^nmap <C-L> <C-W><C-L>$/;"	m
+<leader>ba	.config/nvim/init.vim	/^nmap <leader>ba :bufdo$/;"	m
+<leader>l	.config/nvim/init.vim	/^nmap <leader>l :bnext<cr>$/;"	m
+<leader>h	.config/nvim/init.vim	/^nmap <leader>h :bprevious<cr>$/;"	m
+<leader>nt	.config/nvim/init.vim	/^nmap <leader>nt :tabnew<cr>$/;"	m
+<leader>to	.config/nvim/init.vim	/^nmap <leader>to :tabonly<cr>$/;"	m
+<leader>tc	.config/nvim/init.vim	/^nmap <leader>tc :tabclose<cr>$/;"	m
+<leader>tm	.config/nvim/init.vim	/^nmap <leader>tm :tabmove$/;"	m
+<leader>t<leader>	.config/nvim/init.vim	/^nmap <leader>t<leader> :tabnext<cr>$/;"	m
+g:lasttab	.config/nvim/init.vim	/^let g:lasttab = 1$/;"	v
+<leader>tl	.config/nvim/init.vim	/^nmap <leader>tl :exe "tabn ".g:lasttab<cr>$/;"	m
+<leader>te	.config/nvim/init.vim	/^nmap <leader>te :tabedit <c-r>=expand("%:p:h")<cr>\/$/;"	m
+<leader>cd	.config/nvim/init.vim	/^nmap <leader>cd :cd %:p:h<cr>:pwd<cr>$/;"	m
+g:netrw_banner	.config/nvim/init.vim	/^let g:netrw_banner = 0$/;"	v
+-	.config/nvim/init.vim	/^nmap - :Explore<cr>$/;"	m
+<Leader><space>	.config/nvim/init.vim	/^nmap <Leader><space> :nohlsearch<cr>$/;"	m
+<leader>ts	.config/nvim/init.vim	/^nnoremap <leader>ts :tabedit term$/;"	m
+g:session_autoload	.config/nvim/init.vim	/^let g:session_autoload = "no"$/;"	v
+g:session_autosave	.config/nvim/init.vim	/^let g:session_autosave = "no"$/;"	v
+g:session_command_aliases	.config/nvim/init.vim	/^let g:session_command_aliases = 1$/;"	v
+<leader>so	.config/nvim/init.vim	/^nnoremap <leader>so :OpenSession$/;"	m
+<leader>ss	.config/nvim/init.vim	/^nnoremap <leader>ss :SaveSession$/;"	m
+<leader>sd	.config/nvim/init.vim	/^nnoremap <leader>sd :DeleteSession<CR>$/;"	m
+<leader>sc	.config/nvim/init.vim	/^nnoremap <leader>sc :CloseSession<CR>$/;"	m
+<Leader>ev	.config/nvim/init.vim	/^nmap <Leader>ev :tabedit ~\/.config\/nvim\/init.vim<cr>$/;"	m
+<Leader>es	.config/nvim/init.vim	/^nmap <Leader>es :e ~\/.config\/nvim\/snippets\/$/;"	m
+<Leader>epl	.config/nvim/init.vim	/^nmap <Leader>epl :tabedit ~\/.config\/nvim\/plugins.vim<cr>$/;"	m
+<Leader>el	.config/nvim/init.vim	/^nmap <Leader>el :tabedit ~\/.config\/nvim\/lightline.vim<cr>$/;"	m
+;	.config/nvim/init.vim	/^nmap ; :Buffers<CR>$/;"	m
+<c-p>	.config/nvim/init.vim	/^nmap <c-p> :Files<CR>$/;"	m
+<Leader>t	.config/nvim/init.vim	/^nmap <Leader>t :Tags<CR>$/;"	m
+g:fzf_tags_command	.config/nvim/init.vim	/^let g:fzf_tags_command = 'exctags -R'$/;"	v
+GGrep	.config/nvim/init.vim	/^command! -bang -nargs=* GGrep$/;"	c
+Colors	.config/nvim/init.vim	/^command! -bang Colors$/;"	c
+Files	.config/nvim/init.vim	/^command! -bang -nargs=? -complete=dir Files$/;"	c
+Rg	.config/nvim/init.vim	/^command! -bang -nargs=* Rg$/;"	c
+g:grepper	.config/nvim/init.vim	/^let g:grepper = {}$/;"	v
+g:grepper	.config/nvim/init.vim	/^let g:grepper.tools = ['rg', 'git']$/;"	v
+gs	.config/nvim/init.vim	/^nmap gs <plug>(GrepperOperator)$/;"	m
+<leader>g	.config/nvim/init.vim	/^nnoremap <leader>g :Grepper -tool rg<CR>$/;"	m
+<leader>gg	.config/nvim/init.vim	/^nnoremap <leader>gg :Grepper -tool git<CR>$/;"	m
+<leader>rg	.config/nvim/init.vim	/^nnoremap <leader>rg :Grepper -tool rg -cword<CR>$/;"	m
+MyTagContext	.config/nvim/init.vim	/^function MyTagContext()$/;"	f
+g:SuperTabDefaultCompletionType	.config/nvim/init.vim	/^let g:SuperTabDefaultCompletionType = "<c-x><c-o>"$/;"	v
+g:SuperTabRetainCompletionDuration	.config/nvim/init.vim	/^let g:SuperTabRetainCompletionDuration = "completion"$/;"	v
+g:SuperTabLongestEnhanced	.config/nvim/init.vim	/^let g:SuperTabLongestEnhanced = 1$/;"	v
+g:SuperTabLongestHighlight	.config/nvim/init.vim	/^let g:SuperTabLongestHighlight = 1$/;"	v
+g:SuperTabCompletionContexts	.config/nvim/init.vim	/^let g:SuperTabCompletionContexts = ['MyTagContext', 's:ContextText', 's:ContextDiscover']$/;"	v
+ga	.config/nvim/init.vim	/^nmap ga <Plug>(EasyAlign)$/;"	m
+<c-g>	.config/nvim/init.vim	/^nmap <c-g> :GundoToggle<cr>$/;"	m
+<C-t>	.config/nvim/init.vim	/^nmap <C-t> :TagbarToggle<CR>$/;"	m
+gm	.config/nvim/init.vim	/^nmap gm :LivedownToggle<CR>$/;"	m
+LspPHPIntelephense	.config/nvim/init.vim	/^  augroup LspPHPIntelephense$/;"	a
+<TAB>	.config/nvim/init.vim	/^inoremap <silent><expr> <TAB>$/;"	m
+<S-TAB>	.config/nvim/init.vim	/^inoremap <expr><S-TAB> pumvisible() ? "\\<C-p>" : "\\<C-h>"$/;"	m
+check_back_space	.config/nvim/init.vim	/^function! s:check_back_space() abort$/;"	f
+g:coc_global_extensions	.config/nvim/init.vim	/^  let g:coc_global_extensions += ['coc-prettier']$/;"	v
+g:coc_global_extensions	.config/nvim/init.vim	/^  let g:coc_global_extensions += ['coc-eslint']$/;"	v
+K	.config/nvim/init.vim	/^nnoremap <silent> K :call <SID>show_documentation()<CR>$/;"	m
+show_documentation	.config/nvim/init.vim	/^function! s:show_documentation()$/;"	f
+<c-space>	.config/nvim/init.vim	/^inoremap <silent><expr> <c-space> coc#refresh()$/;"	m
+<cr>	.config/nvim/init.vim	/^  inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\\<C-y>" : "\\<C-g>u\\<CR>"$/;"	m
+<cr>	.config/nvim/init.vim	/^  inoremap <expr> <cr> pumvisible() ? "\\<C-y>" : "\\<C-g>u\\<CR>"$/;"	m
+[g	.config/nvim/init.vim	/^nmap <silent> [g <Plug>(coc-diagnostic-prev)$/;"	m
+]g	.config/nvim/init.vim	/^nmap <silent> ]g <Plug>(coc-diagnostic-next)$/;"	m
+gd	.config/nvim/init.vim	/^nmap <silent> gd <Plug>(coc-definition)$/;"	m
+gy	.config/nvim/init.vim	/^nmap <silent> gy <Plug>(coc-type-definition)$/;"	m
+gi	.config/nvim/init.vim	/^nmap <silent> gi <Plug>(coc-implementation)$/;"	m
+gr	.config/nvim/init.vim	/^nmap <silent> gr <Plug>(coc-references)$/;"	m
+<leader>rn	.config/nvim/init.vim	/^nmap <leader>rn <Plug>(coc-rename)$/;"	m
+<leader>f	.config/nvim/init.vim	/^nmap <leader>f  <Plug>(coc-format-selected)$/;"	m
+mygroup	.config/nvim/init.vim	/^augroup mygroup$/;"	a
+<leader>a	.config/nvim/init.vim	/^nmap <leader>a  <Plug>(coc-codeaction-selected)$/;"	m
+<leader>ac	.config/nvim/init.vim	/^nmap <leader>ac  <Plug>(coc-codeaction)$/;"	m
+<leader>qf	.config/nvim/init.vim	/^nmap <leader>qf  <Plug>(coc-fix-current)$/;"	m
+if	.config/nvim/init.vim	/^omap if <Plug>(coc-funcobj-i)$/;"	m
+af	.config/nvim/init.vim	/^omap af <Plug>(coc-funcobj-a)$/;"	m
+<TAB>	.config/nvim/init.vim	/^nmap <silent> <TAB> <Plug>(coc-range-select)$/;"	m
+Format	.config/nvim/init.vim	/^command! -nargs=0 Format :call CocAction('format')$/;"	c
+Fold	.config/nvim/init.vim	/^command! -nargs=? Fold :call     CocAction('fold', <f-args>)$/;"	c
+OR	.config/nvim/init.vim	/^command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')$/;"	c
+<space>a	.config/nvim/init.vim	/^nnoremap <silent> <space>a  :<C-u>CocList diagnostics<cr>$/;"	m
+<space>e	.config/nvim/init.vim	/^nnoremap <silent> <space>e  :<C-u>CocList extensions<cr>$/;"	m
+<space>c	.config/nvim/init.vim	/^nnoremap <silent> <space>c  :<C-u>CocList commands<cr>$/;"	m
+<space>o	.config/nvim/init.vim	/^nnoremap <silent> <space>o  :<C-u>CocList outline<cr>$/;"	m
+<space>s	.config/nvim/init.vim	/^nnoremap <silent> <space>s  :<C-u>CocList -I symbols<cr>$/;"	m
+<space>j	.config/nvim/init.vim	/^nnoremap <silent> <space>j  :<C-u>CocNext<CR>$/;"	m
+<space>k	.config/nvim/init.vim	/^nnoremap <silent> <space>k  :<C-u>CocPrev<CR>$/;"	m
+<space>p	.config/nvim/init.vim	/^nnoremap <silent> <space>p  :<C-u>CocListResume<CR>$/;"	m
+g:ale_lint_on_enter	.config/nvim/init.vim	/^let g:ale_lint_on_enter = 1$/;"	v
+g:ale_lint_on_text_changed	.config/nvim/init.vim	/^let g:ale_lint_on_text_changed = 'never'$/;"	v
+g:ale_sign_warning	.config/nvim/init.vim	/^let g:ale_sign_warning = '▲'$/;"	v
+g:ale_sign_error	.config/nvim/init.vim	/^let g:ale_sign_error = '✗'$/;"	v
+<c-k>	.config/nvim/init.vim	/^nmap <silent> <c-k> <Plug>(ale_previous_wrap)$/;"	m
+<c-j>	.config/nvim/init.vim	/^nmap <silent> <c-j> <Plug>(ale_next_wrap)$/;"	m
+<Leader>gs	.config/nvim/init.vim	/^nmap <Leader>gs :Gstatus<cr>$/;"	m
+<Leader>gd	.config/nvim/init.vim	/^nmap <Leader>gd :Gdiff<cr>$/;"	m
+<Leader>gc	.config/nvim/init.vim	/^nmap <Leader>gc :Gcommit<cr>$/;"	m
+<Leader>gb	.config/nvim/init.vim	/^nmap <Leader>gb :Gblame<cr>$/;"	m
+<Leader>gl	.config/nvim/init.vim	/^nmap <Leader>gl :Glog<cr>$/;"	m
+<Leader>gp	.config/nvim/init.vim	/^nmap <Leader>gp :Git push<cr>$/;"	m
+<Leader>gm	.config/nvim/init.vim	/^nmap <Leader>gm :Merginal<cr>$/;"	m
+<Leader>gt	.config/nvim/init.vim	/^nmap <Leader>gt :Twiggy<cr>$/;"	m
+g:UltiSnipsExpandTrigger	.config/nvim/init.vim	/^let g:UltiSnipsExpandTrigger="<c-j>"$/;"	v
+g:UltiSnipsJumpForwardTrigger	.config/nvim/init.vim	/^let g:UltiSnipsJumpForwardTrigger="<c-j>"$/;"	v
+g:UltiSnipsJumpBackwardTrigger	.config/nvim/init.vim	/^let g:UltiSnipsJumpBackwardTrigger="<c-b>"$/;"	v
+g:ultisnips_php_scalar_types	.config/nvim/init.vim	/^let g:ultisnips_php_scalar_types = 1$/;"	v
+g:closetag_filenames	.config/nvim/init.vim	/^let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.twig'$/;"	v
+g:closetag_xhtml_filenames	.config/nvim/init.vim	/^let g:closetag_xhtml_filenames = '*.xhtml,*.jsx'$/;"	v
+g:closetag_filetypes	.config/nvim/init.vim	/^let g:closetag_filetypes = 'html,xhtml,phtml,*.twig'$/;"	v
+g:closetag_xhtml_filetypes	.config/nvim/init.vim	/^let g:closetag_xhtml_filetypes = 'xhtml,jsx'$/;"	v
+g:closetag_emptyTags_caseSensitive	.config/nvim/init.vim	/^let g:closetag_emptyTags_caseSensitive = 1$/;"	v
+g:closetag_shortcut	.config/nvim/init.vim	/^let g:closetag_shortcut = '>'$/;"	v
+g:closetag_close_shortcut	.config/nvim/init.vim	/^let g:closetag_close_shortcut = '<leader>>'$/;"	v
+<Leader>lm	.config/nvim/init.vim	/^nmap <Leader>lm :!php artisan make:$/;"	m
+<Leader><Leader>c	.config/nvim/init.vim	/^nmap <Leader><Leader>c :e app\/Http\/Controllers\/<cr>$/;"	m
+<Leader><Leader>m	.config/nvim/init.vim	/^nmap <Leader><Leader>m :e app\/<cr>$/;"	m
+<Leader><Leader>v	.config/nvim/init.vim	/^nmap <Leader><Leader>v :e resources\/views\/<cr>$/;"	m
+g:gutentags_ctags_executable	.config/nvim/init.vim	/^let g:gutentags_ctags_executable = 'exctags'$/;"	v
+MyGutentagsStatusLineRefresher	.config/nvim/init.vim	/^augroup MyGutentagsStatusLineRefresher$/;"	a
+g:pdv_template_dir	.config/nvim/init.vim	/^let g:pdv_template_dir = $HOME ."\/.vim\/plugged\/pdv\/templates_snip"$/;"	v
+<Leader>d	.config/nvim/init.vim	/^nnoremap <Leader>d :call pdv#DocumentWithSnip()<cr>$/;"	m
+g:php_namespace_sort_after_insert	.config/nvim/init.vim	/^let g:php_namespace_sort_after_insert = 1$/;"	v
+IPhpInsertUse	.config/nvim/init.vim	/^function! IPhpInsertUse()$/;"	f
+IPhpExpandClass	.config/nvim/init.vim	/^function! IPhpExpandClass()$/;"	f
+g:php_cs_fixer_level	.config/nvim/init.vim	/^let g:php_cs_fixer_level = "psr2"$/;"	v
+<leader>pf	.config/nvim/init.vim	/^nnoremap <silent><leader>pf :call PhpCsFixerFixFile()<CR>$/;"	m
+<leader>tn	.config/nvim/init.vim	/^nmap <silent> <leader>tn :TestNearest<CR>$/;"	m
+<leader>tf	.config/nvim/init.vim	/^nmap <silent> <leader>tf :TestFile<CR>$/;"	m
+<leader>ts	.config/nvim/init.vim	/^nmap <silent> <leader>ts :TestSuite<CR>$/;"	m
+<leader>tl	.config/nvim/init.vim	/^nmap <silent> <leader>tl :TestLast<CR>$/;"	m
+<leader>tg	.config/nvim/init.vim	/^nmap <silent> <leader>tg :TestVisit<CR>$/;"	m
+g:used_javascript_libs	.config/nvim/init.vim	/^let g:used_javascript_libs = 'jquery,vue'$/;"	v
+autosourcing	.config/nvim/init.vim	/^augroup autosourcing$/;"	a
+VimCSS3Syntax	.config/nvim/init.vim	/^augroup VimCSS3Syntax$/;"	a
+CmdLine	.config/nvim/init.vim	/^function! CmdLine(str)$/;"	f
+VisualSelection	.config/nvim/init.vim	/^function! VisualSelection(direction, extra_filter) range$/;"	f
+HasPaste	.config/nvim/init.vim	/^function! HasPaste()$/;"	f
+Bclose	.config/nvim/init.vim	/^command! Bclose call <SID>BufcloseCloseIt()$/;"	c
+BufcloseCloseIt	.config/nvim/init.vim	/^function! <SID>BufcloseCloseIt()$/;"	f
+g:lightline	.config/nvim/lightline.vim	/^ let g:lightline =  {$/;"	v
+LightlineModified	.config/nvim/lightline.vim	/^function! LightlineModified()$/;"	f
+LightlineReadonly	.config/nvim/lightline.vim	/^function! LightlineReadonly()$/;"	f
+LightlineFilename	.config/nvim/lightline.vim	/^function! LightlineFilename()$/;"	f
+LightlineFugitive	.config/nvim/lightline.vim	/^function! LightlineFugitive()$/;"	f
+LightlineFileformat	.config/nvim/lightline.vim	/^function! LightlineFileformat()$/;"	f
+LightlineFiletype	.config/nvim/lightline.vim	/^function! LightlineFiletype()$/;"	f
+LightlineFileencoding	.config/nvim/lightline.vim	/^function! LightlineFileencoding()$/;"	f
+LightlineMode	.config/nvim/lightline.vim	/^function! LightlineMode()$/;"	f
+g:tagbar_status_func	.config/nvim/lightline.vim	/^let g:tagbar_status_func = 'TagbarStatusFunc'$/;"	v
+TagbarStatusFunc	.config/nvim/lightline.vim	/^function! TagbarStatusFunc(current, sort, fname, ...) abort$/;"	f
+LightlineLinterWarnings	.config/nvim/lightline.vim	/^function! LightlineLinterWarnings() abort$/;"	f
+LightlineLinterErrors	.config/nvim/lightline.vim	/^function! LightlineLinterErrors() abort$/;"	f
+LightlineLinterOK	.config/nvim/lightline.vim	/^function! LightlineLinterOK() abort$/;"	f
+MaybeUpdateLightline	.config/nvim/lightline.vim	/^function! s:MaybeUpdateLightline()$/;"	f
+g:unite_force_overwrite_statusline	.config/nvim/lightline.vim	/^let g:unite_force_overwrite_statusline = 0$/;"	v
+g:vimfiler_force_overwrite_statusline	.config/nvim/lightline.vim	/^let g:vimfiler_force_overwrite_statusline = 0$/;"	v
+g:vimshell_force_overwrite_statusline	.config/nvim/lightline.vim	/^let g:vimshell_force_overwrite_statusline = 0$/;"	v
+g:lightline#ale#indicator_warnings	.config/nvim/lightline.vim	/^let g:lightline#ale#indicator_warnings = "▲"$/;"	v
+g:lightline#ale#indicator_errors	.config/nvim/lightline.vim	/^let g:lightline#ale#indicator_errors = "✗"$/;"	v
+DoRemote	.config/nvim/plugins.vim	/^function! DoRemote(arg)$/;"	f
+g:coc_global_extensions	.config/nvim/plugins.vim	/^let g:coc_global_extensions = [$/;"	v
+g:loaded_plug	.config/nvim/autoload/plug.vim	/^let g:loaded_plug = 1$/;"	v
+s:cpo_save	.config/nvim/autoload/plug.vim	/^let s:cpo_save = &cpo$/;"	v
+s:plug_src	.config/nvim/autoload/plug.vim	/^let s:plug_src = 'https:\/\/github.com\/junegunn\/vim-plug.git'$/;"	v
+s:plug_tab	.config/nvim/autoload/plug.vim	/^let s:plug_tab = get(s:, 'plug_tab', -1)$/;"	v
+s:plug_buf	.config/nvim/autoload/plug.vim	/^let s:plug_buf = get(s:, 'plug_buf', -1)$/;"	v
+s:mac_gui	.config/nvim/autoload/plug.vim	/^let s:mac_gui = has('gui_macvim') && has('gui_running')$/;"	v
+s:is_win	.config/nvim/autoload/plug.vim	/^let s:is_win = has('win32')$/;"	v
+s:nvim	.config/nvim/autoload/plug.vim	/^let s:nvim = has('nvim-0.2') || (has('nvim') && exists('*jobwait') && !s:is_win)$/;"	v
+s:vim8	.config/nvim/autoload/plug.vim	/^let s:vim8 = has('patch-8.0.0039') && exists('*job_start')$/;"	v
+s:me	.config/nvim/autoload/plug.vim	/^  let s:me = resolve(expand('<sfile>:p'))$/;"	v
+s:me	.config/nvim/autoload/plug.vim	/^  let s:me = resolve(expand('<sfile>:p'))$/;"	v
+s:base_spec	.config/nvim/autoload/plug.vim	/^let s:base_spec = { 'branch': '', 'frozen': 0 }$/;"	v
+s:TYPE	.config/nvim/autoload/plug.vim	/^let s:TYPE = {$/;"	v
+s:loaded	.config/nvim/autoload/plug.vim	/^let s:loaded = get(s:, 'loaded', {})$/;"	v
+s:triggers	.config/nvim/autoload/plug.vim	/^let s:triggers = get(s:, 'triggers', {})$/;"	v
+isabsolute	.config/nvim/autoload/plug.vim	/^function! s:isabsolute(dir) abort$/;"	f
+git_dir	.config/nvim/autoload/plug.vim	/^function! s:git_dir(dir) abort$/;"	f
+git_origin_url	.config/nvim/autoload/plug.vim	/^function! s:git_origin_url(dir) abort$/;"	f
+git_revision	.config/nvim/autoload/plug.vim	/^function! s:git_revision(dir) abort$/;"	f
+git_local_branch	.config/nvim/autoload/plug.vim	/^function! s:git_local_branch(dir) abort$/;"	f
+git_origin_branch	.config/nvim/autoload/plug.vim	/^function! s:git_origin_branch(spec)$/;"	f
+plug_call	.config/nvim/autoload/plug.vim	/^  function! s:plug_call(fn, ...)$/;"	f
+plug_call	.config/nvim/autoload/plug.vim	/^  function! s:plug_call(fn, ...)$/;"	f
+plug_getcwd	.config/nvim/autoload/plug.vim	/^function! s:plug_getcwd()$/;"	f
+plug_fnamemodify	.config/nvim/autoload/plug.vim	/^function! s:plug_fnamemodify(fname, mods)$/;"	f
+plug_expand	.config/nvim/autoload/plug.vim	/^function! s:plug_expand(fmt)$/;"	f
+plug_tempname	.config/nvim/autoload/plug.vim	/^function! s:plug_tempname()$/;"	f
+plug#begin	.config/nvim/autoload/plug.vim	/^function! plug#begin(...)$/;"	f
+define_commands	.config/nvim/autoload/plug.vim	/^function! s:define_commands()$/;"	f
+to_a	.config/nvim/autoload/plug.vim	/^function! s:to_a(v)$/;"	f
+to_s	.config/nvim/autoload/plug.vim	/^function! s:to_s(v)$/;"	f
+glob	.config/nvim/autoload/plug.vim	/^function! s:glob(from, pattern)$/;"	f
+source	.config/nvim/autoload/plug.vim	/^function! s:source(from, ...)$/;"	f
+assoc	.config/nvim/autoload/plug.vim	/^function! s:assoc(dict, key, val)$/;"	f
+ask	.config/nvim/autoload/plug.vim	/^function! s:ask(message, ...)$/;"	f
+ask_no_interrupt	.config/nvim/autoload/plug.vim	/^function! s:ask_no_interrupt(...)$/;"	f
+lazy	.config/nvim/autoload/plug.vim	/^function! s:lazy(plug, opt)$/;"	f
+plug#end	.config/nvim/autoload/plug.vim	/^function! plug#end()$/;"	f
+loaded_names	.config/nvim/autoload/plug.vim	/^function! s:loaded_names()$/;"	f
+load_plugin	.config/nvim/autoload/plug.vim	/^function! s:load_plugin(spec)$/;"	f
+reload_plugins	.config/nvim/autoload/plug.vim	/^function! s:reload_plugins()$/;"	f
+trim	.config/nvim/autoload/plug.vim	/^function! s:trim(str)$/;"	f
+version_requirement	.config/nvim/autoload/plug.vim	/^function! s:version_requirement(val, min)$/;"	f
+git_version_requirement	.config/nvim/autoload/plug.vim	/^function! s:git_version_requirement(...)$/;"	f
+progress_opt	.config/nvim/autoload/plug.vim	/^function! s:progress_opt(base)$/;"	f
+rtp	.config/nvim/autoload/plug.vim	/^function! s:rtp(spec)$/;"	f
+path	.config/nvim/autoload/plug.vim	/^  function! s:path(path)$/;"	f
+dirpath	.config/nvim/autoload/plug.vim	/^  function! s:dirpath(path)$/;"	f
+is_local_plug	.config/nvim/autoload/plug.vim	/^  function! s:is_local_plug(repo)$/;"	f
+wrap_cmds	.config/nvim/autoload/plug.vim	/^  function! s:wrap_cmds(cmds)$/;"	f
+batchfile	.config/nvim/autoload/plug.vim	/^  function! s:batchfile(cmd)$/;"	f
+path	.config/nvim/autoload/plug.vim	/^  function! s:path(path)$/;"	f
+dirpath	.config/nvim/autoload/plug.vim	/^  function! s:dirpath(path)$/;"	f
+is_local_plug	.config/nvim/autoload/plug.vim	/^  function! s:is_local_plug(repo)$/;"	f
+err	.config/nvim/autoload/plug.vim	/^function! s:err(msg)$/;"	f
+warn	.config/nvim/autoload/plug.vim	/^function! s:warn(cmd, msg)$/;"	f
+esc	.config/nvim/autoload/plug.vim	/^function! s:esc(path)$/;"	f
+escrtp	.config/nvim/autoload/plug.vim	/^function! s:escrtp(path)$/;"	f
+remove_rtp	.config/nvim/autoload/plug.vim	/^function! s:remove_rtp()$/;"	f
+reorg_rtp	.config/nvim/autoload/plug.vim	/^function! s:reorg_rtp()$/;"	f
+doautocmd	.config/nvim/autoload/plug.vim	/^function! s:doautocmd(...)$/;"	f
+dobufread	.config/nvim/autoload/plug.vim	/^function! s:dobufread(names)$/;"	f
+plug#load	.config/nvim/autoload/plug.vim	/^function! plug#load(...)$/;"	f
+remove_triggers	.config/nvim/autoload/plug.vim	/^function! s:remove_triggers(name)$/;"	f
+lod	.config/nvim/autoload/plug.vim	/^function! s:lod(names, types, ...)$/;"	f
+lod_ft	.config/nvim/autoload/plug.vim	/^function! s:lod_ft(pat, names)$/;"	f
+lod_cmd	.config/nvim/autoload/plug.vim	/^function! s:lod_cmd(cmd, bang, l1, l2, args, names)$/;"	f
+lod_map	.config/nvim/autoload/plug.vim	/^function! s:lod_map(map, names, with_prefix, prefix)$/;"	f
+plug#	.config/nvim/autoload/plug.vim	/^function! plug#(repo, ...)$/;"	f
+parse_options	.config/nvim/autoload/plug.vim	/^function! s:parse_options(arg)$/;"	f
+infer_properties	.config/nvim/autoload/plug.vim	/^function! s:infer_properties(name, repo)$/;"	f
+install	.config/nvim/autoload/plug.vim	/^function! s:install(force, names)$/;"	f
+update	.config/nvim/autoload/plug.vim	/^function! s:update(force, names)$/;"	f
+plug#helptags	.config/nvim/autoload/plug.vim	/^function! plug#helptags()$/;"	f
+syntax	.config/nvim/autoload/plug.vim	/^function! s:syntax()$/;"	f
+lpad	.config/nvim/autoload/plug.vim	/^function! s:lpad(str, len)$/;"	f
+lines	.config/nvim/autoload/plug.vim	/^function! s:lines(msg)$/;"	f
+lastline	.config/nvim/autoload/plug.vim	/^function! s:lastline(msg)$/;"	f
+new_window	.config/nvim/autoload/plug.vim	/^function! s:new_window()$/;"	f
+plug_window_exists	.config/nvim/autoload/plug.vim	/^function! s:plug_window_exists()$/;"	f
+switch_in	.config/nvim/autoload/plug.vim	/^function! s:switch_in()$/;"	f
+switch_out	.config/nvim/autoload/plug.vim	/^function! s:switch_out(...)$/;"	f
+finish_bindings	.config/nvim/autoload/plug.vim	/^function! s:finish_bindings()$/;"	f
+prepare	.config/nvim/autoload/plug.vim	/^function! s:prepare(...)$/;"	f
+assign_name	.config/nvim/autoload/plug.vim	/^function! s:assign_name()$/;"	f
+chsh	.config/nvim/autoload/plug.vim	/^function! s:chsh(swap)$/;"	f
+bang	.config/nvim/autoload/plug.vim	/^function! s:bang(cmd, ...)$/;"	f
+regress_bar	.config/nvim/autoload/plug.vim	/^function! s:regress_bar()$/;"	f
+is_updated	.config/nvim/autoload/plug.vim	/^function! s:is_updated(dir)$/;"	f
+do	.config/nvim/autoload/plug.vim	/^function! s:do(pull, force, todo)$/;"	f
+hash_match	.config/nvim/autoload/plug.vim	/^function! s:hash_match(a, b)$/;"	f
+checkout	.config/nvim/autoload/plug.vim	/^function! s:checkout(spec)$/;"	f
+finish	.config/nvim/autoload/plug.vim	/^function! s:finish(pull)$/;"	f
+retry	.config/nvim/autoload/plug.vim	/^function! s:retry()$/;"	f
+is_managed	.config/nvim/autoload/plug.vim	/^function! s:is_managed(name)$/;"	f
+names	.config/nvim/autoload/plug.vim	/^function! s:names(...)$/;"	f
+check_ruby	.config/nvim/autoload/plug.vim	/^function! s:check_ruby()$/;"	f
+update_impl	.config/nvim/autoload/plug.vim	/^function! s:update_impl(pull, force, args) abort$/;"	f
+log4	.config/nvim/autoload/plug.vim	/^function! s:log4(name, msg)$/;"	f
+update_finish	.config/nvim/autoload/plug.vim	/^function! s:update_finish()$/;"	f
+job_abort	.config/nvim/autoload/plug.vim	/^function! s:job_abort()$/;"	f
+last_non_empty_line	.config/nvim/autoload/plug.vim	/^function! s:last_non_empty_line(lines)$/;"	f
+job_out_cb	.config/nvim/autoload/plug.vim	/^function! s:job_out_cb(self, data) abort$/;"	f
+job_exit_cb	.config/nvim/autoload/plug.vim	/^function! s:job_exit_cb(self, data) abort$/;"	f
+job_cb	.config/nvim/autoload/plug.vim	/^function! s:job_cb(fn, job, ch, data)$/;"	f
+nvim_cb	.config/nvim/autoload/plug.vim	/^function! s:nvim_cb(job_id, data, event) dict abort$/;"	f
+spawn	.config/nvim/autoload/plug.vim	/^function! s:spawn(name, cmd, opts)$/;"	f
+reap	.config/nvim/autoload/plug.vim	/^function! s:reap(name)$/;"	f
+bar	.config/nvim/autoload/plug.vim	/^function! s:bar()$/;"	f
+logpos	.config/nvim/autoload/plug.vim	/^function! s:logpos(name)$/;"	f
+log	.config/nvim/autoload/plug.vim	/^function! s:log(bullet, name, lines)$/;"	f
+update_vim	.config/nvim/autoload/plug.vim	/^function! s:update_vim()$/;"	f
+tick	.config/nvim/autoload/plug.vim	/^function! s:tick()$/;"	f
+update_python	.config/nvim/autoload/plug.vim	/^function! s:update_python()$/;"	f
+update_ruby	.config/nvim/autoload/plug.vim	/^function! s:update_ruby()$/;"	f
+shellesc_cmd	.config/nvim/autoload/plug.vim	/^function! s:shellesc_cmd(arg, script)$/;"	f
+shellesc_ps1	.config/nvim/autoload/plug.vim	/^function! s:shellesc_ps1(arg)$/;"	f
+shellesc_sh	.config/nvim/autoload/plug.vim	/^function! s:shellesc_sh(arg)$/;"	f
+plug#shellescape	.config/nvim/autoload/plug.vim	/^function! plug#shellescape(arg, ...)$/;"	f
+glob_dir	.config/nvim/autoload/plug.vim	/^function! s:glob_dir(path)$/;"	f
+progress_bar	.config/nvim/autoload/plug.vim	/^function! s:progress_bar(line, bar, total)$/;"	f
+compare_git_uri	.config/nvim/autoload/plug.vim	/^function! s:compare_git_uri(a, b)$/;"	f
+format_message	.config/nvim/autoload/plug.vim	/^function! s:format_message(bullet, name, message)$/;"	f
+with_cd	.config/nvim/autoload/plug.vim	/^function! s:with_cd(cmd, dir, ...)$/;"	f
+system	.config/nvim/autoload/plug.vim	/^function! s:system(cmd, ...)$/;"	f
+system_chomp	.config/nvim/autoload/plug.vim	/^function! s:system_chomp(...)$/;"	f
+git_validate	.config/nvim/autoload/plug.vim	/^function! s:git_validate(spec, check_branch)$/;"	f
+rm_rf	.config/nvim/autoload/plug.vim	/^function! s:rm_rf(dir)$/;"	f
+clean	.config/nvim/autoload/plug.vim	/^function! s:clean(force)$/;"	f
+delete_op	.config/nvim/autoload/plug.vim	/^function! s:delete_op(type, ...)$/;"	f
+delete	.config/nvim/autoload/plug.vim	/^function! s:delete(range, force)$/;"	f
+upgrade	.config/nvim/autoload/plug.vim	/^function! s:upgrade()$/;"	f
+upgrade_specs	.config/nvim/autoload/plug.vim	/^function! s:upgrade_specs()$/;"	f
+status	.config/nvim/autoload/plug.vim	/^function! s:status()$/;"	f
+extract_name	.config/nvim/autoload/plug.vim	/^function! s:extract_name(str, prefix, suffix)$/;"	f
+status_load	.config/nvim/autoload/plug.vim	/^function! s:status_load(lnum)$/;"	f
+status_update	.config/nvim/autoload/plug.vim	/^function! s:status_update() range$/;"	f
+is_preview_window_open	.config/nvim/autoload/plug.vim	/^function! s:is_preview_window_open()$/;"	f
+find_name	.config/nvim/autoload/plug.vim	/^function! s:find_name(lnum)$/;"	f
+preview_commit	.config/nvim/autoload/plug.vim	/^function! s:preview_commit()$/;"	f
+section	.config/nvim/autoload/plug.vim	/^function! s:section(flags)$/;"	f
+format_git_log	.config/nvim/autoload/plug.vim	/^function! s:format_git_log(line)$/;"	f
+append_ul	.config/nvim/autoload/plug.vim	/^function! s:append_ul(lnum, text)$/;"	f
+diff	.config/nvim/autoload/plug.vim	/^function! s:diff()$/;"	f
+revert	.config/nvim/autoload/plug.vim	/^function! s:revert()$/;"	f
+snapshot	.config/nvim/autoload/plug.vim	/^function! s:snapshot(force, ...) abort$/;"	f
+split_rtp	.config/nvim/autoload/plug.vim	/^function! s:split_rtp()$/;"	f
+s:first_rtp	.config/nvim/autoload/plug.vim	/^let s:first_rtp = s:escrtp(get(s:split_rtp(), 0, ''))$/;"	v
+s:last_rtp	.config/nvim/autoload/plug.vim	/^let s:last_rtp  = s:escrtp(get(s:split_rtp(), -1, ''))$/;"	v
+g:plugs_order	.config/nvim/autoload/plug.vim	/^  let g:plugs_order = get(g:, 'plugs_order', keys(g:plugs))$/;"	v
+Installation instructions	.config/nvim/plugged/vim-session/INSTALL.md	/^# Installation instructions$/;"	h
+Installation using ZIP archives	.config/nvim/plugged/vim-session/INSTALL.md	/^## Installation using ZIP archives$/;"	i
+Installation using a Vim plug-in manager	.config/nvim/plugged/vim-session/INSTALL.md	/^## Installation using a Vim plug-in manager$/;"	i
+Extended session management for Vim	.config/nvim/plugged/vim-session/README.md	/^# Extended session management for Vim$/;"	h
+Installation	.config/nvim/plugged/vim-session/README.md	/^## Installation$/;"	i
+Commands	.config/nvim/plugged/vim-session/README.md	/^## Commands$/;"	i
+The `:SaveSession` command	.config/nvim/plugged/vim-session/README.md	/^### The `:SaveSession` command$/;"	k
+The `:OpenSession` command	.config/nvim/plugged/vim-session/README.md	/^### The `:OpenSession` command$/;"	k
+The `:RestartVim` command	.config/nvim/plugged/vim-session/README.md	/^### The `:RestartVim` command$/;"	k
+The `:CloseSession` command	.config/nvim/plugged/vim-session/README.md	/^### The `:CloseSession` command$/;"	k
+The `:DeleteSession` command	.config/nvim/plugged/vim-session/README.md	/^### The `:DeleteSession` command$/;"	k
+The `:ViewSession` command	.config/nvim/plugged/vim-session/README.md	/^### The `:ViewSession` command$/;"	k
+Tab scoped sessions	.config/nvim/plugged/vim-session/README.md	/^### Tab scoped sessions$/;"	k
+Options	.config/nvim/plugged/vim-session/README.md	/^## Options$/;"	i
+The `sessionoptions` setting	.config/nvim/plugged/vim-session/README.md	/^### The `sessionoptions` setting$/;"	k
+The `g:session_directory` option	.config/nvim/plugged/vim-session/README.md	/^### The `g:session_directory` option$/;"	k
+The `g:session_lock_directory` option	.config/nvim/plugged/vim-session/README.md	/^### The `g:session_lock_directory` option$/;"	k
+The `g:session_lock_enabled` option	.config/nvim/plugged/vim-session/README.md	/^### The `g:session_lock_enabled` option$/;"	k
+The `g:session_default_name` option	.config/nvim/plugged/vim-session/README.md	/^### The `g:session_default_name` option$/;"	k
+The `g:session_default_overwrite` option	.config/nvim/plugged/vim-session/README.md	/^### The `g:session_default_overwrite` option$/;"	k
+The `g:session_extension` option	.config/nvim/plugged/vim-session/README.md	/^### The `g:session_extension` option$/;"	k
+The `g:session_autoload` option	.config/nvim/plugged/vim-session/README.md	/^### The `g:session_autoload` option$/;"	k
+The `g:session_autosave` option	.config/nvim/plugged/vim-session/README.md	/^### The `g:session_autosave` option$/;"	k
+The `g:session_autosave_to` option	.config/nvim/plugged/vim-session/README.md	/^### The `g:session_autosave_to` option$/;"	k
+The `g:session_autosave_periodic` option	.config/nvim/plugged/vim-session/README.md	/^### The `g:session_autosave_periodic` option$/;"	k
+The `g:session_autosave_silent` option	.config/nvim/plugged/vim-session/README.md	/^### The `g:session_autosave_silent` option$/;"	k
+The `g:session_verbose_messages` option	.config/nvim/plugged/vim-session/README.md	/^### The `g:session_verbose_messages` option$/;"	k
+The `g:session_default_to_last` option	.config/nvim/plugged/vim-session/README.md	/^### The `g:session_default_to_last` option$/;"	k
+The `g:session_persist_font` option	.config/nvim/plugged/vim-session/README.md	/^### The `g:session_persist_font` option$/;"	k
+The `g:session_persist_colors` option	.config/nvim/plugged/vim-session/README.md	/^### The `g:session_persist_colors` option$/;"	k
+The `g:session_persist_globals` option	.config/nvim/plugged/vim-session/README.md	/^### The `g:session_persist_globals` option$/;"	k
+The `g:session_restart_environment` option	.config/nvim/plugged/vim-session/README.md	/^### The `g:session_restart_environment` option$/;"	k
+The `g:session_command_aliases` option	.config/nvim/plugged/vim-session/README.md	/^### The `g:session_command_aliases` option$/;"	k
+The `g:session_menu` option	.config/nvim/plugged/vim-session/README.md	/^### The `g:session_menu` option$/;"	k
+The `g:session_name_suggestion_function` option	.config/nvim/plugged/vim-session/README.md	/^### The `g:session_name_suggestion_function` option$/;"	k
+The `g:loaded_session` option	.config/nvim/plugged/vim-session/README.md	/^### The `g:loaded_session` option$/;"	k
+Compatibility with other plug-ins	.config/nvim/plugged/vim-session/README.md	/^## Compatibility with other plug-ins$/;"	i
+Function reference	.config/nvim/plugged/vim-session/README.md	/^## Function reference$/;"	i
+Public API for the vim-session plug-in	.config/nvim/plugged/vim-session/README.md	/^### Public API for the vim-session plug-in$/;"	k
+Example function for session name suggestions	.config/nvim/plugged/vim-session/README.md	/^### Example function for session name suggestions$/;"	k
+Troubleshooting	.config/nvim/plugged/vim-session/README.md	/^## Troubleshooting$/;"	i
+Using multiple platforms (multi boot, Cygwin, etc.)	.config/nvim/plugged/vim-session/README.md	/^### Using multiple platforms (multi boot, Cygwin, etc.)$/;"	k
+Contact	.config/nvim/plugged/vim-session/README.md	/^## Contact$/;"	i
+License	.config/nvim/plugged/vim-session/README.md	/^## License$/;"	i
+Sample session script	.config/nvim/plugged/vim-session/README.md	/^## Sample session script$/;"	i
+To-do list	.config/nvim/plugged/vim-session/TODO.md	/^# To-do list$/;"	h
+g:xolox#session#version	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^let g:xolox#session#version = '2.13.1'$/;"	v
+xolox#session#save_session	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! xolox#session#save_session(commands, filename) " {{{2$/;"	f
+xolox#session#save_globals	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! xolox#session#save_globals(commands) " {{{2$/;"	f
+xolox#session#save_features	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! xolox#session#save_features(commands) " {{{2$/;"	f
+xolox#session#save_colors	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! xolox#session#save_colors(commands) " {{{2$/;"	f
+xolox#session#save_fullscreen	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! xolox#session#save_fullscreen(commands) " {{{2$/;"	f
+xolox#session#save_qflist	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! xolox#session#save_qflist(commands) " {{{2$/;"	f
+xolox#session#save_state	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! xolox#session#save_state(commands) " {{{2$/;"	f
+eat_trailing_line	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! s:eat_trailing_line(session, line) " {{{3$/;"	f
+tabpage_filter	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! s:tabpage_filter(buffers, line) " {{{3$/;"	f
+state_filter	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! s:state_filter(line) " {{{3$/;"	f
+xolox#session#save_special_windows	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! xolox#session#save_special_windows(session) " {{{2$/;"	f
+check_special_tabpage	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! s:check_special_tabpage(session)$/;"	f
+check_special_window	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! s:check_special_window(session)$/;"	f
+jump_to_window	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! s:jump_to_window(session, tabpage, window)$/;"	f
+nerdtree_persist	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! s:nerdtree_persist()$/;"	f
+cleanup_after_plugin	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! s:cleanup_after_plugin(commands, bufnr_var)$/;"	f
+xolox#session#auto_load	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! xolox#session#auto_load() " {{{2$/;"	f
+xolox#session#is_empty	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! xolox#session#is_empty() " {{{2$/;"	f
+xolox#session#auto_save	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! xolox#session#auto_save() " {{{2$/;"	f
+xolox#session#auto_save_periodic	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! xolox#session#auto_save_periodic() " {{{2$/;"	f
+flush_session	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! s:flush_session()$/;"	f
+xolox#session#auto_unlock	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! xolox#session#auto_unlock() " {{{2$/;"	f
+prompt	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! s:prompt(msg, choices, option_name)$/;"	f
+xolox#session#open_cmd	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! xolox#session#open_cmd(name, bang, command) abort " {{{2$/;"	f
+xolox#session#view_cmd	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! xolox#session#view_cmd(name) abort " {{{2$/;"	f
+xolox#session#save_cmd	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! xolox#session#save_cmd(name, bang, command) abort " {{{2$/;"	f
+xolox#session#delete_cmd	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! xolox#session#delete_cmd(name, bang) " {{{2$/;"	f
+xolox#session#close_cmd	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! xolox#session#close_cmd(bang, silent, save_allowed, command) abort " {{{2$/;"	f
+xolox#session#open_tab_cmd	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! xolox#session#open_tab_cmd(name, bang, command) abort " {{{2$/;"	f
+xolox#session#save_tab_cmd	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! xolox#session#save_tab_cmd(name, bang, command) abort " {{{2$/;"	f
+xolox#session#append_tab_cmd	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! xolox#session#append_tab_cmd(name, bang, count, command) abort " {{{2$/;"	f
+xolox#session#close_tab_cmd	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! xolox#session#close_tab_cmd(bang, command) abort " {{{2$/;"	f
+xolox#session#restart_cmd	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! xolox#session#restart_cmd(bang, args) abort " {{{2$/;"	f
+unescape	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! s:unescape(s) " {{{2$/;"	f
+xolox#session#prompt_for_name	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! xolox#session#prompt_for_name(action) " {{{2$/;"	f
+xolox#session#name_to_path	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! xolox#session#name_to_path(name) " {{{2$/;"	f
+xolox#session#path_to_name	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! xolox#session#path_to_name(path) " {{{2$/;"	f
+xolox#session#get_names	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! xolox#session#get_names(include_suggestions) " {{{2$/;"	f
+xolox#session#complete_names	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! xolox#session#complete_names(arg, line, pos) " {{{2$/;"	f
+xolox#session#complete_names_with_suggestions	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! xolox#session#complete_names_with_suggestions(arg, line, pos) " {{{2$/;"	f
+xolox#session#is_tab_scoped	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! xolox#session#is_tab_scoped() " {{{2$/;"	f
+xolox#session#find_current_session	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! xolox#session#find_current_session() " {{{2$/;"	f
+xolox#session#get_label	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! xolox#session#get_label(name, is_tab_scoped) " {{{2$/;"	f
+xolox#session#options_include	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! xolox#session#options_include(value) " {{{2$/;"	f
+xolox#session#include_tabs	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! xolox#session#include_tabs() " {{{3$/;"	f
+xolox#session#change_tab_options	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! xolox#session#change_tab_options() " {{{3$/;"	f
+xolox#session#restore_tab_options	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! xolox#session#restore_tab_options() " {{{3$/;"	f
+last_session_file	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! s:last_session_file()$/;"	f
+last_session_persist	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! s:last_session_persist(name)$/;"	f
+last_session_forget	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! s:last_session_forget()$/;"	f
+get_last_or_default_session	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! s:get_last_or_default_session()$/;"	f
+s:lock_files	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^  let s:lock_files = []$/;"	v
+xolox#session#locking_enabled	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! xolox#session#locking_enabled()$/;"	f
+vim_instance_id	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! s:vim_instance_id()$/;"	f
+lock_file_path	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! s:lock_file_path(session_path)$/;"	f
+lock_session	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! s:lock_session(session_path)$/;"	f
+unlock_session	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! s:unlock_session(session_path)$/;"	f
+session_is_locked	.config/nvim/plugged/vim-session/autoload/xolox/session.vim	/^function! s:session_is_locked(session_name, command)$/;"	f
+xolox#session#suggestions#vcs_feature_branch	.config/nvim/plugged/vim-session/autoload/xolox/session/suggestions.vim	/^function! xolox#session#suggestions#vcs_feature_branch() " {{{1$/;"	f
+xolox#session#suggestions#find_vcs_repository	.config/nvim/plugged/vim-session/autoload/xolox/session/suggestions.vim	/^function! xolox#session#suggestions#find_vcs_repository()$/;"	f
+g:loaded_session	.config/nvim/plugged/vim-session/plugin/session.vim	/^  let g:loaded_session = 1$/;"	v
+g:session_default_name	.config/nvim/plugged/vim-session/plugin/session.vim	/^  let g:session_default_name = 'default'$/;"	v
+g:session_default_overwrite	.config/nvim/plugged/vim-session/plugin/session.vim	/^  let g:session_default_overwrite = 0$/;"	v
+g:session_extension	.config/nvim/plugged/vim-session/plugin/session.vim	/^  let g:session_extension = '.vim'$/;"	v
+g:session_autoload	.config/nvim/plugged/vim-session/plugin/session.vim	/^  let g:session_autoload = 'prompt'$/;"	v
+g:session_autosave	.config/nvim/plugged/vim-session/plugin/session.vim	/^  let g:session_autosave = 'prompt'$/;"	v
+g:session_autosave_periodic	.config/nvim/plugged/vim-session/plugin/session.vim	/^  let g:session_autosave_periodic = 0$/;"	v
+g:session_verbose_messages	.config/nvim/plugged/vim-session/plugin/session.vim	/^  let g:session_verbose_messages = 1$/;"	v
+g:session_default_to_last	.config/nvim/plugged/vim-session/plugin/session.vim	/^  let g:session_default_to_last = 0$/;"	v
+g:session_persist_globals	.config/nvim/plugged/vim-session/plugin/session.vim	/^  let g:session_persist_globals = []$/;"	v
+g:session_restart_environment	.config/nvim/plugged/vim-session/plugin/session.vim	/^  let g:session_restart_environment = ['TERM', 'VIM', 'VIMRUNTIME']$/;"	v
+g:session_directory	.config/nvim/plugged/vim-session/plugin/session.vim	/^    let g:session_directory = '~\\vimfiles\\sessions'$/;"	v
+g:session_directory	.config/nvim/plugged/vim-session/plugin/session.vim	/^    let g:session_directory = '~\/.vim\/sessions'$/;"	v
+g:session_command_aliases	.config/nvim/plugged/vim-session/plugin/session.vim	/^  let g:session_command_aliases = 0$/;"	v
+g:session_menu	.config/nvim/plugged/vim-session/plugin/session.vim	/^  let g:session_menu = 1$/;"	v
+g:session_persist_colors	.config/nvim/plugged/vim-session/plugin/session.vim	/^  let g:session_persist_colors = 1$/;"	v
+g:session_name_suggestion_function	.config/nvim/plugged/vim-session/plugin/session.vim	/^  let g:session_name_suggestion_function = 'xolox#session#suggestions#vcs_feature_branch'$/;"	v
+s:directory	.config/nvim/plugged/vim-session/plugin/session.vim	/^let s:directory = fnamemodify(g:session_directory, ':p')$/;"	v
+s:msg	.config/nvim/plugged/vim-session/plugin/session.vim	/^  let s:msg = "session.vim %s: The sessions directory %s isn't writable!"$/;"	v
+PluginSession	.config/nvim/plugged/vim-session/plugin/session.vim	/^augroup PluginSession$/;"	a
+OpenSession	.config/nvim/plugged/vim-session/plugin/session.vim	/^command! -bar -bang -nargs=? -complete=customlist,xolox#session#complete_names OpenSession call xolox#session#open_cmd(<q-args>, <q-bang>, 'OpenSession')$/;"	c
+ViewSession	.config/nvim/plugged/vim-session/plugin/session.vim	/^command! -bar -nargs=? -complete=customlist,xolox#session#complete_names ViewSession call xolox#session#view_cmd(<q-args>)$/;"	c
+SaveSession	.config/nvim/plugged/vim-session/plugin/session.vim	/^command! -bar -bang -nargs=? -complete=customlist,xolox#session#complete_names_with_suggestions SaveSession call xolox#session#save_cmd(<q-args>, <q-bang>, 'SaveSession')$/;"	c
+DeleteSession	.config/nvim/plugged/vim-session/plugin/session.vim	/^command! -bar -bang -nargs=? -complete=customlist,xolox#session#complete_names DeleteSession call xolox#session#delete_cmd(<q-args>, <q-bang>)$/;"	c
+CloseSession	.config/nvim/plugged/vim-session/plugin/session.vim	/^command! -bar -bang CloseSession call xolox#session#close_cmd(<q-bang>, 0, 1, 'CloseSession')$/;"	c
+OpenTabSession	.config/nvim/plugged/vim-session/plugin/session.vim	/^command! -bar -bang -nargs=? -complete=customlist,xolox#session#complete_names OpenTabSession call xolox#session#open_tab_cmd(<q-args>, <q-bang>, 'OpenTabSession')$/;"	c
+SaveTabSession	.config/nvim/plugged/vim-session/plugin/session.vim	/^command! -bar -bang -nargs=? -complete=customlist,xolox#session#complete_names SaveTabSession call xolox#session#save_tab_cmd(<q-args>, <q-bang>, 'SaveTabSession')$/;"	c
+AppendTabSession	.config/nvim/plugged/vim-session/plugin/session.vim	/^command! -bar -bang -range=-1 -nargs=? -complete=customlist,xolox#session#complete_names AppendTabSession call xolox#session#append_tab_cmd(<q-args>, <q-bang>, <count>, 'AppendTabSession')$/;"	c
+CloseTabSession	.config/nvim/plugged/vim-session/plugin/session.vim	/^command! -bar -bang CloseTabSession call xolox#session#close_tab_cmd(<q-bang>, 'CloseTabSession')$/;"	c
+RestartVim	.config/nvim/plugged/vim-session/plugin/session.vim	/^command! -bang -nargs=* -complete=command RestartVim call xolox#session#restart_cmd(<q-bang>, <q-args>)$/;"	c
+SessionOpen	.config/nvim/plugged/vim-session/plugin/session.vim	/^  command! -bar -bang -nargs=? -complete=customlist,xolox#session#complete_names SessionOpen call xolox#session#open_cmd(<q-args>, <q-bang>, 'SessionOpen')$/;"	c
+SessionView	.config/nvim/plugged/vim-session/plugin/session.vim	/^  command! -bar -nargs=? -complete=customlist,xolox#session#complete_names SessionView call xolox#session#view_cmd(<q-args>)$/;"	c
+SessionSave	.config/nvim/plugged/vim-session/plugin/session.vim	/^  command! -bar -bang -nargs=? -complete=customlist,xolox#session#complete_names SessionSave call xolox#session#save_cmd(<q-args>, <q-bang>, 'SessionSave')$/;"	c
+SessionDelete	.config/nvim/plugged/vim-session/plugin/session.vim	/^  command! -bar -bang -nargs=? -complete=customlist,xolox#session#complete_names SessionDelete call xolox#session#delete_cmd(<q-args>, <q-bang>)$/;"	c
+SessionClose	.config/nvim/plugged/vim-session/plugin/session.vim	/^  command! -bar -bang SessionClose call xolox#session#close_cmd(<q-bang>, 0, 1, 'SessionClose')$/;"	c
+SessionTabOpen	.config/nvim/plugged/vim-session/plugin/session.vim	/^  command! -bar -bang -nargs=? -complete=customlist,xolox#session#complete_names SessionTabOpen call xolox#session#open_tab_cmd(<q-args>, <q-bang>, 'SessionTabOpen')$/;"	c
+SessionTabSave	.config/nvim/plugged/vim-session/plugin/session.vim	/^  command! -bar -bang -nargs=? -complete=customlist,xolox#session#complete_names SessionTabSave call xolox#session#save_tab_cmd(<q-args>, <q-bang>, 'SessionTabSave')$/;"	c
+SessionTabAppend	.config/nvim/plugged/vim-session/plugin/session.vim	/^  command! -bar -bang -range=-1 -nargs=? -complete=customlist,xolox#session#complete_names SessionTabAppend call xolox#session#append_tab_cmd(<q-args>, <q-bang>, <count>, 'SessionTabAppend')$/;"	c
+SessionTabClose	.config/nvim/plugged/vim-session/plugin/session.vim	/^  command! -bar -bang SessionTabClose call xolox#session#close_tab_cmd(<q-bang>, 'SessionTabClose')$/;"	c
+g:loaded_session	.config/nvim/plugged/vim-session/plugin/session.vim	/^let g:loaded_session = 1$/;"	v
+Why?	.config/nvim/plugged/coc.nvim/Readme.md	/^## Why?$/;"	i
+Quick Start	.config/nvim/plugged/coc.nvim/Readme.md	/^## Quick Start$/;"	i
+Example vim configuration	.config/nvim/plugged/coc.nvim/Readme.md	/^## Example vim configuration$/;"	i
+Articles	.config/nvim/plugged/coc.nvim/Readme.md	/^## Articles$/;"	i
+Trouble shooting	.config/nvim/plugged/coc.nvim/Readme.md	/^## Trouble shooting$/;"	i
+Feedback	.config/nvim/plugged/coc.nvim/Readme.md	/^## Feedback$/;"	i
+License	.config/nvim/plugged/coc.nvim/Readme.md	/^## License$/;"	i
+value	.config/nvim/plugged/coc.nvim/build/index.js	/^  value: function () {$/;"	M
+msg	.config/nvim/plugged/coc.nvim/build/index.js	/^  let msg = 'Uncaught exception: ' + err.message$/;"	V
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = {$/;"	P
+R	.config/nvim/plugged/coc.nvim/build/index.js	/^let R = 0$/;"	V
+createToken	.config/nvim/plugged/coc.nvim/build/index.js	/^const createToken = (name, value, isGlobal) => {$/;"	F
+SEMVER_SPEC_VERSION	.config/nvim/plugged/coc.nvim/build/index.js	/^const SEMVER_SPEC_VERSION = '2.0.0'$/;"	V
+MAX_LENGTH	.config/nvim/plugged/coc.nvim/build/index.js	/^const MAX_LENGTH = 256$/;"	V
+MAX_SAFE_COMPONENT_LENGTH	.config/nvim/plugged/coc.nvim/build/index.js	/^const MAX_SAFE_COMPONENT_LENGTH = 16$/;"	V
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = {$/;"	P
+debug	.config/nvim/plugged/coc.nvim/build/index.js	/^const debug = ($/;"	F
+SemVer	.config/nvim/plugged/coc.nvim/build/index.js	/^class SemVer {$/;"	C
+includePrerelease	.config/nvim/plugged/coc.nvim/build/index.js	/^        includePrerelease: false$/;"	P
+i	.config/nvim/plugged/coc.nvim/build/index.js	/^    let i = 0$/;"	V
+i	.config/nvim/plugged/coc.nvim/build/index.js	/^    let i = 0$/;"	V
+numeric	.config/nvim/plugged/coc.nvim/build/index.js	/^const numeric = \/^[0-9]+$\/$/;"	V
+compareIdentifiers	.config/nvim/plugged/coc.nvim/build/index.js	/^const compareIdentifiers = (a, b) => {$/;"	F
+rcompareIdentifiers	.config/nvim/plugged/coc.nvim/build/index.js	/^const rcompareIdentifiers = (a, b) => compareIdentifiers(b, a)$/;"	F
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = {$/;"	P
+parse	.config/nvim/plugged/coc.nvim/build/index.js	/^const parse = (version, options) => {$/;"	F
+includePrerelease	.config/nvim/plugged/coc.nvim/build/index.js	/^      includePrerelease: false$/;"	P
+valid	.config/nvim/plugged/coc.nvim/build/index.js	/^const valid = (version, options) => {$/;"	F
+clean	.config/nvim/plugged/coc.nvim/build/index.js	/^const clean = (version, options) => {$/;"	F
+inc	.config/nvim/plugged/coc.nvim/build/index.js	/^const inc = (version, release, options, identifier) => {$/;"	F
+diff	.config/nvim/plugged/coc.nvim/build/index.js	/^const diff = (version1, version2) => {$/;"	F
+eq	.config/nvim/plugged/coc.nvim/build/index.js	/^const eq = (a, b, loose) => compare(a, b, loose) === 0$/;"	F
+compare	.config/nvim/plugged/coc.nvim/build/index.js	/^const compare = (a, b, loose) =>$/;"	F
+major	.config/nvim/plugged/coc.nvim/build/index.js	/^const major = (a, loose) => new SemVer(a, loose).major$/;"	F
+minor	.config/nvim/plugged/coc.nvim/build/index.js	/^const minor = (a, loose) => new SemVer(a, loose).minor$/;"	F
+patch	.config/nvim/plugged/coc.nvim/build/index.js	/^const patch = (a, loose) => new SemVer(a, loose).patch$/;"	F
+prerelease	.config/nvim/plugged/coc.nvim/build/index.js	/^const prerelease = (version, options) => {$/;"	F
+rcompare	.config/nvim/plugged/coc.nvim/build/index.js	/^const rcompare = (a, b, loose) => compare(b, a, loose)$/;"	F
+compareLoose	.config/nvim/plugged/coc.nvim/build/index.js	/^const compareLoose = (a, b) => compare(a, b, true)$/;"	F
+compareBuild	.config/nvim/plugged/coc.nvim/build/index.js	/^const compareBuild = (a, b, loose) => {$/;"	F
+versionA	.config/nvim/plugged/coc.nvim/build/index.js	/^  const versionA = new SemVer(a, loose)$/;"	V
+versionB	.config/nvim/plugged/coc.nvim/build/index.js	/^  const versionB = new SemVer(b, loose)$/;"	V
+sort	.config/nvim/plugged/coc.nvim/build/index.js	/^const sort = (list, loose) => list.sort((a, b) => compareBuild(a, b, loose))$/;"	F
+rsort	.config/nvim/plugged/coc.nvim/build/index.js	/^const rsort = (list, loose) => list.sort((a, b) => compareBuild(b, a, loose))$/;"	F
+gt	.config/nvim/plugged/coc.nvim/build/index.js	/^const gt = (a, b, loose) => compare(a, b, loose) > 0$/;"	F
+lt	.config/nvim/plugged/coc.nvim/build/index.js	/^const lt = (a, b, loose) => compare(a, b, loose) < 0$/;"	F
+neq	.config/nvim/plugged/coc.nvim/build/index.js	/^const neq = (a, b, loose) => compare(a, b, loose) !== 0$/;"	F
+gte	.config/nvim/plugged/coc.nvim/build/index.js	/^const gte = (a, b, loose) => compare(a, b, loose) >= 0$/;"	F
+lte	.config/nvim/plugged/coc.nvim/build/index.js	/^const lte = (a, b, loose) => compare(a, b, loose) <= 0$/;"	F
+cmp	.config/nvim/plugged/coc.nvim/build/index.js	/^const cmp = (a, op, b, loose) => {$/;"	F
+coerce	.config/nvim/plugged/coc.nvim/build/index.js	/^const coerce = (version, options) => {$/;"	F
+Comparator	.config/nvim/plugged/coc.nvim/build/index.js	/^class Comparator {$/;"	C
+includePrerelease	.config/nvim/plugged/coc.nvim/build/index.js	/^        includePrerelease: false$/;"	P
+includePrerelease	.config/nvim/plugged/coc.nvim/build/index.js	/^        includePrerelease: false$/;"	P
+Range	.config/nvim/plugged/coc.nvim/build/index.js	/^class Range {$/;"	C
+includePrerelease	.config/nvim/plugged/coc.nvim/build/index.js	/^        includePrerelease: false$/;"	P
+isSatisfiable	.config/nvim/plugged/coc.nvim/build/index.js	/^const isSatisfiable = (comparators, options) => {$/;"	F
+parseComparator	.config/nvim/plugged/coc.nvim/build/index.js	/^const parseComparator = (comp, options) => {$/;"	F
+isX	.config/nvim/plugged/coc.nvim/build/index.js	/^const isX = id => !id || id.toLowerCase() === 'x' || id === '*'$/;"	F
+replaceTildes	.config/nvim/plugged/coc.nvim/build/index.js	/^const replaceTildes = (comp, options) =>$/;"	F
+replaceTilde	.config/nvim/plugged/coc.nvim/build/index.js	/^const replaceTilde = (comp, options) => {$/;"	F
+replaceCarets	.config/nvim/plugged/coc.nvim/build/index.js	/^const replaceCarets = (comp, options) =>$/;"	F
+replaceCaret	.config/nvim/plugged/coc.nvim/build/index.js	/^const replaceCaret = (comp, options) => {$/;"	F
+replaceXRanges	.config/nvim/plugged/coc.nvim/build/index.js	/^const replaceXRanges = (comp, options) => {$/;"	F
+replaceXRange	.config/nvim/plugged/coc.nvim/build/index.js	/^const replaceXRange = (comp, options) => {$/;"	F
+replaceStars	.config/nvim/plugged/coc.nvim/build/index.js	/^const replaceStars = (comp, options) => {$/;"	F
+replaceGTE0	.config/nvim/plugged/coc.nvim/build/index.js	/^const replaceGTE0 = (comp, options) => {$/;"	F
+hyphenReplace	.config/nvim/plugged/coc.nvim/build/index.js	/^const hyphenReplace = incPr => ($0,$/;"	F
+testSet	.config/nvim/plugged/coc.nvim/build/index.js	/^const testSet = (set, version, options) => {$/;"	F
+satisfies	.config/nvim/plugged/coc.nvim/build/index.js	/^const satisfies = (version, range, options) => {$/;"	F
+toComparators	.config/nvim/plugged/coc.nvim/build/index.js	/^const toComparators = (range, options) =>$/;"	F
+maxSatisfying	.config/nvim/plugged/coc.nvim/build/index.js	/^const maxSatisfying = (versions, range, options) => {$/;"	F
+minSatisfying	.config/nvim/plugged/coc.nvim/build/index.js	/^const minSatisfying = (versions, range, options) => {$/;"	F
+minVersion	.config/nvim/plugged/coc.nvim/build/index.js	/^const minVersion = (range, loose) => {$/;"	F
+minver	.config/nvim/plugged/coc.nvim/build/index.js	/^  let minver = new SemVer('0.0.0')$/;"	V
+compver	.config/nvim/plugged/coc.nvim/build/index.js	/^      const compver = new SemVer(comparator.semver.version)$/;"	V
+validRange	.config/nvim/plugged/coc.nvim/build/index.js	/^const validRange = (range, options) => {$/;"	F
+outside	.config/nvim/plugged/coc.nvim/build/index.js	/^const outside = (version, range, hilo, options) => {$/;"	F
+gtfn	.config/nvim/plugged/coc.nvim/build/index.js	/^  let gtfn, ltefn, ltfn, comp, ecomp$/;"	V
+ltefn	.config/nvim/plugged/coc.nvim/build/index.js	/^  let gtfn, ltefn, ltfn, comp, ecomp$/;"	V
+ltfn	.config/nvim/plugged/coc.nvim/build/index.js	/^  let gtfn, ltefn, ltfn, comp, ecomp$/;"	V
+ltefn	.config/nvim/plugged/coc.nvim/build/index.js	/^        ltefn(version, low.semver)) {$/;"	M
+gtr	.config/nvim/plugged/coc.nvim/build/index.js	/^const gtr = (version, range, options) => outside(version, range, '>', options)$/;"	F
+ltr	.config/nvim/plugged/coc.nvim/build/index.js	/^const ltr = (version, range, options) => outside(version, range, '<', options)$/;"	F
+intersects	.config/nvim/plugged/coc.nvim/build/index.js	/^const intersects = (r1, r2, options) => {$/;"	F
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = (versions, range, options) => {$/;"	M
+set	.config/nvim/plugged/coc.nvim/build/index.js	/^  const set = []$/;"	A
+ranges	.config/nvim/plugged/coc.nvim/build/index.js	/^  const ranges = []$/;"	A
+subset	.config/nvim/plugged/coc.nvim/build/index.js	/^const subset = (sub, dom, options) => {$/;"	F
+simpleSubset	.config/nvim/plugged/coc.nvim/build/index.js	/^const simpleSubset = (sub, dom, options) => {$/;"	F
+eqSet	.config/nvim/plugged/coc.nvim/build/index.js	/^  const eqSet = new Set()$/;"	V
+gt	.config/nvim/plugged/coc.nvim/build/index.js	/^  let gt, lt$/;"	V
+lt	.config/nvim/plugged/coc.nvim/build/index.js	/^  let gt, lt$/;"	V
+higher	.config/nvim/plugged/coc.nvim/build/index.js	/^  let higher, lower$/;"	V
+lower	.config/nvim/plugged/coc.nvim/build/index.js	/^  let higher, lower$/;"	V
+hasDomLT	.config/nvim/plugged/coc.nvim/build/index.js	/^  let hasDomLT, hasDomGT$/;"	V
+hasDomGT	.config/nvim/plugged/coc.nvim/build/index.js	/^  let hasDomLT, hasDomGT$/;"	V
+higherGT	.config/nvim/plugged/coc.nvim/build/index.js	/^const higherGT = (a, b, options) => {$/;"	F
+lowerLT	.config/nvim/plugged/coc.nvim/build/index.js	/^const lowerLT = (a, b, options) => {$/;"	F
+getPolyfill	.config/nvim/plugged/coc.nvim/build/index.js	/^	getPolyfill: getPolyfill,$/;"	P
+implementation	.config/nvim/plugged/coc.nvim/build/index.js	/^	implementation: implementation,$/;"	P
+shim	.config/nvim/plugged/coc.nvim/build/index.js	/^	shim: shim$/;"	P
+ERROR_MESSAGE	.config/nvim/plugged/coc.nvim/build/index.js	/^var ERROR_MESSAGE = 'Function.prototype.bind called on incompatible ';$/;"	V
+funcType	.config/nvim/plugged/coc.nvim/build/index.js	/^var funcType = '[object Function]';$/;"	V
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = function bind(that) {$/;"	M
+bound	.config/nvim/plugged/coc.nvim/build/index.js	/^    var bound;$/;"	V
+binder	.config/nvim/plugged/coc.nvim/build/index.js	/^    var binder = function () {$/;"	F
+boundArgs	.config/nvim/plugged/coc.nvim/build/index.js	/^    var boundArgs = [];$/;"	A
+Empty	.config/nvim/plugged/coc.nvim/build/index.js	/^        var Empty = function Empty() {};$/;"	C
+isFunction	.config/nvim/plugged/coc.nvim/build/index.js	/^var isFunction = function (fn) {$/;"	F
+arePropertyDescriptorsSupported	.config/nvim/plugged/coc.nvim/build/index.js	/^var arePropertyDescriptorsSupported = function () {$/;"	F
+obj	.config/nvim/plugged/coc.nvim/build/index.js	/^	var obj = {};$/;"	O
+defineProperty	.config/nvim/plugged/coc.nvim/build/index.js	/^var defineProperty = function (object, name, value, predicate) {$/;"	F
+configurable	.config/nvim/plugged/coc.nvim/build/index.js	/^			configurable: true,$/;"	P
+enumerable	.config/nvim/plugged/coc.nvim/build/index.js	/^			enumerable: false,$/;"	P
+value	.config/nvim/plugged/coc.nvim/build/index.js	/^			value: value,$/;"	P
+writable	.config/nvim/plugged/coc.nvim/build/index.js	/^			writable: true$/;"	P
+defineProperties	.config/nvim/plugged/coc.nvim/build/index.js	/^var defineProperties = function (object, map) {$/;"	F
+shim	.config/nvim/plugged/coc.nvim/build/index.js	/^keysShim.shim = function shimObjectKeys() {$/;"	M
+keys	.config/nvim/plugged/coc.nvim/build/index.js	/^			Object.keys = function keys(object) { \/\/ eslint-disable-line func-name-matching$/;"	M
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = function isArguments(value) {$/;"	M
+keysShim	.config/nvim/plugged/coc.nvim/build/index.js	/^var keysShim;$/;"	V
+dontEnums	.config/nvim/plugged/coc.nvim/build/index.js	/^	var dontEnums = [$/;"	A
+equalsConstructorPrototype	.config/nvim/plugged/coc.nvim/build/index.js	/^	var equalsConstructorPrototype = function (o) {$/;"	F
+excludedKeys	.config/nvim/plugged/coc.nvim/build/index.js	/^	var excludedKeys = {$/;"	O
+$applicationCache	.config/nvim/plugged/coc.nvim/build/index.js	/^		$applicationCache: true,$/;"	P
+$console	.config/nvim/plugged/coc.nvim/build/index.js	/^		$console: true,$/;"	P
+$external	.config/nvim/plugged/coc.nvim/build/index.js	/^		$external: true,$/;"	P
+$frame	.config/nvim/plugged/coc.nvim/build/index.js	/^		$frame: true,$/;"	P
+$frameElement	.config/nvim/plugged/coc.nvim/build/index.js	/^		$frameElement: true,$/;"	P
+$frames	.config/nvim/plugged/coc.nvim/build/index.js	/^		$frames: true,$/;"	P
+$innerHeight	.config/nvim/plugged/coc.nvim/build/index.js	/^		$innerHeight: true,$/;"	P
+$innerWidth	.config/nvim/plugged/coc.nvim/build/index.js	/^		$innerWidth: true,$/;"	P
+$onmozfullscreenchange	.config/nvim/plugged/coc.nvim/build/index.js	/^		$onmozfullscreenchange: true,$/;"	P
+$onmozfullscreenerror	.config/nvim/plugged/coc.nvim/build/index.js	/^		$onmozfullscreenerror: true,$/;"	P
+$outerHeight	.config/nvim/plugged/coc.nvim/build/index.js	/^		$outerHeight: true,$/;"	P
+$outerWidth	.config/nvim/plugged/coc.nvim/build/index.js	/^		$outerWidth: true,$/;"	P
+$pageXOffset	.config/nvim/plugged/coc.nvim/build/index.js	/^		$pageXOffset: true,$/;"	P
+$pageYOffset	.config/nvim/plugged/coc.nvim/build/index.js	/^		$pageYOffset: true,$/;"	P
+$parent	.config/nvim/plugged/coc.nvim/build/index.js	/^		$parent: true,$/;"	P
+$scrollLeft	.config/nvim/plugged/coc.nvim/build/index.js	/^		$scrollLeft: true,$/;"	P
+$scrollTop	.config/nvim/plugged/coc.nvim/build/index.js	/^		$scrollTop: true,$/;"	P
+$scrollX	.config/nvim/plugged/coc.nvim/build/index.js	/^		$scrollX: true,$/;"	P
+$scrollY	.config/nvim/plugged/coc.nvim/build/index.js	/^		$scrollY: true,$/;"	P
+$self	.config/nvim/plugged/coc.nvim/build/index.js	/^		$self: true,$/;"	P
+$webkitIndexedDB	.config/nvim/plugged/coc.nvim/build/index.js	/^		$webkitIndexedDB: true,$/;"	P
+$webkitStorageInfo	.config/nvim/plugged/coc.nvim/build/index.js	/^		$webkitStorageInfo: true,$/;"	P
+$window	.config/nvim/plugged/coc.nvim/build/index.js	/^		$window: true$/;"	P
+equalsConstructorPrototypeIfNotBuggy	.config/nvim/plugged/coc.nvim/build/index.js	/^	var equalsConstructorPrototypeIfNotBuggy = function (o) {$/;"	F
+theKeys	.config/nvim/plugged/coc.nvim/build/index.js	/^		var theKeys = [];$/;"	A
+promiseResolve	.config/nvim/plugged/coc.nvim/build/index.js	/^var promiseResolve = function PromiseResolve(C, value) {$/;"	F
+createThenFinally	.config/nvim/plugged/coc.nvim/build/index.js	/^var createThenFinally = function CreateThenFinally(C, onFinally) {$/;"	F
+valueThunk	.config/nvim/plugged/coc.nvim/build/index.js	/^		var valueThunk = function () {$/;"	F
+createCatchFinally	.config/nvim/plugged/coc.nvim/build/index.js	/^var createCatchFinally = function CreateCatchFinally(C, onFinally) {$/;"	F
+thrower	.config/nvim/plugged/coc.nvim/build/index.js	/^		var thrower = function () {$/;"	F
+promiseFinally	.config/nvim/plugged/coc.nvim/build/index.js	/^var promiseFinally = function finally_(onFinally) {$/;"	F
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = function requirePromise() {$/;"	M
+constructorRegex	.config/nvim/plugged/coc.nvim/build/index.js	/^var constructorRegex = \/^\\s*class\\b\/;$/;"	V
+isES6ClassFn	.config/nvim/plugged/coc.nvim/build/index.js	/^var isES6ClassFn = function isES6ClassFunction(value) {$/;"	F
+tryFunctionObject	.config/nvim/plugged/coc.nvim/build/index.js	/^var tryFunctionObject = function tryFunctionToStr(value) {$/;"	F
+fnClass	.config/nvim/plugged/coc.nvim/build/index.js	/^var fnClass = '[object Function]';$/;"	V
+genClass	.config/nvim/plugged/coc.nvim/build/index.js	/^var genClass = '[object GeneratorFunction]';$/;"	V
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = function isCallable(value) {$/;"	M
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = function SpeciesConstructor(O, defaultConstructor) {$/;"	M
+undefined	.config/nvim/plugged/coc.nvim/build/index.js	/^var undefined;$/;"	V
+throwTypeError	.config/nvim/plugged/coc.nvim/build/index.js	/^var throwTypeError = function () { throw new $TypeError(); };$/;"	F
+generator	.config/nvim/plugged/coc.nvim/build/index.js	/^var generator; \/\/ = function * () {};$/;"	V
+asyncFn	.config/nvim/plugged/coc.nvim/build/index.js	/^var asyncFn; \/\/ async function() {};$/;"	V
+asyncGen	.config/nvim/plugged/coc.nvim/build/index.js	/^var asyncGen; \/\/ async function * () {};$/;"	V
+INTRINSICS	.config/nvim/plugged/coc.nvim/build/index.js	/^var INTRINSICS = {$/;"	O
+rePropName	.config/nvim/plugged/coc.nvim/build/index.js	/^var rePropName = \/[^%.[\\]]+|\\[(?:(-?\\d+(?:\\.\\d+)?)|(["'])((?:(?!\\2)[^\\\\]|\\\\.)*?)\\2)\\]|(?=(?:\\.|\\[\\])(?:\\.|\\[\\]|%$))\/g;$/;"	V
+reEscapeChar	.config/nvim/plugged/coc.nvim/build/index.js	/^var reEscapeChar = \/\\\\(\\\\)?\/g; \/** Used to match backslashes in property paths. *\/$/;"	V
+stringToPath	.config/nvim/plugged/coc.nvim/build/index.js	/^var stringToPath = function stringToPath(string) {$/;"	F
+result	.config/nvim/plugged/coc.nvim/build/index.js	/^	var result = [];$/;"	A
+$replace	.config/nvim/plugged/coc.nvim/build/index.js	/^	$replace(string, rePropName, function (match, number, quote, subString) {$/;"	M
+getBaseIntrinsic	.config/nvim/plugged/coc.nvim/build/index.js	/^var getBaseIntrinsic = function getBaseIntrinsic(name, allowMissing) {$/;"	F
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = function GetIntrinsic(name, allowMissing) {$/;"	M
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = function hasNativeSymbols() {$/;"	M
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = function hasSymbols() {$/;"	M
+obj	.config/nvim/plugged/coc.nvim/build/index.js	/^	var obj = {};$/;"	O
+symVal	.config/nvim/plugged/coc.nvim/build/index.js	/^	var symVal = 42;$/;"	V
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = function IsConstructor(argument) {$/;"	M
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = function Type(x) {$/;"	M
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = function Type(x) {$/;"	M
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = function getPolyfill() {$/;"	M
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = function shimPromiseFinally() {$/;"	M
+getLogFile	.config/nvim/plugged/coc.nvim/build/index.js	/^function getLogFile() {$/;"	F
+MAX_LOG_SIZE	.config/nvim/plugged/coc.nvim/build/index.js	/^const MAX_LOG_SIZE = 1024 * 1024;$/;"	V
+MAX_LOG_BACKUPS	.config/nvim/plugged/coc.nvim/build/index.js	/^const MAX_LOG_BACKUPS = 10;$/;"	V
+disableClustering	.config/nvim/plugged/coc.nvim/build/index.js	/^    disableClustering: true,$/;"	P
+appenders	.config/nvim/plugged/coc.nvim/build/index.js	/^    appenders: {$/;"	P
+out	.config/nvim/plugged/coc.nvim/build/index.js	/^        out: {$/;"	P
+mode	.config/nvim/plugged/coc.nvim/build/index.js	/^            mode: 0o666,$/;"	P
+filename	.config/nvim/plugged/coc.nvim/build/index.js	/^            filename: logfile,$/;"	P
+maxLogSize	.config/nvim/plugged/coc.nvim/build/index.js	/^            maxLogSize: MAX_LOG_SIZE,$/;"	P
+backups	.config/nvim/plugged/coc.nvim/build/index.js	/^            backups: MAX_LOG_BACKUPS,$/;"	P
+layout	.config/nvim/plugged/coc.nvim/build/index.js	/^            layout: {$/;"	P
+categories	.config/nvim/plugged/coc.nvim/build/index.js	/^    categories: {$/;"	P
+default	.config/nvim/plugged/coc.nvim/build/index.js	/^        default: { appenders: ['out'], level }$/;"	P
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = (name = 'coc-nvim') => {$/;"	M
+getLogFile	.config/nvim/plugged/coc.nvim/build/index.js	/^    logger.getLogFile = () => logfile;$/;"	M
+extendStatics	.config/nvim/plugged/coc.nvim/build/index.js	/^var extendStatics = function(d, b) {$/;"	F
+__extends	.config/nvim/plugged/coc.nvim/build/index.js	/^function __extends(d, b) {$/;"	F
+__	.config/nvim/plugged/coc.nvim/build/index.js	/^    function __() { this.constructor = d; }$/;"	F
+__rest	.config/nvim/plugged/coc.nvim/build/index.js	/^function __rest(s, e) {$/;"	F
+t	.config/nvim/plugged/coc.nvim/build/index.js	/^    var t = {};$/;"	O
+__decorate	.config/nvim/plugged/coc.nvim/build/index.js	/^function __decorate(decorators, target, key, desc) {$/;"	F
+__param	.config/nvim/plugged/coc.nvim/build/index.js	/^function __param(paramIndex, decorator) {$/;"	F
+__metadata	.config/nvim/plugged/coc.nvim/build/index.js	/^function __metadata(metadataKey, metadataValue) {$/;"	F
+__awaiter	.config/nvim/plugged/coc.nvim/build/index.js	/^function __awaiter(thisArg, _arguments, P, generator) {$/;"	F
+adopt	.config/nvim/plugged/coc.nvim/build/index.js	/^    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }$/;"	F
+fulfilled	.config/nvim/plugged/coc.nvim/build/index.js	/^        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }$/;"	F
+rejected	.config/nvim/plugged/coc.nvim/build/index.js	/^        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }$/;"	F
+step	.config/nvim/plugged/coc.nvim/build/index.js	/^        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }$/;"	F
+__generator	.config/nvim/plugged/coc.nvim/build/index.js	/^function __generator(thisArg, body) {$/;"	F
+_	.config/nvim/plugged/coc.nvim/build/index.js	/^    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;$/;"	O
+verb	.config/nvim/plugged/coc.nvim/build/index.js	/^    function verb(n) { return function (v) { return step([n, v]); }; }$/;"	F
+step	.config/nvim/plugged/coc.nvim/build/index.js	/^    function step(op) {$/;"	F
+__exportStar	.config/nvim/plugged/coc.nvim/build/index.js	/^function __exportStar(m, o) {$/;"	F
+__values	.config/nvim/plugged/coc.nvim/build/index.js	/^function __values(o) {$/;"	F
+next	.config/nvim/plugged/coc.nvim/build/index.js	/^        next: function () {$/;"	M
+__read	.config/nvim/plugged/coc.nvim/build/index.js	/^function __read(o, n) {$/;"	F
+__spread	.config/nvim/plugged/coc.nvim/build/index.js	/^function __spread() {$/;"	F
+__spreadArrays	.config/nvim/plugged/coc.nvim/build/index.js	/^function __spreadArrays() {$/;"	F
+__await	.config/nvim/plugged/coc.nvim/build/index.js	/^function __await(v) {$/;"	F
+__asyncGenerator	.config/nvim/plugged/coc.nvim/build/index.js	/^function __asyncGenerator(thisArg, _arguments, generator) {$/;"	F
+verb	.config/nvim/plugged/coc.nvim/build/index.js	/^    function verb(n) { if (g[n]) i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; }$/;"	F
+resume	.config/nvim/plugged/coc.nvim/build/index.js	/^    function resume(n, v) { try { step(g[n](v)); } catch (e) { settle(q[0][3], e); } }$/;"	F
+step	.config/nvim/plugged/coc.nvim/build/index.js	/^    function step(r) { r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r); }$/;"	F
+fulfill	.config/nvim/plugged/coc.nvim/build/index.js	/^    function fulfill(value) { resume("next", value); }$/;"	F
+reject	.config/nvim/plugged/coc.nvim/build/index.js	/^    function reject(value) { resume("throw", value); }$/;"	F
+settle	.config/nvim/plugged/coc.nvim/build/index.js	/^    function settle(f, v) { if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]); }$/;"	F
+__asyncDelegator	.config/nvim/plugged/coc.nvim/build/index.js	/^function __asyncDelegator(o) {$/;"	F
+i	.config/nvim/plugged/coc.nvim/build/index.js	/^    var i, p;$/;"	V
+p	.config/nvim/plugged/coc.nvim/build/index.js	/^    var i, p;$/;"	V
+verb	.config/nvim/plugged/coc.nvim/build/index.js	/^    function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: __await(o[n](v)), done: n === "return" } : f ? f(v) : v; } : f; }$/;"	F
+__asyncValues	.config/nvim/plugged/coc.nvim/build/index.js	/^function __asyncValues(o) {$/;"	F
+verb	.config/nvim/plugged/coc.nvim/build/index.js	/^    function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }$/;"	F
+settle	.config/nvim/plugged/coc.nvim/build/index.js	/^    function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }$/;"	F
+__makeTemplateObject	.config/nvim/plugged/coc.nvim/build/index.js	/^function __makeTemplateObject(cooked, raw) {$/;"	F
+__importStar	.config/nvim/plugged/coc.nvim/build/index.js	/^function __importStar(mod) {$/;"	F
+result	.config/nvim/plugged/coc.nvim/build/index.js	/^    var result = {};$/;"	O
+__importDefault	.config/nvim/plugged/coc.nvim/build/index.js	/^function __importDefault(mod) {$/;"	F
+__classPrivateFieldGet	.config/nvim/plugged/coc.nvim/build/index.js	/^function __classPrivateFieldGet(receiver, privateMap) {$/;"	F
+__classPrivateFieldSet	.config/nvim/plugged/coc.nvim/build/index.js	/^function __classPrivateFieldSet(receiver, privateMap, value) {$/;"	F
+sendLogEventToAppender	.config/nvim/plugged/coc.nvim/build/index.js	/^function sendLogEventToAppender(logEvent) {$/;"	F
+loadConfigurationFile	.config/nvim/plugged/coc.nvim/build/index.js	/^function loadConfigurationFile(filename) {$/;"	F
+configure	.config/nvim/plugged/coc.nvim/build/index.js	/^function configure(configurationFileOrObject) {$/;"	F
+shutdown	.config/nvim/plugged/coc.nvim/build/index.js	/^function shutdown(cb) {$/;"	F
+completed	.config/nvim/plugged/coc.nvim/build/index.js	/^  let completed = 0;$/;"	V
+error	.config/nvim/plugged/coc.nvim/build/index.js	/^  let error;$/;"	V
+complete	.config/nvim/plugged/coc.nvim/build/index.js	/^  function complete(err) {$/;"	F
+getLogger	.config/nvim/plugged/coc.nvim/build/index.js	/^function getLogger(category) {$/;"	F
+appenders	.config/nvim/plugged/coc.nvim/build/index.js	/^        appenders: { out: { type: "stdout" } },$/;"	P
+categories	.config/nvim/plugged/coc.nvim/build/index.js	/^        categories: { default: { appenders: ["out"], level: "OFF" } }$/;"	P
+log4js	.config/nvim/plugged/coc.nvim/build/index.js	/^const log4js = {$/;"	O
+useColors	.config/nvim/plugged/coc.nvim/build/index.js	/^function useColors() {$/;"	F
+formatArgs	.config/nvim/plugged/coc.nvim/build/index.js	/^function formatArgs(args) {$/;"	F
+c	.config/nvim/plugged/coc.nvim/build/index.js	/^	const c = 'color: ' + this.color;$/;"	V
+index	.config/nvim/plugged/coc.nvim/build/index.js	/^	let index = 0;$/;"	V
+lastC	.config/nvim/plugged/coc.nvim/build/index.js	/^	let lastC = 0;$/;"	V
+log	.config/nvim/plugged/coc.nvim/build/index.js	/^function log(...args) {$/;"	F
+save	.config/nvim/plugged/coc.nvim/build/index.js	/^function save(namespaces) {$/;"	F
+XXX	.config/nvim/plugged/coc.nvim/build/index.js	/^		\/\/ XXX (@Qix-) should we be logging these?$/;"	T
+load	.config/nvim/plugged/coc.nvim/build/index.js	/^function load() {$/;"	F
+r	.config/nvim/plugged/coc.nvim/build/index.js	/^	let r;$/;"	V
+XXX	.config/nvim/plugged/coc.nvim/build/index.js	/^		\/\/ XXX (@Qix-) should we be logging these?$/;"	T
+localstorage	.config/nvim/plugged/coc.nvim/build/index.js	/^function localstorage() {$/;"	F
+XXX	.config/nvim/plugged/coc.nvim/build/index.js	/^		\/\/ XXX (@Qix-) should we be logging these?$/;"	T
+j	.config/nvim/plugged/coc.nvim/build/index.js	/^formatters.j = function (v) {$/;"	M
+setup	.config/nvim/plugged/coc.nvim/build/index.js	/^function setup(env) {$/;"	F
+formatters	.config/nvim/plugged/coc.nvim/build/index.js	/^	createDebug.formatters = {};$/;"	P
+selectColor	.config/nvim/plugged/coc.nvim/build/index.js	/^	function selectColor(namespace) {$/;"	F
+hash	.config/nvim/plugged/coc.nvim/build/index.js	/^		let hash = 0;$/;"	V
+hash	.config/nvim/plugged/coc.nvim/build/index.js	/^			hash = ((hash << 5) - hash) + namespace.charCodeAt(i);$/;"	M
+createDebug	.config/nvim/plugged/coc.nvim/build/index.js	/^	function createDebug(namespace) {$/;"	F
+prevTime	.config/nvim/plugged/coc.nvim/build/index.js	/^		let prevTime;$/;"	V
+debug	.config/nvim/plugged/coc.nvim/build/index.js	/^		function debug(...args) {$/;"	F
+index	.config/nvim/plugged/coc.nvim/build/index.js	/^			let index = 0;$/;"	V
+destroy	.config/nvim/plugged/coc.nvim/build/index.js	/^	function destroy() {$/;"	F
+extend	.config/nvim/plugged/coc.nvim/build/index.js	/^	function extend(namespace, delimiter) {$/;"	F
+enable	.config/nvim/plugged/coc.nvim/build/index.js	/^	function enable(namespaces) {$/;"	F
+i	.config/nvim/plugged/coc.nvim/build/index.js	/^		let i;$/;"	V
+disable	.config/nvim/plugged/coc.nvim/build/index.js	/^	function disable() {$/;"	F
+namespaces	.config/nvim/plugged/coc.nvim/build/index.js	/^		const namespaces = [$/;"	A
+enabled	.config/nvim/plugged/coc.nvim/build/index.js	/^	function enabled(name) {$/;"	F
+i	.config/nvim/plugged/coc.nvim/build/index.js	/^		let i;$/;"	V
+len	.config/nvim/plugged/coc.nvim/build/index.js	/^		let len;$/;"	V
+toNamespace	.config/nvim/plugged/coc.nvim/build/index.js	/^	function toNamespace(regexp) {$/;"	F
+coerce	.config/nvim/plugged/coc.nvim/build/index.js	/^	function coerce(val) {$/;"	F
+s	.config/nvim/plugged/coc.nvim/build/index.js	/^var s = 1000;$/;"	V
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = function(val, options) {$/;"	M
+parse	.config/nvim/plugged/coc.nvim/build/index.js	/^function parse(str) {$/;"	F
+match	.config/nvim/plugged/coc.nvim/build/index.js	/^  var match = \/^(-?(?:\\d+)?\\.?\\d+) *(milliseconds?|msecs?|ms|seconds?|secs?|s|minutes?|mins?|m|hours?|hrs?|h|days?|d|weeks?|w|years?|yrs?|y)?$\/i.exec($/;"	V
+fmtShort	.config/nvim/plugged/coc.nvim/build/index.js	/^function fmtShort(ms) {$/;"	F
+fmtLong	.config/nvim/plugged/coc.nvim/build/index.js	/^function fmtLong(ms) {$/;"	F
+plural	.config/nvim/plugged/coc.nvim/build/index.js	/^function plural(ms, msAbs, n, name) {$/;"	F
+useColors	.config/nvim/plugged/coc.nvim/build/index.js	/^function useColors() {$/;"	F
+formatArgs	.config/nvim/plugged/coc.nvim/build/index.js	/^function formatArgs(args) {$/;"	F
+colorCode	.config/nvim/plugged/coc.nvim/build/index.js	/^		const colorCode = '\\u001B[3' + (c < 8 ? c : '8;5;' + c);$/;"	V
+getDate	.config/nvim/plugged/coc.nvim/build/index.js	/^function getDate() {$/;"	F
+log	.config/nvim/plugged/coc.nvim/build/index.js	/^function log(...args) {$/;"	F
+save	.config/nvim/plugged/coc.nvim/build/index.js	/^function save(namespaces) {$/;"	F
+load	.config/nvim/plugged/coc.nvim/build/index.js	/^function load() {$/;"	F
+init	.config/nvim/plugged/coc.nvim/build/index.js	/^function init(debug) {$/;"	F
+inspectOpts	.config/nvim/plugged/coc.nvim/build/index.js	/^	debug.inspectOpts = {};$/;"	P
+o	.config/nvim/plugged/coc.nvim/build/index.js	/^formatters.o = function (v) {$/;"	M
+O	.config/nvim/plugged/coc.nvim/build/index.js	/^formatters.O = function (v) {$/;"	M
+forceColor	.config/nvim/plugged/coc.nvim/build/index.js	/^let forceColor;$/;"	V
+hasFlag	.config/nvim/plugged/coc.nvim/build/index.js	/^	hasFlag('color=never')) {$/;"	M
+hasFlag	.config/nvim/plugged/coc.nvim/build/index.js	/^	hasFlag('color=always')) {$/;"	M
+translateLevel	.config/nvim/plugged/coc.nvim/build/index.js	/^function translateLevel(level) {$/;"	F
+hasBasic	.config/nvim/plugged/coc.nvim/build/index.js	/^		hasBasic: true,$/;"	P
+supportsColor	.config/nvim/plugged/coc.nvim/build/index.js	/^function supportsColor(haveStream, streamIsTTY) {$/;"	F
+hasFlag	.config/nvim/plugged/coc.nvim/build/index.js	/^		hasFlag('color=truecolor')) {$/;"	M
+getSupportLevel	.config/nvim/plugged/coc.nvim/build/index.js	/^function getSupportLevel(stream) {$/;"	F
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = {$/;"	P
+supportsColor	.config/nvim/plugged/coc.nvim/build/index.js	/^	supportsColor: getSupportLevel,$/;"	P
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = (flag, argv = process.argv) => {$/;"	M
+rfdc	.config/nvim/plugged/coc.nvim/build/index.js	/^function rfdc (opts) {$/;"	F
+cloneArray	.config/nvim/plugged/coc.nvim/build/index.js	/^  function cloneArray (a, fn) {$/;"	F
+a2	.config/nvim/plugged/coc.nvim/build/index.js	/^    var a2 = new Array(keys.length)$/;"	V
+clone	.config/nvim/plugged/coc.nvim/build/index.js	/^  function clone (o) {$/;"	F
+o2	.config/nvim/plugged/coc.nvim/build/index.js	/^    var o2 = {}$/;"	O
+cloneProto	.config/nvim/plugged/coc.nvim/build/index.js	/^  function cloneProto (o) {$/;"	F
+o2	.config/nvim/plugged/coc.nvim/build/index.js	/^    var o2 = {}$/;"	O
+rfdcCircles	.config/nvim/plugged/coc.nvim/build/index.js	/^function rfdcCircles (opts) {$/;"	F
+refs	.config/nvim/plugged/coc.nvim/build/index.js	/^  var refs = []$/;"	A
+refsNew	.config/nvim/plugged/coc.nvim/build/index.js	/^  var refsNew = []$/;"	A
+cloneArray	.config/nvim/plugged/coc.nvim/build/index.js	/^  function cloneArray (a, fn) {$/;"	F
+a2	.config/nvim/plugged/coc.nvim/build/index.js	/^    var a2 = new Array(keys.length)$/;"	V
+clone	.config/nvim/plugged/coc.nvim/build/index.js	/^  function clone (o) {$/;"	F
+o2	.config/nvim/plugged/coc.nvim/build/index.js	/^    var o2 = {}$/;"	O
+cloneProto	.config/nvim/plugged/coc.nvim/build/index.js	/^  function cloneProto (o) {$/;"	F
+o2	.config/nvim/plugged/coc.nvim/build/index.js	/^    var o2 = {}$/;"	O
+preProcessingListeners	.config/nvim/plugged/coc.nvim/build/index.js	/^const preProcessingListeners = [];$/;"	A
+listeners	.config/nvim/plugged/coc.nvim/build/index.js	/^const listeners = [];$/;"	A
+not	.config/nvim/plugged/coc.nvim/build/index.js	/^const not = thing => !thing;$/;"	F
+anObject	.config/nvim/plugged/coc.nvim/build/index.js	/^const anObject = thing => thing && typeof thing === 'object' && !Array.isArray(thing);$/;"	F
+validIdentifier	.config/nvim/plugged/coc.nvim/build/index.js	/^const validIdentifier = thing => \/^[A-Za-z][A-Za-z0-9_]*$\/g.test(thing);$/;"	F
+anInteger	.config/nvim/plugged/coc.nvim/build/index.js	/^const anInteger = thing => thing && typeof thing === 'number' && Number.isInteger(thing);$/;"	F
+addListener	.config/nvim/plugged/coc.nvim/build/index.js	/^const addListener = (fn) => {$/;"	F
+addPreProcessingListener	.config/nvim/plugged/coc.nvim/build/index.js	/^const addPreProcessingListener = (fn) => {$/;"	F
+throwExceptionIf	.config/nvim/plugged/coc.nvim/build/index.js	/^const throwExceptionIf = (config, checks, message) => {$/;"	F
+configure	.config/nvim/plugged/coc.nvim/build/index.js	/^const configure = (candidate) => {$/;"	F
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = {$/;"	P
+styles	.config/nvim/plugged/coc.nvim/build/index.js	/^const styles = {$/;"	O
+bold	.config/nvim/plugged/coc.nvim/build/index.js	/^  bold: [1, 22],$/;"	P
+italic	.config/nvim/plugged/coc.nvim/build/index.js	/^  italic: [3, 23],$/;"	P
+underline	.config/nvim/plugged/coc.nvim/build/index.js	/^  underline: [4, 24],$/;"	P
+inverse	.config/nvim/plugged/coc.nvim/build/index.js	/^  inverse: [7, 27],$/;"	P
+white	.config/nvim/plugged/coc.nvim/build/index.js	/^  white: [37, 39],$/;"	P
+grey	.config/nvim/plugged/coc.nvim/build/index.js	/^  grey: [90, 39],$/;"	P
+black	.config/nvim/plugged/coc.nvim/build/index.js	/^  black: [90, 39],$/;"	P
+blue	.config/nvim/plugged/coc.nvim/build/index.js	/^  blue: [34, 39],$/;"	P
+cyan	.config/nvim/plugged/coc.nvim/build/index.js	/^  cyan: [36, 39],$/;"	P
+green	.config/nvim/plugged/coc.nvim/build/index.js	/^  green: [32, 39],$/;"	P
+magenta	.config/nvim/plugged/coc.nvim/build/index.js	/^  magenta: [35, 39],$/;"	P
+red	.config/nvim/plugged/coc.nvim/build/index.js	/^  red: [91, 39],$/;"	P
+yellow	.config/nvim/plugged/coc.nvim/build/index.js	/^  yellow: [33, 39]$/;"	P
+colorizeStart	.config/nvim/plugged/coc.nvim/build/index.js	/^function colorizeStart(style) {$/;"	F
+colorizeEnd	.config/nvim/plugged/coc.nvim/build/index.js	/^function colorizeEnd(style) {$/;"	F
+colorize	.config/nvim/plugged/coc.nvim/build/index.js	/^function colorize(str, style) {$/;"	F
+timestampLevelAndCategory	.config/nvim/plugged/coc.nvim/build/index.js	/^function timestampLevelAndCategory(loggingEvent, colour) {$/;"	F
+basicLayout	.config/nvim/plugged/coc.nvim/build/index.js	/^function basicLayout(loggingEvent) {$/;"	F
+colouredLayout	.config/nvim/plugged/coc.nvim/build/index.js	/^function colouredLayout(loggingEvent) {$/;"	F
+messagePassThroughLayout	.config/nvim/plugged/coc.nvim/build/index.js	/^function messagePassThroughLayout(loggingEvent) {$/;"	F
+dummyLayout	.config/nvim/plugged/coc.nvim/build/index.js	/^function dummyLayout(loggingEvent) {$/;"	F
+patternLayout	.config/nvim/plugged/coc.nvim/build/index.js	/^function patternLayout(pattern, tokens) {$/;"	F
+TTCC_CONVERSION_PATTERN	.config/nvim/plugged/coc.nvim/build/index.js	/^  const TTCC_CONVERSION_PATTERN = '%r %p %c - %m%n';$/;"	V
+regex	.config/nvim/plugged/coc.nvim/build/index.js	/^  const regex = \/%(-?[0-9]+)?(\\.?-?[0-9]+)?([[\\]cdhmnprzxXyflos%])(\\{([^}]+)\\})?|([^%]+)\/;$/;"	V
+categoryName	.config/nvim/plugged/coc.nvim/build/index.js	/^  function categoryName(loggingEvent, specifier) {$/;"	F
+formatAsDate	.config/nvim/plugged/coc.nvim/build/index.js	/^  function formatAsDate(loggingEvent, specifier) {$/;"	F
+hostname	.config/nvim/plugged/coc.nvim/build/index.js	/^  function hostname() {$/;"	F
+formatMessage	.config/nvim/plugged/coc.nvim/build/index.js	/^  function formatMessage(loggingEvent) {$/;"	F
+endOfLine	.config/nvim/plugged/coc.nvim/build/index.js	/^  function endOfLine() {$/;"	F
+logLevel	.config/nvim/plugged/coc.nvim/build/index.js	/^  function logLevel(loggingEvent) {$/;"	F
+startTime	.config/nvim/plugged/coc.nvim/build/index.js	/^  function startTime(loggingEvent) {$/;"	F
+startColour	.config/nvim/plugged/coc.nvim/build/index.js	/^  function startColour(loggingEvent) {$/;"	F
+endColour	.config/nvim/plugged/coc.nvim/build/index.js	/^  function endColour(loggingEvent) {$/;"	F
+percent	.config/nvim/plugged/coc.nvim/build/index.js	/^  function percent() {$/;"	F
+pid	.config/nvim/plugged/coc.nvim/build/index.js	/^  function pid(loggingEvent) {$/;"	F
+clusterInfo	.config/nvim/plugged/coc.nvim/build/index.js	/^  function clusterInfo() {$/;"	F
+userDefined	.config/nvim/plugged/coc.nvim/build/index.js	/^  function userDefined(loggingEvent, specifier) {$/;"	F
+contextDefined	.config/nvim/plugged/coc.nvim/build/index.js	/^  function contextDefined(loggingEvent, specifier) {$/;"	F
+fileName	.config/nvim/plugged/coc.nvim/build/index.js	/^  function fileName(loggingEvent, specifier) {$/;"	F
+lineNumber	.config/nvim/plugged/coc.nvim/build/index.js	/^  function lineNumber(loggingEvent) {$/;"	F
+columnNumber	.config/nvim/plugged/coc.nvim/build/index.js	/^  function columnNumber(loggingEvent) {$/;"	F
+callStack	.config/nvim/plugged/coc.nvim/build/index.js	/^  function callStack(loggingEvent) {$/;"	F
+replacers	.config/nvim/plugged/coc.nvim/build/index.js	/^  const replacers = {$/;"	O
+c	.config/nvim/plugged/coc.nvim/build/index.js	/^    c: categoryName,$/;"	P
+d	.config/nvim/plugged/coc.nvim/build/index.js	/^    d: formatAsDate,$/;"	P
+h	.config/nvim/plugged/coc.nvim/build/index.js	/^    h: hostname,$/;"	P
+m	.config/nvim/plugged/coc.nvim/build/index.js	/^    m: formatMessage,$/;"	P
+n	.config/nvim/plugged/coc.nvim/build/index.js	/^    n: endOfLine,$/;"	P
+p	.config/nvim/plugged/coc.nvim/build/index.js	/^    p: logLevel,$/;"	P
+r	.config/nvim/plugged/coc.nvim/build/index.js	/^    r: startTime,$/;"	P
+y	.config/nvim/plugged/coc.nvim/build/index.js	/^    y: clusterInfo,$/;"	P
+z	.config/nvim/plugged/coc.nvim/build/index.js	/^    z: pid,$/;"	P
+x	.config/nvim/plugged/coc.nvim/build/index.js	/^    x: userDefined,$/;"	P
+X	.config/nvim/plugged/coc.nvim/build/index.js	/^    X: contextDefined,$/;"	P
+f	.config/nvim/plugged/coc.nvim/build/index.js	/^    f: fileName,$/;"	P
+l	.config/nvim/plugged/coc.nvim/build/index.js	/^    l: lineNumber,$/;"	P
+o	.config/nvim/plugged/coc.nvim/build/index.js	/^    o: columnNumber,$/;"	P
+s	.config/nvim/plugged/coc.nvim/build/index.js	/^    s: callStack$/;"	P
+replaceToken	.config/nvim/plugged/coc.nvim/build/index.js	/^  function replaceToken(conversionCharacter, loggingEvent, specifier) {$/;"	F
+truncate	.config/nvim/plugged/coc.nvim/build/index.js	/^  function truncate(truncation, toTruncate) {$/;"	F
+len	.config/nvim/plugged/coc.nvim/build/index.js	/^    let len;$/;"	V
+pad	.config/nvim/plugged/coc.nvim/build/index.js	/^  function pad(padding, toPad) {$/;"	F
+len	.config/nvim/plugged/coc.nvim/build/index.js	/^    let len;$/;"	V
+truncateAndPad	.config/nvim/plugged/coc.nvim/build/index.js	/^  function truncateAndPad(toTruncAndPad, truncation, padding) {$/;"	F
+formattedString	.config/nvim/plugged/coc.nvim/build/index.js	/^    let formattedString = '';$/;"	V
+result	.config/nvim/plugged/coc.nvim/build/index.js	/^    let result;$/;"	V
+layoutMakers	.config/nvim/plugged/coc.nvim/build/index.js	/^const layoutMakers = {$/;"	O
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = {$/;"	P
+coloredLayout	.config/nvim/plugged/coc.nvim/build/index.js	/^  coloredLayout: colouredLayout,$/;"	P
+padWithZeros	.config/nvim/plugged/coc.nvim/build/index.js	/^function padWithZeros(vNumber, width) {$/;"	F
+addZero	.config/nvim/plugged/coc.nvim/build/index.js	/^function addZero(vNumber) {$/;"	F
+offset	.config/nvim/plugged/coc.nvim/build/index.js	/^function offset(timezoneOffset) {$/;"	F
+asString	.config/nvim/plugged/coc.nvim/build/index.js	/^function asString(format, date) {$/;"	F
+setDatePart	.config/nvim/plugged/coc.nvim/build/index.js	/^function setDatePart(date, part, value, local) {$/;"	F
+extractDateParts	.config/nvim/plugged/coc.nvim/build/index.js	/^function extractDateParts(pattern, str, missingValuesDate) {$/;"	F
+matchers	.config/nvim/plugged/coc.nvim/build/index.js	/^  var matchers = [$/;"	A
+pattern	.config/nvim/plugged/coc.nvim/build/index.js	/^      pattern: \/y{1,4}\/,$/;"	P
+regexp	.config/nvim/plugged/coc.nvim/build/index.js	/^      regexp: "\\\\d{1,4}",$/;"	P
+fn	.config/nvim/plugged/coc.nvim/build/index.js	/^      fn: function(date, value) {$/;"	M
+pattern	.config/nvim/plugged/coc.nvim/build/index.js	/^      pattern: \/MM\/,$/;"	P
+regexp	.config/nvim/plugged/coc.nvim/build/index.js	/^      regexp: "\\\\d{1,2}",$/;"	P
+fn	.config/nvim/plugged/coc.nvim/build/index.js	/^      fn: function(date, value) {$/;"	M
+pattern	.config/nvim/plugged/coc.nvim/build/index.js	/^      pattern: \/dd\/,$/;"	P
+regexp	.config/nvim/plugged/coc.nvim/build/index.js	/^      regexp: "\\\\d{1,2}",$/;"	P
+fn	.config/nvim/plugged/coc.nvim/build/index.js	/^      fn: function(date, value) {$/;"	M
+pattern	.config/nvim/plugged/coc.nvim/build/index.js	/^      pattern: \/hh\/,$/;"	P
+regexp	.config/nvim/plugged/coc.nvim/build/index.js	/^      regexp: "\\\\d{1,2}",$/;"	P
+fn	.config/nvim/plugged/coc.nvim/build/index.js	/^      fn: function(date, value) {$/;"	M
+pattern	.config/nvim/plugged/coc.nvim/build/index.js	/^      pattern: \/mm\/,$/;"	P
+regexp	.config/nvim/plugged/coc.nvim/build/index.js	/^      regexp: "\\\\d\\\\d",$/;"	P
+fn	.config/nvim/plugged/coc.nvim/build/index.js	/^      fn: function(date, value) {$/;"	M
+pattern	.config/nvim/plugged/coc.nvim/build/index.js	/^      pattern: \/ss\/,$/;"	P
+regexp	.config/nvim/plugged/coc.nvim/build/index.js	/^      regexp: "\\\\d\\\\d",$/;"	P
+fn	.config/nvim/plugged/coc.nvim/build/index.js	/^      fn: function(date, value) {$/;"	M
+pattern	.config/nvim/plugged/coc.nvim/build/index.js	/^      pattern: \/SSS\/,$/;"	P
+regexp	.config/nvim/plugged/coc.nvim/build/index.js	/^      regexp: "\\\\d\\\\d\\\\d",$/;"	P
+fn	.config/nvim/plugged/coc.nvim/build/index.js	/^      fn: function(date, value) {$/;"	M
+pattern	.config/nvim/plugged/coc.nvim/build/index.js	/^      pattern: \/O\/,$/;"	P
+regexp	.config/nvim/plugged/coc.nvim/build/index.js	/^      regexp: "[+-]\\\\d{3,4}|Z",$/;"	P
+fn	.config/nvim/plugged/coc.nvim/build/index.js	/^      fn: function(date, value) {$/;"	M
+function	.config/nvim/plugged/coc.nvim/build/index.js	/^    function(p, m) {$/;"	M
+matcher	.config/nvim/plugged/coc.nvim/build/index.js	/^  var matcher = new RegExp(parsedPattern.regexp);$/;"	V
+parse	.config/nvim/plugged/coc.nvim/build/index.js	/^function parse(pattern, str, missingValuesDate) {$/;"	F
+now	.config/nvim/plugged/coc.nvim/build/index.js	/^function now() {$/;"	F
+validColours	.config/nvim/plugged/coc.nvim/build/index.js	/^const validColours = [$/;"	A
+Level	.config/nvim/plugged/coc.nvim/build/index.js	/^class Level {$/;"	C
+constructor	.config/nvim/plugged/coc.nvim/build/index.js	/^  constructor(level, levelStr, colour) {$/;"	M
+toString	.config/nvim/plugged/coc.nvim/build/index.js	/^  toString() {$/;"	M
+getLevel	.config/nvim/plugged/coc.nvim/build/index.js	/^  static getLevel(sArg, defaultLevel) {$/;"	M
+addLevels	.config/nvim/plugged/coc.nvim/build/index.js	/^  static addLevels(customLevels) {$/;"	M
+existingLevelIndex	.config/nvim/plugged/coc.nvim/build/index.js	/^        const existingLevelIndex = Level.levels.findIndex(lvl => lvl.levelStr === levelStr);$/;"	F
+isLessThanOrEqualTo	.config/nvim/plugged/coc.nvim/build/index.js	/^  isLessThanOrEqualTo(otherLevel) {$/;"	M
+isGreaterThanOrEqualTo	.config/nvim/plugged/coc.nvim/build/index.js	/^  isGreaterThanOrEqualTo(otherLevel) {$/;"	M
+isEqualTo	.config/nvim/plugged/coc.nvim/build/index.js	/^  isEqualTo(otherLevel) {$/;"	M
+ALL	.config/nvim/plugged/coc.nvim/build/index.js	/^  ALL: { value: Number.MIN_VALUE, colour: 'grey' },$/;"	P
+TRACE	.config/nvim/plugged/coc.nvim/build/index.js	/^  TRACE: { value: 5000, colour: 'blue' },$/;"	P
+DEBUG	.config/nvim/plugged/coc.nvim/build/index.js	/^  DEBUG: { value: 10000, colour: 'cyan' },$/;"	P
+INFO	.config/nvim/plugged/coc.nvim/build/index.js	/^  INFO: { value: 20000, colour: 'green' },$/;"	P
+WARN	.config/nvim/plugged/coc.nvim/build/index.js	/^  WARN: { value: 30000, colour: 'yellow' },$/;"	P
+ERROR	.config/nvim/plugged/coc.nvim/build/index.js	/^  ERROR: { value: 40000, colour: 'red' },$/;"	P
+FATAL	.config/nvim/plugged/coc.nvim/build/index.js	/^  FATAL: { value: 50000, colour: 'magenta' },$/;"	P
+MARK	.config/nvim/plugged/coc.nvim/build/index.js	/^  MARK: { value: 9007199254740992, colour: 'grey' }, \/\/ 2^53$/;"	P
+OFF	.config/nvim/plugged/coc.nvim/build/index.js	/^  OFF: { value: Number.MAX_VALUE, colour: 'grey' }$/;"	P
+coreAppenders	.config/nvim/plugged/coc.nvim/build/index.js	/^const coreAppenders = new Map();$/;"	V
+appenders	.config/nvim/plugged/coc.nvim/build/index.js	/^const appenders = new Map();$/;"	V
+tryLoading	.config/nvim/plugged/coc.nvim/build/index.js	/^const tryLoading = (modulePath, config) => {$/;"	F
+loadAppenderModule	.config/nvim/plugged/coc.nvim/build/index.js	/^const loadAppenderModule = (type, config) => coreAppenders.get(type)$/;"	F
+appendersLoading	.config/nvim/plugged/coc.nvim/build/index.js	/^const appendersLoading = new Set();$/;"	V
+getAppender	.config/nvim/plugged/coc.nvim/build/index.js	/^const getAppender = (name, config) => {$/;"	F
+createAppender	.config/nvim/plugged/coc.nvim/build/index.js	/^const createAppender = (name, config) => {$/;"	F
+setup	.config/nvim/plugged/coc.nvim/build/index.js	/^const setup = (config) => {$/;"	F
+usedAppenders	.config/nvim/plugged/coc.nvim/build/index.js	/^  const usedAppenders = [];$/;"	A
+listeners	.config/nvim/plugged/coc.nvim/build/index.js	/^const listeners = [];$/;"	A
+pm2InstanceVar	.config/nvim/plugged/coc.nvim/build/index.js	/^let pm2InstanceVar = "NODE_APP_INSTANCE";$/;"	V
+isPM2Master	.config/nvim/plugged/coc.nvim/build/index.js	/^const isPM2Master = () => pm2 && process.env[pm2InstanceVar] === "0";$/;"	F
+isMaster	.config/nvim/plugged/coc.nvim/build/index.js	/^const isMaster = () => disabled || cluster.isMaster || isPM2Master();$/;"	F
+sendToListeners	.config/nvim/plugged/coc.nvim/build/index.js	/^const sendToListeners = logEvent => {$/;"	F
+receiver	.config/nvim/plugged/coc.nvim/build/index.js	/^const receiver = (worker, message) => {$/;"	F
+disableClustering	.config/nvim/plugged/coc.nvim/build/index.js	/^      disableClustering: disabled,$/;"	P
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = {$/;"	P
+onlyOnMaster	.config/nvim/plugged/coc.nvim/build/index.js	/^  onlyOnMaster: (fn, notMaster) => (isMaster() ? fn() : notMaster),$/;"	M
+cluster	.config/nvim/plugged/coc.nvim/build/index.js	/^        msg.cluster = {$/;"	P
+LoggingEvent	.config/nvim/plugged/coc.nvim/build/index.js	/^class LoggingEvent {$/;"	C
+constructor	.config/nvim/plugged/coc.nvim/build/index.js	/^  constructor(categoryName, level, data, context, location) {$/;"	M
+serialise	.config/nvim/plugged/coc.nvim/build/index.js	/^  serialise() {$/;"	M
+logData	.config/nvim/plugged/coc.nvim/build/index.js	/^    const logData = this.data.map((e) => {$/;"	F
+deserialise	.config/nvim/plugged/coc.nvim/build/index.js	/^  static deserialise(serialised) {$/;"	M
+event	.config/nvim/plugged/coc.nvim/build/index.js	/^    let event;$/;"	V
+fakeError	.config/nvim/plugged/coc.nvim/build/index.js	/^          const fakeError = new Error(e);$/;"	V
+Flatted	.config/nvim/plugged/coc.nvim/build/index.js	/^  var Flatted = {$/;"	O
+replace	.config/nvim/plugged/coc.nvim/build/index.js	/^        replace = function (key, value) {$/;"	M
+noop	.config/nvim/plugged/coc.nvim/build/index.js	/^  function noop(key, value) {$/;"	F
+revive	.config/nvim/plugged/coc.nvim/build/index.js	/^  function revive(input, parsed, output, $) {$/;"	F
+set	.config/nvim/plugged/coc.nvim/build/index.js	/^  function set(known, input, value) {$/;"	F
+primitives	.config/nvim/plugged/coc.nvim/build/index.js	/^  function primitives(value) {$/;"	F
+Primitives	.config/nvim/plugged/coc.nvim/build/index.js	/^  function Primitives(key, value) {$/;"	F
+maxFileSizeUnitTransform	.config/nvim/plugged/coc.nvim/build/index.js	/^function maxFileSizeUnitTransform(maxLogSize) {$/;"	F
+units	.config/nvim/plugged/coc.nvim/build/index.js	/^  const units = {$/;"	O
+K	.config/nvim/plugged/coc.nvim/build/index.js	/^    K: 1024,$/;"	P
+adapter	.config/nvim/plugged/coc.nvim/build/index.js	/^function adapter(configAdapter, config) {$/;"	F
+fileAppenderAdapter	.config/nvim/plugged/coc.nvim/build/index.js	/^function fileAppenderAdapter(config) {$/;"	F
+configAdapter	.config/nvim/plugged/coc.nvim/build/index.js	/^  const configAdapter = {$/;"	O
+maxLogSize	.config/nvim/plugged/coc.nvim/build/index.js	/^    maxLogSize: maxFileSizeUnitTransform$/;"	P
+adapters	.config/nvim/plugged/coc.nvim/build/index.js	/^const adapters = {$/;"	O
+file	.config/nvim/plugged/coc.nvim/build/index.js	/^  file: fileAppenderAdapter,$/;"	P
+fileSync	.config/nvim/plugged/coc.nvim/build/index.js	/^  fileSync: fileAppenderAdapter$/;"	P
+consoleAppender	.config/nvim/plugged/coc.nvim/build/index.js	/^function consoleAppender(layout, timezoneOffset) {$/;"	F
+configure	.config/nvim/plugged/coc.nvim/build/index.js	/^function configure(config, layouts) {$/;"	F
+stdoutAppender	.config/nvim/plugged/coc.nvim/build/index.js	/^function stdoutAppender(layout, timezoneOffset) {$/;"	F
+configure	.config/nvim/plugged/coc.nvim/build/index.js	/^function configure(config, layouts) {$/;"	F
+stderrAppender	.config/nvim/plugged/coc.nvim/build/index.js	/^function stderrAppender(layout, timezoneOffset) {$/;"	F
+configure	.config/nvim/plugged/coc.nvim/build/index.js	/^function configure(config, layouts) {$/;"	F
+logLevelFilter	.config/nvim/plugged/coc.nvim/build/index.js	/^function logLevelFilter(minLevelString, maxLevelString, appender, levels) {$/;"	F
+configure	.config/nvim/plugged/coc.nvim/build/index.js	/^function configure(config, layouts, findAppender, levels) {$/;"	F
+categoryFilter	.config/nvim/plugged/coc.nvim/build/index.js	/^function categoryFilter(excludes, appender) {$/;"	F
+configure	.config/nvim/plugged/coc.nvim/build/index.js	/^function configure(config, layouts, findAppender) {$/;"	F
+removeNullOrEmptyRegexp	.config/nvim/plugged/coc.nvim/build/index.js	/^function removeNullOrEmptyRegexp(regexp) {$/;"	F
+filtered	.config/nvim/plugged/coc.nvim/build/index.js	/^  const filtered = regexp.filter(el => ((el != null) && (el !== '')));$/;"	F
+noLogFilter	.config/nvim/plugged/coc.nvim/build/index.js	/^function noLogFilter(filters, appender) {$/;"	F
+regex	.config/nvim/plugged/coc.nvim/build/index.js	/^    const regex = new RegExp(filters.join('|'), 'i');$/;"	V
+configure	.config/nvim/plugged/coc.nvim/build/index.js	/^function configure(config, layouts, findAppender) {$/;"	F
+openTheStream	.config/nvim/plugged/coc.nvim/build/index.js	/^function openTheStream(file, fileSize, numFiles, options) {$/;"	F
+stream	.config/nvim/plugged/coc.nvim/build/index.js	/^  const stream = new streams.RollingFileStream($/;"	V
+fileAppender	.config/nvim/plugged/coc.nvim/build/index.js	/^function fileAppender(file, layout, logSize, numBackups, options, timezoneOffset) {$/;"	F
+app	.config/nvim/plugged/coc.nvim/build/index.js	/^  const app = function (loggingEvent) {$/;"	F
+regex	.config/nvim/plugged/coc.nvim/build/index.js	/^      const regex = \/\\x1b[[0-9;]*m\/g;$/;"	V
+reopen	.config/nvim/plugged/coc.nvim/build/index.js	/^  app.reopen = function () {$/;"	M
+sighupHandler	.config/nvim/plugged/coc.nvim/build/index.js	/^  app.sighupHandler = function () {$/;"	M
+shutdown	.config/nvim/plugged/coc.nvim/build/index.js	/^  app.shutdown = function (complete) {$/;"	M
+configure	.config/nvim/plugged/coc.nvim/build/index.js	/^function configure(config, layouts) {$/;"	F
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = {$/;"	P
+RollingFileWriteStream	.config/nvim/plugged/coc.nvim/build/index.js	/^class RollingFileWriteStream extends Writable {$/;"	C
+constructor	.config/nvim/plugged/coc.nvim/build/index.js	/^  constructor(filePath, options) {$/;"	M
+state	.config/nvim/plugged/coc.nvim/build/index.js	/^    this.state = {$/;"	P
+currentSize	.config/nvim/plugged/coc.nvim/build/index.js	/^      currentSize: 0$/;"	P
+index	.config/nvim/plugged/coc.nvim/build/index.js	/^      index: 0,$/;"	P
+_setExistingSizeAndDate	.config/nvim/plugged/coc.nvim/build/index.js	/^  _setExistingSizeAndDate() {$/;"	M
+_parseOption	.config/nvim/plugged/coc.nvim/build/index.js	/^  _parseOption(rawOptions) {$/;"	M
+defaultOptions	.config/nvim/plugged/coc.nvim/build/index.js	/^    const defaultOptions = {$/;"	O
+encoding	.config/nvim/plugged/coc.nvim/build/index.js	/^      encoding: "utf8",$/;"	P
+flags	.config/nvim/plugged/coc.nvim/build/index.js	/^      flags: "a",$/;"	P
+compress	.config/nvim/plugged/coc.nvim/build/index.js	/^      compress: false,$/;"	P
+keepFileExt	.config/nvim/plugged/coc.nvim/build/index.js	/^      keepFileExt: false,$/;"	P
+alwaysIncludePattern	.config/nvim/plugged/coc.nvim/build/index.js	/^      alwaysIncludePattern: false$/;"	P
+_final	.config/nvim/plugged/coc.nvim/build/index.js	/^  _final(callback) {$/;"	M
+_write	.config/nvim/plugged/coc.nvim/build/index.js	/^  _write(chunk, encoding, callback) {$/;"	M
+_dateChanged	.config/nvim/plugged/coc.nvim/build/index.js	/^  _dateChanged() {$/;"	M
+_tooBig	.config/nvim/plugged/coc.nvim/build/index.js	/^  _tooBig() {$/;"	M
+_roll	.config/nvim/plugged/coc.nvim/build/index.js	/^  _roll() {$/;"	M
+index	.config/nvim/plugged/coc.nvim/build/index.js	/^        index: i$/;"	P
+files	.config/nvim/plugged/coc.nvim/build/index.js	/^    const files = await fs.readdir(this.fileObject.dir).catch(() => []);$/;"	F
+getKey	.config/nvim/plugged/coc.nvim/build/index.js	/^    const getKey = n =>$/;"	F
+_renewWriteStream	.config/nvim/plugged/coc.nvim/build/index.js	/^  _renewWriteStream() {$/;"	M
+index	.config/nvim/plugged/coc.nvim/build/index.js	/^      index: 0$/;"	P
+ops	.config/nvim/plugged/coc.nvim/build/index.js	/^    const ops = {$/;"	O
+_tooManyFiles	.config/nvim/plugged/coc.nvim/build/index.js	/^  _tooManyFiles(numFiles) {$/;"	M
+deleteFiles	.config/nvim/plugged/coc.nvim/build/index.js	/^const deleteFiles = fileNames => {$/;"	F
+api	.config/nvim/plugged/coc.nvim/build/index.js	/^const api = [$/;"	A
+exists	.config/nvim/plugged/coc.nvim/build/index.js	/^exports.exists = function (filename, callback) {$/;"	M
+read	.config/nvim/plugged/coc.nvim/build/index.js	/^exports.read = function (fd, buffer, offset, length, position, callback) {$/;"	M
+write	.config/nvim/plugged/coc.nvim/build/index.js	/^exports.write = function (fd, buffer, ...args) {$/;"	M
+fromCallback	.config/nvim/plugged/coc.nvim/build/index.js	/^exports.fromCallback = function (fn) {$/;"	M
+fromPromise	.config/nvim/plugged/coc.nvim/build/index.js	/^exports.fromPromise = function (fn) {$/;"	M
+noop	.config/nvim/plugged/coc.nvim/build/index.js	/^function noop () {}$/;"	F
+publishQueue	.config/nvim/plugged/coc.nvim/build/index.js	/^function publishQueue(context, queue) {$/;"	F
+get	.config/nvim/plugged/coc.nvim/build/index.js	/^    get: function() {$/;"	M
+debug	.config/nvim/plugged/coc.nvim/build/index.js	/^  debug = function() {$/;"	M
+close	.config/nvim/plugged/coc.nvim/build/index.js	/^  fs.close = (function (fs$close) {$/;"	M
+close	.config/nvim/plugged/coc.nvim/build/index.js	/^    function close (fd, cb) {$/;"	F
+value	.config/nvim/plugged/coc.nvim/build/index.js	/^      value: fs$close$/;"	P
+closeSync	.config/nvim/plugged/coc.nvim/build/index.js	/^  fs.closeSync = (function (fs$closeSync) {$/;"	M
+closeSync	.config/nvim/plugged/coc.nvim/build/index.js	/^    function closeSync (fd) {$/;"	F
+value	.config/nvim/plugged/coc.nvim/build/index.js	/^      value: fs$closeSync$/;"	P
+patch	.config/nvim/plugged/coc.nvim/build/index.js	/^function patch (fs) {$/;"	F
+readFile	.config/nvim/plugged/coc.nvim/build/index.js	/^  function readFile (path, options, cb) {$/;"	F
+go$readFile	.config/nvim/plugged/coc.nvim/build/index.js	/^    function go$readFile (path, options, cb) {$/;"	F
+writeFile	.config/nvim/plugged/coc.nvim/build/index.js	/^  function writeFile (path, data, options, cb) {$/;"	F
+go$writeFile	.config/nvim/plugged/coc.nvim/build/index.js	/^    function go$writeFile (path, data, options, cb) {$/;"	F
+appendFile	.config/nvim/plugged/coc.nvim/build/index.js	/^  function appendFile (path, data, options, cb) {$/;"	F
+go$appendFile	.config/nvim/plugged/coc.nvim/build/index.js	/^    function go$appendFile (path, data, options, cb) {$/;"	F
+readdir	.config/nvim/plugged/coc.nvim/build/index.js	/^  function readdir (path, options, cb) {$/;"	F
+args	.config/nvim/plugged/coc.nvim/build/index.js	/^    var args = [path]$/;"	A
+go$readdir$cb	.config/nvim/plugged/coc.nvim/build/index.js	/^    function go$readdir$cb (err, files) {$/;"	F
+go$readdir	.config/nvim/plugged/coc.nvim/build/index.js	/^  function go$readdir (args) {$/;"	F
+get	.config/nvim/plugged/coc.nvim/build/index.js	/^    get: function () {$/;"	M
+set	.config/nvim/plugged/coc.nvim/build/index.js	/^    set: function (val) {$/;"	M
+enumerable	.config/nvim/plugged/coc.nvim/build/index.js	/^    enumerable: true,$/;"	P
+configurable	.config/nvim/plugged/coc.nvim/build/index.js	/^    configurable: true$/;"	P
+get	.config/nvim/plugged/coc.nvim/build/index.js	/^    get: function () {$/;"	M
+set	.config/nvim/plugged/coc.nvim/build/index.js	/^    set: function (val) {$/;"	M
+enumerable	.config/nvim/plugged/coc.nvim/build/index.js	/^    enumerable: true,$/;"	P
+configurable	.config/nvim/plugged/coc.nvim/build/index.js	/^    configurable: true$/;"	P
+get	.config/nvim/plugged/coc.nvim/build/index.js	/^    get: function () {$/;"	M
+set	.config/nvim/plugged/coc.nvim/build/index.js	/^    set: function (val) {$/;"	M
+enumerable	.config/nvim/plugged/coc.nvim/build/index.js	/^    enumerable: true,$/;"	P
+configurable	.config/nvim/plugged/coc.nvim/build/index.js	/^    configurable: true$/;"	P
+get	.config/nvim/plugged/coc.nvim/build/index.js	/^    get: function () {$/;"	M
+set	.config/nvim/plugged/coc.nvim/build/index.js	/^    set: function (val) {$/;"	M
+enumerable	.config/nvim/plugged/coc.nvim/build/index.js	/^    enumerable: true,$/;"	P
+configurable	.config/nvim/plugged/coc.nvim/build/index.js	/^    configurable: true$/;"	P
+ReadStream	.config/nvim/plugged/coc.nvim/build/index.js	/^  function ReadStream (path, options) {$/;"	F
+ReadStream$open	.config/nvim/plugged/coc.nvim/build/index.js	/^  function ReadStream$open () {$/;"	F
+open	.config/nvim/plugged/coc.nvim/build/index.js	/^    open(that.path, that.flags, that.mode, function (err, fd) {$/;"	M
+WriteStream	.config/nvim/plugged/coc.nvim/build/index.js	/^  function WriteStream (path, options) {$/;"	F
+WriteStream$open	.config/nvim/plugged/coc.nvim/build/index.js	/^  function WriteStream$open () {$/;"	F
+open	.config/nvim/plugged/coc.nvim/build/index.js	/^    open(that.path, that.flags, that.mode, function (err, fd) {$/;"	M
+createReadStream	.config/nvim/plugged/coc.nvim/build/index.js	/^  function createReadStream (path, options) {$/;"	F
+createWriteStream	.config/nvim/plugged/coc.nvim/build/index.js	/^  function createWriteStream (path, options) {$/;"	F
+open	.config/nvim/plugged/coc.nvim/build/index.js	/^  function open (path, flags, mode, cb) {$/;"	F
+go$open	.config/nvim/plugged/coc.nvim/build/index.js	/^    function go$open (path, flags, mode, cb) {$/;"	F
+enqueue	.config/nvim/plugged/coc.nvim/build/index.js	/^function enqueue (elem) {$/;"	F
+retry	.config/nvim/plugged/coc.nvim/build/index.js	/^function retry () {$/;"	F
+cwd	.config/nvim/plugged/coc.nvim/build/index.js	/^process.cwd = function() {$/;"	M
+chdir	.config/nvim/plugged/coc.nvim/build/index.js	/^process.chdir = function(d) {$/;"	M
+patch	.config/nvim/plugged/coc.nvim/build/index.js	/^function patch (fs) {$/;"	F
+lchmod	.config/nvim/plugged/coc.nvim/build/index.js	/^    fs.lchmod = function (path, mode, cb) {$/;"	M
+lchmodSync	.config/nvim/plugged/coc.nvim/build/index.js	/^    fs.lchmodSync = function () {}$/;"	M
+lchown	.config/nvim/plugged/coc.nvim/build/index.js	/^    fs.lchown = function (path, uid, gid, cb) {$/;"	M
+lchownSync	.config/nvim/plugged/coc.nvim/build/index.js	/^    fs.lchownSync = function () {}$/;"	M
+rename	.config/nvim/plugged/coc.nvim/build/index.js	/^    fs.rename = (function (fs$rename) { return function (from, to, cb) {$/;"	M
+backoff	.config/nvim/plugged/coc.nvim/build/index.js	/^      var backoff = 0;$/;"	V
+fs$rename	.config/nvim/plugged/coc.nvim/build/index.js	/^      fs$rename(from, to, function CB (er) {$/;"	M
+setTimeout	.config/nvim/plugged/coc.nvim/build/index.js	/^          setTimeout(function() {$/;"	M
+read	.config/nvim/plugged/coc.nvim/build/index.js	/^  fs.read = (function (fs$read) {$/;"	M
+read	.config/nvim/plugged/coc.nvim/build/index.js	/^    function read (fd, buffer, offset, length, position, callback_) {$/;"	F
+eagCounter	.config/nvim/plugged/coc.nvim/build/index.js	/^        var eagCounter = 0$/;"	V
+callback	.config/nvim/plugged/coc.nvim/build/index.js	/^        callback = function (er, _, __) {$/;"	M
+readSync	.config/nvim/plugged/coc.nvim/build/index.js	/^  fs.readSync = (function (fs$readSync) { return function (fd, buffer, offset, length, position) {$/;"	M
+eagCounter	.config/nvim/plugged/coc.nvim/build/index.js	/^    var eagCounter = 0$/;"	V
+patchLchmod	.config/nvim/plugged/coc.nvim/build/index.js	/^  function patchLchmod (fs) {$/;"	F
+lchmod	.config/nvim/plugged/coc.nvim/build/index.js	/^    fs.lchmod = function (path, mode, callback) {$/;"	M
+lchmodSync	.config/nvim/plugged/coc.nvim/build/index.js	/^    fs.lchmodSync = function (path, mode) {$/;"	M
+patchLutimes	.config/nvim/plugged/coc.nvim/build/index.js	/^  function patchLutimes (fs) {$/;"	F
+lutimes	.config/nvim/plugged/coc.nvim/build/index.js	/^      fs.lutimes = function (path, at, mt, cb) {$/;"	M
+lutimesSync	.config/nvim/plugged/coc.nvim/build/index.js	/^      fs.lutimesSync = function (path, at, mt) {$/;"	M
+lutimes	.config/nvim/plugged/coc.nvim/build/index.js	/^      fs.lutimes = function (_a, _b, _c, cb) { if (cb) process.nextTick(cb) }$/;"	M
+lutimesSync	.config/nvim/plugged/coc.nvim/build/index.js	/^      fs.lutimesSync = function () {}$/;"	M
+chmodFix	.config/nvim/plugged/coc.nvim/build/index.js	/^  function chmodFix (orig) {$/;"	F
+chmodFixSync	.config/nvim/plugged/coc.nvim/build/index.js	/^  function chmodFixSync (orig) {$/;"	F
+chownFix	.config/nvim/plugged/coc.nvim/build/index.js	/^  function chownFix (orig) {$/;"	F
+chownFixSync	.config/nvim/plugged/coc.nvim/build/index.js	/^  function chownFixSync (orig) {$/;"	F
+statFix	.config/nvim/plugged/coc.nvim/build/index.js	/^  function statFix (orig) {$/;"	F
+callback	.config/nvim/plugged/coc.nvim/build/index.js	/^      function callback (er, stats) {$/;"	F
+statFixSync	.config/nvim/plugged/coc.nvim/build/index.js	/^  function statFixSync (orig) {$/;"	F
+chownErOk	.config/nvim/plugged/coc.nvim/build/index.js	/^  function chownErOk (er) {$/;"	F
+legacy	.config/nvim/plugged/coc.nvim/build/index.js	/^function legacy (fs) {$/;"	F
+ReadStream	.config/nvim/plugged/coc.nvim/build/index.js	/^    ReadStream: ReadStream,$/;"	P
+WriteStream	.config/nvim/plugged/coc.nvim/build/index.js	/^    WriteStream: WriteStream$/;"	P
+ReadStream	.config/nvim/plugged/coc.nvim/build/index.js	/^  function ReadStream (path, options) {$/;"	F
+WriteStream	.config/nvim/plugged/coc.nvim/build/index.js	/^  function WriteStream (path, options) {$/;"	F
+clone	.config/nvim/plugged/coc.nvim/build/index.js	/^function clone (obj) {$/;"	F
+copy	.config/nvim/plugged/coc.nvim/build/index.js	/^    var copy = { __proto__: obj.__proto__ }$/;"	O
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = {$/;"	P
+copySync	.config/nvim/plugged/coc.nvim/build/index.js	/^function copySync (src, dest, opts) {$/;"	F
+handleFilterAndCopy	.config/nvim/plugged/coc.nvim/build/index.js	/^function handleFilterAndCopy (destStat, src, dest, opts) {$/;"	F
+startCopy	.config/nvim/plugged/coc.nvim/build/index.js	/^function startCopy (destStat, src, dest, opts) {$/;"	F
+getStats	.config/nvim/plugged/coc.nvim/build/index.js	/^function getStats (destStat, src, dest, opts) {$/;"	F
+onFile	.config/nvim/plugged/coc.nvim/build/index.js	/^function onFile (srcStat, destStat, src, dest, opts) {$/;"	F
+mayCopyFile	.config/nvim/plugged/coc.nvim/build/index.js	/^function mayCopyFile (srcStat, src, dest, opts) {$/;"	F
+copyFile	.config/nvim/plugged/coc.nvim/build/index.js	/^function copyFile (srcStat, src, dest, opts) {$/;"	F
+copyFileFallback	.config/nvim/plugged/coc.nvim/build/index.js	/^function copyFileFallback (srcStat, src, dest, opts) {$/;"	F
+BUF_LENGTH	.config/nvim/plugged/coc.nvim/build/index.js	/^  const BUF_LENGTH = 64 * 1024$/;"	V
+pos	.config/nvim/plugged/coc.nvim/build/index.js	/^  let pos = 0$/;"	V
+onDir	.config/nvim/plugged/coc.nvim/build/index.js	/^function onDir (srcStat, destStat, src, dest, opts) {$/;"	F
+mkDirAndCopy	.config/nvim/plugged/coc.nvim/build/index.js	/^function mkDirAndCopy (srcStat, src, dest, opts) {$/;"	F
+copyDir	.config/nvim/plugged/coc.nvim/build/index.js	/^function copyDir (src, dest, opts) {$/;"	F
+copyDirItem	.config/nvim/plugged/coc.nvim/build/index.js	/^function copyDirItem (item, src, dest, opts) {$/;"	F
+onLink	.config/nvim/plugged/coc.nvim/build/index.js	/^function onLink (destStat, src, dest, opts) {$/;"	F
+copyLink	.config/nvim/plugged/coc.nvim/build/index.js	/^function copyLink (resolvedSrc, dest) {$/;"	F
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = {$/;"	P
+mkdirp	.config/nvim/plugged/coc.nvim/build/index.js	/^  mkdirp: mkdirs,$/;"	P
+mkdirpSync	.config/nvim/plugged/coc.nvim/build/index.js	/^  mkdirpSync: mkdirsSync,$/;"	P
+ensureDir	.config/nvim/plugged/coc.nvim/build/index.js	/^  ensureDir: mkdirs,$/;"	P
+ensureDirSync	.config/nvim/plugged/coc.nvim/build/index.js	/^  ensureDirSync: mkdirsSync$/;"	P
+mkdirs	.config/nvim/plugged/coc.nvim/build/index.js	/^function mkdirs (p, opts, callback, made) {$/;"	F
+errInval	.config/nvim/plugged/coc.nvim/build/index.js	/^    const errInval = new Error(p + ' contains invalid WIN32 path characters.')$/;"	V
+getRootPath	.config/nvim/plugged/coc.nvim/build/index.js	/^function getRootPath (p) {$/;"	F
+TODO	.config/nvim/plugged/coc.nvim/build/index.js	/^\/\/ TODO: expand to include the rest$/;"	T
+INVALID_PATH_CHARS	.config/nvim/plugged/coc.nvim/build/index.js	/^const INVALID_PATH_CHARS = \/[<>:"|?*]\/$/;"	V
+invalidWin32Path	.config/nvim/plugged/coc.nvim/build/index.js	/^function invalidWin32Path (p) {$/;"	F
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = {$/;"	P
+mkdirsSync	.config/nvim/plugged/coc.nvim/build/index.js	/^function mkdirsSync (p, opts, made) {$/;"	F
+errInval	.config/nvim/plugged/coc.nvim/build/index.js	/^    const errInval = new Error(p + ' contains invalid WIN32 path characters.')$/;"	V
+hasMillisResSync	.config/nvim/plugged/coc.nvim/build/index.js	/^function hasMillisResSync () {$/;"	F
+d	.config/nvim/plugged/coc.nvim/build/index.js	/^  const d = new Date(1435410243862)$/;"	V
+hasMillisRes	.config/nvim/plugged/coc.nvim/build/index.js	/^function hasMillisRes (callback) {$/;"	F
+d	.config/nvim/plugged/coc.nvim/build/index.js	/^  const d = new Date(1435410243862)$/;"	V
+timeRemoveMillis	.config/nvim/plugged/coc.nvim/build/index.js	/^function timeRemoveMillis (timestamp) {$/;"	F
+utimesMillis	.config/nvim/plugged/coc.nvim/build/index.js	/^function utimesMillis (path, atime, mtime, callback) {$/;"	F
+utimesMillisSync	.config/nvim/plugged/coc.nvim/build/index.js	/^function utimesMillisSync (path, atime, mtime) {$/;"	F
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = {$/;"	P
+NODE_VERSION_MAJOR_WITH_BIGINT	.config/nvim/plugged/coc.nvim/build/index.js	/^const NODE_VERSION_MAJOR_WITH_BIGINT = 10$/;"	V
+NODE_VERSION_MINOR_WITH_BIGINT	.config/nvim/plugged/coc.nvim/build/index.js	/^const NODE_VERSION_MINOR_WITH_BIGINT = 5$/;"	V
+NODE_VERSION_PATCH_WITH_BIGINT	.config/nvim/plugged/coc.nvim/build/index.js	/^const NODE_VERSION_PATCH_WITH_BIGINT = 0$/;"	V
+nodeSupportsBigInt	.config/nvim/plugged/coc.nvim/build/index.js	/^function nodeSupportsBigInt () {$/;"	F
+getStats	.config/nvim/plugged/coc.nvim/build/index.js	/^function getStats (src, dest, cb) {$/;"	F
+getStatsSync	.config/nvim/plugged/coc.nvim/build/index.js	/^function getStatsSync (src, dest) {$/;"	F
+srcStat	.config/nvim/plugged/coc.nvim/build/index.js	/^  let srcStat, destStat$/;"	V
+destStat	.config/nvim/plugged/coc.nvim/build/index.js	/^  let srcStat, destStat$/;"	V
+checkPaths	.config/nvim/plugged/coc.nvim/build/index.js	/^function checkPaths (src, dest, funcName, cb) {$/;"	F
+checkPathsSync	.config/nvim/plugged/coc.nvim/build/index.js	/^function checkPathsSync (src, dest, funcName) {$/;"	F
+checkParentPaths	.config/nvim/plugged/coc.nvim/build/index.js	/^function checkParentPaths (src, srcStat, dest, funcName, cb) {$/;"	F
+checkParentPathsSync	.config/nvim/plugged/coc.nvim/build/index.js	/^function checkParentPathsSync (src, srcStat, dest, funcName) {$/;"	F
+isSrcSubdir	.config/nvim/plugged/coc.nvim/build/index.js	/^function isSrcSubdir (src, dest) {$/;"	F
+srcArr	.config/nvim/plugged/coc.nvim/build/index.js	/^  const srcArr = path.resolve(src).split(path.sep).filter(i => i)$/;"	F
+destArr	.config/nvim/plugged/coc.nvim/build/index.js	/^  const destArr = path.resolve(dest).split(path.sep).filter(i => i)$/;"	F
+errMsg	.config/nvim/plugged/coc.nvim/build/index.js	/^function errMsg (src, dest, funcName) {$/;"	F
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = {$/;"	P
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = function (size) {$/;"	M
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = {$/;"	P
+copy	.config/nvim/plugged/coc.nvim/build/index.js	/^function copy (src, dest, opts, cb) {$/;"	F
+checkParentDir	.config/nvim/plugged/coc.nvim/build/index.js	/^function checkParentDir (destStat, src, dest, opts, cb) {$/;"	F
+handleFilter	.config/nvim/plugged/coc.nvim/build/index.js	/^function handleFilter (onInclude, destStat, src, dest, opts, cb) {$/;"	F
+startCopy	.config/nvim/plugged/coc.nvim/build/index.js	/^function startCopy (destStat, src, dest, opts, cb) {$/;"	F
+getStats	.config/nvim/plugged/coc.nvim/build/index.js	/^function getStats (destStat, src, dest, opts, cb) {$/;"	F
+onFile	.config/nvim/plugged/coc.nvim/build/index.js	/^function onFile (srcStat, destStat, src, dest, opts, cb) {$/;"	F
+mayCopyFile	.config/nvim/plugged/coc.nvim/build/index.js	/^function mayCopyFile (srcStat, src, dest, opts, cb) {$/;"	F
+copyFile	.config/nvim/plugged/coc.nvim/build/index.js	/^function copyFile (srcStat, src, dest, opts, cb) {$/;"	F
+copyFileFallback	.config/nvim/plugged/coc.nvim/build/index.js	/^function copyFileFallback (srcStat, src, dest, opts, cb) {$/;"	F
+setDestModeAndTimestamps	.config/nvim/plugged/coc.nvim/build/index.js	/^function setDestModeAndTimestamps (srcStat, dest, opts, cb) {$/;"	F
+onDir	.config/nvim/plugged/coc.nvim/build/index.js	/^function onDir (srcStat, destStat, src, dest, opts, cb) {$/;"	F
+mkDirAndCopy	.config/nvim/plugged/coc.nvim/build/index.js	/^function mkDirAndCopy (srcStat, src, dest, opts, cb) {$/;"	F
+copyDir	.config/nvim/plugged/coc.nvim/build/index.js	/^function copyDir (src, dest, opts, cb) {$/;"	F
+copyDirItems	.config/nvim/plugged/coc.nvim/build/index.js	/^function copyDirItems (items, src, dest, opts, cb) {$/;"	F
+copyDirItem	.config/nvim/plugged/coc.nvim/build/index.js	/^function copyDirItem (items, item, src, dest, opts, cb) {$/;"	F
+onLink	.config/nvim/plugged/coc.nvim/build/index.js	/^function onLink (destStat, src, dest, opts, cb) {$/;"	F
+copyLink	.config/nvim/plugged/coc.nvim/build/index.js	/^function copyLink (resolvedSrc, dest, cb) {$/;"	F
+pathExists	.config/nvim/plugged/coc.nvim/build/index.js	/^function pathExists (path) {$/;"	F
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = {$/;"	P
+deleteItem	.config/nvim/plugged/coc.nvim/build/index.js	/^    function deleteItem () {$/;"	F
+emptyDirSync	.config/nvim/plugged/coc.nvim/build/index.js	/^function emptyDirSync (dir) {$/;"	F
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = {$/;"	P
+emptydirSync	.config/nvim/plugged/coc.nvim/build/index.js	/^  emptydirSync: emptyDirSync,$/;"	P
+emptydir	.config/nvim/plugged/coc.nvim/build/index.js	/^  emptydir: emptyDir$/;"	P
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = {$/;"	P
+defaults	.config/nvim/plugged/coc.nvim/build/index.js	/^function defaults (options) {$/;"	F
+methods	.config/nvim/plugged/coc.nvim/build/index.js	/^  const methods = [$/;"	A
+rimraf	.config/nvim/plugged/coc.nvim/build/index.js	/^function rimraf (p, options, cb) {$/;"	F
+busyTries	.config/nvim/plugged/coc.nvim/build/index.js	/^  let busyTries = 0$/;"	V
+rimraf_	.config/nvim/plugged/coc.nvim/build/index.js	/^  rimraf_(p, options, function CB (er) {$/;"	M
+rimraf_	.config/nvim/plugged/coc.nvim/build/index.js	/^function rimraf_ (p, options, cb) {$/;"	F
+fixWinEPERM	.config/nvim/plugged/coc.nvim/build/index.js	/^function fixWinEPERM (p, options, er, cb) {$/;"	F
+fixWinEPERMSync	.config/nvim/plugged/coc.nvim/build/index.js	/^function fixWinEPERMSync (p, options, er) {$/;"	F
+rmdir	.config/nvim/plugged/coc.nvim/build/index.js	/^function rmdir (p, options, originalEr, cb) {$/;"	F
+rmkids	.config/nvim/plugged/coc.nvim/build/index.js	/^function rmkids (p, options, cb) {$/;"	F
+rimrafSync	.config/nvim/plugged/coc.nvim/build/index.js	/^function rimrafSync (p, options) {$/;"	F
+rmdirSync	.config/nvim/plugged/coc.nvim/build/index.js	/^function rmdirSync (p, options, originalEr) {$/;"	F
+rmkidsSync	.config/nvim/plugged/coc.nvim/build/index.js	/^function rmkidsSync (p, options) {$/;"	F
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = {$/;"	P
+createFile	.config/nvim/plugged/coc.nvim/build/index.js	/^function createFile (file, callback) {$/;"	F
+makeFile	.config/nvim/plugged/coc.nvim/build/index.js	/^  function makeFile () {$/;"	F
+createFileSync	.config/nvim/plugged/coc.nvim/build/index.js	/^function createFileSync (file) {$/;"	F
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = {$/;"	P
+createLink	.config/nvim/plugged/coc.nvim/build/index.js	/^function createLink (srcpath, dstpath, callback) {$/;"	F
+makeLink	.config/nvim/plugged/coc.nvim/build/index.js	/^  function makeLink (srcpath, dstpath) {$/;"	F
+createLinkSync	.config/nvim/plugged/coc.nvim/build/index.js	/^function createLinkSync (srcpath, dstpath) {$/;"	F
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = {$/;"	P
+createSymlink	.config/nvim/plugged/coc.nvim/build/index.js	/^function createSymlink (srcpath, dstpath, type, callback) {$/;"	F
+callback	.config/nvim/plugged/coc.nvim/build/index.js	/^  callback = (typeof type === 'function') ? type : callback$/;"	M
+type	.config/nvim/plugged/coc.nvim/build/index.js	/^  type = (typeof type === 'function') ? false : type$/;"	M
+createSymlinkSync	.config/nvim/plugged/coc.nvim/build/index.js	/^function createSymlinkSync (srcpath, dstpath, type) {$/;"	F
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = {$/;"	P
+symlinkPaths	.config/nvim/plugged/coc.nvim/build/index.js	/^function symlinkPaths (srcpath, dstpath, callback) {$/;"	F
+symlinkPathsSync	.config/nvim/plugged/coc.nvim/build/index.js	/^function symlinkPathsSync (srcpath, dstpath) {$/;"	F
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = {$/;"	P
+symlinkType	.config/nvim/plugged/coc.nvim/build/index.js	/^function symlinkType (srcpath, type, callback) {$/;"	F
+callback	.config/nvim/plugged/coc.nvim/build/index.js	/^  callback = (typeof type === 'function') ? type : callback$/;"	M
+type	.config/nvim/plugged/coc.nvim/build/index.js	/^  type = (typeof type === 'function') ? false : type$/;"	M
+type	.config/nvim/plugged/coc.nvim/build/index.js	/^    type = (stats && stats.isDirectory()) ? 'dir' : 'file'$/;"	M
+symlinkTypeSync	.config/nvim/plugged/coc.nvim/build/index.js	/^function symlinkTypeSync (srcpath, type) {$/;"	F
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = {$/;"	P
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = {$/;"	P
+readFile	.config/nvim/plugged/coc.nvim/build/index.js	/^function readFile (file, options, callback) {$/;"	F
+readFileSync	.config/nvim/plugged/coc.nvim/build/index.js	/^function readFileSync (file, options) {$/;"	F
+stringify	.config/nvim/plugged/coc.nvim/build/index.js	/^function stringify (obj, options) {$/;"	F
+EOL	.config/nvim/plugged/coc.nvim/build/index.js	/^  var EOL = '\\n'$/;"	V
+writeFile	.config/nvim/plugged/coc.nvim/build/index.js	/^function writeFile (file, obj, options, callback) {$/;"	F
+str	.config/nvim/plugged/coc.nvim/build/index.js	/^  var str = ''$/;"	V
+writeFileSync	.config/nvim/plugged/coc.nvim/build/index.js	/^function writeFileSync (file, obj, options) {$/;"	F
+stripBom	.config/nvim/plugged/coc.nvim/build/index.js	/^function stripBom (content) {$/;"	F
+jsonfile	.config/nvim/plugged/coc.nvim/build/index.js	/^var jsonfile = {$/;"	O
+readFile	.config/nvim/plugged/coc.nvim/build/index.js	/^  readFile: readFile,$/;"	P
+readFileSync	.config/nvim/plugged/coc.nvim/build/index.js	/^  readFileSync: readFileSync,$/;"	P
+writeFile	.config/nvim/plugged/coc.nvim/build/index.js	/^  writeFile: writeFile,$/;"	P
+writeFileSync	.config/nvim/plugged/coc.nvim/build/index.js	/^  writeFileSync: writeFileSync$/;"	P
+outputJson	.config/nvim/plugged/coc.nvim/build/index.js	/^function outputJson (file, data, options, callback) {$/;"	F
+outputJsonSync	.config/nvim/plugged/coc.nvim/build/index.js	/^function outputJsonSync (file, data, options) {$/;"	F
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = {$/;"	P
+moveSync	.config/nvim/plugged/coc.nvim/build/index.js	/^function moveSync (src, dest, opts) {$/;"	F
+doRename	.config/nvim/plugged/coc.nvim/build/index.js	/^function doRename (src, dest, overwrite) {$/;"	F
+rename	.config/nvim/plugged/coc.nvim/build/index.js	/^function rename (src, dest, overwrite) {$/;"	F
+moveAcrossDevice	.config/nvim/plugged/coc.nvim/build/index.js	/^function moveAcrossDevice (src, dest, overwrite) {$/;"	F
+opts	.config/nvim/plugged/coc.nvim/build/index.js	/^  const opts = {$/;"	O
+errorOnExist	.config/nvim/plugged/coc.nvim/build/index.js	/^    errorOnExist: true$/;"	P
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = {$/;"	P
+move	.config/nvim/plugged/coc.nvim/build/index.js	/^function move (src, dest, opts, cb) {$/;"	F
+doRename	.config/nvim/plugged/coc.nvim/build/index.js	/^function doRename (src, dest, overwrite, cb) {$/;"	F
+rename	.config/nvim/plugged/coc.nvim/build/index.js	/^function rename (src, dest, overwrite, cb) {$/;"	F
+moveAcrossDevice	.config/nvim/plugged/coc.nvim/build/index.js	/^function moveAcrossDevice (src, dest, overwrite, cb) {$/;"	F
+opts	.config/nvim/plugged/coc.nvim/build/index.js	/^  const opts = {$/;"	O
+errorOnExist	.config/nvim/plugged/coc.nvim/build/index.js	/^    errorOnExist: true$/;"	P
+outputFile	.config/nvim/plugged/coc.nvim/build/index.js	/^function outputFile (file, data, encoding, callback) {$/;"	F
+outputFileSync	.config/nvim/plugged/coc.nvim/build/index.js	/^function outputFileSync (file, ...args) {$/;"	F
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = {$/;"	P
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = () => new Date();$/;"	M
+padWithZeros	.config/nvim/plugged/coc.nvim/build/index.js	/^function padWithZeros(vNumber, width) {$/;"	F
+addZero	.config/nvim/plugged/coc.nvim/build/index.js	/^function addZero(vNumber) {$/;"	F
+offset	.config/nvim/plugged/coc.nvim/build/index.js	/^function offset(timezoneOffset) {$/;"	F
+datePart	.config/nvim/plugged/coc.nvim/build/index.js	/^function datePart(date, displayUTC, part) {$/;"	F
+asString	.config/nvim/plugged/coc.nvim/build/index.js	/^function asString(format, date) {$/;"	F
+extractDateParts	.config/nvim/plugged/coc.nvim/build/index.js	/^function extractDateParts(pattern, str, missingValuesDate) {$/;"	F
+matchers	.config/nvim/plugged/coc.nvim/build/index.js	/^  var matchers = [$/;"	A
+pattern	.config/nvim/plugged/coc.nvim/build/index.js	/^      pattern: \/y{1,4}\/,$/;"	P
+regexp	.config/nvim/plugged/coc.nvim/build/index.js	/^      regexp: "\\\\d{1,4}",$/;"	P
+fn	.config/nvim/plugged/coc.nvim/build/index.js	/^      fn: function(date, value) {$/;"	M
+pattern	.config/nvim/plugged/coc.nvim/build/index.js	/^      pattern: \/MM\/,$/;"	P
+regexp	.config/nvim/plugged/coc.nvim/build/index.js	/^      regexp: "\\\\d{1,2}",$/;"	P
+fn	.config/nvim/plugged/coc.nvim/build/index.js	/^      fn: function(date, value) {$/;"	M
+pattern	.config/nvim/plugged/coc.nvim/build/index.js	/^      pattern: \/dd\/,$/;"	P
+regexp	.config/nvim/plugged/coc.nvim/build/index.js	/^      regexp: "\\\\d{1,2}",$/;"	P
+fn	.config/nvim/plugged/coc.nvim/build/index.js	/^      fn: function(date, value) {$/;"	M
+pattern	.config/nvim/plugged/coc.nvim/build/index.js	/^      pattern: \/hh\/,$/;"	P
+regexp	.config/nvim/plugged/coc.nvim/build/index.js	/^      regexp: "\\\\d{1,2}",$/;"	P
+fn	.config/nvim/plugged/coc.nvim/build/index.js	/^      fn: function(date, value) {$/;"	M
+pattern	.config/nvim/plugged/coc.nvim/build/index.js	/^      pattern: \/mm\/,$/;"	P
+regexp	.config/nvim/plugged/coc.nvim/build/index.js	/^      regexp: "\\\\d\\\\d",$/;"	P
+fn	.config/nvim/plugged/coc.nvim/build/index.js	/^      fn: function(date, value) {$/;"	M
+pattern	.config/nvim/plugged/coc.nvim/build/index.js	/^      pattern: \/ss\/,$/;"	P
+regexp	.config/nvim/plugged/coc.nvim/build/index.js	/^      regexp: "\\\\d\\\\d",$/;"	P
+fn	.config/nvim/plugged/coc.nvim/build/index.js	/^      fn: function(date, value) {$/;"	M
+pattern	.config/nvim/plugged/coc.nvim/build/index.js	/^      pattern: \/SSS\/,$/;"	P
+regexp	.config/nvim/plugged/coc.nvim/build/index.js	/^      regexp: "\\\\d\\\\d\\\\d",$/;"	P
+fn	.config/nvim/plugged/coc.nvim/build/index.js	/^      fn: function(date, value) {$/;"	M
+pattern	.config/nvim/plugged/coc.nvim/build/index.js	/^      pattern: \/O\/,$/;"	P
+regexp	.config/nvim/plugged/coc.nvim/build/index.js	/^      regexp: "[+-]\\\\d{3,4}|Z",$/;"	P
+fn	.config/nvim/plugged/coc.nvim/build/index.js	/^      fn: function(date, value) {$/;"	M
+function	.config/nvim/plugged/coc.nvim/build/index.js	/^    function(p, m) {$/;"	M
+matcher	.config/nvim/plugged/coc.nvim/build/index.js	/^  var matcher = new RegExp(parsedPattern.regexp);$/;"	V
+parse	.config/nvim/plugged/coc.nvim/build/index.js	/^function parse(pattern, str, missingValuesDate) {$/;"	F
+now	.config/nvim/plugged/coc.nvim/build/index.js	/^function now() {$/;"	F
+FILENAME_SEP	.config/nvim/plugged/coc.nvim/build/index.js	/^const FILENAME_SEP = ".";$/;"	V
+ZIP_EXT	.config/nvim/plugged/coc.nvim/build/index.js	/^const ZIP_EXT = ".gz";$/;"	V
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = ({$/;"	M
+ext	.config/nvim/plugged/coc.nvim/build/index.js	/^  const ext = f => f + file.ext;$/;"	F
+index	.config/nvim/plugged/coc.nvim/build/index.js	/^  const index = (f, i, d) =>$/;"	F
+date	.config/nvim/plugged/coc.nvim/build/index.js	/^  const date = (f, i, d) => {$/;"	F
+gzip	.config/nvim/plugged/coc.nvim/build/index.js	/^  const gzip = (f, i) => (i && compress ? f + ZIP_EXT : f);$/;"	F
+FILENAME_SEP	.config/nvim/plugged/coc.nvim/build/index.js	/^const FILENAME_SEP = ".";$/;"	V
+ZIP_EXT	.config/nvim/plugged/coc.nvim/build/index.js	/^const ZIP_EXT = ".gz";$/;"	V
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = ({ file, keepFileExt, pattern }) => {$/;"	M
+zip	.config/nvim/plugged/coc.nvim/build/index.js	/^  const zip = (f, p) => {$/;"	F
+__NOT_MATCHING__	.config/nvim/plugged/coc.nvim/build/index.js	/^  const __NOT_MATCHING__ = "__NOT_MATCHING__";$/;"	V
+extAtEnd	.config/nvim/plugged/coc.nvim/build/index.js	/^  const extAtEnd = f => {$/;"	F
+extInMiddle	.config/nvim/plugged/coc.nvim/build/index.js	/^  const extInMiddle = f => {$/;"	F
+dateAndIndex	.config/nvim/plugged/coc.nvim/build/index.js	/^  const dateAndIndex = (f, p) => {$/;"	F
+index	.config/nvim/plugged/coc.nvim/build/index.js	/^  const index = (f, p) => {$/;"	F
+parts	.config/nvim/plugged/coc.nvim/build/index.js	/^  let parts = [$/;"	A
+result	.config/nvim/plugged/coc.nvim/build/index.js	/^    let result = { filename, index: 0, isCompressed: false };$/;"	O
+RollingFileStream	.config/nvim/plugged/coc.nvim/build/index.js	/^class RollingFileStream extends RollingFileWriteStream {$/;"	C
+constructor	.config/nvim/plugged/coc.nvim/build/index.js	/^  constructor(filename, size, backups, options) {$/;"	M
+DateRollingFileStream	.config/nvim/plugged/coc.nvim/build/index.js	/^class DateRollingFileStream extends RollingFileWriteStream {$/;"	C
+constructor	.config/nvim/plugged/coc.nvim/build/index.js	/^  constructor(filename, pattern, options) {$/;"	M
+appender	.config/nvim/plugged/coc.nvim/build/index.js	/^function appender($/;"	F
+logFile	.config/nvim/plugged/coc.nvim/build/index.js	/^  const logFile = new streams.DateRollingFileStream($/;"	V
+app	.config/nvim/plugged/coc.nvim/build/index.js	/^  const app = function (logEvent) {$/;"	F
+shutdown	.config/nvim/plugged/coc.nvim/build/index.js	/^  app.shutdown = function (complete) {$/;"	M
+configure	.config/nvim/plugged/coc.nvim/build/index.js	/^function configure(config, layouts) {$/;"	F
+touchFile	.config/nvim/plugged/coc.nvim/build/index.js	/^function touchFile(file, options) {$/;"	F
+RollingFileSync	.config/nvim/plugged/coc.nvim/build/index.js	/^class RollingFileSync {$/;"	C
+constructor	.config/nvim/plugged/coc.nvim/build/index.js	/^  constructor(filename, size, backups, options) {$/;"	M
+throwErrorIfArgumentsAreNotValid	.config/nvim/plugged/coc.nvim/build/index.js	/^    function throwErrorIfArgumentsAreNotValid() {$/;"	F
+currentFileSize	.config/nvim/plugged/coc.nvim/build/index.js	/^    function currentFileSize(file) {$/;"	F
+fileSize	.config/nvim/plugged/coc.nvim/build/index.js	/^      let fileSize = 0;$/;"	V
+shouldRoll	.config/nvim/plugged/coc.nvim/build/index.js	/^  shouldRoll() {$/;"	M
+roll	.config/nvim/plugged/coc.nvim/build/index.js	/^  roll(filename) {$/;"	M
+nameMatcher	.config/nvim/plugged/coc.nvim/build/index.js	/^    const nameMatcher = new RegExp(`^${path.basename(filename)}`);$/;"	V
+justTheseFiles	.config/nvim/plugged/coc.nvim/build/index.js	/^    function justTheseFiles(item) {$/;"	F
+index	.config/nvim/plugged/coc.nvim/build/index.js	/^    function index(filename_) {$/;"	F
+byIndex	.config/nvim/plugged/coc.nvim/build/index.js	/^    function byIndex(a, b) {$/;"	F
+increaseFileIndex	.config/nvim/plugged/coc.nvim/build/index.js	/^    function increaseFileIndex(fileToRename) {$/;"	F
+renameTheFiles	.config/nvim/plugged/coc.nvim/build/index.js	/^    function renameTheFiles() {$/;"	F
+write	.config/nvim/plugged/coc.nvim/build/index.js	/^  write(chunk, encoding) {$/;"	M
+writeTheChunk	.config/nvim/plugged/coc.nvim/build/index.js	/^    function writeTheChunk() {$/;"	F
+fileAppender	.config/nvim/plugged/coc.nvim/build/index.js	/^function fileAppender(file, layout, logSize, numBackups, timezoneOffset, options) {$/;"	F
+openTheStream	.config/nvim/plugged/coc.nvim/build/index.js	/^  function openTheStream(filePath, fileSize, numFiles) {$/;"	F
+stream	.config/nvim/plugged/coc.nvim/build/index.js	/^    let stream;$/;"	V
+stream	.config/nvim/plugged/coc.nvim/build/index.js	/^      stream = (((f) => {$/;"	M
+write	.config/nvim/plugged/coc.nvim/build/index.js	/^          write(data) {$/;"	M
+configure	.config/nvim/plugged/coc.nvim/build/index.js	/^function configure(config, layouts) {$/;"	F
+options	.config/nvim/plugged/coc.nvim/build/index.js	/^  const options = {$/;"	O
+webpackEmptyContext	.config/nvim/plugged/coc.nvim/build/index.js	/^function webpackEmptyContext(req) {$/;"	F
+e	.config/nvim/plugged/coc.nvim/build/index.js	/^	var e = new Error("Cannot find module '" + req + "'");$/;"	V
+keys	.config/nvim/plugged/coc.nvim/build/index.js	/^webpackEmptyContext.keys = function() { return []; };$/;"	M
+categories	.config/nvim/plugged/coc.nvim/build/index.js	/^const categories = new Map();$/;"	V
+inheritFromParent	.config/nvim/plugged/coc.nvim/build/index.js	/^function inheritFromParent(config, category, categoryName) {$/;"	F
+addCategoryInheritance	.config/nvim/plugged/coc.nvim/build/index.js	/^function addCategoryInheritance(config) {$/;"	F
+setup	.config/nvim/plugged/coc.nvim/build/index.js	/^const setup = (config) => {$/;"	F
+categoryAppenders	.config/nvim/plugged/coc.nvim/build/index.js	/^    const categoryAppenders = [];$/;"	A
+appenders	.config/nvim/plugged/coc.nvim/build/index.js	/^          appenders: categoryAppenders,$/;"	P
+configForCategory	.config/nvim/plugged/coc.nvim/build/index.js	/^const configForCategory = (category) => {$/;"	F
+appendersForCategory	.config/nvim/plugged/coc.nvim/build/index.js	/^const appendersForCategory = category => configForCategory(category).appenders;$/;"	F
+getLevelForCategory	.config/nvim/plugged/coc.nvim/build/index.js	/^const getLevelForCategory = category => configForCategory(category).level;$/;"	F
+setLevelForCategory	.config/nvim/plugged/coc.nvim/build/index.js	/^const setLevelForCategory = (category, level) => {$/;"	F
+getEnableCallStackForCategory	.config/nvim/plugged/coc.nvim/build/index.js	/^const getEnableCallStackForCategory = category => configForCategory(category).enableCallStack === true;$/;"	F
+setEnableCallStackForCategory	.config/nvim/plugged/coc.nvim/build/index.js	/^const setEnableCallStackForCategory = (category, useCallStack) => {$/;"	F
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = {$/;"	P
+stackReg	.config/nvim/plugged/coc.nvim/build/index.js	/^const stackReg = \/at (?:(.+)\\s+\\()?(?:(.+?):(\\d+)(?::(\\d+))?|([^)]+))\\)?\/;$/;"	V
+defaultParseCallStack	.config/nvim/plugged/coc.nvim/build/index.js	/^function defaultParseCallStack(data, skipIdx = 4) {$/;"	F
+Logger	.config/nvim/plugged/coc.nvim/build/index.js	/^class Logger {$/;"	C
+constructor	.config/nvim/plugged/coc.nvim/build/index.js	/^  constructor(name) {$/;"	M
+context	.config/nvim/plugged/coc.nvim/build/index.js	/^    this.context = {};$/;"	P
+log	.config/nvim/plugged/coc.nvim/build/index.js	/^  log(level, ...args) {$/;"	M
+isLevelEnabled	.config/nvim/plugged/coc.nvim/build/index.js	/^  isLevelEnabled(otherLevel) {$/;"	M
+_log	.config/nvim/plugged/coc.nvim/build/index.js	/^  _log(level, data) {$/;"	M
+loggingEvent	.config/nvim/plugged/coc.nvim/build/index.js	/^    const loggingEvent = new LoggingEvent($/;"	V
+addContext	.config/nvim/plugged/coc.nvim/build/index.js	/^  addContext(key, value) {$/;"	M
+removeContext	.config/nvim/plugged/coc.nvim/build/index.js	/^  removeContext(key) {$/;"	M
+clearContext	.config/nvim/plugged/coc.nvim/build/index.js	/^  clearContext() {$/;"	M
+context	.config/nvim/plugged/coc.nvim/build/index.js	/^    this.context = {};$/;"	P
+setParseCallStackFunction	.config/nvim/plugged/coc.nvim/build/index.js	/^  setParseCallStackFunction(parseFunction) {$/;"	M
+addLevelMethods	.config/nvim/plugged/coc.nvim/build/index.js	/^function addLevelMethods(target) {$/;"	F
+levelMethod	.config/nvim/plugged/coc.nvim/build/index.js	/^  const levelMethod = levelStrLower.replace(\/_([a-z])\/g, g =>$/;"	F
+getUrl	.config/nvim/plugged/coc.nvim/build/index.js	/^function getUrl(req) {$/;"	F
+assembleTokens	.config/nvim/plugged/coc.nvim/build/index.js	/^function assembleTokens(req, res, customTokens) {$/;"	F
+arrayUniqueTokens	.config/nvim/plugged/coc.nvim/build/index.js	/^  const arrayUniqueTokens = array => {$/;"	F
+defaultTokens	.config/nvim/plugged/coc.nvim/build/index.js	/^  const defaultTokens = [];$/;"	A
+token	.config/nvim/plugged/coc.nvim/build/index.js	/^    token: ":status",$/;"	P
+token	.config/nvim/plugged/coc.nvim/build/index.js	/^    token: ":response-time",$/;"	P
+token	.config/nvim/plugged/coc.nvim/build/index.js	/^    token: ":referrer",$/;"	P
+token	.config/nvim/plugged/coc.nvim/build/index.js	/^    token: ":http-version",$/;"	P
+token	.config/nvim/plugged/coc.nvim/build/index.js	/^    token: ":remote-addr",$/;"	P
+token	.config/nvim/plugged/coc.nvim/build/index.js	/^    token: ":user-agent",$/;"	P
+token	.config/nvim/plugged/coc.nvim/build/index.js	/^    token: ":content-length",$/;"	P
+token	.config/nvim/plugged/coc.nvim/build/index.js	/^    token: \/:req\\[([^\\]]+)]\/g,$/;"	P
+replacement	.config/nvim/plugged/coc.nvim/build/index.js	/^    replacement(_, field) {$/;"	M
+token	.config/nvim/plugged/coc.nvim/build/index.js	/^    token: \/:res\\[([^\\]]+)]\/g,$/;"	P
+replacement	.config/nvim/plugged/coc.nvim/build/index.js	/^    replacement(_, field) {$/;"	M
+format	.config/nvim/plugged/coc.nvim/build/index.js	/^function format(str, tokens) {$/;"	F
+createNoLogCondition	.config/nvim/plugged/coc.nvim/build/index.js	/^function createNoLogCondition(nolog) {$/;"	F
+regexpsAsStrings	.config/nvim/plugged/coc.nvim/build/index.js	/^    const regexpsAsStrings = nolog.map(reg => (reg.source ? reg.source : reg));$/;"	F
+matchRules	.config/nvim/plugged/coc.nvim/build/index.js	/^function matchRules(statusCode, currentLevel, ruleSet) {$/;"	F
+matchedRule	.config/nvim/plugged/coc.nvim/build/index.js	/^    const matchedRule = ruleSet.find(rule => {$/;"	F
+exports	.config/nvim/plugged/coc.nvim/build/index.js	/^module.exports = function getLogger(logger4js, options) {$/;"	M
+start	.config/nvim/plugged/coc.nvim/build/index.js	/^      const start = new Date();$/;"	V
+writeHead	.config/nvim/plugged/coc.nvim/build/index.js	/^      res.writeHead = (code, headers) => {$/;"	M
+line	.config/nvim/plugged/coc.nvim/build/index.js	/^          const line = fmt(req, res, str => format(str, combinedTokens));$/;"	F
+default	.config/nvim/plugged/coc.nvim/build/index.js	/^exports.default = (opts, requestApi = true) => {$/;"	M
+file	.config/nvim/plugged/coc.nvim/build/index.js	/^                vscode_uri_1.URI.file = (path) => {$/;"	M
+plugin	.config/nvim/plugged/coc.nvim/build/index.js	/^    const plugin = new plugin_1.default(nvim);$/;"	V
+default	.config/nvim/plugged/coc.nvim/build/index.js	/^            default: {$/;"	P
+timer	.config/nvim/plugged/coc.nvim/build/index.js	/^        let timer = setTimeout(() => {$/;"	F
+attach	.config/nvim/plugged/coc.nvim/build/index.js	/^function attach({ reader: _reader, writer: _writer, proc, socket, }, _logger = null, requestApi = true) {$/;"	F
+writer	.config/nvim/plugged/coc.nvim/build/index.js	/^    let writer;$/;"	V
+reader	.config/nvim/plugged/coc.nvim/build/index.js	/^    let reader;$/;"	V
+neovim	.config/nvim/plugged/coc.nvim/build/index.js	/^    let neovim;$/;"	V
+fulfilled	.config/nvim/plugged/coc.nvim/build/index.js	/^        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }$/;"	F
+rejected	.config/nvim/plugged/coc.nvim/build/index.js	/^        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }$/;"	F
+step	.config/nvim/plugged/coc.nvim/build/index.js	/^        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }$/;"	F
+AsyncResponse	.config/nvim/plugged/coc.nvim/build/index.js	/^class AsyncResponse {$/;"	C
+constructor	.config/nvim/plugged/coc.nvim/build/index.js	/^    constructor(requestId, cb) {$/;"	M
+finish	.config/nvim/plugged/coc.nvim/build/index.js	/^    finish(err, res) {$/;"	M
+NeovimClient	.config/nvim/plugged/coc.nvim/build/index.js	/^class NeovimClient extends Neovim_1.Neovim {$/;"	C
+constructor	.config/nvim/plugged/coc.nvim/build/index.js	/^    constructor() {$/;"	M
+value	.config/nvim/plugged/coc.nvim/build/index.js	/^            value: this$/;"	P
+createBuffer	.config/nvim/plugged/coc.nvim/build/index.js	/^    createBuffer(id) {$/;"	M
+data	.config/nvim/plugged/coc.nvim/build/index.js	/^            data: id,$/;"	P
+client	.config/nvim/plugged/coc.nvim/build/index.js	/^            client: this$/;"	P
+createWindow	.config/nvim/plugged/coc.nvim/build/index.js	/^    createWindow(id) {$/;"	M
+data	.config/nvim/plugged/coc.nvim/build/index.js	/^            data: id,$/;"	P
+client	.config/nvim/plugged/coc.nvim/build/index.js	/^            client: this$/;"	P
+createTabpage	.config/nvim/plugged/coc.nvim/build/index.js	/^    createTabpage(id) {$/;"	M
+data	.config/nvim/plugged/coc.nvim/build/index.js	/^            data: id,$/;"	P
+client	.config/nvim/plugged/coc.nvim/build/index.js	/^            client: this$/;"	P
+send	.config/nvim/plugged/coc.nvim/build/index.js	/^    send(arr) {$/;"	M
+attach	.config/nvim/plugged/coc.nvim/build/index.js	/^    attach({ reader, writer, }, requestApi = true) {$/;"	M
+detach	.config/nvim/plugged/coc.nvim/build/index.js	/^    detach() {$/;"	M
+isAttached	.config/nvim/plugged/coc.nvim/build/index.js	/^    isAttached(bufnr) {$/;"	M
+handleRequest	.config/nvim/plugged/coc.nvim/build/index.js	/^    handleRequest(method, args, resp) {$/;"	M
+sendAsyncRequest	.config/nvim/plugged/coc.nvim/build/index.js	/^    sendAsyncRequest(method, args) {$/;"	M
+response	.config/nvim/plugged/coc.nvim/build/index.js	/^            let response = new AsyncResponse(id, (err, res) => {$/;"	F
+response	.config/nvim/plugged/coc.nvim/build/index.js	/^            let response = new AsyncResponse(id, (err, res) => {$/;"	V
+emitNotification	.config/nvim/plugged/coc.nvim/build/index.js	/^    emitNotification(method, args) {$/;"	M
+send	.config/nvim/plugged/coc.nvim/build/index.js	/^                    send: (resp, isError) => {$/;"	M
+handleNotification	.config/nvim/plugged/coc.nvim/build/index.js	/^    handleNotification(method, args) {$/;"	M
+setupTransport	.config/nvim/plugged/coc.nvim/build/index.js	/^    setupTransport(requestApi = true) {$/;"	M
+requestApi	.config/nvim/plugged/coc.nvim/build/index.js	/^    requestApi() {$/;"	M
+generateApi	.config/nvim/plugged/coc.nvim/build/index.js	/^    generateApi() {$/;"	M
+results	.config/nvim/plugged/coc.nvim/build/index.js	/^            let results;$/;"	V
+attachBufferEvent	.config/nvim/plugged/coc.nvim/build/index.js	/^    attachBufferEvent(buffer, eventName, cb) {$/;"	M
+detachBufferEvent	.config/nvim/plugged/coc.nvim/build/index.js	/^    detachBufferEvent(buffer, eventName, cb) {$/;"	M
+handlers	.config/nvim/plugged/coc.nvim/build/index.js	/^        const handlers = bufferMap.get(eventName).filter(handler => handler !== cb);$/;"	F
+pauseNotification	.config/nvim/plugged/coc.nvim/build/index.js	/^    pauseNotification() {$/;"	M
+timer	.config/nvim/plugged/coc.nvim/build/index.js	/^        let timer = setTimeout(() => {$/;"	F
+resumeNotification	.config/nvim/plugged/coc.nvim/build/index.js	/^    resumeNotification(cancel, notify) {$/;"	M
+hasFunction	.config/nvim/plugged/coc.nvim/build/index.js	/^    hasFunction(name) {$/;"	M
+result	.config/nvim/plugged/coc.nvim/build/index.js	/^    var result = {};$/;"	O
+NvimTransport	.config/nvim/plugged/coc.nvim/build/index.js	/^class NvimTransport extends base_1.default {$/;"	C
+constructor	.config/nvim/plugged/coc.nvim/build/index.js	/^    constructor() {$/;"	M
+parseMessage	.config/nvim/plugged/coc.nvim/build/index.js	/^    parseMessage(msg) {$/;"	M
+setupCodec	.config/nvim/plugged/coc.nvim/build/index.js	/^    setupCodec() {$/;"	M
+transport	.config/nvim/plugged/coc.nvim/build/index.js	/^                transport: this,$/;"	P
+attach	.config/nvim/plugged/coc.nvim/build/index.js	/^    attach(writer, reader, client) {$/;"	M
+buffered	.config/nvim/plugged/coc.nvim/build/index.js	/^        const buffered = new buffered_1.default();$/;"	V
+detach	.config/nvim/plugged/coc.nvim/build/index.js	/^    detach() {$/;"	M
+request	.config/nvim/plugged/coc.nvim/build/index.js	/^    request(method, args, cb) {$/;"	M
+timer	.config/nvim/plugged/coc.nvim/build/index.js	/^        let timer = setTimeout(() => {$/;"	F
+notify	.config/nvim/plugged/coc.nvim/build/index.js	/^    notify(method, args) {$/;"	M
+send	.config/nvim/plugged/coc.nvim/build/index.js	/^    send(arr) {$/;"	M
+createResponse	.config/nvim/plugged/coc.nvim/build/index.js	/^    createResponse(requestId) {$/;"	M
+timer	.config/nvim/plugged/coc.nvim/build/index.js	/^        let timer = setTimeout(() => {$/;"	F
+send	.config/nvim/plugged/coc.nvim/build/index.js	/^            send: (resp, isError) => {$/;"	M
+encode	.config/nvim/plugged/coc.nvim/build/index.js	/^function encode(input, options) {$/;"	F
+encoder	.config/nvim/plugged/coc.nvim/build/index.js	/^  var encoder = new EncodeBuffer(options);$/;"	V
+EncodeBuffer	.config/nvim/plugged/coc.nvim/build/index.js	/^function EncodeBuffer(options) {$/;"	F
+write	.config/nvim/plugged/coc.nvim/build/index.js	/^EncodeBuffer.prototype.write = function(input) {$/;"	M
+addExtPacker	.config/nvim/plugged/coc.nvim/build/index.js	/^  addExtPacker: addExtPacker,$/;"	P
+getExtPacker	.config/nvim/plugged/coc.nvim/build/index.js	/^  getExtPacker: getExtPacker,$/;"	P
+init	.config/nvim/plugged/coc.nvim/build/index.js	/^  init: init$/;"	P
+getEncoder	.config/nvim/plugged/coc.nvim/build/index.js	/^function getEncoder(options) {$/;"	F
+encode	.config/nvim/plugged/coc.nvim/build/index.js	/^  function encode(encoder, value) {$/;"	F
+init	.config/nvim/plugged/coc.nvim/build/index.js	/^function init() {$/;"	F
+addExtPacker	.config/nvim/plugged/coc.nvim/build/index.js	/^function addExtPacker(etype, Class, packer) {$/;"	F
+extPacker	.config/nvim/plugged/coc.nvim/build/index.js	/^  function extPacker(value) {$/;"	F
+getExtPacker	.config/nvim/plugged/coc.nvim/build/index.js	/^function getExtPacker(value) {$/;"	F
+ExtBuffer	.config/nvim/plugged/coc.nvim/build/index.js	/^function ExtBuffer(buffer, type) {$/;"	F
+from	.config/nvim/plugged/coc.nvim/build/index.js	/^function from(value) {$/;"	F
+alloc	.config/nvim/plugged/coc.nvim/build/index.js	/^function alloc(size) {$/;"	F
+concat	.config/nvim/plugged/coc.nvim/build/index.js	/^function concat(list, length) {$/;"	F
+offset	.config/nvim/plugged/coc.nvim/build/index.js	/^  var offset = 0;$/;"	V
+dryrun	.config/nvim/plugged/coc.nvim/build/index.js	/^  function dryrun(buffer) {$/;"	F
+append	.config/nvim/plugged/coc.nvim/build/index.js	/^  function append(buffer) {$/;"	F
+isArrayBuffer	.config/nvim/plugged/coc.nvim/build/index.js	/^function isArrayBuffer(value) {$/;"	F
+fromString	.config/nvim/plugged/coc.nvim/build/index.js	/^function fromString(value) {$/;"	F
+auto	.config/nvim/plugged/coc.nvim/build/index.js	/^function auto(that) {$/;"	F
+_false	.config/nvim/plugged/coc.nvim/build/index.js	/^function _false() {$/;"	F
+_is	.config/nvim/plugged/coc.nvim/build/index.js	/^function _is(name, key) {$/;"	F
+c	.config/nvim/plugged/coc.nvim/build/index.js	/^function c(B) {$/;"	F
+toString	.config/nvim/plugged/coc.nvim/build/index.js	/^var toString = {}.toString;$/;"	O
+alloc	.config/nvim/plugged/coc.nvim/build/index.js	/^function alloc(size) {$/;"	F
+from	.config/nvim/plugged/coc.nvim/build/index.js	/^function from(value) {$/;"	F
+alloc	.config/nvim/plugged/coc.nvim/build/index.js	/^function alloc(size) {$/;"	F
+from	.config/nvim/plugged/coc.nvim/build/index.js	/^function from(value) {$/;"	F
+alloc	.config/nvim/plugged/coc.nvim/build/index.js	/^function alloc(size) {$/;"	F
+from	.config/nvim/plugged/coc.nvim/build/index.js	/^function from(value) {$/;"	F
+copy	.config/nvim/plugged/coc.nvim/build/index.js	/^function copy(target, targetStart, start, end) {$/;"	F
+slice	.config/nvim/plugged/coc.nvim/build/index.js	/^function slice(start, end) {$/;"	F
+toString	.config/nvim/plugged/coc.nvim/build/index.js	/^function toString(encoding, start, end) {$/;"	F
+gen	.config/nvim/plugged/coc.nvim/build/index.js	/^function gen(method) {$/;"	F
+wrap	.config/nvim/plugged/coc.nvim/build/index.js	/^  function wrap() {$/;"	F
+MAXBUFLEN	.config/nvim/plugged/coc.nvim/build/index.js	/^var MAXBUFLEN = 8192;$/;"	V
+write	.config/nvim/plugged/coc.nvim/build/index.js	/^function write(string, offset) {$/;"	F
+chr	.config/nvim/plugged/coc.nvim/build/index.js	/^  var chr = 0;$/;"	V
+i	.config/nvim/plugged/coc.nvim/build/index.js	/^  var i = 0;$/;"	V
+chr	.config/nvim/plugged/coc.nvim/build/index.js	/^      chr = (((chr - 0xD800) << 10) | (string.charCodeAt(i++) - 0xDC00)) + 0x10000;$/;"	M
+toString	.config/nvim/plugged/coc.nvim/build/index.js	/^function toString(encoding, start, end) {$/;"	F
+string	.config/nvim/plugged/coc.nvim/build/index.js	/^  var string = '';$/;"	V
+chr	.config/nvim/plugged/coc.nvim/build/index.js	/^  var chr = 0;$/;"	V
+chr	.config/nvim/plugged/coc.nvim/build/index.js	/^      chr = (chr & 0x1F) << 6 |$/;"	M
+chr	.config/nvim/plugged/coc.nvim/build/index.js	/^      chr = (chr & 0x0F)             << 12 |$/;"	M
+chr	.config/nvim/plugged/coc.nvim/build/index.js	/^      chr = (chr & 0x07)             << 18 |$/;"	M
+copy	.config/nvim/plugged/coc.nvim/build/index.js	/^function copy(target, targetStart, start, end) {$/;"	F
+i	.config/nvim/plugged/coc.nvim/build/index.js	/^  var i;$/;"	V
+_encode	.config/nvim/plugged/coc.nvim/build/index.js	/^var _encode;$/;"	V
+ERROR_COLUMNS	.config/nvim/plugged/coc.nvim/build/index.js	/^var ERROR_COLUMNS = {name: 1, message: 1, stack: 1, columnNumber: 1, fileName: 1, lineNumber: 1};$/;"	O
+setExtPackers	.config/nvim/plugged/coc.nvim/build/index.js	/^function setExtPackers(codec) {$/;"	F
+encode	.config/nvim/plugged/coc.nvim/build/index.js	/^function encode(input) {$/;"	F
+packValueOf	.config/nvim/plugged/coc.nvim/build/index.js	/^function packValueOf(value) {$/;"	F
+packRegExp	.config/nvim/plugged/coc.nvim/build/index.js	/^function packRegExp(value) {$/;"	F
+out	.config/nvim/plugged/coc.nvim/build/index.js	/^  var out = [value.pop()];$/;"	A
+packError	.config/nvim/plugged/coc.nvim/build/index.js	/^function packError(value) {$/;"	F
+out	.config/nvim/plugged/coc.nvim/build/index.js	/^  var out = {};$/;"	O
+extmap	.config/nvim/plugged/coc.nvim/build/index.js	/^var extmap = [];$/;"	A
+getWriteType	.config/nvim/plugged/coc.nvim/build/index.js	/^function getWriteType(options) {$/;"	F
+writeType	.config/nvim/plugged/coc.nvim/build/index.js	/^  var writeType = {$/;"	O
+bool	.config/nvim/plugged/coc.nvim/build/index.js	/^  function bool(encoder, value) {$/;"	F
+number	.config/nvim/plugged/coc.nvim/build/index.js	/^  function number(encoder, value) {$/;"	F
+type	.config/nvim/plugged/coc.nvim/build/index.js	/^    var type;$/;"	V
+type	.config/nvim/plugged/coc.nvim/build/index.js	/^      type = (ivalue <= 0xFF) ? 0xcc : (ivalue <= 0xFFFF) ? 0xcd : 0xce;$/;"	M
+type	.config/nvim/plugged/coc.nvim/build/index.js	/^      type = (-0x80 <= ivalue) ? 0xd0 : (-0x8000 <= ivalue) ? 0xd1 : 0xd2;$/;"	M
+uint64	.config/nvim/plugged/coc.nvim/build/index.js	/^  function uint64(encoder, value) {$/;"	F
+type	.config/nvim/plugged/coc.nvim/build/index.js	/^    var type = 0xcf;$/;"	V
+int64	.config/nvim/plugged/coc.nvim/build/index.js	/^  function int64(encoder, value) {$/;"	F
+type	.config/nvim/plugged/coc.nvim/build/index.js	/^    var type = 0xd3;$/;"	V
+str_head_size	.config/nvim/plugged/coc.nvim/build/index.js	/^  function str_head_size(length) {$/;"	F
+raw_head_size	.config/nvim/plugged/coc.nvim/build/index.js	/^  function raw_head_size(length) {$/;"	F
+_string	.config/nvim/plugged/coc.nvim/build/index.js	/^  function _string(head_size) {$/;"	F
+string	.config/nvim/plugged/coc.nvim/build/index.js	/^    function string(encoder, value) {$/;"	F
+maxsize	.config/nvim/plugged/coc.nvim/build/index.js	/^      var maxsize = 5 + length * 3;$/;"	V
+object	.config/nvim/plugged/coc.nvim/build/index.js	/^  function object(encoder, value) {$/;"	F
+object_raw	.config/nvim/plugged/coc.nvim/build/index.js	/^  function object_raw(encoder, value) {$/;"	F
+nil	.config/nvim/plugged/coc.nvim/build/index.js	/^  function nil(encoder, value) {$/;"	F
+type	.config/nvim/plugged/coc.nvim/build/index.js	/^    var type = 0xc0;$/;"	V
+array	.config/nvim/plugged/coc.nvim/build/index.js	/^  function array(encoder, value) {$/;"	F
+bin_buffer	.config/nvim/plugged/coc.nvim/build/index.js	/^  function bin_buffer(encoder, value) {$/;"	F
+bin_arraybuffer	.config/nvim/plugged/coc.nvim/build/index.js	/^  function bin_arraybuffer(encoder, value) {$/;"	F
+ext	.config/nvim/plugged/coc.nvim/build/index.js	/^  function ext(encoder, value) {$/;"	F
+obj_to_map	.config/nvim/plugged/coc.nvim/build/index.js	/^  function obj_to_map(encoder, value) {$/;"	F
+map_to_map	.config/nvim/plugged/coc.nvim/build/index.js	/^  function map_to_map(encoder, value) {$/;"	F
+raw	.config/nvim/plugged/coc.nvim/build/index.js	/^  function raw(encoder, value) {$/;"	F
+Uint64BE	.config/nvim/plugged/coc.nvim/build/index.js	/^var Uint64BE, Int64BE, Uint64LE, Int64LE;$/;"	V
+Int64BE	.config/nvim/plugged/coc.nvim/build/index.js	/^var Uint64BE, Int64BE, Uint64LE, Int64LE;$/;"	V
+Uint64LE	.config/nvim/plugged/coc.nvim/build/index.js	/^var Uint64BE, Int64BE, Uint64LE, Int64LE;$/;"	V
+UNDEFINED	.config/nvim/plugged/coc.nvim/build/index.js	/^  var UNDEFINED = "undefined";$/;"	V
+ZERO	.config/nvim/plugged/coc.nvim/build/index.js	/^  var ZERO = [0, 0, 0, 0, 0, 0, 0, 0];$/;"	A
+BIT32	.config/nvim/plugged/coc.nvim/build/index.js	/^  var BIT32 = 4294967296;$/;"	V
+BIT24	.config/nvim/plugged/coc.nvim/build/index.js	/^  var BIT24 = 16777216;$/;"	V
+storage	.config/nvim/plugged/coc.nvim/build/index.js	/^  var storage; \/\/ Array;$/;"	V
+factory	.config/nvim/plugged/coc.nvim/build/index.js	/^  function factory(name, bigendian, unsigned) {$/;"	F
+isName	.config/nvim/plugged/coc.nvim/build/index.js	/^    var isName = "is" + name;$/;"	V
+_isInt64	.config/nvim/plugged/coc.nvim/build/index.js	/^    var _isInt64 = "_" + isName;$/;"	V
+Int64	.config/nvim/plugged/coc.nvim/build/index.js	/^    function Int64(buffer, offset, value, raddix) {$/;"	F
+isInt64	.config/nvim/plugged/coc.nvim/build/index.js	/^    function isInt64(b) {$/;"	F
+init	.config/nvim/plugged/coc.nvim/build/index.js	/^    function init(that, buffer, offset, value, raddix) {$/;"	F
+fromString	.config/nvim/plugged/coc.nvim/build/index.js	/^    function fromString(buffer, offset, str, raddix) {$/;"	F
+pos	.config/nvim/plugged/coc.nvim/build/index.js	/^      var pos = 0;$/;"	V
+high	.config/nvim/plugged/coc.nvim/build/index.js	/^      var high = 0;$/;"	V
+low	.config/nvim/plugged/coc.nvim/build/index.js	/^      var low = 0;$/;"	V
+toNumber	.config/nvim/plugged/coc.nvim/build/index.js	/^    function toNumber() {$/;"	F
+toString	.config/nvim/plugged/coc.nvim/build/index.js	/^    function toString(radix) {$/;"	F
+str	.config/nvim/plugged/coc.nvim/build/index.js	/^      var str = "";$/;"	V
+str	.config/nvim/plugged/coc.nvim/build/index.js	/^        str = (mod % radix).toString(radix) + str;$/;"	M
+writeInt32	.config/nvim/plugged/coc.nvim/build/index.js	/^    function writeInt32(buffer, offset, value) {$/;"	F
+readInt32	.config/nvim/plugged/coc.nvim/build/index.js	/^    function readInt32(buffer, offset) {$/;"	F
+toArray	.config/nvim/plugged/coc.nvim/build/index.js	/^  function toArray(raw) {$/;"	F
+toBuffer	.config/nvim/plugged/coc.nvim/build/index.js	/^  function toBuffer(raw) {$/;"	F
+dest	.config/nvim/plugged/coc.nvim/build/index.js	/^    var dest = new BUFFER(8);$/;"	V
+toArrayBuffer	.config/nvim/plugged/coc.nvim/build/index.js	/^  function toArrayBuffer(raw) {$/;"	F
+dest	.config/nvim/plugged/coc.nvim/build/index.js	/^    var dest = new UINT8ARRAY(8);$/;"	V
+isValidBuffer	.config/nvim/plugged/coc.nvim/build/index.js	/^  function isValidBuffer(buffer, offset) {$/;"	F
+fromArray	.config/nvim/plugged/coc.nvim/build/index.js	/^  function fromArray(destbuf, destoff, srcbuf, srcoff) {$/;"	F
+newArray	.config/nvim/plugged/coc.nvim/build/index.js	/^  function newArray(buffer, offset) {$/;"	F
+fromPositiveBE	.config/nvim/plugged/coc.nvim/build/index.js	/^  function fromPositiveBE(buffer, offset, value) {$/;"	F
+fromNegativeBE	.config/nvim/plugged/coc.nvim/build/index.js	/^  function fromNegativeBE(buffer, offset, value) {$/;"	F
+fromPositiveLE	.config/nvim/plugged/coc.nvim/build/index.js	/^  function fromPositiveLE(buffer, offset, value) {$/;"	F
+fromNegativeLE	.config/nvim/plugged/coc.nvim/build/index.js	/^  function fromNegativeLE(buffer, offset, value) {$/;"	F
+_isArray	.config/nvim/plugged/coc.nvim/build/index.js	/^  function _isArray(val) {$/;"	F
+getWriteToken	.config/nvim/plugged/coc.nvim/build/index.js	/^function getWriteToken(options) {$/;"	F
+init_uint8array	.config/nvim/plugged/coc.nvim/build/index.js	/^function init_uint8array() {$/;"	F
+init_token	.config/nvim/plugged/coc.nvim/build/index.js	/^function init_token() {$/;"	F
+init_safe	.config/nvim/plugged/coc.nvim/build/index.js	/^function init_safe() {$/;"	F
+write1	.config/nvim/plugged/coc.nvim/build/index.js	/^function write1(type) {$/;"	F
+write2	.config/nvim/plugged/coc.nvim/build/index.js	/^function write2(type) {$/;"	F
+write4	.config/nvim/plugged/coc.nvim/build/index.js	/^function write4(type) {$/;"	F
+writeN	.config/nvim/plugged/coc.nvim/build/index.js	/^function writeN(type, len, method, noAssert) {$/;"	F
+writeUInt64BE	.config/nvim/plugged/coc.nvim/build/index.js	/^function writeUInt64BE(value, offset) {$/;"	F
+writeInt64BE	.config/nvim/plugged/coc.nvim/build/index.js	/^function writeInt64BE(value, offset) {$/;"	F
+writeFloatBE	.config/nvim/plugged/coc.nvim/build/index.js	/^function writeFloatBE(value, offset) {$/;"	F
+writeDoubleBE	.config/nvim/plugged/coc.nvim/build/index.js	/^function writeDoubleBE(value, offset) {$/;"	F
+read	.config/nvim/plugged/coc.nvim/build/index.js	/^exports.read = function (buffer, offset, isLE, mLen, nBytes) {$/;"	M
+e	.config/nvim/plugged/coc.nvim/build/index.js	/^  var e, m$/;"	V
+m	.config/nvim/plugged/coc.nvim/build/index.js	/^  var e, m$/;"	V
+write	.config/nvim/plugged/coc.nvim/build/index.js	/^exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {$/;"	M
+e	.config/nvim/plugged/coc.nvim/build/index.js	/^  var e, m, c$/;"	V
+m	.config/nvim/plugged/coc.nvim/build/index.js	/^  var e, m, c$/;"	V
+c	.config/nvim/plugged/coc.nvim/build/index.js	/^  var e, m, c$/;"	V
+m	.config/nvim/plugged/coc.nvim/build/index.js	/^      m = ((value * c) - 1) * Math.pow(2, mLen)$/;"	M
+e	.config/nvim/plugged/coc.nvim/build/index.js	/^  e = (e << mLen) | m$/;"	M
+write0	.config/nvim/plugged/coc.nvim/build/index.js	/^function write0(type) {$/;"	F
+Codec	.config/nvim/plugged/coc.nvim/build/index.js	/^function Codec(options) {$/;"	F
+init	.config/nvim/plugged/coc.nvim/build/index.js	/^Codec.prototype.init = function() {$/;"	M
+install	.config/nvim/plugged/coc.nvim/build/index.js	/^function install(props) {$/;"	F
+add	.config/nvim/plugged/coc.nvim/build/index.js	/^function add(a, b) {$/;"	F
+ab	.config/nvim/plugged/coc.nvim/build/index.js	/^  function ab() {$/;"	F
+join	.config/nvim/plugged/coc.nvim/build/index.js	/^function join(filters) {$/;"	F
+iterator	.config/nvim/plugged/coc.nvim/build/index.js	/^  function iterator(value, filter) {$/;"	F
+filter	.config/nvim/plugged/coc.nvim/build/index.js	/^function filter(filter) {$/;"	F
+createCodec	.config/nvim/plugged/coc.nvim/build/index.js	/^function createCodec(options) {$/;"	F
+MIN_BUFFER_SIZE	.config/nvim/plugged/coc.nvim/build/index.js	/^var MIN_BUFFER_SIZE = 20

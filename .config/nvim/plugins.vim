@@ -57,15 +57,17 @@ Plug 'skywind3000/gutentags_plus'
 Plug 'KabbAmine/zeavim.vim'
 Plug 'rajasegar/vim-search-web'
 Plug 'vim-vdebug/vdebug'
-
+Plug 'kkoomen/vim-doge'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Autocompletion
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins'  }
-Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
-Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
-
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+let g:coc_global_extensions = [
+  \ 'coc-tsserver',
+  \ 'coc-phpls',
+  \ 'coc-css'
+  \ ]
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => PHP, Laravel, Symfony
@@ -75,12 +77,8 @@ Plug 'arnaud-lb/vim-php-namespace'    "types use statements for you
 Plug 'stephpy/vim-php-cs-fixer'       "A tool to automatically fix PHP coding standard issues
 Plug 'SirVer/ultisnips'               "UltiSnips - The ultimate snippet solution for Vim.
 Plug 'tobyS/vmustache'                "Mustache templates system for VIMScript (required for PDV)
-Plug 'tobyS/pdv'                      "PHP Documentator for vim
 Plug 'shawncplus/phpcomplete.vim'     "Improved PHP omni-completion
 Plug 'jwalton512/vim-blade'           "Vim syntax highlighting for Blade templates
-Plug 'lumiliet/vim-twig'              "Twig Syntax highlighting
-Plug 'phpactor/phpactor', { 'do': ':call phpactor#Update()', 'for': 'php' }
-Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install'  }
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -112,4 +110,9 @@ Plug 'ternjs/tern_for_vim', { 'do': 'npm install && npm install -g tern' }
 Plug 'leafgarland/typescript-vim'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'mlaursen/vim-react-snippets'
+Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+Plug 'jparise/vim-graphql'
 call plug#end()
