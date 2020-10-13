@@ -59,15 +59,19 @@ Plug 'rajasegar/vim-search-web'
 Plug 'vim-vdebug/vdebug'
 Plug 'kkoomen/vim-doge'
 
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Autocompletion
+" => CoC
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 let g:coc_global_extensions = [
   \ 'coc-tsserver',
   \ 'coc-phpls',
-  \ 'coc-css'
+  \ 'coc-css',
+  \ 'coc-eslint',
+  \ 'coc-prettier'
   \ ]
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => PHP, Laravel, Symfony

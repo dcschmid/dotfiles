@@ -498,6 +498,7 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => ALE
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -569,14 +570,6 @@ let g:closetag_shortcut = '>'
 " Add > at current position without closing the current tag, default is ''
 "
 let g:closetag_close_shortcut = '<leader>>'
-
-"""""""""""""""""""""""""""""""""
-" => Laravel specific
-"""""""""""""""""""""""""""""""""
-nmap <Leader>lm :!php artisan make:
-nmap <Leader><Leader>c :e app/Http/Controllers/<cr>
-nmap <Leader><Leader>m :e app/<cr>
-nmap <Leader><Leader>v :e resources/views/<cr>
 
 
 """""""""""""""""""""""""""""""""
@@ -661,6 +654,7 @@ augroup END
 
 autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
 autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
