@@ -17,7 +17,7 @@ endfunction
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'cocopon/iceberg.vim'            "A dark blue theme
 Plug 'itchyny/lightline.vim'          "statusline/tabline for vim
-Plug 'maximbaz/lightline-ale'         "This plugin provides ALE indicator for the lightline vim plugin.
+Plug 'josa42/vim-lightline-coc'
 Plug 'itchyny/vim-gitbranch'
 Plug 'niklaas/lightline-gitdiff'
 Plug 'fisle/vim-no-fixme'             "Vim plugin for lightline to show amount of TODO|FIXME|XXX in current file
@@ -39,7 +39,6 @@ Plug 'phux/vim-snippets'              "vim-snipmate default snippets (Previously
 Plug 'ntpeters/vim-better-whitespace' "Better whitespace highlighting for Vim
 Plug 'airblade/vim-gitgutter'         "A Vim plugin shows a git diff in the gutter and stages/undoes hunks
 Plug 'editorconfig/editorconfig-vim'  "EditorConfig plugin for vim
-Plug 'w0rp/ale'                       "Asynchronous Lint Engine
 Plug 'xolox/vim-session'              "Session management 
 Plug 'xolox/vim-misc'                 "Session management 
 Plug 'jiangmiao/auto-pairs'           "Vim plugin, insert or delete brackets, parens, quotes in pair

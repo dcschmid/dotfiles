@@ -2,7 +2,7 @@
     \ 'colorscheme': 'iceberg',
     \ 'active': {
     \   'left': [['mode','paste'],['gitbranch', 'gitdiff', 'fugitive', 'filename']],
-    \   'right': [['lineinfo'], ['percent'], ['fileformat', 'fileencoding', 'filetype'],['linter_checking','linter_warnings', 'linter_errors', 'linter_ok'], ['nofixme']]
+    \   'right': [[ 'coc_errors', 'coc_warnings', 'coc_ok' ], [ 'coc_status'  ],['lineinfo'], ['percent'], ['fileformat', 'fileencoding', 'filetype'], ['nofixme']]
     \},
     \ 'component_function': {
     \   'fugitive': 'LightlineFugitive',
@@ -17,10 +17,6 @@
     \    'gitstatus': 'lightline_gitdiff#get_status() !=# ""',
     \ },
     \ 'component_expand': {
-    \   'linter_checking': 'lightline#ale#checking',
-    \   'linter_warnings': 'lightline#ale#warnings',
-    \   'linter_errors': 'lightline#ale#errors',
-    \   'linter_ok': 'lightline#ale#ok',
     \   'nofixme': 'nofixme#amount',
     \   'gitdiff': 'lightline#gitdiff#get',
     \ },
@@ -35,6 +31,8 @@
     \ },
     \ 'subseparator': { 'left': '|', 'right': '|' }
     \ }
+
+call lightline#coc#register()
 
 function! LightlineModified()
   return &ft =~ 'help' ? '' : &modified ? '+' : &modifiable ? '' : '-'
@@ -97,41 +95,4 @@ function! TagbarStatusFunc(current, sort, fname, ...) abort
     let g:lightline.fname = a:fname
   return lightline#statusline(0)
 endfunction
-
-function! LightlineLinterWarnings() abort
-  let l:counts = ale#statusline#Count(bufnr(''))
-  let l:all_errors = l:counts.error + l:counts.style_error
-  let l:all_non_errors = l:counts.total - l:all_errors
-  return l:counts.total == 0 ? '' : printf('%d ◆', all_non_errors)
-endfunction
-
-function! LightlineLinterErrors() abort
-  let l:counts = ale#statusline#Count(bufnr(''))
-  let l:all_errors = l:counts.error + l:counts.style_error
-  let l:all_non_errors = l:counts.total - l:all_errors
-  return l:counts.total == 0 ? '' : printf('%d ✗', all_errors)
-endfunction
-
-function! LightlineLinterOK() abort
-  let l:counts = ale#statusline#Count(bufnr(''))
-  let l:all_errors = l:counts.error + l:counts.style_error
-  let l:all_non_errors = l:counts.total - l:all_errors
-  return l:counts.total == 0 ? '✓ ' : ''
-endfunction
-
-autocmd User ALELint call s:MaybeUpdateLightline()
-
-" Update and show lightline but only if it's visible (e.g., not in Goyo)
-function! s:MaybeUpdateLightline()
-  if exists('#lightline')
-    call lightline#update()
-  end
-endfunction
-
-let g:unite_force_overwrite_statusline = 0
-let g:vimfiler_force_overwrite_statusline = 0
-let g:vimshell_force_overwrite_statusline = 0
-
-let g:lightline#ale#indicator_warnings = "▲"
-let g:lightline#ale#indicator_errors = "✗"
 

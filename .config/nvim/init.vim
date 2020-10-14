@@ -500,19 +500,6 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => ALE
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:ale_lint_on_enter = 1
-let g:ale_lint_on_text_changed = 'never'
-let g:ale_sign_warning = '▲'
-let g:ale_sign_error = '✗'
-highlight link ALEWarningSign String
-highlight link ALEErrorSign Title
-nmap <silent> <c-k> <Plug>(ale_previous_wrap)
-nmap <silent> <c-j> <Plug>(ale_next_wrap)
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => fugitive
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <Leader>gs :Gstatus<cr>
