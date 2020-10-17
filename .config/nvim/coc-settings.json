@@ -11,4 +11,10 @@
     "tsserver.formatOnType": true,
     "coc.preferences.formatOnType": true,
     "intelephense.licenseKey": "0000OP777V6K947",
+    "css.validate": false,
+    "less.validate": false,
+    "scss.validate": false,
+    "wxss.validate": false,
+    "stylelintplus.autoFixOnSave": true,
+    "stylelintplus.cssInJs": true
 }
