@@ -94,7 +94,31 @@ alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias configdot='/usr/local/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias vim='nvim'
-
 alias danschmid="ssh root@88.198.36.213"
+alias droneio="ssh root@116.203.116.193"
+
+gffs() {
+    git flow feature start $1
+}
+
+gfff() {
+    git flow feature finish $1 && git push
+}
+
+gfrs() {
+    git flow release start $1
+}
+
+gfrf() {
+    git flow release finish $1 && git push --tags && git checkout master && git push && git checkout develop
+}
+
+gfhs() {
+    git flow hotfix start $1
+}
+
+gfhf() {
+    git flow hotfix finish $1 && git push --tags && git checkout master && git push && git checkout develop
+}
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
