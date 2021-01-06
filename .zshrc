@@ -49,7 +49,7 @@ HIST_STAMPS="dd.mm.yyyy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(composer common-aliases encode64 git git-extras git-flow httpie jira jsontools node npm redis-cli sublime sudo systemd urltools web-search)
+plugins=(composer common-aliases encode64 git git-extras git-flow httpie jira jsontools node npm redis-cli sudo systemd urltools web-search)
 
 # User configuration
 export PATH="/usr/bin:/bin:/usr/local/bin:/usr/sbin:/sbin:$PATH:/home/daniel/.config/composer/vendor/bin:/home/daniel/.gem/ruby/2.4.0/bin/"

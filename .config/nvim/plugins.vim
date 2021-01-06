@@ -67,8 +67,6 @@ let g:coc_global_extensions = [
   \ 'coc-tsserver',
   \ 'coc-phpls',
   \ 'coc-css',
-  \ 'coc-eslint',
-  \ 'coc-prettier',
   \ 'coc-stylelintplus',
   \ 'coc-jest'
   \ ]
