@@ -68,7 +68,10 @@ let g:coc_global_extensions = [
   \ 'coc-phpls',
   \ 'coc-css',
   \ 'coc-stylelintplus',
-  \ 'coc-jest'
+  \ 'coc-jest',
+  \ 'coc-go',
+  \ 'coc-rust-analyzer',
+  \ 'coc-tailwindcss'
   \ ]
 
 
@@ -93,7 +96,6 @@ Plug 'groenewege/vim-less'            "Vim syntax for less
 Plug 'gorodinskiy/vim-coloresque'     "css/less/sass/html color preview for vim
 Plug 'cakebaker/scss-syntax.vim'      "Vim syntax file for scss
 Plug 'mattn/emmet-vim'                "Emmet Plugin
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Javascript

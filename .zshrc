@@ -52,7 +52,7 @@ HIST_STAMPS="dd.mm.yyyy"
 plugins=(composer common-aliases encode64 git git-extras git-flow httpie jira jsontools node npm redis-cli sudo systemd urltools web-search)
 
 # User configuration
-export PATH="/usr/bin:/bin:/usr/local/bin:/usr/sbin:/sbin:$PATH:/home/daniel/.config/composer/vendor/bin:/home/daniel/.gem/ruby/2.4.0/bin/"
+export PATH="/usr/bin:/bin:/usr/local/bin:/usr/sbin:/sbin:$PATH:/home/daniel/.config/composer/vendor/bin:/home/daniel/.gem/ruby/2.4.0/bin/:/home/daniel/.local/bin"
 export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -110,7 +110,7 @@ gfrs() {
 }
 
 gfrf() {
-    git flow release finish $1 && git push --tags && git checkout master && git push && git checkout develop
+    git flow release finish $1 && git push --tags && git checkout main && git push && git checkout develop && git push
 }
 
 gfhs() {
@@ -118,7 +118,7 @@ gfhs() {
 }
 
 gfhf() {
-    git flow hotfix finish $1 && git push --tags && git checkout master && git push && git checkout develop
+    git flow hotfix finish $1 && git push --tags && git checkout main && git push && git checkout develop && git push
 }
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

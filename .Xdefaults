@@ -21,8 +21,8 @@ URxvt.visualBell:           false
 URxvt.termName:             rxvt-unicode-256color
 
 ! Fonts
-URxvt*font:                 xft:Hack:pixelsize=12
-URxvt*boldFont:             xft:Hack:pixelsize=12
+URxvt*font:                 xft:Hack:pixelsize=16
+URxvt*boldFont:             xft:Hack:pixelsize=16
 URxvt.letterSpace:          -1
 
 ! Scrollbar
@@ -30,7 +30,7 @@ URxvt.scrollStyle:          rxvt
 URxvt.scrollBar:            false
 
 ! Perl extensions
-URxvt.perl-ext-common:      default,url-select,tabbed
+URxvt.perl-ext-common:      default,url-select,tabbed,font-size
 URxvt.keysym.M-u:           perl:url-select:select_next
 URxvt.url-select.launcher:  firefox -new-tab
 URxvt.url-select.underline: true

@@ -23,7 +23,7 @@ nmap <leader>w :w!<cr>
 " Use ag over grep
 set grepprg=ag\ --nogroup\ --nocolor
 
-let g:python3_host_prog = "/usr/bin/python3.8"
+let g:python3_host_prog = "/usr/local/bin/python3.8"
 
 """"""""""""""""""""""""""""""""
 " => Vim user interface
@@ -252,7 +252,7 @@ nmap ; :Buffers<CR>
 nmap <c-p> :Files<CR>
 nmap <Leader>t :Tags<CR>
 
-let g:fzf_tags_command = 'ctags -R'
+let g:fzf_tags_command = 'uctags -R'
 
 " Command for git grep
 " - fzf#vim#grep(command, with_column, [options], [fullscreen])
@@ -574,7 +574,7 @@ let g:closetag_close_shortcut = '<leader>>'
 """""""""""""""""""""""""""""""""
 " => Gutentags
 """""""""""""""""""""""""""""""""
-let g:gutentags_ctags_executable = 'ctags'
+let g:gutentags_ctags_executable = 'uctags'
 
 augroup MyGutentagsStatusLineRefresher
     autocmd!
@@ -653,7 +653,7 @@ augroup END
 
 autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
 autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
-
+autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
