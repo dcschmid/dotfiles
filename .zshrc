@@ -110,7 +110,7 @@ gfrs() {
 }
 
 gfrf() {
-    git flow release finish $1 && git push --tags && git checkout main && git push && git checkout develop && git push
+    git flow release finish $1 && git push --tags && git checkout master && git push && git checkout develop && git push
 }
 
 gfhs() {
@@ -118,7 +118,7 @@ gfhs() {
 }
 
 gfhf() {
-    git flow hotfix finish $1 && git push --tags && git checkout main && git push && git checkout develop && git push
+    git flow hotfix finish $1 && git push --tags && git checkout master && git push && git checkout develop && git push
 }
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
