@@ -35,33 +35,15 @@
     </action>
   </item>
 
-  <item label="chrome">
-    <action name="Execute">
-      <command>chrome</command>
-    </action>
-  </item>
-
   <item label="filezilla">
     <action name="Execute">
       <command>filezilla</command>
     </action>
   </item>
 
-  <item label="seafile">
-    <action name="Execute">
-      <command>seafile-applet</command>
-    </action>
-  </item>
-
 </menu>
 
 <menu id="development" label="development">
-
-  <item label="gvim">
-    <action name="Execute">
-      <command>gvim</command>
-    </action>
-  </item>
 
   <item label="zeal">
     <action name="Execute">
@@ -73,9 +55,9 @@
 
 <menu id="office" label="office">
 
-  <item label="evince pdf viewer">
+  <item label="xpdf">
     <action name="Execute">
-       <execute>evince</execute>
+       <execute>xpdf</execute>
     </action>
   </item>
 
@@ -108,19 +90,6 @@
       <execute>libreoffice --writer</execute>
     </action>
   </item>
-
-  <item label="lyx">
-    <action name="Execute">
-      <execute>lyx</execute>
-    </action>
-  </item>
-
-  <item label="zim">
-    <action name="Execute">
-      <execute>zim</execute>
-    </action>
-  </item>
-
 </menu>
 
 <menu id="graphics" label="graphics">
@@ -159,9 +128,9 @@
     </action>
   </item>
 
-  <item label="gnome mpv">
+  <item label="celluloid">
     <action name="Execute">
-      <execute>gnome-mpv</execute>
+      <execute>celluloid</execute>
     </action>
   </item>
 </menu>
@@ -259,54 +228,51 @@
 
   <item label="/boot/loader.conf">
     <action name="Execute">
-      <execute>doas gvim /boot/loader.conf</execute>
+      <execute>doas nvim-qt /boot/loader.conf</execute>
     </action>
   </item>
 
   <item label="/etc/rc.conf">
     <action name="Execute">
-      <execute>doas gvim /etc/rc.conf</execute>
+      <execute>doas nvim-qt /etc/rc.conf</execute>
     </action>
   </item>
 
   <item label="/etc/sysctl.conf">
     <action name="Execute">
-      <execute>doas gvim /etc/sysctl.conf</execute>
+      <execute>doas nvim-qt /etc/sysctl.conf</execute>
     </action>
   </item>
 
   <item label="/etc/make.conf">
     <action name="Execute">
-      <execute>doas gvim /etc/make.conf</execute>
+      <execute>doas nvim-qt /etc/make.conf</execute>
     </action>
   </item>
 
   <item label="/etc/newsyslog.conf">
     <action name="Execute">
-      <execute>doas gvim /etc/newsyslog.conf</execute>
+      <execute>doas nvim-qt /etc/newsyslog.conf</execute>
     </action>
   </item>
 
   <item label="/etc/wpa_supplicant.conf">
     <action name="Execute">
-      <execute>doas gvim /etc/wpa_supplicant.conf</execute>
+      <execute>doas nvim-qt /etc/wpa_supplicant.conf</execute>
     </action>
   </item>
 
   <item label="/etc/fstab">
     <action name="Execute">
-      <execute>doas gvim /etc/fstab</execute>
+      <execute>doas nvim-qt /etc/fstab</execute>
     </action>
   </item>
 
 </menu>
 
-<menu id="recent" label="recent" execute="~/scripts/__openbox_recent.sh" />
-
 <menu id="sound" label="sound" execute="~/scripts/__openbox_freebsd_sound.sh" />
 
 <menu id="daemons" label="daemons">
-
 
   <item label="RESTART: tint2">
     <action name="Execute">
@@ -317,12 +283,6 @@
 </menu>
 
 <menu id="x11" label="x11">
-
-  <item label="screen off">
-    <action name="Execute">
-      <command>xset dpms force off</command>
-    </action>
-  </item>
 
   <item label="screen lock">
     <action name="Execute">
@@ -368,19 +328,19 @@
 
   <item label="~/.xinitrc">
     <action name="Execute">
-      <execute>gvim ~/.xinitrc</execute>
+      <execute>nvim-qt ~/.xinitrc</execute>
     </action>
   </item>
 
   <item label="~/.config/openbox/menu.xml">
     <action name="Execute">
-      <execute>gvim ~/.config/openbox/menu.xml</execute>
+      <execute>nvim-qt ~/.config/openbox/menu.xml</execute>
     </action>
   </item>
 
   <item label="~/.config/openbox/rc.xml">
     <action name="Execute">
-      <execute>gvim ~/.config/openbox/rc.xml</execute>
+      <execute>nvim-qt ~/.config/openbox/rc.xml</execute>
     </action>
   </item>
 
@@ -400,7 +360,7 @@
 
   <item label="screenshot: browse">
     <action name="Execute">
-      <command>pcmanfm ~/gfx/screenshots</command>
+      <command>xfe ~/gfx/screenshots</command>
     </action>
   </item>
 </menu>
@@ -429,13 +389,13 @@
 
 <item label="reboot">
     <action name="Reboot">
-        <command>shutdown -r now</command>
+        <command>doas reboot</command>
     </action>
 </item>
 
 <item label="shutdown">
     <action name="Shutdown">
-        <command>shutdown -p now</command>
+        <command>doas shutdown -p now</command>
     </action>
 </item>
 

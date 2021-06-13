@@ -278,19 +278,14 @@
             <action name="Execute">
                 <startupnotify>
                     <enabled>true</enabled>
-                    <name>PCManFM</name>
+                    <name>xfe</name>
                 </startupnotify>
-                <command>pcmanfm</command>
+                <command>xfe</command>
             </action>
         </keybind>
         <keybind key="W-b">
             <action name="Execute">
                 <command>firefox</command>
-            </action>
-        </keybind>
-        <keybind key="W-c">
-            <action name="Execute">
-                <command>chrome</command>
             </action>
         </keybind>
         <keybind key="W-r">
@@ -306,11 +301,6 @@
         <keybind key="W-m">
             <action name="Execute">
                 <command>quodlibet</command>
-            </action>
-        </keybind>
-        <keybind key="W-v">
-            <action name="Execute">
-                <command>/data/apps/vscode/code-oss</command>
             </action>
         </keybind>
         <!-- KEYBOARD / LOCK -->

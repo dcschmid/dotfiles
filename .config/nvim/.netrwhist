@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =1
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/usr/home/daniel/dotfiles/.config/openbox'
 let g:netrw_dirhist_1='/data/websites/nuxt-blog/.github/workflows'
 let g:netrw_dirhist_0='/data/websites/nuxt-blog/.github'
 let g:netrw_dirhist_9='/data/websites/nuxt-blog'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_6='/data/websites/nuxt-blog/pages'
 let g:netrw_dirhist_5='/data/websites/nuxt-blog'
 let g:netrw_dirhist_4='/data/websites/vote-app'
 let g:netrw_dirhist_3='/data/websites/vote-app/src'
-let g:netrw_dirhist_2='/data/websites/vote-app/src/components'
