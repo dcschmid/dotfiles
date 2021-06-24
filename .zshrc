@@ -62,9 +62,9 @@ export LANG=de_DE.UTF-8
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='nvim'
+   export EDITOR='vim'
 else
-   export EDITOR='nvim'
+   export EDITOR='vim'
 fi
 
 
@@ -90,10 +90,9 @@ export QT_QPA_PLATFORMTHEME=qt5ct
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="nvim ~/.zshrc"
-alias ohmyzsh="nvim ~/.oh-my-zsh"
+alias zshconfig="vim ~/.zshrc"
+alias ohmyzsh="vim ~/.oh-my-zsh"
 alias configdot='/usr/local/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-alias vim='nvim'
 alias danschmid="ssh root@88.198.36.213"
 alias droneio="ssh root@116.203.116.193"
 
