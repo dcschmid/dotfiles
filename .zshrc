@@ -94,7 +94,7 @@ alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias configdot='/usr/local/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias danschmid="ssh root@88.198.36.213"
-alias droneio="ssh root@116.203.116.193"
+alias re="git checkout $(git recent | fzf)"
 
 gffs() {
     git flow feature start $1
