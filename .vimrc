@@ -58,7 +58,7 @@ set hlsearch
 "makes search act like search in modern browsers
 set incsearch
 
-"don't redraw while executing macros (good performence config)
+"don't redraw while executing macros (good performance config)
 set lazyredraw
 
 "for regular expressions turn magic on
@@ -70,7 +70,7 @@ set showmatch
 "how many tenths of a second to blink when matching brackets
 set mat=2
 
-"no anoying sounds on errors
+"no annoying sounds on errors
 set noerrorbells
 set novisualbell
 set t_vb=
@@ -144,8 +144,8 @@ set expandtab
 set smarttab
 
 "1Tab == 4 spaces
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 
 "Auto indent
 set ai
@@ -169,18 +169,14 @@ nmap <C-L> <C-W><C-L>
 
 "close all the buffers
 nmap <leader>ba :bufdo
-nmap <leader>l :bnext<cr>
-nmap <leader>h :bprevious<cr>
 
 "Useful mappings for managing tabs
 nmap <leader>nt :tabnew<cr>
 nmap <leader>to :tabonly<cr>
 nmap <leader>tc :tabclose<cr>
 nmap <leader>tm :tabmove
-nmap <C-j> :tabnext<cr>
-nmap <C-k> :tabprev<cr>
 
-"let 'tl' toogle betwwen this and the last accessed tab
+"let 'tl' toggle between this and the last accessed tab
 let g:lasttab = 1
 nmap <leader>tl :exe "tabn ".g:lasttab<cr>
 au TabLeave * let g:lasttab = tabpagenr()
@@ -255,7 +251,7 @@ map <Leader>n :NERDTreeFind<CR>
 " Limit the window size to 40% screen from the bottom
 let g:fzf_layout = { 'down': '~40%' }
 
-" Mapping for most oftenly used command
+" Mapping for most often used command
 nnoremap <C-p> :GFiles<cr>
 
 " Just press <LEADER> + f when on a word to search for it
@@ -274,7 +270,7 @@ nnoremap ; :Buffers<CR>
 """""""""""""""""""""""""""""""""
 " => vim-closetag
 """""""""""""""""""""""""""""""""
-let g:closetag_filenames = '*.html,*.xhtml,*.jsx,*.tsx'
+let g:closetag_filenames = '*.html,*.xhtml,*.jsx,*.tsx,*.vue'
 
 
 """""""""""""""""""""""""""""""""
@@ -283,6 +279,7 @@ let g:closetag_filenames = '*.html,*.xhtml,*.jsx,*.tsx'
 let g:mta_filetypes = {
 \ 'html' : 1,
 \ 'typescriptreact': 1,
+\ 'vue': 1,
 \}
 
 
@@ -303,6 +300,12 @@ nnoremap <leader>gvf :GV!<CR>
 
 
 """""""""""""""""""""""""""""""""
+" => Language Tools
+"""""""""""""""""""""""""""""""""
+:let g:languagetool_jar='$HOME/LanguageTool-5.4/languagetool-commandline.jar'
+
+
+"""""""""""""""""""""""""""""""""
 " => coc
 """""""""""""""""""""""""""""""""
 let g:coc_global_extensions = [
@@ -312,6 +315,7 @@ let g:coc_global_extensions = [
   \ 'coc-json',
   \ 'coc-stylelintplus',
   \ 'coc-vetur',
+  \ 'coc-spell-checker',
   \ ]
 
 if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')
@@ -340,7 +344,7 @@ inoremap <silent><expr> <c-space> coc#refresh()
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
-" Remap keys for gotos
+" Remap keys for goto
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
@@ -351,6 +355,8 @@ nmap <leader>rn <Plug>(coc-rename)
 
 " Remap for do codeAction of current line
 nmap <leader>ac <Plug>(coc-codeaction)
+vmap <leader>a <Plug>(coc-codeaction-selected)
+nmap <leader>a <Plug>(coc-codeaction-selected)
 
 " Fix autofix problem of current line
 nmap <leader>qf <Plug>(coc-fix-current)
@@ -410,8 +416,8 @@ endfunction
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Auto-Commands
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
-autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
+autocmd BufEnter *.{js,jsx,ts,tsx,vue} :syntax sync fromstart
+autocmd BufLeave *.{js,jsx,ts,tsx,vue} :syntax sync clear
 
 " Highlight the symbol and its references when holding the cursor.
 autocmd CursorHold * silent call CocActionAsync('highlight')

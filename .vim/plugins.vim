@@ -1,6 +1,5 @@
 call plug#begin()
 Plug 'cocopon/iceberg.vim'
-Plug 'ap/vim-buftabline'
 Plug 'roman/golden-ratio' " Auto-expands current split
 Plug 'scrooloose/nerdtree'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -22,4 +21,6 @@ Plug 'junegunn/gv.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'itchyny/lightline.vim'
 Plug 'josa42/vim-lightline-coc'
+Plug 'ap/vim-css-color'
+Plug 'dpelle/vim-LanguageTool'
 call plug#end()

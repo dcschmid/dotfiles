@@ -15,5 +15,8 @@
   "scss.validate": false,
   "wxss.validate": false,
   "stylelintplus.autoFixOnSave": true,
-  "stylelintplus.cssInJs": true
+  "stylelintplus.cssInJs": true,
+  "cSpell.userWords": [
+    "Autoconfiguration"
+  ]
 }
