@@ -1,3 +1,14 @@
+" Install vim-plug if not found
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+endif
+
+" Run PlugInstall if there are missing plugins
+autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+  \| PlugInstall --sync | source $MYVIMRC
+\| endif
+
 call plug#begin()
 " Git
 Plug 'tpope/vim-fugitive'      " Git plugin with commands 'G<command>'
@@ -18,6 +29,7 @@ Plug 'terryma/vim-multiple-cursors'   " Use multiple cursor in vim
 Plug 'alvan/vim-closetag'             " Autoclose HTML Tags 
 
 " Visual
+Plug 'gkeep/iceberg-dark'
 Plug 'cocopon/iceberg.vim'            " Iceberg is well-designed, bluish color scheme for Vim
 Plug 'roman/golden-ratio'             " Auto-expands current split
 Plug 'valloric/MatchTagAlways'        " Always highlight enclosing tags

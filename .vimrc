@@ -29,6 +29,7 @@ set grepprg=ag\ --nogroup\ --nocolor
 " Use the system regihttps://www.genickbruch.com/index.php?befehl=news&meldung=29315ster
 set clipboard^=unnamed 
 
+set autochdir
 
 """""""""""""""""""""""""""""""""
 " => Vim user interface
@@ -131,7 +132,6 @@ syntax on
 "Colorscheme and enable 256 Colors
 colorscheme iceberg
 set t_CO=256						"Use colors, This is useful for Terminal vim
-set termguicolors
 
 "set utf8 as standard encoding
 set encoding=utf8
@@ -289,7 +289,7 @@ let g:fzf_buffers_jump = 1
 let g:fzf_layout = { 'down': '~40%' }
 
 " Mapping for most often used command
-nnoremap <C-p> :GFiles<cr>
+nnoremap <C-p> :Files<cr>
 
 " Just press <LEADER> + f when on a word to search for it
 nnoremap <Leader>f :Rg <C-R><C-W><cr>
