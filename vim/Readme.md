@@ -57,22 +57,22 @@ You can use it as a base for your own vim configuration.
 - [vim-LanguageTool](http://github.com/dpelle/vim-LanguageTool) - LanguageTool grammar checker
 
 ## Shortcuts
-<Leader> == , (Comma)
+Leader key = , (Comma)
 
 ### Basic
 
 | Shortcut      | Functionality  |
 | ------------- | -------------- |
-| <leader>w     |  fast save     |
+| leader + w     |  fast save     |
 
 ### Managing Tabs
 
 | Shortcut      | Functionality  |
 | ------------- | -------------- |
-| <leader>nt    |  new tab       |
-| <leader>ct    |  close tab     |
-| <leader>tm    |  move tab      |
-| <leader>tl    |  go to last tab      |
-| <leader>tn    |  next tab      |
-| <leader>tp    |  prev tab      |
+| leader + nt    |  new tab       |
+| leader + ct    |  close tab     |
+| leader + tm    |  move tab      |
+| leader + tl    |  go to last tab      |
+| leader + tn    |  next tab      |
+| leader + tp    |  prev tab      |
 
