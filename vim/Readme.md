@@ -42,6 +42,16 @@ You can use it as a base for your own vim configuration.
 ### Auto-completion
 - [coc.nvim](http://github.com/neoclide/coc.nvim) - Make your Vim/Neovim as smart as VSCode
 
+#### CoC Plugins
+- [coc-tsserver](https://github.com/neoclide/coc-tsserver) - Tsserver extension for coc.nvim that provide rich features like VSCode for javascript & typescript
+- [coc-css](https://github.com/neoclide/coc-css) - Css language server extension
+- [coc-html](https://github.com/neoclide/coc-html) - Html language server extension
+- [coc-json](https://github.com/neoclide/coc-json) - Json language extension
+- [coc-stylelintplus](https://github.com/bmatcuk/coc-stylelintplus) - stylelint extension supporting additional features
+- [coc-vetur](https://github.com/neoclide/coc-vetur) - Vue language server extension
+- [coc-spell-checker](https://github.com/iamcco/coc-spell-checker) - A basic spell checker that works well with camelCase code
+- [coc-project](https://github.com/iamcco/coc-project) - project extension 
+
 ### Behaviour/tools
-- [brooth/far.vim](http://github.com/brooth/far.vim) - Find And Replace
+- [far.vim](http://github.com/brooth/far.vim) - Find And Replace
 - [vim-LanguageTool](http://github.com/dpelle/vim-LanguageTool) - LanguageTool grammar checker
