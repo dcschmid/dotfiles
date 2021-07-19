@@ -23,7 +23,7 @@ You can use it as a base for your own vim configuration.
 - [vim-closetag](http://github.com/alvan/vim-closetag) - Autoclose HTML Tags
 
 ### Visual
-- [iceberg-dark](http://github.com/gkeep/iceberg-dark) - 
+- [iceberg-dark](http://github.com/gkeep/iceberg-dark) - Dark blue color scheme for various programs, complementary to iceberg.vim  
 - [iceberg.vim](http://github.com/cocopon/iceberg.vim) - Iceberg is well-designed, bluish color scheme for Vim
 - [golden-ratio](http://github.com/roman/golden-ratio) - Auto-expands current split
 - [MatchTagAlways](http://github.com/alvan/valloric/MatchTagAlways) - Always highlight enclosing tags
@@ -55,3 +55,24 @@ You can use it as a base for your own vim configuration.
 ### Behaviour/tools
 - [far.vim](http://github.com/brooth/far.vim) - Find And Replace
 - [vim-LanguageTool](http://github.com/dpelle/vim-LanguageTool) - LanguageTool grammar checker
+
+## Shortcuts
+<Leader> == , (Comma)
+
+### Basic
+
+| Shortcut      | Functionality  |
+| ------------- | -------------- |
+| <leader>w     |  fast save     |
+
+### Managing Tabs
+
+| Shortcut      | Functionality  |
+| ------------- | -------------- |
+| <leader>nt    |  new tab       |
+| <leader>ct    |  close tab     |
+| <leader>tm    |  move tab      |
+| <leader>tl    |  go to last tab      |
+| <leader>tn    |  next tab      |
+| <leader>tp    |  prev tab      |
+

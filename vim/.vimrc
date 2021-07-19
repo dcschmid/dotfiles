@@ -1,4 +1,3 @@
-"Plugins Plug 'itchyny/lightline.vim'
 so ~/.vim/plugins.vim    "extra plugins file
 
 """""""""""""""""""""""""""""""""
