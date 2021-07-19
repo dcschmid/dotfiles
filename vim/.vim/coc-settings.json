@@ -18,5 +18,8 @@
   "stylelintplus.cssInJs": true,
   "cSpell.userWords": [
     "Autoconfiguration"
+  ],
+  "cSpell.words": [
+    "dotfile"
   ]
 }
