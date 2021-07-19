@@ -10,6 +10,9 @@ set nocompatible
 "Sets how many lines of history VIM has to remember
 set history=500
 
+" Only used in vim
+set ttyfast
+
 "Set to autoread when a file is changed from the outside
 set autoread
 
@@ -23,7 +26,7 @@ nmap <leader>w :w!<cr>
 " Use ag over grep
 set grepprg=ag\ --nogroup\ --nocolor
 
-" Use the system register
+" Use the system regihttps://www.genickbruch.com/index.php?befehl=news&meldung=29315ster
 set clipboard^=unnamed 
 
 
@@ -43,7 +46,6 @@ set cmdheight=1
 set hid
 
 "configure backspace so it acts as it should act
-set backspace=indent,eol,start
 set whichwrap+=<,>,h,l
 
 "Ignore case when searching
@@ -85,6 +87,12 @@ set number
 "Disable show node
 set noshowmode
 
+" Hide fold numbering in left column
+set foldcolumn=0
+
+" Do not wrap text at the end of the screen
+set nowrap
+
 "----Split Management-----"
 set splitbelow
 set splitright
@@ -97,6 +105,15 @@ nnoremap <C-h> <C-w>h
 
 "Ctrl + l to move to the right one
 nnoremap <C-l> <C-w>l
+
+" Open vertical split
+nnoremap <silent> <Leader>v :vsplit<CR>
+
+"Always show at least one line above/below the cursor
+set scrolloff=1
+
+"Delete over newlines, etc.
+set backspace=2
 
 
 """""""""""""""""""""""""""""""""
@@ -114,6 +131,7 @@ syntax on
 "Colorscheme and enable 256 Colors
 colorscheme iceberg
 set t_CO=256						"Use colors, This is useful for Terminal vim
+set termguicolors
 
 "set utf8 as standard encoding
 set encoding=utf8
@@ -153,13 +171,24 @@ set ai
 "Smart indent
 set si
 
+" When vim smartwraps overflowing text, the text on the new line is indented properly
+set breakindent
+
+" Don't let the filetype plugin insert newlines automatically
+set textwidth=0 wrapmargin=0
+
+" Do not let vim force line breaks when exceeding textwidth in insert mode
+set formatoptions-=t
+
 
 """""""""""""""""""""""""""""""""
 " => Moving around, tabs, windows and buffers
 """""""""""""""""""""""""""""""""
-"Map <space> to / (search) and Ctrl-<space> to ? (backward search)
+"Map <space> to / (search) and Alt-<space> to ? (backward search)
 nmap <space> /
-nmap <c-space> ?
+nmap <A-space> ?
+" Search highlight removal
+nmap <Leader><space> :nohlsearch<cr>
 
 "smart way to move between windows
 nmap <C-J> <C-W><C-J>
@@ -175,6 +204,8 @@ nmap <leader>nt :tabnew<cr>
 nmap <leader>to :tabonly<cr>
 nmap <leader>tc :tabclose<cr>
 nmap <leader>tm :tabmove
+nmap <leader>tn :tabnext<cr>
+nmap <leader>tp :tabprevious<cr>
 
 "let 'tl' toggle between this and the last accessed tab
 let g:lasttab = 1
@@ -199,7 +230,12 @@ endtry
 """""""""""""""""""""""""""""""""
 " => Netrw
 """""""""""""""""""""""""""""""""
+" Show directory hierarchy in netrw
+let g:netrw_liststyle = 3
+
+" Remove directory banner in netrw
 let g:netrw_banner = 0
+
 nmap - :Explore<cr>
 
 
@@ -207,12 +243,6 @@ nmap - :Explore<cr>
 " => Omni complete functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set omnifunc=syntaxcomplete#Complete
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Add simple highlight removal.
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nmap <Leader><space> :nohlsearch<cr>
 
 
 """""""""""""""""""""""""""""""""
@@ -225,13 +255,12 @@ nmap <Leader>el :tabedit ~/.vim/lightline.vim<cr>
 
 
 """""""""""""""""""""""""""""""""
-" => Status line
+" => Lightline
 """""""""""""""""""""""""""""""""
+so ~/.vim/lightline.vim    "extra lightline file
+
 "Always Show the status line
 set laststatus=2
-
-"lightline
-so ~/.vim/lightline.vim    "extra lightline file
 
 
 """""""""""""""""""""""""""""""""
@@ -248,6 +277,14 @@ map <Leader>n :NERDTreeFind<CR>
 """""""""""""""""""""""""""""""""
 " => FZF
 """""""""""""""""""""""""""""""""
+let g:fzf_action = {
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-s': 'split',
+  \ 'ctrl-v': 'vsplit' }
+
+" [Buffers] Jump to the existing window if possible
+let g:fzf_buffers_jump = 1
+
 " Limit the window size to 40% screen from the bottom
 let g:fzf_layout = { 'down': '~40%' }
 
@@ -258,7 +295,7 @@ nnoremap <C-p> :GFiles<cr>
 nnoremap <Leader>f :Rg <C-R><C-W><cr>
 
 " Works for visual mode as well
-vnoremap <Leader>f y:Rg <C-R>"<cr>
+vnoremap <Leader>f :Rg <C-R><cr>
 
 " Pressing Ctrl+f and type the search pattern
 nnoremap <C-F> :Rg<Space>
@@ -266,6 +303,32 @@ nnoremap <C-F> :Rg<Space>
 " Show Buffer list
 nnoremap ; :Buffers<CR>
 
+" All git commits
+nnoremap <silent> <leader>gl :Commits<CR>
+
+" All git commits in current buffer
+nnoremap <silent> <leader>gL :Commits<CR>
+
+" Search helptags
+nnoremap <silent> <leader>hh :Helptags<CR>
+
+" --column: Show column number
+" --line-number: Show line number
+" --no-heading: Do not show file headings in results
+" --fixed-strings: Search term as a literal string
+" --ignore-case: Case insensitive search
+" --no-ignore: Do not respect .gitignore, etc...
+" --hidden: Search hidden files and folders
+" --follow: Follow symlinks
+" --glob: Additional conditions for search (in this case ignore everything in the .git/ folder)
+" --color: Search color options
+command! -bang -nargs=* Find
+  \ call fzf#vim#grep(
+  \   'rg --line-number --no-heading --fixed-strings --smart-case --hidden --follow --glob "!.git/*" --color=always '.shellescape(<q-args>),
+  \   1,
+  \   fzf#vim#with_preview({'options': '--delimiter : --nth 2..'}, 'right:50%'),
+  \   <bang>0
+  \ )
 
 """""""""""""""""""""""""""""""""
 " => vim-closetag
@@ -298,6 +361,14 @@ nnoremap <leader>gp :Gpush<CR>
 nnoremap <leader>gv :GV<CR>
 nnoremap <leader>gvf :GV!<CR>
 
+" Show commits for every source line
+nnoremap <Leader>gbl :Gblame<CR>
+
+" Open current line in the browser
+nnoremap <Leader>gb :.Gbrowse<CR>
+
+" Open visual selection in the browser
+vnoremap <Leader>gb :Gbrowse<CR>
 
 """""""""""""""""""""""""""""""""
 " => Language Tools
@@ -316,6 +387,7 @@ let g:coc_global_extensions = [
   \ 'coc-stylelintplus',
   \ 'coc-vetur',
   \ 'coc-spell-checker',
+  \ 'coc-project',
   \ ]
 
 if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')
@@ -326,82 +398,108 @@ if isdirectory('./node_modules') && isdirectory('./node_modules/eslint')
   let g:coc_global_extensions += ['coc-eslint']
 endif
 
-" Use tab for trigger completion with characters ahead and navigate.
-" Use command ':verbose imap <tab>' to make sure tab is not mapped by other
-inoremap <silent><expr> <TAB>
-\ pumvisible() ? "\<C-n>" :
-\ <SID>check_back_space() ? "\<TAB>" :
-          \ coc#refresh()
+" Tweak insert mode completion
+"   noinsert: Do not insert text before accepting the completion
+"   menuone: Use the popup menu even if there is only one match
+"   noselect: Do not select a match in the menu, force manual selection
+set completeopt=noinsert,menuone,noselect
 
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+" Snippet expand and additional edit feature of LSP requires confirm
+" completion to work.
+set confirm
+
+" Do not show in-completion-menu messages, e.g. 'match 1 of 2'
+set shortmess+=c
+
+" Update sign column every quarter second
+set updatetime=250
+
+" Better display for messages
+set cmdheight=1
+
+" Escape completion with ctrl+c
+inoremap <C-c> <ESC>
 
 " Use <c-space> to trigger completion.
 inoremap <silent><expr> <c-space> coc#refresh()
 
-" Make <CR> auto-select the first completion item and notify coc.nvim to
-" format on enter, <cr> could be remapped by other vim plugin
-inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
-                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+" Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
+" Coc only does snippet and additional edit on confirm.
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
+" Navigate between diagnostic items in signcolumn
+nmap <silent> <Leader>dn <Plug>(coc-diagnostic-next)
+nmap <silent> <Leader>dp <Plug>(coc-diagnostic-prev)
 
 " Remap keys for goto
 nmap <silent> gd <Plug>(coc-definition)
+
+" Remap keys for gotos
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
+" Use K to show documentation in preview window.
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+
 " Remap for rename current word
 nmap <leader>rn <Plug>(coc-rename)
+
+" Remap for format selected region
+xmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selected)
+
+" Fix autofix problem of current line
+nmap <leader>Q  <Plug>(coc-fix-current)
 
 " Remap for do codeAction of current line
 nmap <leader>ac <Plug>(coc-codeaction)
 vmap <leader>a <Plug>(coc-codeaction-selected)
 nmap <leader>a <Plug>(coc-codeaction-selected)
 
-" Fix autofix problem of current line
-nmap <leader>qf <Plug>(coc-fix-current)
+" Use <tab> for select selections ranges, needs server support, like: coc-tsserver, coc-python, coc-yank
+nmap <silent> <TAB> <Plug>(coc-range-select)
+xmap <silent> <TAB> <Plug>(coc-range-select)
+xmap <silent> <S-TAB> <Plug>(coc-range-select-backword)
 
-" Create mappings for function text object, requires document symbols features
-xmap if <Plug>(coc-funcobj-i)
-xmap af <Plug>(coc-funcobj-a)
-omap if <Plug>(coc-funcobj-i)
-omap af <Plug>(coc-funcobj-a)
+" Use `:Format` to format current buffer
+command! -nargs=0 Format :call CocAction('format')
 
-" Use <C-d> for select selections ranges, needs server support, like:
-" coc-tsserver
-nmap <silent> <C-d> <Plug>(coc-range-select)
-xmap <silent> <C-d> <Plug>(coc-range-select)
+" Use `:Fold` to fold current buffer
+command! -nargs=? Fold :call CocAction('fold', <f-args>)
 
-" Use K to show documentation in preview window.
-nnoremap <silent> K :call <SID>show_documentation()<CR>
+" use `:OR` for organize import of current buffer
+command! -nargs=0 OR :call CocAction('runCommand', 'editor.action.organizeImport')
 
-" Mappings for CoCList
-" Show all diagnostics.
-nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>
-" Manage extensions.
-nnoremap <silent><nowait> <space>e  :<C-u>CocList extensions<cr>
-" Show commands.
-nnoremap <silent><nowait> <space>c  :<C-u>CocList commands<cr>
-" Find symbol of current document.
-nnoremap <silent><nowait> <space>o  :<C-u>CocList outline<cr>
-" Search workspace symbols.
-nnoremap <silent><nowait> <space>s  :<C-u>CocList -I symbols<cr>
+" Using CocList
+" Show all diagnostics
+nnoremap <silent> <Leader>cd :<C-u>CocList diagnostics<cr>
+
+" Manage extensions
+nnoremap <silent> <Leader>ce :<C-u>CocList extensions<cr>
+
+" Show commands
+nnoremap <silent> <Leader>ce :<C-u>CocList commands<cr>
+
+" Find symbol of current document
+nnoremap <silent> <Leader>S :<C-u>CocList outline<cr>
+
+" Search workspace symbols
+nnoremap <silent> <Leader>s :<C-u>CocList -I symbols<cr>
+
 " Do default action for next item.
-nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
+nnoremap <silent> <Leader>cj :<C-u>CocNext<CR>
+
 " Do default action for previous item.
-nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
-" Resume latest coc list.
-nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+nnoremap <silent> <Leader>ck :<C-u>CocPrev<CR>
+
+" Resume latest coc list
+nnoremap <silent> <Leader>cl :<C-u>CocListResume<CR>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-function! s:check_back_space() abort
-   let col = col('.') - 1
-   return !col || getline('.')[col - 1] =~# '\s'
-endfunction
-
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
     execute 'h '.expand('<cword>')
@@ -420,6 +518,19 @@ autocmd BufEnter *.{js,jsx,ts,tsx,vue} :syntax sync fromstart
 autocmd BufLeave *.{js,jsx,ts,tsx,vue} :syntax sync clear
 
 " Highlight the symbol and its references when holding the cursor.
+autocmd CursorHold * silent call CocActionAsync('highlight')
+
+" Use auocmd to force lightline update when coc.nvim status changes.
+autocmd User CocStatusChange,CocDiagnosticChange call lightline#update()
+
+" Prevent duplicate netrw buffers (bug caused by vinegar)
+" See: https://codeyarns.com/2015/02/02/cannot-close-buffer-of-netrw-in-vim/
+autocmd FileType netrw setl bufhidden=wipe
+
+" Automatically place help buffer in vertical split layout
+au BufEnter */doc/* if &filetype=='help' | wincmd L | endif
+
+" Highlight symbol under cursor on CursorHold
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
 "-------------Tips and Reminders--------------"
