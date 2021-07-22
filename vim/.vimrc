@@ -90,9 +90,6 @@ set noshowmode
 " Hide fold numbering in left column
 set foldcolumn=0
 
-" Do not wrap text at the end of the screen
-set nowrap
-
 "----Split Management-----"
 set splitbelow
 set splitright
@@ -160,7 +157,7 @@ set expandtab
 "be smart when using tabs
 set smarttab
 
-"1Tab == 4 spaces
+"1Tab == 2 spaces
 set tabstop=2
 set shiftwidth=2
 
@@ -261,18 +258,6 @@ so ~/.vim/lightline.vim    "extra lightline file
 "Always Show the status line
 set laststatus=2
 
-
-"""""""""""""""""""""""""""""""""
-" => NERDTree
-"""""""""""""""""""""""""""""""""
-" Always show dot (hidden) files
-let NERDTreeShowHidden=1
-" Close the NERDTree after opening a file
-let NERDTreeQuitOnOpen=1
-" Leader + n to open the NT
-map <Leader>n :NERDTreeFind<CR> 
-
-
 """""""""""""""""""""""""""""""""
 " => FZF
 """""""""""""""""""""""""""""""""
@@ -288,7 +273,7 @@ let g:fzf_buffers_jump = 1
 let g:fzf_layout = { 'down': '~40%' }
 
 " Mapping for most often used command
-nnoremap <C-p> :Files<cr>
+nnoremap <C-p> :GFiles<cr>
 
 " Just press <LEADER> + f when on a word to search for it
 nnoremap <Leader>f :Rg <C-R><C-W><cr>
@@ -297,7 +282,7 @@ nnoremap <Leader>f :Rg <C-R><C-W><cr>
 vnoremap <Leader>f :Rg <C-R><cr>
 
 " Pressing Ctrl+f and type the search pattern
-nnoremap <C-F> :Rg<Space>
+nnoremap <C-f> :Rg<Space>
 
 " Show Buffer list
 nnoremap ; :Buffers<CR>
@@ -346,12 +331,6 @@ let g:mta_filetypes = {
 
 
 """""""""""""""""""""""""""""""""
-" => Far
-"""""""""""""""""""""""""""""""""
-let g:far#source  = 'g'
-
-
-"""""""""""""""""""""""""""""""""
 " => Fugitive
 """""""""""""""""""""""""""""""""
 nnoremap <leader>gs :Gstatus<CR>
@@ -361,13 +340,14 @@ nnoremap <leader>gv :GV<CR>
 nnoremap <leader>gvf :GV!<CR>
 
 " Show commits for every source line
-nnoremap <Leader>gbl :Gblame<CR>
+nnoremap <Leader>gl :Gblame<CR>
 
 " Open current line in the browser
-nnoremap <Leader>gb :.Gbrowse<CR>
+nnoremap <Leader>gb :.GBrowse<CR>
 
 " Open visual selection in the browser
-vnoremap <Leader>gb :Gbrowse<CR>
+vnoremap <Leader>gb :GBrowse<CR>
+
 
 """""""""""""""""""""""""""""""""
 " => Language Tools
@@ -416,11 +396,11 @@ set updatetime=250
 " Better display for messages
 set cmdheight=1
 
-" Escape completion with ctrl+c
-inoremap <C-c> <ESC>
-
 " Use <c-space> to trigger completion.
 inoremap <silent><expr> <c-space> coc#refresh()
+
+" Escape completion with ctrl+c
+inoremap <C-c> <ESC>
 
 " Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
 " Coc only does snippet and additional edit on confirm.
@@ -456,11 +436,6 @@ nmap <leader>ac <Plug>(coc-codeaction)
 vmap <leader>a <Plug>(coc-codeaction-selected)
 nmap <leader>a <Plug>(coc-codeaction-selected)
 
-" Use <tab> for select selections ranges, needs server support, like: coc-tsserver, coc-python, coc-yank
-nmap <silent> <TAB> <Plug>(coc-range-select)
-xmap <silent> <TAB> <Plug>(coc-range-select)
-xmap <silent> <S-TAB> <Plug>(coc-range-select-backword)
-
 " Use `:Format` to format current buffer
 command! -nargs=0 Format :call CocAction('format')
 
@@ -478,7 +453,7 @@ nnoremap <silent> <Leader>cd :<C-u>CocList diagnostics<cr>
 nnoremap <silent> <Leader>ce :<C-u>CocList extensions<cr>
 
 " Show commands
-nnoremap <silent> <Leader>ce :<C-u>CocList commands<cr>
+nnoremap <silent> <Leader>cc :<C-u>CocList commands<cr>
 
 " Find symbol of current document
 nnoremap <silent> <Leader>S :<C-u>CocList outline<cr>

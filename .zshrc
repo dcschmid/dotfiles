@@ -84,6 +84,10 @@ export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --glob "!{.git,.svn,nod
 
 export QT_QPA_PLATFORMTHEME=qt5ct
 
+export NVM_DIR="$HOME/.nvm" [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+export CC=cc  
+export CXX=c++
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.

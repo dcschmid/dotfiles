@@ -59,20 +59,118 @@ You can use it as a base for your own vim configuration.
 ## Shortcuts
 Leader key = , (Comma)
 
+### Edit vim files 
+
+| Shortcut      | Functionality                                   |
+| ------------- | ----------------------------------------------- |
+| leader + ev   |  edit vimrc file                                |
+| leader + epl  |  edit plugins.vim file                          |
+| leader + el   |  edit lightline.vim file                        |
+
 ### Basic
 
-| Shortcut      | Functionality  |
-| ------------- | -------------- |
-| leader + w     |  fast save     |
+| Shortcut      | Functionality                                   |
+| ------------- | ----------------------------------------------- |
+| leader + w    |  fast save                                      |
+| leader + ba   |  close all the buffers                          |
+| leader + cd   |  Switch CWD to the directory of the open buffer |
+| -             |  open netrw                                     |
+
+### Split management
+
+| Shortcut    | Functionality         |
+| ----------- | --------------------- |
+| ctrl + h    | switch to left split  |
+| ctrl + l    | switch to right split |
+| leader + w  | open vertical split   |
+
+### Search
+
+| Shortcut       | Functionality            |
+| -------------- | ------------------------ |
+| space          |  search                  |
+| ctrl + space   |  backward search         |
+| leader + space |  remove search higlights |
+
+### Move between windows 
+
+| Shortcut    | Functionality            |
+| ----------- | ------------------------ |
+| ctrl + h    |  move to left window     |
+| ctrl + j    |  move to bottom window   |
+| ctrl + k    |  move to top  window     |
+| ctrl + l    |  move to right window    |
 
 ### Managing Tabs
 
-| Shortcut      | Functionality  |
-| ------------- | -------------- |
-| leader + nt    |  new tab       |
-| leader + ct    |  close tab     |
-| leader + tm    |  move tab      |
-| leader + tl    |  go to last tab      |
-| leader + tn    |  next tab      |
-| leader + tp    |  prev tab      |
+| Shortcut       | Functionality                              |
+| -------------  | ------------------------------------------ |
+| leader + nt    |  new tab                                   |
+| leader + ct    |  close tab                                 |
+| leader + tm    |  move tab                                  |
+| leader + tl    |  go to last tab                            |
+| leader + tn    |  next tab                                  |
+| leader + tp    |  prev tab                                  |
+| leader + tl    |  toggle between this and last accessed tab |
+
+### Move between windows 
+
+| Shortcut    | Functionality            |
+| ----------- | ------------------------ |
+| ctrl + h    |  move to left window     |
+| ctrl + j    |  move to bottom window   |
+| ctrl + k    |  move to top  window     |
+| ctrl + l    |  move to right window    |
+
+### FZF Search 
+
+| Shortcut    | Functionality                           |
+| ----------- | --------------------------------------- |
+| ctrl + p    |  search files in project                |
+| leader + f  |  search for the hovered or marked word  |
+| ctrl + f    |  type the search pattern                |
+| ;           |  show buffer list                       |
+| leader + gl |  show all git commits                   |
+| leader + gL |  show git commits for current file      |
+| leader + hh |  search in helpfiles                    |
+
+### Fugitive 
+
+| Shortcut     | Functionality                                    |
+| ------------ | ------------------------------------------------ |
+| leader + gs  |  git status                                      |
+| leader + gc  |  git commit                                      |
+| leader + gp  |  git push                                        |
+| leader + gv  |  open commit browser                             |
+| leader + gvf |  list commits thats affected to the current file |
+| leader + gl  |  show commits for every source line              |
+| leader + gb  |  open current line in the browser                |
+| leader + gb  |  open visual selection in the browser            |
+
+### CoC 
+
+| Shortcut      | Functionality                                    |
+| ------------- | ------------------------------------------------ |
+| ctrl + space  | trigger completion                               |
+| ctrl + c      | escape completion                                |
+| leader + dn   | next diagnostic item                             |     
+| leader + dp   | prev diagnostic item                             |
+| gd            | jump to definition of current symbol             |
+| gy            | jump to type definition of current symbol        |
+| gi            | jump to implementation of current symbol         |
+| gr            | jump to references of current symbol             |
+| K             | show documentation of current symbol             |
+| leader + rn   | rename symbol under to a new word                |
+| leader + f    | format selected range                            |
+| leader + Q    | try first quickfix action for diagnostic         |
+| leader + ac   | get and run code actions for current file        |
+| leader + a    | get and run code actions for selected region     |
+| leader + cd   | show all diagnostics                             |
+| leader + ce   | manage extensions                                | 
+| leader + cc   | show commands                                    |
+| leader + S    | find symbol of current document                  |
+| leader + s    | search workspace symbols                         |
+| leader + cj   | next item                                        |
+| leader + ck   | prev item                                        |
+| leader + cl   | resume latest coc list                           |
 
