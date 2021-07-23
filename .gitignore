@@ -1,7 +1,5 @@
-.config/nvim/plugged/
-.config/nvim/autoload/
-.vim/plugged
-.vim/autoload
+vim/.vim/plugged
+vim/.vim/autoload
 tags
-.vim/.netrwhist
+vim/.vim/.netrwhist
 scripts/stats
