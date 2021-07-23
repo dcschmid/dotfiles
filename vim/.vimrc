@@ -258,6 +258,12 @@ so ~/.vim/lightline.vim    "extra lightline file
 "Always Show the status line
 set laststatus=2
 
+
+"""""""""""""""""""""""""""""""""
+" => vim rooter
+"""""""""""""""""""""""""""""""""
+let g:rooter_patterns = ['package.json']
+
 """""""""""""""""""""""""""""""""
 " => FZF
 """""""""""""""""""""""""""""""""
