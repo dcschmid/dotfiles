@@ -1,5 +1,7 @@
 # My awesome vim dotfile
 
+![alt text](https://github.com/dcschmid/dotfiles/blob/master/screenshots/vim.png  "Vim")
+
 This is my actually vim configuration, what I am using for private and for working development. 
 You can use it as a base for your own vim configuration.
 
