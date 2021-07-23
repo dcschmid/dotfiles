@@ -226,9 +226,6 @@ endtry
 """""""""""""""""""""""""""""""""
 " => Netrw
 """""""""""""""""""""""""""""""""
-" Show directory hierarchy in netrw
-let g:netrw_liststyle = 3
-
 " Remove directory banner in netrw
 let g:netrw_banner = 0
 
@@ -258,12 +255,6 @@ so ~/.vim/lightline.vim    "extra lightline file
 "Always Show the status line
 set laststatus=2
 
-
-"""""""""""""""""""""""""""""""""
-" => vim rooter
-"""""""""""""""""""""""""""""""""
-let g:rooter_patterns = ['package.json']
-
 """""""""""""""""""""""""""""""""
 " => FZF
 """""""""""""""""""""""""""""""""
@@ -279,7 +270,7 @@ let g:fzf_buffers_jump = 1
 let g:fzf_layout = { 'down': '~40%' }
 
 " Mapping for most often used command
-nnoremap <C-p> :GFiles<cr>
+nnoremap <C-p> :GFilesCwd<cr>
 
 " Just press <LEADER> + f when on a word to search for it
 nnoremap <Leader>f :Rg <C-R><C-W><cr>
@@ -314,7 +305,7 @@ nnoremap <silent> <leader>hh :Helptags<CR>
 " --color: Search color options
 command! -bang -nargs=* Find
   \ call fzf#vim#grep(
-  \   'rg --line-number --no-heading --fixed-strings --smart-case --hidden --follow --glob "!.git/*" --color=always '.shellescape(<q-args>),
+  \   'rg --line-number --no-heading --fixed-strings --smart-case --hidden --follow --glob --others "!.git/*" --color=always '.shellescape(<q-args>),
   \   1,
   \   fzf#vim#with_preview({'options': '--delimiter : --nth 2..'}, 'right:50%'),
   \   <bang>0
@@ -491,6 +482,7 @@ function! s:show_documentation()
 endfunction
 
 
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Auto-Commands
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -512,6 +504,10 @@ au BufEnter */doc/* if &filetype=='help' | wincmd L | endif
 
 " Highlight symbol under cursor on CursorHold
 autocmd CursorHold * silent call CocActionAsync('highlight')
+
+command! -bang -nargs=? GFilesCwd
+  \ call fzf#vim#gitfiles(<q-args>, fzf#vim#with_preview(<q-args> == '?' ? { 'dir': getcwd(), 'placeholder': '' } : { 'dir': getcwd() }), <bang>0)
+
 
 "-------------Tips and Reminders--------------"
 " - Press 'zz' to instantly center the line where the cursor is located.

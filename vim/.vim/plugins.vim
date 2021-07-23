@@ -51,5 +51,4 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}  " Make your Vim/Neovim as smart
 " Behaviour/tools
 Plug 'brooth/far.vim'            " Find And Replace 
 Plug 'dpelle/vim-LanguageTool'   " LanguageTool grammar checker 
-Plug 'airblade/vim-rooter'       " Changes Vim working directory to project root. 
 call plug#end()

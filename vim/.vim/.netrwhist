@@ -1,5 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =4
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/usr/home/daniel/dotfiles/vim'
+let g:netrw_dirhist_6='/usr/home/daniel/dotfiles/.vim'
+let g:netrw_dirhist_5='/usr/home/daniel/dotfiles'
 let g:netrw_dirhist_4='/home/daniel/br24'
 let g:netrw_dirhist_3='/home/daniel/br24/br24-proxy-graphql'
 let g:netrw_dirhist_2='/home/daniel'
@@ -7,6 +10,3 @@ let g:netrw_dirhist_1='/home/daniel/br24/packages/br24-cache/src'
 let g:netrw_dirhist_0='/home/daniel/br24/packages/br24-cache'
 let g:netrw_dirhist_9='/home/daniel/br24/packages'
 let g:netrw_dirhist_8='/home/daniel/br24'
-let g:netrw_dirhist_7='/home/daniel/br24/br24-web'
-let g:netrw_dirhist_6='/home/daniel/br24'
-let g:netrw_dirhist_5='/home/daniel/br24/br24-web'
