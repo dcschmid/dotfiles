@@ -127,3 +127,6 @@ gfhf() {
 }
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+
+source /usr/share/nvm/init-nvm.sh
