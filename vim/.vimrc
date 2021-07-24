@@ -260,13 +260,7 @@ set laststatus=2
 " => gutentags
 """""""""""""""""""""""""""""""""
 let g:gutentags_ctags_executable = 'uctags'
-let g:gutentags_add_default_project_roots = ['.git', '.hg', '.svn', '.bzr', '_darcs', '_darcs', '_FOSSIL_', '.fslckout', 'package.json', 'composer.json']
-
-augroup MyGutentagsStatusLineRefresher
-    autocmd!
-    autocmd User GutentagsUpdating call lightline#update()
-    autocmd User GutentagsUpdated call lightline#update()
-augroup END
+let g:gutentags_project_roots = ['.git', 'package.json', 'composer.json']
 
 """""""""""""""""""""""""""""""""
 " => FZF
@@ -296,6 +290,9 @@ nnoremap <C-f> :Rg<Space>
 
 " Show Buffer list
 nnoremap ; :Buffers<CR>
+
+" Show Buffer list
+nnoremap <leader>t :Tags<CR>
 
 " All git commits
 nnoremap <silent> <leader>gl :Commits<CR>
