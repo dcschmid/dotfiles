@@ -49,6 +49,8 @@ Plug 'leafOfTree/vim-vue-plugin'                                       " Vim syn
 Plug 'neoclide/coc.nvim', {'branch': 'release'}  " Make your Vim/Neovim as smart as VSCode.
 
 " Behaviour/tools
-Plug 'brooth/far.vim'            " Find And Replace 
-Plug 'dpelle/vim-LanguageTool'   " LanguageTool grammar checker 
+Plug 'brooth/far.vim'                " Find And Replace 
+Plug 'dpelle/vim-LanguageTool'       " LanguageTool grammar checker 
+Plug 'ludovicchabant/vim-gutentags'  " A Vim plugin that manages your tag files 
+
 call plug#end()

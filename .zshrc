@@ -84,7 +84,7 @@ export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --glob "!{.git,.svn,nod
 
 export QT_QPA_PLATFORMTHEME=qt5ct
 
-export NVM_DIR="$HOME/.nvm" [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+export NVM_DIR="$HOME/.nvm"  && \. "$NVM_DIR/nvm.sh"
 export CC=cc  
 export CXX=c++
 
@@ -97,7 +97,7 @@ export CXX=c++
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias configdot='/usr/local/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-alias danschmid="ssh root@88.198.36.213"
+alias danschmid="ssh root@danschmid.de"
 alias cat="bat"
 alias ls="exa"
 alias find="fd"
@@ -126,7 +126,7 @@ gfhf() {
     git flow hotfix finish $1 && git push --tags && git checkout master && git push && git checkout develop && git push
 }
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ~/.fzf.zsh ] && -source ~/.fzf.zsh
 
 
-source /usr/share/nvm/init-nvm.sh
+# source /usr/share/nvm/init-nvm.sh

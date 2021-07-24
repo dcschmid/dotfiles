@@ -255,6 +255,19 @@ so ~/.vim/lightline.vim    "extra lightline file
 "Always Show the status line
 set laststatus=2
 
+
+"""""""""""""""""""""""""""""""""
+" => gutentags
+"""""""""""""""""""""""""""""""""
+let g:gutentags_ctags_executable = 'uctags'
+let g:gutentags_add_default_project_roots = ['.git', '.hg', '.svn', '.bzr', '_darcs', '_darcs', '_FOSSIL_', '.fslckout', 'package.json', 'composer.json']
+
+augroup MyGutentagsStatusLineRefresher
+    autocmd!
+    autocmd User GutentagsUpdating call lightline#update()
+    autocmd User GutentagsUpdated call lightline#update()
+augroup END
+
 """""""""""""""""""""""""""""""""
 " => FZF
 """""""""""""""""""""""""""""""""

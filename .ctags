@@ -1,4 +1,4 @@
----recurse=yes
+--recurse=yes
 
 --exclude=.git
 --exclude=node_modules
@@ -36,3 +36,4 @@
 --exclude=kirby/router.php
 --exclude=kirby/bootstrap.php
 --exclude=kirby/views
+--exclude=.nuxt
