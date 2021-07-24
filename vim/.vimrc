@@ -28,8 +28,6 @@ set grepprg=ag\ --nogroup\ --nocolor
 " Use the system regihttps://www.genickbruch.com/index.php?befehl=news&meldung=29315ster
 set clipboard^=unnamed 
 
-set autochdir
-
 """""""""""""""""""""""""""""""""
 " => Vim user interface
 """""""""""""""""""""""""""""""""
@@ -262,6 +260,13 @@ set laststatus=2
 let g:gutentags_ctags_executable = 'uctags'
 let g:gutentags_project_roots = ['.git', 'package.json', 'composer.json']
 
+
+"""""""""""""""""""""""""""""""""
+" => rooter vim
+"""""""""""""""""""""""""""""""""
+let g:rooter_patterns = ['.git', 'package.json', 'composer.json']
+
+
 """""""""""""""""""""""""""""""""
 " => FZF
 """""""""""""""""""""""""""""""""
@@ -269,6 +274,8 @@ let g:fzf_action = {
   \ 'ctrl-t': 'tab split',
   \ 'ctrl-s': 'split',
   \ 'ctrl-v': 'vsplit' }
+
+let b:coc_root_patterns = ['.git', '.env', 'package,json', 'composer.json']
 
 " [Buffers] Jump to the existing window if possible
 let g:fzf_buffers_jump = 1
