@@ -54,9 +54,12 @@ You can use it as a base for your own vim configuration.
 - [coc-spell-checker](https://github.com/iamcco/coc-spell-checker) - A basic spell checker that works well with camelCase code
 - [coc-project](https://github.com/iamcco/coc-project) - project extension 
 
-### Behaviour/tools
+### Tools
 - [far.vim](http://github.com/brooth/far.vim) - Find And Replace
 - [vim-LanguageTool](http://github.com/dpelle/vim-LanguageTool) - LanguageTool grammar checker
+- [vim-rooter](http://github.com/airblade/vim-rooter) - Changes Vim working directory to project root.
+- [vim-gutentags](http://github.com/ludovicchabant/vim-gutentags) - A Vim plugin that manages your tag files
+
 
 ## Shortcuts
 Leader key = , (Comma)
@@ -84,7 +87,7 @@ Leader key = , (Comma)
 | ----------- | --------------------- |
 | ctrl + h    | switch to left split  |
 | ctrl + l    | switch to right split |
-| leader + w  | open vertical split   |
+| leader + v  | open vertical split   |
 
 ### Search
 
@@ -115,15 +118,6 @@ Leader key = , (Comma)
 | leader + tp    |  prev tab                                  |
 | leader + tl    |  toggle between this and last accessed tab |
 
-### Move between windows 
-
-| Shortcut    | Functionality            |
-| ----------- | ------------------------ |
-| ctrl + h    |  move to left window     |
-| ctrl + j    |  move to bottom window   |
-| ctrl + k    |  move to top  window     |
-| ctrl + l    |  move to right window    |
-
 ### FZF Search 
 
 | Shortcut    | Functionality                           |
@@ -135,6 +129,7 @@ Leader key = , (Comma)
 | leader + gl |  show all git commits                   |
 | leader + gL |  show git commits for current file      |
 | leader + hh |  search in helpfiles                    |
+| leader + t  |  show tags list                         |
 
 ### Fugitive 
 

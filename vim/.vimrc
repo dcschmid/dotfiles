@@ -265,6 +265,13 @@ let g:gutentags_project_roots = ['.git', 'package.json', 'composer.json']
 " => rooter vim
 """""""""""""""""""""""""""""""""
 let g:rooter_patterns = ['.git', 'package.json', 'composer.json']
+let g:rooter_cd_cmd = 'cd'
+let g:rooter_change_directory_for_non_project_files = 'home'
+let g:rooter_resolve_links = 1
+
+augroup vimrc_rooter
+    autocmd VimEnter * :Rooter
+augroup END
 
 
 """""""""""""""""""""""""""""""""
@@ -327,6 +334,7 @@ command! -bang -nargs=* Find
   \   fzf#vim#with_preview({'options': '--delimiter : --nth 2..'}, 'right:50%'),
   \   <bang>0
   \ )
+
 
 """""""""""""""""""""""""""""""""
 " => vim-closetag
@@ -497,7 +505,6 @@ function! s:show_documentation()
     execute '!' . &keywordprg . " " . expand('<cword>')
   endif
 endfunction
-
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
