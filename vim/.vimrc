@@ -28,6 +28,7 @@ set grepprg=ag\ --nogroup\ --nocolor
 " Use the system regihttps://www.genickbruch.com/index.php?befehl=news&meldung=29315ster
 set clipboard^=unnamed 
 
+
 """""""""""""""""""""""""""""""""
 " => Vim user interface
 """""""""""""""""""""""""""""""""
@@ -211,7 +212,7 @@ au TabLeave * let g:lasttab = tabpagenr()
 nmap <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
 
 " Switch CWD to the directory of the open buffer
-nmap <leader>cd :cd %:p:h<cr>:pwd<cr>
+nmap <leader>cd :Rooter<cr>
 
 " Specify the behavior when switching between buffers
 try
@@ -226,7 +227,6 @@ endtry
 """""""""""""""""""""""""""""""""
 " Remove directory banner in netrw
 let g:netrw_banner = 0
-
 nmap - :Explore<cr>
 
 
@@ -374,7 +374,26 @@ vnoremap <Leader>gb :GBrowse<CR>
 """""""""""""""""""""""""""""""""
 " => Language Tools
 """""""""""""""""""""""""""""""""
-:let g:languagetool_jar='$HOME/LanguageTool-5.4/languagetool-commandline.jar'
+let g:languagetool_jar='$HOME/LanguageTool-5.4/languagetool-commandline.jar'
+let g:languagetool_disable_rules='WHITESPACE_RULE,EN_QUOTES,ARROWS,DASH_RULE'
+let g:languagetool_enable_rules='PASSIVE_VOICE'
+
+" Run Language Check
+nmap <Leader>l :LanguageToolCheck
+vmap <Leader>l :LanguageToolCheck
+
+"""""""""""""""""""""""""""""""""
+" => Language Tools
+"""""""""""""""""""""""""""""""""
+let g:translator_target_lang = 'en'
+let g:translator_default_engines = ['bing', 'google']
+
+" Replace the text with translation
+nmap <silent> <Leader>r <Plug>TranslateR
+vmap <silent> <Leader>r <Plug>TranslateRV
+
+" Translate the text in clipboard
+nmap <silent> <Leader>x <Plug>TranslateX
 
 
 """""""""""""""""""""""""""""""""

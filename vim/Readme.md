@@ -78,8 +78,10 @@ Leader key = , (Comma)
 | ------------- | ----------------------------------------------- |
 | leader + w    |  fast save                                      |
 | leader + ba   |  close all the buffers                          |
-| leader + cd   |  Switch CWD to the directory of the open buffer |
+| leader + cd   |  set cwd to project working directory           |
 | -             |  open netrw                                     |
+| leader + r    |  replace text with english translation          |
+| leader + l    |  run grammar check                              |
 
 ### Split management
 

@@ -48,9 +48,12 @@ Plug 'leafOfTree/vim-vue-plugin'                                       " Vim syn
 " Auto-completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}  " Make your Vim/Neovim as smart as VSCode.
 
+" Language Tools
+Plug 'dpelle/vim-LanguageTool'       " LanguageTool grammar checker 
+Plug 'voldikss/vim-translator'       " Translating plugin for Vim/Neovim 
+
 " Tools
 Plug 'brooth/far.vim'                " Find And Replace 
-Plug 'dpelle/vim-LanguageTool'       " LanguageTool grammar checker 
 Plug 'ludovicchabant/vim-gutentags'  " A Vim plugin that manages your tag files 
 Plug 'airblade/vim-rooter'           " Changes Vim working directory to project root.  
 
