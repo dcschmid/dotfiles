@@ -44,6 +44,7 @@ Plug 'peitalin/vim-jsx-typescript'                                     " React J
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }   " Vim bundle for http://styled-components.com based javascript files. 
 Plug 'jparise/vim-graphql'                                             " provides GraphQL file detection, syntax highlighting, and indentation
 Plug 'leafOfTree/vim-vue-plugin'                                       " Vim syntax and indent plugin for .vue files 
+Plug 'cespare/vim-toml', { 'branch': 'main' }
 
 " Auto-completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}  " Make your Vim/Neovim as smart as VSCode.
