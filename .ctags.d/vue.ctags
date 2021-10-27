@@ -1,7 +1,6 @@
 --langdef=vue
 --langmap=vue:.vue
 --regex-vue=/^(<template>)$/\1/t,template/{scope=set}{exclusive}
---regex-vue=/^\S*(.*(v-if=|v-for=|v-show=|ref=)("[^"]*"))/\2\3/c,vue-command/{scope=ref}
 --regex-vue=/^(<\/template>)$/\1//{scope=pop}{exclusive}{placeholder}
 
 --regex-vue=/^(<style.*)$/style/s,script/{scope=set}{exclusive}
