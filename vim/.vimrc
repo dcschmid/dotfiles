@@ -408,6 +408,7 @@ let g:coc_global_extensions = [
   \ 'coc-vetur',
   \ 'coc-spell-checker',
   \ 'coc-project',
+  \ 'coc-tabnine',
   \ ]
 
 if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')
