@@ -1,4 +1,4 @@
-so ~/.vim/plugins.vim    "extra plugins file
+so ~/.config/nvim/plugins.vim    "extra plugins file
 
 """""""""""""""""""""""""""""""""
 " => General
@@ -25,7 +25,7 @@ nmap <leader>w :w!<cr>
 " Use ag over grep
 set grepprg=ag\ --nogroup\ --nocolor
 
-" Use the system register
+" Use the system regihttps://www.genickbruch.com/index.php?befehl=news&meldung=29315ster
 set clipboard^=unnamed 
 
 
@@ -239,16 +239,15 @@ set omnifunc=syntaxcomplete#Complete
 """""""""""""""""""""""""""""""""
 " => Make it easy to edit the vimrc file.
 """""""""""""""""""""""""""""""""
-nmap <Leader>ev :tabedit ~/.vimrc<cr>
-nmap <Leader>es :e ~/.vim/snippets/
-nmap <Leader>epl :tabedit ~/.vim/plugins.vim<cr>
-nmap <Leader>el :tabedit ~/.vim/lightline.vim<cr>
+nmap <Leader>ev :tabedit ~/.config/nvim/init.vim<cr>
+nmap <Leader>epl :tabedit ~/.config/nvim/plugins.vim<cr>
+nmap <Leader>el :tabedit ~/.config/nvim/lightline.vim<cr>
 
 
 """""""""""""""""""""""""""""""""
 " => Lightline
 """""""""""""""""""""""""""""""""
-so ~/.vim/lightline.vim    "extra lightline file
+so ~/.config/nvim/lightline.vim    "extra lightline file
 
 "Always Show the status line
 set laststatus=2

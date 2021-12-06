@@ -17,3 +17,4 @@
 --exclude=kss-custom-builder
 --exclude=package.json
 --exclude=.nuxt
+--exclude=.next

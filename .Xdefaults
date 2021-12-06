@@ -21,8 +21,8 @@ URxvt.visualBell:           false
 URxvt.termName:             rxvt-unicode-256color
 
 ! Fonts
-URxvt*font:                 xft:Hack:pixelsize=16
-URxvt*boldFont:             xft:Hack:pixelsize=16
+URxvt*font:                 xft:Hack Nerd Font:pixelsize=16
+URxvt*boldFont:             xft:Hack Nerd Font:pixelsize=16
 URxvt.letterSpace:          -1
 
 ! Scrollbar
