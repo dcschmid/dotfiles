@@ -19,8 +19,6 @@ return require('packer').startup{function()
         config = [[ require('plugins/lualine') ]]
   }
 
-	use {'williamboman/nvim-lsp-installer', after = 'cmp-nvim-lsp', config = "require('lsp.installer')"}
-
   use { -- A collection of common configurations for Neovim's built-in language server client
         'neovim/nvim-lspconfig',
         config = [[ require('plugins/lspconfig') ]]

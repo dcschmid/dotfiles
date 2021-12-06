@@ -1,18 +1,43 @@
-local M = {}
-
--- Auto-install
-
-local lsp_installer_servers = require'nvim-lsp-installer.servers'
-
-local ok, volar = lsp_installer_servers.get_server("vls")
-if ok then
-    if not volar:is_installed() then
-        volar:install()
-    end
-end
-
--- Setting
-
-M.settings = {}
-
-return M
+-- npm install -g vls
+require'lspconfig'.vuels.setup{
+	cmd = { "vls" },
+	filetypes = { "vue" },
+	init_options = {
+		config = {
+			css = {},
+			emmet = {},
+			html = {
+				suggest = {}
+			},
+			javascript = {
+				format = {}
+			},
+			stylusSupremacy = {},
+			typescript = {
+				format = {}
+			},
+			vetur = {
+				completion = {
+					autoImport = false,
+					tagCasing = "kebab",
+					useScaffoldSnippets = false
+				},
+				format = {
+					defaultFormatter = {
+						js = "none",
+						ts = "none"
+					},
+					defaultFormatterOptions = {},
+					scriptInitialIndent = false,
+					styleInitialIndent = false
+				},
+				useWorkspaceDependencies = false,
+				validation = {
+					script = true,
+					style = true,
+					template = true
+				}
+			}
+		}
+	},
+}

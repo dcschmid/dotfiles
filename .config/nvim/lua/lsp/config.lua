@@ -5,5 +5,11 @@ for type, icon in pairs(signs) do
   vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 end
 
+require('lsp.servers.css')
+require('lsp.servers.eslint')
+require('lsp.servers.graphql')
+require('lsp.servers.html')
+require('lsp.servers.json')
 require('lsp.servers.tsserver')
 require('lsp.servers.tailwind')
+require('lsp.servers.volar')

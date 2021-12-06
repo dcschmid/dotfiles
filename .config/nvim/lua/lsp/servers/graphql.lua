@@ -1,18 +1,6 @@
-local M = {}
+-- npm install -g graphql-language-service-cli
 
--- Auto-install
-
-local lsp_installer_servers = require'nvim-lsp-installer.servers'
-
-local ok, graphql = lsp_installer_servers.get_server("graphql")
-if ok then
-    if not graphql:is_installed() then
-        graphql:install()
-    end
-end
-
--- ettings
-
-M.settings = {}
-
-return MS
+require'lspconfig'.graphql.setup{
+	cmd = { "graphql-lsp", "server", "-m", "stream" },
+  filetypes = { "graphql" },
+}

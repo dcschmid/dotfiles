@@ -1,19 +1,11 @@
-local M = {}
+-- npm i -g vscode-langservers-extracted
 
--- Auto-install
+--Enable (broadcasting) snippet capability for completion
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
 
-local lsp_installer_servers = require'nvim-lsp-installer.servers'
-
-local ok, jsonls = lsp_installer_servers.get_server("jsonls")
-if ok then
-    if not jsonls:is_installed() then
-        jsonls:install()
-    end
-end
-
--- Settngs
-
-M.settings = {
+require'lspconfig'.jsonls.setup {
+  capabilities = capabilities,
   json = {
     schemas = {
       {
@@ -52,4 +44,3 @@ M.settings = {
   }
 }
 
-return M

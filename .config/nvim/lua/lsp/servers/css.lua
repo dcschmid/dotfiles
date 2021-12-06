@@ -1,18 +1,9 @@
-local M = {}
+-- npm i -g vscode-langservers-extracted
 
--- Auto-install
+--Enable (broadcasting) snippet capability for completion
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
 
-local lsp_installer_servers = require'nvim-lsp-installer.servers'
-
-local ok, cssls = lsp_installer_servers.get_server("cssls")
-if ok then
-    if not cssls:is_installed() then
-        cssls:install()
-    end
-end
-
--- Setting
-
-M.settings = {}
-
-return M
+require'lspconfig'.cssls.setup {
+  capabilities = capabilities,
+}
