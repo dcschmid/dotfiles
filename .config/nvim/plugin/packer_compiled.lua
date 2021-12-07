@@ -131,6 +131,12 @@ _G.packer_plugins = {
     path = "/usr/home/daniel/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["diffview.nvim"] = {
+    config = { " require('plugins/diffview') " },
+    loaded = true,
+    path = "/usr/home/daniel/.local/share/nvim/site/pack/packer/start/diffview.nvim",
+    url = "https://github.com/sindrets/diffview.nvim"
+  },
   ["formatter.nvim"] = {
     config = { " require('plugins/formatter') " },
     loaded = true,
@@ -265,10 +271,10 @@ time([[Config for nvim-treesitter]], false)
 time([[Config for nvim-cmp]], true)
  require('plugins/cmp') 
 time([[Config for nvim-cmp]], false)
--- Config for: lsp-status.nvim
-time([[Config for lsp-status.nvim]], true)
- require('plugins/lspstatus') 
-time([[Config for lsp-status.nvim]], false)
+-- Config for: diffview.nvim
+time([[Config for diffview.nvim]], true)
+ require('plugins/diffview') 
+time([[Config for diffview.nvim]], false)
 -- Config for: lspkind-nvim
 time([[Config for lspkind-nvim]], true)
  require('plugins/lspkind') 
@@ -281,18 +287,22 @@ time([[Config for nvim-comment]], false)
 time([[Config for lualine.nvim]], true)
  require('plugins/lualine') 
 time([[Config for lualine.nvim]], false)
+-- Config for: lsp-status.nvim
+time([[Config for lsp-status.nvim]], true)
+ require('plugins/lspstatus') 
+time([[Config for lsp-status.nvim]], false)
 -- Config for: session-lens
 time([[Config for session-lens]], true)
 try_loadstring("\27LJ\1\2L\0\0\2\0\4\0\a4\0\0\0%\1\1\0>\0\2\0027\0\2\0003\1\3\0>\0\2\1G\0\1\0\1\0\1\14previewer\1\nsetup\17session-lens\frequire\0", "config", "session-lens")
 time([[Config for session-lens]], false)
--- Config for: LuaSnip
-time([[Config for LuaSnip]], true)
- require('plugins/luasnip') 
-time([[Config for LuaSnip]], false)
 -- Config for: nvim-lspconfig
 time([[Config for nvim-lspconfig]], true)
  require('plugins/lspconfig') 
 time([[Config for nvim-lspconfig]], false)
+-- Config for: LuaSnip
+time([[Config for LuaSnip]], true)
+ require('plugins/luasnip') 
+time([[Config for LuaSnip]], false)
 -- Config for: auto-session
 time([[Config for auto-session]], true)
 try_loadstring("\27LJ\1\2P\0\0\2\0\4\0\a4\0\0\0%\1\1\0>\0\2\0027\0\2\0003\1\3\0>\0\2\1G\0\1\0\1\0\1\14log_level\tinfo\nsetup\17auto-session\frequire\0", "config", "auto-session")

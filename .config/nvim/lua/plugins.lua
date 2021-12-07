@@ -132,6 +132,12 @@ return require('packer').startup{function()
        'David-Kunz/jester',
   }
 
+	use { -- Single tabpage interface for easily cycling through diffs for all modified files for any git rev
+		'sindrets/diffview.nvim',
+		requires = 'nvim-lua/plenary.nvim',
+    config = [[ require('plugins/diffview') ]]
+	}
+
   use { -- An asynchronous grammar checker for Neovim using LanguageTool
        'vigoux/LanguageTool.nvim',
   }
