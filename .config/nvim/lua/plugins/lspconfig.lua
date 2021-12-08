@@ -1,16 +1,19 @@
--- options for lsp diagnostic
-vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
-  vim.lsp.diagnostic.on_publish_diagnostics, {
-    underline = true,
-    signs = true,
-    update_in_insert = true,
-    virtual_text = {
-        true,
-        spacing = 6,
-        --severity_limit='Error'  -- Only show virtual text on error
-    },
-  }
-)
+-- Customizing how diagnostics are displayed
+vim.diagnostic.config({
+  virtual_text = false,
+  signs = true,
+  underline = true,
+  update_in_insert = false,
+  severity_sort = false,
+})
+
+-- Change diagnostic symbols in the sign column (gutter)
+local signs = { Error = "✗", Warn = "⚠", Hint = "", Info = "" }
+for type, icon in pairs(signs) do
+  local hl = "DiagnosticSign" .. type
+  vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
+end
+
 
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer

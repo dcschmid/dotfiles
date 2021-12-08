@@ -94,6 +94,7 @@ k('n', '<leader>f', [[:Format<CR>]], { noremap = true, silent = true })         
 k('n', '<leader>el', [[:EslintFixAll<CR>]], { noremap = true, silent = true })         -- open netrw (native file expolorer)
 k('n', '<leader>l', [[:LanguageToolCheck<CR>]], { noremap = true, silent = true })         -- open netrw (native file expolorer)
 k('v', '<leader>x', [[:Translate English<CR>]], { noremap = true, silent = true })         -- open netrw (native file expolorer)
+k('n', '<leader>tt', [[:TroubleToggle lsp_workspace_diagnostics<CR>]], { noremap = true, silent = true })         -- open netrw (native file expolorer)
 
 -- highlight on yank
 exec([[

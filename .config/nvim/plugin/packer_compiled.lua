@@ -251,6 +251,12 @@ _G.packer_plugins = {
     path = "/usr/home/daniel/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["trouble.nvim"] = {
+    config = { "\27LJ\1\2Ê\1\0\0\3\0\6\0\t4\0\0\0%\1\1\0>\0\2\0027\0\2\0003\1\3\0003\2\4\0:\2\5\1>\0\2\1G\0\1\0\nsigns\1\0\4\16information\tinfo\thint\thint\fwarning\twarn\nerror\nerror\1\0\5\17indent_lines\1\29use_lsp_diagnostic_signs\1\16fold_closed\6>\nicons\1\14fold_open\6v\nsetup\ftrouble\frequire\0" },
+    loaded = true,
+    path = "/usr/home/daniel/.local/share/nvim/site/pack/packer/start/trouble.nvim",
+    url = "https://github.com/folke/trouble.nvim"
+  },
   ["vim-gutentags"] = {
     loaded = true,
     path = "/usr/home/daniel/.local/share/nvim/site/pack/packer/start/vim-gutentags",
@@ -275,14 +281,18 @@ time([[Config for nvim-cmp]], false)
 time([[Config for diffview.nvim]], true)
  require('plugins/diffview') 
 time([[Config for diffview.nvim]], false)
+-- Config for: auto-session
+time([[Config for auto-session]], true)
+try_loadstring("\27LJ\1\2P\0\0\2\0\4\0\a4\0\0\0%\1\1\0>\0\2\0027\0\2\0003\1\3\0>\0\2\1G\0\1\0\1\0\1\14log_level\tinfo\nsetup\17auto-session\frequire\0", "config", "auto-session")
+time([[Config for auto-session]], false)
 -- Config for: lspkind-nvim
 time([[Config for lspkind-nvim]], true)
  require('plugins/lspkind') 
 time([[Config for lspkind-nvim]], false)
--- Config for: nvim-comment
-time([[Config for nvim-comment]], true)
- require('plugins/comment') 
-time([[Config for nvim-comment]], false)
+-- Config for: trouble.nvim
+time([[Config for trouble.nvim]], true)
+try_loadstring("\27LJ\1\2Ê\1\0\0\3\0\6\0\t4\0\0\0%\1\1\0>\0\2\0027\0\2\0003\1\3\0003\2\4\0:\2\5\1>\0\2\1G\0\1\0\nsigns\1\0\4\16information\tinfo\thint\thint\fwarning\twarn\nerror\nerror\1\0\5\17indent_lines\1\29use_lsp_diagnostic_signs\1\16fold_closed\6>\nicons\1\14fold_open\6v\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
+time([[Config for trouble.nvim]], false)
 -- Config for: lualine.nvim
 time([[Config for lualine.nvim]], true)
  require('plugins/lualine') 
@@ -295,18 +305,18 @@ time([[Config for lsp-status.nvim]], false)
 time([[Config for session-lens]], true)
 try_loadstring("\27LJ\1\2L\0\0\2\0\4\0\a4\0\0\0%\1\1\0>\0\2\0027\0\2\0003\1\3\0>\0\2\1G\0\1\0\1\0\1\14previewer\1\nsetup\17session-lens\frequire\0", "config", "session-lens")
 time([[Config for session-lens]], false)
--- Config for: nvim-lspconfig
-time([[Config for nvim-lspconfig]], true)
- require('plugins/lspconfig') 
-time([[Config for nvim-lspconfig]], false)
+-- Config for: nvim-comment
+time([[Config for nvim-comment]], true)
+ require('plugins/comment') 
+time([[Config for nvim-comment]], false)
 -- Config for: LuaSnip
 time([[Config for LuaSnip]], true)
  require('plugins/luasnip') 
 time([[Config for LuaSnip]], false)
--- Config for: auto-session
-time([[Config for auto-session]], true)
-try_loadstring("\27LJ\1\2P\0\0\2\0\4\0\a4\0\0\0%\1\1\0>\0\2\0027\0\2\0003\1\3\0>\0\2\1G\0\1\0\1\0\1\14log_level\tinfo\nsetup\17auto-session\frequire\0", "config", "auto-session")
-time([[Config for auto-session]], false)
+-- Config for: nvim-lspconfig
+time([[Config for nvim-lspconfig]], true)
+ require('plugins/lspconfig') 
+time([[Config for nvim-lspconfig]], false)
 if should_profile then save_profiles() end
 
 end)
