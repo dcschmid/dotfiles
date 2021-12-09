@@ -258,7 +258,7 @@ set laststatus=2
 """""""""""""""""""""""""""""""""
 " => gutentags
 """""""""""""""""""""""""""""""""
-let g:gutentags_ctags_executable = 'uctags'
+let g:gutentags_ctags_executable = 'ctags'
 let g:gutentags_project_roots = ['.git', 'package.json', 'composer.json']
 
 
@@ -411,6 +411,7 @@ let g:coc_global_extensions = [
   \ 'coc-spell-checker',
   \ 'coc-project',
   \ 'coc-tabnine',
+  \ 'coc-emmet',
   \ ]
 
 if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')

@@ -49,6 +49,7 @@ Plug 'cespare/vim-toml', { 'branch': 'main' }
 
 " Auto-completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}  " Make your Vim/Neovim as smart as VSCode.
+Plug 'mattn/emmet-vim' " emmet for vim: http://emmet.io/ 
 
 " Language Tools
 Plug 'dpelle/vim-LanguageTool'       " LanguageTool grammar checker 
