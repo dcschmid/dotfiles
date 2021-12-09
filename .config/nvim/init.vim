@@ -126,7 +126,9 @@ syntax on
 
 "Colorscheme and enable 256 Colors
 colorscheme iceberg
-set t_CO=256						"Use colors, This is useful for Terminal vim
+
+"Use colors, This is useful for Terminal vim
+set t_CO=256						
 
 "set utf8 as standard encoding
 set encoding=utf8
@@ -269,7 +271,7 @@ let g:rooter_change_directory_for_non_project_files = 'home'
 let g:rooter_resolve_links = 1
 
 augroup vimrc_rooter
-    autocmd VimEnter * :Rooter
+  autocmd VimEnter * :Rooter
 augroup END
 
 
@@ -361,7 +363,7 @@ nnoremap <leader>gv :GV<CR>
 nnoremap <leader>gvf :GV!<CR>
 
 " Show commits for every source line
-nnoremap <Leader>gl :Gblame<CR>
+nnoremap <Leader>gl :Git blame<CR>
 
 " Open current line in the browser
 nnoremap <Leader>gb :.GBrowse<CR>
@@ -381,8 +383,9 @@ let g:languagetool_enable_rules='PASSIVE_VOICE'
 nmap <Leader>l :LanguageToolCheck
 vmap <Leader>l :LanguageToolCheck
 
+
 """""""""""""""""""""""""""""""""
-" => Language Tools
+" => Translator
 """""""""""""""""""""""""""""""""
 let g:translator_target_lang = 'en'
 let g:translator_default_engines = ['bing', 'google']

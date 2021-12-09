@@ -10,12 +10,13 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 \| endif
 
 call plug#begin()
+
 " Git
 Plug 'tpope/vim-fugitive'      " Git plugin with commands 'G<command>'
 Plug 'tpope/vim-rhubarb'       " Enables GBrowse from fugitive to open Github URLs 
 Plug 'junegunn/gv.vim'         " A git commit browser for vim                                            
 Plug 'airblade/vim-gitgutter'  " Shows git diff markers in the sign column
-Plug 'sodapopcan/vim-twiggy' " Git branch management for Vim 
+Plug 'sodapopcan/vim-twiggy'   " Git branch management for Vim 
 
 " Navigation
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }  " Fuzzy file++ searching
