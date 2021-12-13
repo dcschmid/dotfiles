@@ -258,7 +258,7 @@ set laststatus=2
 """""""""""""""""""""""""""""""""
 " => gutentags
 """""""""""""""""""""""""""""""""
-let g:gutentags_ctags_executable = 'ctags'
+let g:gutentags_ctags_executable = 'uctags'
 let g:gutentags_project_roots = ['.git', 'package.json', 'composer.json']
 
 
