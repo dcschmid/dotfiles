@@ -46,14 +46,11 @@ Plug 'styled-components/vim-styled-components', { 'branch': 'main' }   " Vim bun
 Plug 'jparise/vim-graphql'                                             " provides GraphQL file detection, syntax highlighting, and indentation
 Plug 'leafOfTree/vim-vue-plugin'                                       " Vim syntax and indent plugin for .vue files 
 Plug 'cespare/vim-toml', { 'branch': 'main' }
+Plug 'rajasegar/vim-astro', {'branch': 'main'}
 
 " Auto-completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}  " Make your Vim/Neovim as smart as VSCode.
 Plug 'mattn/emmet-vim' " emmet for vim: http://emmet.io/ 
-
-" Language Tools
-Plug 'dpelle/vim-LanguageTool'       " LanguageTool grammar checker 
-Plug 'voldikss/vim-translator'       " Translating plugin for Vim/Neovim 
 
 " Tools
 Plug 'brooth/far.vim'                " Find And Replace 

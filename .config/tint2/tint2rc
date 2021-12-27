@@ -66,7 +66,7 @@ task_urgent_icon_asb = 100 0 0
 task_iconified_icon_asb = 70 0 0
 
 # Fonts
-task_font = hack 10
+task_font = Hack 10
 task_font_color = #FFFFFF 68
 task_active_font_color = #FFFFFF 83
 task_urgent_font_color = #FFFFFF 83
@@ -83,9 +83,9 @@ systray_icon_asb = 70 0 0
 
 # Clock
 time1_format = %H:%M:%S
-time1_font = hack 10
+time1_font = Hack 10
 time2_format = %A %B %d
-time2_font = hack 8
+time2_font = Hack 8
 clock_font_color = #FFFFFF 74
 clock_padding = 1 0
 clock_background_id = 0
@@ -96,7 +96,7 @@ tooltip_padding = 2 2
 tooltip_show_timeout = 0.7
 tooltip_hide_timeout = 0.3
 tooltip_background_id = 1
-tooltip_font = hack 12
+tooltip_font = Hack 10
 tooltip_font_color = #000000 80
 
 # Mouse
@@ -117,8 +117,8 @@ battery = 0
 battery_low_status = 10
 battery_low_cmd = notify-send "battery low"
 battery_hide = 98
-bat1_font = hack 10
-bat2_font = hack 10
+bat1_font = Hack 10
+bat2_font = Hack 10
 battery_font_color = #FFFFFF 74
 battery_padding = 1 0
 battery_background_id = 0

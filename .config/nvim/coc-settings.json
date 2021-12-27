@@ -22,6 +22,7 @@
   "cSpell.words": [
     "dotfile"
   ],
+  "lightbulb.virtualText": "💡",
   "languageserver": {
     "graphql": {
       "command": "graphql-lsp",

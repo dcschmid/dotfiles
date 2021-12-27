@@ -25,9 +25,11 @@ nmap <leader>w :w!<cr>
 " Use ag over grep
 set grepprg=ag\ --nogroup\ --nocolor
 
-" Use the system regihttps://www.genickbruch.com/index.php?befehl=news&meldung=29315ster
+" Use the system register
 set clipboard^=unnamed 
 
+" set python path
+let g:python3_host_prog="/usr/local/bin/python3.8"
 
 """""""""""""""""""""""""""""""""
 " => Vim user interface
@@ -370,33 +372,6 @@ nnoremap <Leader>gb :.GBrowse<CR>
 
 " Open visual selection in the browser
 vnoremap <Leader>gb :GBrowse<CR>
-
-
-"""""""""""""""""""""""""""""""""
-" => Language Tools
-"""""""""""""""""""""""""""""""""
-let g:languagetool_jar='$HOME/LanguageTool-5.4/languagetool-commandline.jar'
-let g:languagetool_disable_rules='WHITESPACE_RULE,EN_QUOTES,ARROWS,DASH_RULE'
-let g:languagetool_enable_rules='PASSIVE_VOICE'
-
-" Run Language Check
-nmap <Leader>l :LanguageToolCheck
-vmap <Leader>l :LanguageToolCheck
-
-
-"""""""""""""""""""""""""""""""""
-" => Translator
-"""""""""""""""""""""""""""""""""
-let g:translator_target_lang = 'en'
-let g:translator_default_engines = ['bing', 'google']
-
-" Replace the text with translation
-nmap <silent> <Leader>r <Plug>TranslateR
-vmap <silent> <Leader>r <Plug>TranslateRV
-
-" Translate the text in clipboard
-nmap <silent> <Leader>x <Plug>TranslateX
-
 
 """""""""""""""""""""""""""""""""
 " => coc

@@ -135,52 +135,6 @@
   </item>
 </menu>
 
-<menu id="games" label="games">
-
-  <item label="supertux 2">
-    <action name="Execute">
-      <execute>supertux2</execute>
-    </action>
-  </item>
-
-  <item label="openrct2">
-    <action name="Execute">
-      <execute>openrct2</execute>
-    </action>
-  </item>
-
-  <item label="openttd">
-    <action name="Execute">
-      <execute>openttd</execute>
-    </action>
-  </item>
-
-  <item label="warzone 2100">
-    <action name="Execute">
-      <execute>warzone2100</execute>
-    </action>
-  </item>
-
-  <item label="widelands">
-    <action name="Execute">
-      <execute>widelands</execute>
-    </action>
-  </item>
-
-  <item label="corsix-th">
-    <action name="Execute">
-        <execute>corsix-th</execute>
-    </action>
-  </item>
-
-  <item label="openarena">
-    <action name="Execute">
-        <execute>openarena</execute>
-    </action>
-  </item>
-
-</menu>
-
 <menu id="utilities-menu" label="utilities">
 
   <item label="cache: firefox">

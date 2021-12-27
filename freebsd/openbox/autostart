@@ -1,0 +1,7 @@
+xrandr --output eDP-1 --mode 1600x900 --scale 1x1 &
+tint2 &
+volumeicon &
+urxvtd -q -f -o &
+nextcloud &
+networkmgr &
+pulseaudio --start &
