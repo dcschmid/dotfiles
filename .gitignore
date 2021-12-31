@@ -3,4 +3,4 @@ vim/.vim/autoload
 tags
 vim/.vim/.netrwhist
 scripts/stats
-tags
+.config/nvim/plugged/

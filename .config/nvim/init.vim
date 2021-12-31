@@ -29,7 +29,7 @@ set grepprg=ag\ --nogroup\ --nocolor
 set clipboard^=unnamed 
 
 " set python path
-let g:python3_host_prog="/usr/local/bin/python3.8"
+let g:python3_host_prog="/usr/bin/python3"
 
 """""""""""""""""""""""""""""""""
 " => Vim user interface
@@ -385,9 +385,7 @@ let g:coc_global_extensions = [
   \ 'coc-vetur',
   \ 'coc-spell-checker',
   \ 'coc-project',
-  \ 'coc-tabnine',
   \ 'coc-emmet',
-  \ 'coc-lightbulb',
   \ ]
 
 if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')
