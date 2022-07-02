@@ -161,8 +161,8 @@ set expandtab
 set smarttab
 
 "1Tab == 2 spaces
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 
 "Auto indent
 set ai
@@ -216,7 +216,7 @@ au TabLeave * let g:lasttab = tabpagenr()
 nmap <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
 
 " Switch CWD to the directory of the open buffer
-nmap <leader>cd :Rooter<cr>
+nmap <space>cd :Rooter<cr>
 
 " Specify the behavior when switching between buffers
 try
@@ -256,14 +256,6 @@ so ~/.config/nvim/lightline.vim    "extra lightline file
 "Always Show the status line
 set laststatus=2
 
-
-"""""""""""""""""""""""""""""""""
-" => gutentags
-"""""""""""""""""""""""""""""""""
-let g:gutentags_ctags_executable = 'uctags'
-let g:gutentags_project_roots = ['.git', 'package.json', 'composer.json']
-
-
 """""""""""""""""""""""""""""""""
 " => rooter vim
 """""""""""""""""""""""""""""""""
@@ -272,10 +264,7 @@ let g:rooter_cd_cmd = 'cd'
 let g:rooter_change_directory_for_non_project_files = 'home'
 let g:rooter_resolve_links = 1
 
-augroup vimrc_rooter
-  autocmd VimEnter * :Rooter
-augroup END
-
+au BufReadPost * :Rooter 
 
 """""""""""""""""""""""""""""""""
 " => FZF
@@ -285,7 +274,7 @@ let g:fzf_action = {
   \ 'ctrl-s': 'split',
   \ 'ctrl-v': 'vsplit' }
 
-let b:coc_root_patterns = ['.git', '.env', 'package,json', 'composer.json']
+let b:coc_root_patterns = ['.git', '.env', 'package.json', 'composer.json']
 
 " [Buffers] Jump to the existing window if possible
 let g:fzf_buffers_jump = 1
@@ -381,9 +370,7 @@ let g:coc_global_extensions = [
   \ 'coc-css',
   \ 'coc-html',
   \ 'coc-json',
-  \ 'coc-stylelintplus',
   \ 'coc-vetur',
-  \ 'coc-spell-checker',
   \ 'coc-project',
   \ 'coc-emmet',
   \ ]
@@ -527,8 +514,7 @@ au BufEnter */doc/* if &filetype=='help' | wincmd L | endif
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
 command! -bang -nargs=? GFilesCwd
-  \ call fzf#vim#gitfiles(<q-args>, fzf#vim#with_preview(<q-args> == '?' ? { 'dir': getcwd(), 'placeholder': '' } : { 'dir': getcwd() }), <bang>0)
-
+  \ call fzf#vim#gitfiles(<q-args>, fzf#vim#with_preview(<q-args> == '?' ? { 'dir': FindRootDirectory(), 'placeholder': '' } : { 'dir': FindRootDirectory() }), <bang>0)
 
 "-------------Tips and Reminders--------------"
 " - Press 'zz' to instantly center the line where the cursor is located.

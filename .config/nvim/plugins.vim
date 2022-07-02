@@ -30,7 +30,6 @@ Plug 'terryma/vim-multiple-cursors'   " Use multiple cursor in vim
 Plug 'alvan/vim-closetag'             " Autoclose HTML Tags 
 
 " Visual
-Plug 'gkeep/iceberg-dark'
 Plug 'cocopon/iceberg.vim'            " Iceberg is well-designed, bluish color scheme for Vim
 Plug 'roman/golden-ratio'             " Auto-expands current split
 Plug 'valloric/MatchTagAlways'        " Always highlight enclosing tags
@@ -54,7 +53,6 @@ Plug 'mattn/emmet-vim' " emmet for vim: http://emmet.io/
 
 " Tools
 Plug 'brooth/far.vim'                " Find And Replace 
-Plug 'ludovicchabant/vim-gutentags'  " A Vim plugin that manages your tag files 
 Plug 'airblade/vim-rooter'           " Changes Vim working directory to project root.  
 
 call plug#end()

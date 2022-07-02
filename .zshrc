@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/daniel/.oh-my-zsh
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -82,11 +82,6 @@ export ARCHFLAGS="-arch x86_64"
 
 export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --glob "!{.git,.svn,node_modules,bower_components,vendor,_site}"'
 
-export QT_QPA_PLATFORMTHEME=qt5ct
-
-export NVM_DIR="$HOME/.nvm"  && \. "$NVM_DIR/nvm.sh"
-export CC=cc  
-export CXX=c++
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -94,10 +89,9 @@ export CXX=c++
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="vim ~/.zshrc"
-alias ohmyzsh="vim ~/.oh-my-zsh"
+alias zshconfig="nvim ~/.zshrc"
+alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias configdot='/usr/local/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-alias danschmid="ssh root@danschmid.de"
 alias cat="bat"
 alias ls="exa"
 alias find="fd"
@@ -126,7 +120,8 @@ gfhf() {
     git flow hotfix finish $1 && git push --tags && git checkout master && git push && git checkout develop && git push
 }
 
-[ -f ~/.fzf.zsh ] && -source ~/.fzf.zsh
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
-# source /usr/share/nvm/init-nvm.sh

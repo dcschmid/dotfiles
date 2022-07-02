@@ -1,9 +1,7 @@
 mkdir -p ~/.config
 rm -f ~/.zshrc
-rm -f ~/.Xdefaults
 rm -rf ~/.config/nvim
 rm -rf ~/.ctags.d
-ln -s /home/daniel/dotfiles/.zshrc ~/.zshrc
-ln -s /home/daniel/dotfiles/.Xdefaults ~/.Xdefaults
-ln -s /home/daniel/dotfiles/.ctags.d ~/.ctags.d
-ln -s /home/daniel/dotfiles/.config/nvim ~/.config/nvim
+ln -s /Users/danielschmid/dotfiles/.zshrc /Users/danielschmid/.zshrc
+ln -s /Users/danielschmid/dotfiles/.ctags.d /Users/danielschmid/.ctags.d
+ln -s /Users/danielschmid/dotfiles/.config/nvim /Users/danielschmid/.config/nvim
